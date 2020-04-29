@@ -1,0 +1,13 @@
+diff --git a/docroot/core/lib/Drupal/Core/Utility/LinkGenerator.php b/docroot/core/lib/Drupal/Core/Utility/LinkGenerator.php
+index cfe0d19d..89fce73d 100644
+--- a/docroot/core/lib/Drupal/Core/Utility/LinkGenerator.php
++++ b/docroot/core/lib/Drupal/Core/Utility/LinkGenerator.php
+@@ -157,7 +157,7 @@ class LinkGenerator implements LinkGeneratorInterface {
+ 
+     // Move attributes out of options since generateFromRoute() doesn't need
+     // them. Make sure the "href" comes first for testing purposes.
+-    $attributes = ['href' => ''] + $variables['options']['attributes'];
++    $attributes = array_merge(array('href' => ''), $variables['options']['attributes']);
+     unset($variables['options']['attributes']);
+     $url->setOptions($variables['options']);
+ 
