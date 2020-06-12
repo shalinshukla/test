@@ -1,0 +1,44 @@
+uuid: 4e207201-e666-42e0-a9d3-a26ee34999b0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_media_category
+    - node.type.media_library
+    - taxonomy.vocabulary.media_category
+  content:
+    - 'taxonomy_term:media_category:854146f9-6198-4fa5-86a0-7572b3477d6b'
+  module:
+    - brick_modal
+    - content_translation
+    - tmgmt_content
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+  tmgmt_content:
+    excluded: false
+  brick_modal:
+    delete_referenced_entities: 0
+id: node.media_library.field_media_category
+field_name: field_media_category
+entity_type: node
+bundle: media_library
+label: 'Media Category'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    target_uuid: 854146f9-6198-4fa5-86a0-7572b3477d6b
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      media_category: media_category
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

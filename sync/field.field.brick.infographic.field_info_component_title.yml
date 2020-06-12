@@ -1,0 +1,24 @@
+uuid: 78bfb44d-78ca-45a9-95f6-dda03bbf013f
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.infographic
+    - field.storage.brick.field_info_component_title
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.infographic.field_info_component_title
+field_name: field_info_component_title
+entity_type: brick
+bundle: infographic
+label: 'Infographic title'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

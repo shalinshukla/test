@@ -1,0 +1,30 @@
+uuid: 5270a3fc-8237-4726-a16f-5dac57e916aa
+langcode: en
+status: false
+dependencies:
+  module:
+    - block_class
+    - custom_blocks
+    - system
+  theme:
+    - project_bootstrap
+third_party_settings:
+  block_class:
+    classes: ''
+id: locatormapblock
+theme: project_bootstrap
+region: content
+weight: -16
+provider: null
+plugin: locator_map
+settings:
+  id: locator_map
+  label: 'Locator Map block'
+  provider: custom_blocks
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: /who-we-are/our-locations
+    negate: false
+    context_mapping: {  }

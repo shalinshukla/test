@@ -1,0 +1,30 @@
+uuid: 16502af9-da8c-4abb-9bed-2879b58b8550
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+    - file
+    - image
+id: brick.field_banner_inner_page
+field_name: field_banner_inner_page
+entity_type: brick
+type: image
+settings:
+  uri_scheme: public
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  target_type: file
+  display_field: false
+  display_default: false
+module: image
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,31 @@
+uuid: 521f581c-f3a4-41b1-91cc-8fad7cef69af
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_news_file_attachment
+    - node.type.newscontent
+  module:
+    - content_translation
+    - file
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: node.newscontent.field_news_file_attachment
+field_name: field_news_file_attachment
+entity_type: node
+bundle: newscontent
+label: 'News file attachment'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'txt pdf doc xls docx xlsx ppt pptx'
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

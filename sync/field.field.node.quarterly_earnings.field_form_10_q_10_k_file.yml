@@ -1,0 +1,27 @@
+uuid: 31765a9b-a033-475a-b3b3-e43056e563c7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_form_10_q_10_k_file
+    - node.type.quarterly_earnings
+  module:
+    - link
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.quarterly_earnings.field_form_10_q_10_k_file
+field_name: field_form_10_q_10_k_file
+entity_type: node
+bundle: quarterly_earnings
+label: 'FORM 10-Q / 10-K File'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

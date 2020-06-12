@@ -1,0 +1,29 @@
+uuid: 61430ab3-955a-48b8-82ec-e0dbb4f4d9c6
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:ba1c1348-6907-4484-b6cb-24ff97205bc9'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - project_bootstrap
+third_party_settings:
+  block_class:
+    classes: 'col-xs-12 col-sm-6 col-md-3 stay-in-touch'
+id: stayintouch
+theme: project_bootstrap
+region: footer
+weight: -36
+provider: null
+plugin: 'block_content:ba1c1348-6907-4484-b6cb-24ff97205bc9'
+settings:
+  id: 'block_content:ba1c1348-6907-4484-b6cb-24ff97205bc9'
+  label: 'Stay in touch'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

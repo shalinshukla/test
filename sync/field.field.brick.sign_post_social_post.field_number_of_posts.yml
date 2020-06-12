@@ -1,0 +1,28 @@
+uuid: e94cd8c1-fbd0-462f-a001-1a52febd48ce
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.sign_post_social_post
+    - field.storage.brick.field_number_of_posts
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.sign_post_social_post.field_number_of_posts
+field_name: field_number_of_posts
+entity_type: brick
+bundle: sign_post_social_post
+label: 'Number of Posts'
+description: 'Please insert number of posts to be displayed in signpost.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 1
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

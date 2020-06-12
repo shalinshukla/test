@@ -1,0 +1,14 @@
+uuid: 522d4900-eaa2-4498-a537-43d528931874
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+    - lightning_core
+third_party_settings:
+  lightning_core:
+    description: 'Display preview data for entity inline form. Used for Bricks forms.'
+id: brick.ief_preview
+label: 'IEF Preview'
+targetEntityType: brick
+cache: true

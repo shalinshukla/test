@@ -1,0 +1,25 @@
+uuid: 6753ba39-69ca-449d-9aad-1d76240caf60
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_isalertable
+    - node.type.us_press_release
+_core:
+  default_config_hash: gCnrwBakCOMZodFcLaAs-bF1cXsd2J_BI6zD1buHlMY
+id: node.us_press_release.field_isalertable
+field_name: field_isalertable
+entity_type: node
+bundle: us_press_release
+label: 'Is Alertable'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Is Alertable'
+  off_label: 'Is Alertable'
+field_type: boolean

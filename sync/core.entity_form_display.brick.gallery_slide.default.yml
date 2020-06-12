@@ -1,0 +1,60 @@
+uuid: 645b4419-4014-46a6-9f5b-fe60e3c71c0a
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.gallery_slide
+    - field.field.brick.gallery_slide.field_image_gallery_image
+    - field.field.brick.gallery_slide.field_img_gal_description
+    - image.style.thumbnail
+  module:
+    - image
+    - imce
+    - lightning_media
+id: brick.gallery_slide.default
+targetEntityType: brick
+bundle: gallery_slide
+mode: default
+content:
+  field_image_gallery_image:
+    type: image_image
+    weight: 2
+    settings:
+      preview_image_style: thumbnail
+      progress_indicator: throbber
+    region: content
+    third_party_settings:
+      imce:
+        enabled: true
+      lightning_media:
+        file_links: true
+        remove_button: true
+  field_img_gal_description:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  langcode:
+    type: language_select
+    weight: 3
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

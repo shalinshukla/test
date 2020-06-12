@@ -1,0 +1,9 @@
+uuid: b3dda5dd-584b-4730-83e2-4c39a312a11a
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.brick
+name: NewsRoom
+type: newsroom
+description: 'This is news room component'

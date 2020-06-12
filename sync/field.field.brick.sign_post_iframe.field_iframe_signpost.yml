@@ -1,0 +1,28 @@
+uuid: 81480794-6837-4acd-a0e1-f40797f3341e
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.sign_post_iframe
+    - field.storage.brick.field_iframe_signpost
+  module:
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: brick.sign_post_iframe.field_iframe_signpost
+field_name: field_iframe_signpost
+entity_type: brick
+bundle: sign_post_iframe
+label: 'Iframe Signpost'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

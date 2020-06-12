@@ -1,0 +1,31 @@
+uuid: 0b5450a2-cbef-462f-b6b6-b65bbef17f35
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content_date
+    - node.type.result
+  module:
+    - content_translation
+    - datetime
+    - tmgmt_content
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+  tmgmt_content:
+    excluded: false
+id: node.result.field_content_date
+field_name: field_content_date
+entity_type: node
+bundle: result
+label: 'Content Date'
+description: 'The year in which this item will be grouped and displayed within the relevant year tab on the site'
+required: false
+translatable: true
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

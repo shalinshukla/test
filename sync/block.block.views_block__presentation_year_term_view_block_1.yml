@@ -1,0 +1,30 @@
+uuid: 21d589da-b752-416d-9030-41125cc68ae9
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.presentation_year_term_view
+  module:
+    - system
+    - views
+  theme:
+    - project_bootstrap
+id: views_block__presentation_year_term_view_block_1
+theme: project_bootstrap
+region: content
+weight: -34
+provider: null
+plugin: 'views_block:presentation_year_term_view-block_1'
+settings:
+  id: 'views_block:presentation_year_term_view-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /node/115
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,29 @@
+uuid: f39cc9be-6013-4e2a-bfcf-4a5677d48c25
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.banner
+    - field.storage.brick.field_banner_video
+  module:
+    - content_translation
+    - video_embed_field
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.banner.field_banner_video
+field_name: field_banner_video
+entity_type: brick
+bundle: banner
+label: 'Banner Video'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_providers:
+    youtube: '0'
+    youtube_playlist: '0'
+    vimeo: '0'
+field_type: video_embed_field

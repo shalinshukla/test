@@ -1,0 +1,23 @@
+uuid: 37a697b3-6fb1-48ac-b1b8-9b880948f305
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.bricky
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: node.bricky.changed
+field_name: changed
+entity_type: node
+bundle: bricky
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

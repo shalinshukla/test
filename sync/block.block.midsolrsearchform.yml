@@ -1,0 +1,20 @@
+uuid: 67cfe8b4-7973-4a95-b0d8-2e382656ea99
+langcode: en
+status: true
+dependencies:
+  module:
+    - mid_solr_search
+  theme:
+    - project_bootstrap
+id: midsolrsearchform
+theme: project_bootstrap
+region: navigation
+weight: -20
+provider: null
+plugin: mid_solr_search_form
+settings:
+  id: mid_solr_search_form
+  label: 'Mid Solr Search Form'
+  provider: mid_solr_search
+  label_display: '0'
+visibility: {  }

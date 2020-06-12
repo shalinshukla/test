@@ -1,0 +1,26 @@
+uuid: cf62ae33-409a-40ab-9201-d3a51322e0eb
+langcode: en
+status: false
+dependencies:
+  config:
+    - 'mid_url_proxy:mid_url_proxy:0daff113-ffbd-4ab5-a70d-5bc44acbe21f'
+  module:
+    - block_class
+    - mid_url_proxy
+  theme:
+    - project_bootstrap
+third_party_settings:
+  block_class:
+    classes: ''
+id: rns_dummy
+theme: project_bootstrap
+region: content
+weight: -18
+provider: null
+plugin: 'mid_url_proxy:4'
+settings:
+  id: 'mid_url_proxy:4'
+  label: 'RNS Dummy'
+  provider: mid_url_proxy
+  label_display: visible
+visibility: {  }

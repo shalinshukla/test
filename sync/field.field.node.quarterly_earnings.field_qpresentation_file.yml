@@ -1,0 +1,27 @@
+uuid: 7dd759ba-60d1-47f8-9638-c069efd31ce5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_qpresentation_file
+    - node.type.quarterly_earnings
+  module:
+    - link
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.quarterly_earnings.field_qpresentation_file
+field_name: field_qpresentation_file
+entity_type: node
+bundle: quarterly_earnings
+label: 'Presentation File'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

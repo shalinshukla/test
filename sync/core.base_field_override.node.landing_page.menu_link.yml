@@ -1,0 +1,25 @@
+uuid: 0780ca4b-4be7-4b99-80c3-d9f83571101f
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.landing_page
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: node.landing_page.menu_link
+field_name: menu_link
+entity_type: node
+bundle: landing_page
+label: 'Menu link'
+description: 'Computed menu link for the node (only available during node saving).'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

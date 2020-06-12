@@ -1,0 +1,9 @@
+uuid: 73a62835-b75f-4d45-bc5b-696a501189eb
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.brick
+name: 'Child Event'
+type: child_event
+description: 'To add the child events'

@@ -1,0 +1,28 @@
+uuid: ab6abfec-0a48-4f24-be2c-8f73d396bc4e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_decline_button_label
+    - node.type.mid_disclaimer
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+_core:
+  default_config_hash: SRZJSWUnxybpnc8H_DRWDp83oqWbngNvKQ7eAZNwVFo
+id: node.mid_disclaimer.field_decline_button_label
+field_name: field_decline_button_label
+entity_type: node
+bundle: mid_disclaimer
+label: 'Decline Button Label'
+description: 'This value is displayed as label for "Decline" button'
+required: false
+translatable: true
+default_value:
+  -
+    value: Decline
+default_value_callback: ''
+settings: {  }
+field_type: string

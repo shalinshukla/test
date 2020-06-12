@@ -1,0 +1,19 @@
+uuid: 4dcbca6a-bacf-4cdc-bc97-9603e5404799
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.sitewide
+    - field.storage.contact_message.field_confirm_email_address
+id: contact_message.sitewide.field_confirm_email_address
+field_name: field_confirm_email_address
+entity_type: contact_message
+bundle: sitewide
+label: 'Confirm email address'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

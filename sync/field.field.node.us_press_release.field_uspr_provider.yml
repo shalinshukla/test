@@ -1,0 +1,21 @@
+uuid: 48551477-3cd6-41ba-b7c6-cd4d40800c5a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_uspr_provider
+    - node.type.us_press_release
+_core:
+  default_config_hash: iAmzQHRlYw76IzytBez0yZOC0DBzwiugki2plXCjTho
+id: node.us_press_release.field_uspr_provider
+field_name: field_uspr_provider
+entity_type: node
+bundle: us_press_release
+label: Provider
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

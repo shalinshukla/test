@@ -1,0 +1,26 @@
+uuid: d2e26743-df3d-41d8-8fec-0fea5a0ce994
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.proxy_statement.field_proxy_statement
+    - field.field.node.proxy_statement.field_proxy_statement_year
+    - node.type.proxy_statement
+  module:
+    - user
+id: node.proxy_statement.teaser
+targetEntityType: node
+bundle: proxy_statement
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_proxy_statement: true
+  field_proxy_statement_year: true
+  langcode: true
+  search_api_excerpt: true

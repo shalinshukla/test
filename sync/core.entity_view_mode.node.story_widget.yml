@@ -1,0 +1,14 @@
+uuid: 92c9285d-fc05-4ffd-aa0f-413a337f812e
+langcode: en
+status: true
+dependencies:
+  module:
+    - lightning_core
+    - node
+third_party_settings:
+  lightning_core:
+    description: ''
+id: node.story_widget
+label: 'Story Widget'
+targetEntityType: node
+cache: true

@@ -1,0 +1,40 @@
+uuid: 1883ea88-c1f8-4897-8587-e8e7e7dd950c
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.gallery_slide
+    - eck.eck_type.brick.image_gallery
+    - field.storage.brick.field_gallery_slide
+  module:
+    - brick_modal
+    - bricks
+    - content_translation
+    - tmgmt_content
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+  tmgmt_content:
+    excluded: false
+  brick_modal:
+    delete_referenced_entities: 1
+id: brick.image_gallery.field_gallery_slide
+field_name: field_gallery_slide
+entity_type: brick
+bundle: image_gallery
+label: 'Gallery slide'
+description: 'Click to add new slide to the gallery'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:brick'
+  handler_settings:
+    target_bundles:
+      gallery_slide: gallery_slide
+    sort:
+      field: _none
+    auto_create: 0
+    auto_create_bundle: ''
+field_type: bricks

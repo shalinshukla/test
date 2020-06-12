@@ -1,0 +1,85 @@
+uuid: cc627b17-884e-451b-91be-d5a1e223f174
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.inner_video
+    - field.field.brick.inner_video.field_inner_video_id
+    - field.field.brick.inner_video.field_vg_video_source
+    - field.field.brick.inner_video.field_video_poster_image
+    - field.field.brick.inner_video.field_vshort_description
+    - image.style.thumbnail
+  module:
+    - image
+    - imce
+    - lightning_media
+    - maxlength
+id: brick.inner_video.default
+targetEntityType: brick
+bundle: inner_video
+mode: default
+content:
+  field_inner_video_id:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_vg_video_source:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_video_poster_image:
+    type: image_image
+    weight: 4
+    settings:
+      preview_image_style: thumbnail
+      progress_indicator: throbber
+    region: content
+    third_party_settings:
+      imce:
+        enabled: true
+      lightning_media:
+        file_links: true
+        remove_button: true
+  field_vshort_description:
+    weight: 3
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings:
+      maxlength:
+        maxlength_js: 100
+        maxlength_js_label: 'Content limited to @limit characters, remaining: <strong>@remaining</strong>'
+        maxlength_js_enforce: false
+        maxlength_js_truncate_html: false
+    type: string_textarea
+    region: content
+  langcode:
+    type: language_select
+    weight: 5
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: 'Enter title for video. By default 50 characters will be visible.'
+    third_party_settings:
+      maxlength:
+        maxlength_js: 50
+        maxlength_js_label: 'Content limited to @limit characters, remaining: <strong>@remaining</strong>'
+  translation:
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

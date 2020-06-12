@@ -1,0 +1,21 @@
+uuid: 6897261e-7a42-41a9-ad2c-1ce984c15307
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+id: brick.field_fc_message_empty_archive
+field_name: field_fc_message_empty_archive
+entity_type: brick
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

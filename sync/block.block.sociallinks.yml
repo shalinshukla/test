@@ -1,0 +1,29 @@
+uuid: 16525447-f56b-48a3-a473-47ccfd24fb42
+langcode: fr
+status: false
+dependencies:
+  config:
+    - system.menu.social-links
+  module:
+    - block_class
+    - system
+  theme:
+    - project_bootstrap
+third_party_settings:
+  block_class:
+    classes: 'col-xs-12 col-sm-6 col-md-3 '
+id: sociallinks
+theme: project_bootstrap
+region: footer
+weight: -30
+provider: null
+plugin: 'system_menu_block:social-links'
+settings:
+  id: 'system_menu_block:social-links'
+  label: 'Social Links'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

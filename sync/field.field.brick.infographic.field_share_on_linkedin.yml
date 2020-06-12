@@ -1,0 +1,26 @@
+uuid: b0ad381a-ea32-4c96-93d4-7fcec117a8a8
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.infographic
+    - field.storage.brick.field_share_on_linkedin
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.infographic.field_share_on_linkedin
+field_name: field_share_on_linkedin
+entity_type: brick
+bundle: infographic
+label: 'Share on linkedin'
+description: 'Please enter linkedin sharing url'
+required: false
+translatable: true
+default_value:
+  -
+    value: 'http://www.linkedin.com/shareArticle'
+default_value_callback: ''
+settings: {  }
+field_type: string

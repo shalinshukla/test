@@ -1,0 +1,70 @@
+uuid: ae9df643-c4ac-4f12-92a0-1c1b37be340a
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.news_list
+    - field.field.brick.news_list.field_display_variation
+    - field.field.brick.news_list.field_see_all_news_link
+    - field.field.brick.news_list.field_see_all_news_text
+    - field.field.brick.news_list.field_views_reference
+  module:
+    - link_ex
+id: brick.news_list.default
+targetEntityType: brick
+bundle: news_list
+mode: default
+content:
+  field_display_variation:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_see_all_news_link:
+    weight: 4
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+      enabled_attributes:
+        id: id
+        name: name
+        title: title
+        target: target
+        class: class
+        imce: imce
+        imce_private: imce_private
+        rel: 0
+        accesskey: 0
+        download: 0
+    third_party_settings: {  }
+    type: link_ex
+    region: content
+  field_views_reference:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  langcode:
+    type: language_select
+    weight: 1
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_see_all_news_text: true

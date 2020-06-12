@@ -1,0 +1,23 @@
+uuid: 587cea2b-685c-44ed-b78d-08f2800a4008
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.sign_post_social_post
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.sign_post_social_post.metatag
+field_name: metatag
+entity_type: brick
+bundle: sign_post_social_post
+label: Metatags
+description: 'The metatags for the entity.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

@@ -1,0 +1,27 @@
+uuid: 2d2258f2-11e0-45af-aa27-2111f44a4dfd
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+    - options
+id: brick.field_banner_variation
+field_name: field_banner_variation
+entity_type: brick
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: variation-1
+      label: 'Variation I'
+    -
+      value: variation-2
+      label: 'Variation II'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,50 @@
+uuid: 81a81b04-449a-4857-8e29-36a13904f698
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.ief_preview
+    - field.field.node.contact_information.body
+    - field.field.node.contact_information.field_contact_designation
+    - field.field.node.contact_information.field_contact_email
+    - field.field.node.contact_information.field_contact_image
+    - field.field.node.contact_information.field_contact_linkedin
+    - field.field.node.contact_information.field_contact_phone_number
+    - field.field.node.contact_information.field_meta_tags
+    - image.style.thumbnail
+    - node.type.contact_information
+  module:
+    - image
+    - panelizer
+    - user
+third_party_settings:
+  panelizer:
+    enable: false
+    custom: false
+    allow: false
+    default: default
+id: node.contact_information.ief_preview
+targetEntityType: node
+bundle: contact_information
+mode: ief_preview
+content:
+  field_contact_image:
+    type: image
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      image_style: thumbnail
+      image_link: ''
+    third_party_settings: {  }
+hidden:
+  body: true
+  content_moderation_control: true
+  field_contact_designation: true
+  field_contact_email: true
+  field_contact_linkedin: true
+  field_contact_phone_number: true
+  field_meta_tags: true
+  langcode: true
+  links: true
+  scheduled_publication: true

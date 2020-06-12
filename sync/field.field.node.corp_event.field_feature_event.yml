@@ -1,0 +1,28 @@
+uuid: ed9c2112-5f2c-4ef8-97ab-1919e5bdf6c9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_feature_event
+    - node.type.corp_event
+  module:
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.corp_event.field_feature_event
+field_name: field_feature_event
+entity_type: node
+bundle: corp_event
+label: 'Feature Event'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

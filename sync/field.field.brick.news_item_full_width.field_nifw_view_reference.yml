@@ -1,0 +1,28 @@
+uuid: 48e06d30-58db-4b47-8d97-b6a3620095e3
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.news_item_full_width
+    - field.storage.brick.field_nifw_view_reference
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.news_item_full_width.field_nifw_view_reference
+field_name: field_nifw_view_reference
+entity_type: brick
+bundle: news_item_full_width
+label: 'View reference'
+description: 'Please select desired view name for rendering.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:view'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: entity_reference

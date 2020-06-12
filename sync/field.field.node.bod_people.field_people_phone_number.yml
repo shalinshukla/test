@@ -1,0 +1,25 @@
+uuid: b736542e-7631-4de9-8646-ce539d6d6cca
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_people_phone_number
+    - node.type.bod_people
+  module:
+    - telephone
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.bod_people.field_people_phone_number
+field_name: field_people_phone_number
+entity_type: node
+bundle: bod_people
+label: 'Phone Number'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

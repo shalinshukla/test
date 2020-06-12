@@ -1,0 +1,27 @@
+uuid: db83e7fb-5a4a-4c7a-9b6e-e721cf1f6e0e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.brick.ief_preview
+    - eck.eck_type.brick.slider
+    - field.field.brick.slider.field_carousel_control_options
+    - field.field.brick.slider.field_control_options
+    - field.field.brick.slider.field_slide_interval
+    - field.field.brick.slider.field_slider_html_tags
+    - field.field.brick.slider.field_slider_indicator_position
+    - field.field.brick.slider.field_slides
+id: brick.slider.ief_preview
+targetEntityType: brick
+bundle: slider
+mode: ief_preview
+content: {  }
+hidden:
+  field_carousel_control_options: true
+  field_control_options: true
+  field_slide_interval: true
+  field_slider_html_tags: true
+  field_slider_indicator_position: true
+  field_slides: true
+  langcode: true
+  title: true

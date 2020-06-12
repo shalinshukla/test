@@ -1,0 +1,23 @@
+uuid: eb162a09-e2b2-473e-940a-ac9692184c02
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_modified_time
+    - node.type.us_press_release
+  module:
+    - datetime
+_core:
+  default_config_hash: '-AjlrnbltGCwmSZv2K-CFjTaQbYG2t-b9e8VPp5B9Tg'
+id: node.us_press_release.field_modified_time
+field_name: field_modified_time
+entity_type: node
+bundle: us_press_release
+label: 'Modified Time'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

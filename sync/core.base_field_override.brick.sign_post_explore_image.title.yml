@@ -1,0 +1,18 @@
+uuid: faf8025f-8567-41ef-9181-3cdf02b0aa1f
+langcode: fr
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.sign_post_explore_image
+id: brick.sign_post_explore_image.title
+field_name: title
+entity_type: brick
+bundle: sign_post_explore_image
+label: Title
+description: 'The title of the entity.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

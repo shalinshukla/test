@@ -1,0 +1,27 @@
+uuid: 223f164c-5945-4898-bfd6-331518a44dce
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_file_attachment
+    - node.type.corp_event
+  module:
+    - link
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.corp_event.field_file_attachment
+field_name: field_file_attachment
+entity_type: node
+bundle: corp_event
+label: 'File Attachment'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

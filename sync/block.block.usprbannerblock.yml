@@ -1,0 +1,37 @@
+uuid: 7de89125-2b95-4bc4-a30a-85bc78b0d3e8
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:reference_block:79f6ce6b-292f-4a01-9b49-e849ea3e8998'
+  module:
+    - block_class
+    - block_content
+    - ctools
+  theme:
+    - project_bootstrap
+third_party_settings:
+  block_class:
+    classes: ''
+id: usprbannerblock
+theme: project_bootstrap
+region: content
+weight: -24
+provider: null
+plugin: 'block_content:79f6ce6b-292f-4a01-9b49-e849ea3e8998'
+settings:
+  id: 'block_content:79f6ce6b-292f-4a01-9b49-e849ea3e8998'
+  label: 'USPR Banner Block'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      us_press_release: us_press_release
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

@@ -1,0 +1,18 @@
+uuid: a752916f-dedc-4cf0-86e1-f6efe5d7c7f8
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.media
+id: brick.media.title
+field_name: title
+entity_type: brick
+bundle: media
+label: Title
+description: 'The title of the entity.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,20 @@
+uuid: 00966c68-2859-4131-b11b-f143667cc5c3
+langcode: fr
+status: true
+dependencies:
+  config:
+    - media.type.instagram
+id: media.instagram.name
+field_name: name
+entity_type: media
+bundle: instagram
+label: Name
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+field_type: string

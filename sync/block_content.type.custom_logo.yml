@@ -1,0 +1,8 @@
+uuid: 8dfd26e2-fd0f-47a6-9430-268f357c47e6
+langcode: en
+status: true
+dependencies: {  }
+id: custom_logo
+label: 'Custom Logo'
+revision: 1
+description: 'To add the secondary Logo into site'

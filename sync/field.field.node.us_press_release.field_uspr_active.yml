@@ -1,0 +1,21 @@
+uuid: fb6ea043-7275-4197-be30-5120fa0b78a6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_uspr_active
+    - node.type.us_press_release
+_core:
+  default_config_hash: dexdY7LrGvZD5ycgHZ_9LdzlIf8QXx-aafJbZyWwa00
+id: node.us_press_release.field_uspr_active
+field_name: field_uspr_active
+entity_type: node
+bundle: us_press_release
+label: Active
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,503 @@
+uuid: f84f04cc-5363-40fe-bb9a-2e6e5651ce3b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.mid_disclaimer.body
+    - field.field.node.mid_disclaimer.field_accept_button_label
+    - field.field.node.mid_disclaimer.field_accept_label_level_2
+    - field.field.node.mid_disclaimer.field_allowed_banned_1
+    - field.field.node.mid_disclaimer.field_allowed_banned_2
+    - field.field.node.mid_disclaimer.field_country_select1_label
+    - field.field.node.mid_disclaimer.field_country_select2_label
+    - field.field.node.mid_disclaimer.field_decline_button_label
+    - field.field.node.mid_disclaimer.field_decline_label_level_2
+    - field.field.node.mid_disclaimer.field_decline_page
+    - field.field.node.mid_disclaimer.field_description
+    - field.field.node.mid_disclaimer.field_disclaimer_1_text
+    - field.field.node.mid_disclaimer.field_disclaimer_1_title
+    - field.field.node.mid_disclaimer.field_disclaimer_2_text
+    - field.field.node.mid_disclaimer.field_disclaimer_2_title
+    - field.field.node.mid_disclaimer.field_disclaimer_radio_text_2
+    - field.field.node.mid_disclaimer.field_disclaimer_radiotext
+    - field.field.node.mid_disclaimer.field_display_countries_1
+    - field.field.node.mid_disclaimer.field_display_countries_2
+    - field.field.node.mid_disclaimer.field_display_origin_1_countries
+    - field.field.node.mid_disclaimer.field_display_origin_2_countries
+    - field.field.node.mid_disclaimer.field_display_physical_1_countri
+    - field.field.node.mid_disclaimer.field_display_physical_2_countri
+    - field.field.node.mid_disclaimer.field_ip_block
+    - field.field.node.mid_disclaimer.field_ip_validate_2
+    - field.field.node.mid_disclaimer.field_one_time_disclaimer
+    - field.field.node.mid_disclaimer.field_origin_country_list_2
+    - field.field.node.mid_disclaimer.field_origin_country_select_lbl2
+    - field.field.node.mid_disclaimer.field_original_country_allowed_l
+    - field.field.node.mid_disclaimer.field_physical_presence_country_
+    - field.field.node.mid_disclaimer.field_pp_countries_as_string_1
+    - field.field.node.mid_disclaimer.field_pp_countries_as_string_2
+    - field.field.node.mid_disclaimer.field_pp_country_list_2
+    - field.field.node.mid_disclaimer.field_pp_select_label_2
+    - field.field.node.mid_disclaimer.field_radio_button_no_label_1
+    - field.field.node.mid_disclaimer.field_radio_button_no_label_2
+    - field.field.node.mid_disclaimer.field_radio_button_yes_label_1
+    - field.field.node.mid_disclaimer.field_radio_button_yes_label_2
+    - field.field.node.mid_disclaimer.field_site_wide_disclaimer
+    - node.type.mid_disclaimer
+  module:
+    - content_moderation
+    - field_group
+    - path
+    - scheduler
+    - text
+third_party_settings:
+  field_group:
+    group_step_one_country_configura:
+      children:
+        - field_display_origin_1_countries
+        - field_country_select1_label
+        - field_display_countries_1
+        - field_allowed_banned_1
+        - field_original_country_allowed_l
+        - field_display_physical_1_countri
+        - field_country_select2_label
+        - field_pp_countries_as_string_1
+        - field_physical_presence_country_
+        - field_ip_block
+      parent_name: group_step_one
+      weight: 12
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: 'Step One country Configuration'
+      region: content
+    group_step_two_country_configura:
+      children:
+        - field_display_origin_2_countries
+        - field_origin_country_select_lbl2
+        - field_display_countries_2
+        - field_allowed_banned_2
+        - field_origin_country_list_2
+        - field_display_physical_2_countri
+        - field_pp_select_label_2
+        - field_pp_countries_as_string_2
+        - field_pp_country_list_2
+        - field_ip_validate_2
+      parent_name: group_step_two
+      weight: 16
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: 'Step Two country Configuration'
+      region: content
+    group_step_one:
+      children:
+        - field_disclaimer_1_title
+        - field_disclaimer_1_text
+        - group_step_one_country_configura
+        - field_disclaimer_radiotext
+        - field_radio_button_yes_label_1
+        - field_radio_button_no_label_1
+        - field_accept_button_label
+        - field_decline_button_label
+      parent_name: ''
+      weight: 10
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: false
+      label: 'Step One'
+      region: content
+    group_step_two:
+      children:
+        - field_disclaimer_2_title
+        - field_disclaimer_2_text
+        - group_step_two_country_configura
+        - field_disclaimer_radio_text_2
+        - field_radio_button_yes_label_2
+        - field_radio_button_no_label_2
+        - field_accept_label_level_2
+        - field_decline_label_level_2
+      parent_name: ''
+      weight: 11
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: false
+      label: 'Step Two'
+      region: content
+_core:
+  default_config_hash: ZnmP04jbW9tViX-8j4C_rBeAS9xVivI_SBiT_WytnD8
+id: node.mid_disclaimer.default
+targetEntityType: node
+bundle: mid_disclaimer
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_accept_button_label:
+    weight: 16
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_accept_label_level_2:
+    weight: 20
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_allowed_banned_1:
+    weight: 44
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_allowed_banned_2:
+    weight: 50
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_country_select1_label:
+    weight: 42
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_country_select2_label:
+    weight: 47
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_decline_button_label:
+    weight: 17
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_decline_label_level_2:
+    weight: 21
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_decline_page:
+    weight: 9
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_description:
+    weight: 5
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_disclaimer_1_text:
+    weight: 11
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_disclaimer_1_title:
+    weight: 10
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_disclaimer_2_text:
+    weight: 15
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_disclaimer_2_title:
+    weight: 14
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_disclaimer_radio_text_2:
+    weight: 17
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_disclaimer_radiotext:
+    weight: 13
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_display_countries_1:
+    weight: 43
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_display_countries_2:
+    weight: 49
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_display_origin_1_countries:
+    weight: 41
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_display_origin_2_countries:
+    weight: 47
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_display_physical_1_countri:
+    type: boolean_checkbox
+    weight: 46
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_display_physical_2_countri:
+    weight: 52
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_ip_block:
+    weight: 50
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_ip_validate_2:
+    weight: 56
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_one_time_disclaimer:
+    weight: 7
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_origin_country_list_2:
+    weight: 51
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_origin_country_select_lbl2:
+    weight: 48
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_original_country_allowed_l:
+    weight: 45
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_physical_presence_country_:
+    weight: 49
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_pp_countries_as_string_1:
+    weight: 48
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_pp_countries_as_string_2:
+    weight: 54
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_pp_country_list_2:
+    weight: 55
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_pp_select_label_2:
+    weight: 53
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_radio_button_no_label_1:
+    weight: 15
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_radio_button_no_label_2:
+    weight: 19
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_radio_button_yes_label_1:
+    weight: 14
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_radio_button_yes_label_2:
+    weight: 18
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_site_wide_disclaimer:
+    weight: 8
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  id_class:
+    type: string_textfield
+    weight: 35
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 1
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+    region: content
+  moderation_state:
+    type: moderation_state_default
+    weight: 100
+    settings: {  }
+    region: content
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  publish_on:
+    type: datetime_timestamp_no_default
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 120
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  translation:
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 2
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    third_party_settings: {  }
+    region: content
+  unpublish_on:
+    type: datetime_timestamp_no_default
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  body: true
+  promote: true
+  sticky: true

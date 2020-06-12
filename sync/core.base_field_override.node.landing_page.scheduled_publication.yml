@@ -1,0 +1,20 @@
+uuid: fa4c0a64-efd8-4887-baa3-bed14c0ffff8
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.landing_page
+  module:
+    - datetime
+id: node.landing_page.scheduled_publication
+field_name: scheduled_publication
+entity_type: node
+bundle: landing_page
+label: 'Scheduled publication'
+description: 'A date and time when the moderation state should be changed automatically.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

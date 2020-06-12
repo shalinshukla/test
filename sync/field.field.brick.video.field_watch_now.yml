@@ -1,0 +1,27 @@
+uuid: 2b8bebd8-73c6-4bfc-a4d1-84019fb6e4ba
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.video
+    - field.storage.brick.field_watch_now
+  module:
+    - content_translation
+    - link
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.video.field_watch_now
+field_name: field_watch_now
+entity_type: brick
+bundle: video
+label: 'Watch Now'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

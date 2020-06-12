@@ -1,0 +1,21 @@
+uuid: fa3a5501-5e0e-4813-a983-76f2c7dcf09d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_uspr_categories_items
+    - node.type.us_press_release
+_core:
+  default_config_hash: lrHuYVzYGk3-pfyj4DxDhgjLRa6N7GdSEqqfr5FznaM
+id: node.us_press_release.field_uspr_categories_items
+field_name: field_uspr_categories_items
+entity_type: node
+bundle: us_press_release
+label: 'Categories Items'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

@@ -1,0 +1,28 @@
+uuid: f95142e8-1250-4fa1-9a4d-a46c8341f6fc
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.financial_calendar
+    - field.storage.brick.field_fin_cal_archive_view
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.financial_calendar.field_fin_cal_archive_view
+field_name: field_fin_cal_archive_view
+entity_type: brick
+bundle: financial_calendar
+label: 'Financial Calendar Archive Featured View'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:view'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: entity_reference

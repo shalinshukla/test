@@ -1,0 +1,32 @@
+uuid: ccc345f7-8ca9-4e78-baef-b185e78a726b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.corporate_article.body
+    - node.type.corporate_article
+  module:
+    - text
+    - user
+id: node.corporate_article.teaser
+targetEntityType: node
+bundle: corporate_article
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

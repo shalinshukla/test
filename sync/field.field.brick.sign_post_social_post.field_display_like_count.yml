@@ -1,0 +1,28 @@
+uuid: d275b963-65a9-493b-a240-7d96abd0c2a6
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.sign_post_social_post
+    - field.storage.brick.field_display_like_count
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.sign_post_social_post.field_display_like_count
+field_name: field_display_like_count
+entity_type: brick
+bundle: sign_post_social_post
+label: 'Display Like Count'
+description: 'Display like count of post'
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

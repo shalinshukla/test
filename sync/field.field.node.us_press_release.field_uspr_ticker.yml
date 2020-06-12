@@ -1,0 +1,21 @@
+uuid: a1060393-2efa-4cac-9046-1a91477a54ef
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_uspr_ticker
+    - node.type.us_press_release
+_core:
+  default_config_hash: KT3NjdzPvlHvc5hEXHnlIkDxUjK54fiMPral6JXWpC8
+id: node.us_press_release.field_uspr_ticker
+field_name: field_uspr_ticker
+entity_type: node
+bundle: us_press_release
+label: Ticker
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

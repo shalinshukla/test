@@ -1,0 +1,23 @@
+uuid: 25052b8b-92d6-4ca3-88d8-8e61698b68b5
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.landing_page
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: node.landing_page.scheduled_transition_state
+field_name: scheduled_transition_state
+entity_type: node
+bundle: landing_page
+label: null
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

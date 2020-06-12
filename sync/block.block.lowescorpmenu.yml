@@ -1,0 +1,30 @@
+uuid: dd763da1-1fdd-4515-a735-315275df6779
+langcode: en
+status: false
+dependencies:
+  module:
+    - block_class
+    - system
+    - we_megamenu
+  theme:
+    - project_bootstrap
+third_party_settings:
+  block_class:
+    classes: corp-megamenu
+id: lowescorpmenu
+theme: project_bootstrap
+region: navigation
+weight: -24
+provider: null
+plugin: 'we_megamenu_block:lowe-s-corp-menu'
+settings:
+  id: 'we_megamenu_block:lowe-s-corp-menu'
+  label: 'Lowe''s corp menu'
+  provider: we_megamenu
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: /node/58750
+    negate: false
+    context_mapping: {  }

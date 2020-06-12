@@ -1,0 +1,27 @@
+uuid: 586db1cf-e669-4a14-9a0c-38f15177d7cc
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.video_banner
+    - field.storage.brick.field_vbanner_link
+  module:
+    - content_translation
+    - link
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.video_banner.field_vbanner_link
+field_name: field_vbanner_link
+entity_type: brick
+bundle: video_banner
+label: Link
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

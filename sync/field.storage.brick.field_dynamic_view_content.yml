@@ -1,0 +1,20 @@
+uuid: 56cacd28-96c3-472b-bb13-e754289f2793
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+    - views
+id: brick.field_dynamic_view_content
+field_name: field_dynamic_view_content
+entity_type: brick
+type: entity_reference
+settings:
+  target_type: view
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

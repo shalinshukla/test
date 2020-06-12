@@ -1,0 +1,26 @@
+uuid: 2a369a7e-4032-449a-b6ca-9c393228aa59
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.sign_post_social_post
+    - field.storage.brick.field_date_format
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.sign_post_social_post.field_date_format
+field_name: field_date_format
+entity_type: brick
+bundle: sign_post_social_post
+label: 'Date Format'
+description: 'Add date format to be displayed for the post.'
+required: false
+translatable: true
+default_value:
+  -
+    value: 'h:s a - d M Y'
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,26 @@
+uuid: 92af65ad-743f-4f85-af73-27663a1e4978
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.newsroom
+    - field.storage.brick.field_newsroom_view_display_name
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.newsroom.field_newsroom_view_display_name
+field_name: field_newsroom_view_display_name
+entity_type: brick
+bundle: newsroom
+label: 'Newsroom view display name'
+description: '<b>Warning:-</b> Component rendering is made with specific view with respective display. If wrong view or display format will be taken as a reference then this will break the UI.'
+required: false
+translatable: true
+default_value:
+  -
+    value: block_1
+default_value_callback: ''
+settings: {  }
+field_type: string

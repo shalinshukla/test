@@ -1,0 +1,27 @@
+uuid: e06241f0-9faf-40bf-9482-d2e2f290bfd7
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.sign_post_news
+    - field.storage.brick.field_sp_news_link
+  module:
+    - content_translation
+    - link
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.sign_post_news.field_sp_news_link
+field_name: field_sp_news_link
+entity_type: brick
+bundle: sign_post_news
+label: Link
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

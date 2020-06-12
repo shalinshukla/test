@@ -1,0 +1,25 @@
+uuid: 94260325-22d6-4ce9-a95e-86be1616b7bd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_event_description
+    - node.type.eventcontent
+  module:
+    - text
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.eventcontent.field_event_description
+field_name: field_event_description
+entity_type: node
+bundle: eventcontent
+label: 'Event Description'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

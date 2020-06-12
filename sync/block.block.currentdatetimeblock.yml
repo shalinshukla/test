@@ -1,0 +1,30 @@
+uuid: 43f9e956-7fc2-49f9-91b7-23fd3c83ad4c
+langcode: en
+status: false
+dependencies:
+  module:
+    - block_class
+    - id_social_media_feeds
+    - system
+  theme:
+    - project_bootstrap
+third_party_settings:
+  block_class:
+    classes: ''
+id: currentdatetimeblock
+theme: project_bootstrap
+region: content
+weight: -19
+provider: null
+plugin: mymodule_example_block
+settings:
+  id: mymodule_example_block
+  label: 'Current Date Time block'
+  provider: id_social_media_feeds
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    pages: /node/292
+    negate: false
+    context_mapping: {  }

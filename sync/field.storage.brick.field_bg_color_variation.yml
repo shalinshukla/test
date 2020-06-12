@@ -1,0 +1,30 @@
+uuid: bdebba94-a424-440c-a40b-a06ad8aaa860
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+    - options
+id: brick.field_bg_color_variation
+field_name: field_bg_color_variation
+entity_type: brick
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: blue-bg
+      label: 'Blue background'
+    -
+      value: gray-bg
+      label: 'Gray background'
+    -
+      value: right
+      label: 'Set content in right side for fullwidth signpost'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

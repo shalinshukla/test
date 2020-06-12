@@ -1,0 +1,24 @@
+uuid: 67e44467-acee-4d7e-9b1c-99d4d8d31661
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.bricky
+  module:
+    - content_translation
+    - path
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: node.bricky.path
+field_name: path
+entity_type: node
+bundle: bricky
+label: 'URL alias'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

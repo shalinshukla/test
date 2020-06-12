@@ -1,0 +1,23 @@
+uuid: 2bfca37a-fe30-4cf3-85f9-bd93be5d40d8
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.result_presentation
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.result_presentation.metatag
+field_name: metatag
+entity_type: brick
+bundle: result_presentation
+label: Metatags
+description: 'The meta tags for the entity.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

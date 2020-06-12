@@ -1,0 +1,25 @@
+uuid: edf11d09-4a1f-4768-affa-b823f1a9bd0c
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.webform_
+    - field.storage.brick.field_form_description
+  module:
+    - content_translation
+    - text
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.webform_.field_form_description
+field_name: field_form_description
+entity_type: brick
+bundle: webform_
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

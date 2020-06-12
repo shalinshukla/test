@@ -1,0 +1,20 @@
+uuid: 0b7c48f6-356f-4553-bbf0-b31ce61ef759
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+    - taxonomy
+id: brick.field_display_variation
+field_name: field_display_variation
+entity_type: brick
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,34 @@
+uuid: eed4a923-58c9-484c-936d-212dd8978b80
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_people_type
+    - node.type.people
+    - taxonomy.vocabulary.people_category
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: node.people.field_people_type
+field_name: field_people_type
+entity_type: node
+bundle: people
+label: Type
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      people_category: people_category
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

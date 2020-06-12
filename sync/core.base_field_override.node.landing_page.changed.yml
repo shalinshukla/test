@@ -1,0 +1,23 @@
+uuid: a17ef68a-d1a7-484f-88de-df473a83efdf
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.landing_page
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: node.landing_page.changed
+field_name: changed
+entity_type: node
+bundle: landing_page
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

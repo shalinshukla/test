@@ -1,0 +1,29 @@
+uuid: d62cd00a-9ecd-4e1e-863c-a01e0e31a98c
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:13f0663e-6a33-46f2-898d-11cb67bf5eca'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - project_bootstrap
+third_party_settings:
+  block_class:
+    classes: ''
+id: whowearesubtitle
+theme: project_bootstrap
+region: hiddne_region
+weight: 0
+provider: null
+plugin: 'block_content:13f0663e-6a33-46f2-898d-11cb67bf5eca'
+settings:
+  id: 'block_content:13f0663e-6a33-46f2-898d-11cb67bf5eca'
+  label: 'Who we are subtitle'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

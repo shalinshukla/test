@@ -1,0 +1,20 @@
+uuid: 7ed708f5-d3b3-499f-891b-500d68de297b
+langcode: en
+status: true
+dependencies:
+  theme:
+    - investis_admin
+_core:
+  default_config_hash: ES5TKEj-Ro-aYY6omAyKvUjZfpjGqZfJaJDMilVuYTs
+id: investis_admin_local_actions
+theme: investis_admin
+region: content
+weight: -10
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

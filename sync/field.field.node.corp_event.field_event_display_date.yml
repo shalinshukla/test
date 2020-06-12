@@ -1,0 +1,24 @@
+uuid: 309228a2-b5a4-4acd-b4c6-bbdd328281b2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_event_display_date
+    - node.type.corp_event
+  module:
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.corp_event.field_event_display_date
+field_name: field_event_display_date
+entity_type: node
+bundle: corp_event
+label: 'Display date'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

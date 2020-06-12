@@ -1,0 +1,106 @@
+uuid: d584a58f-34f2-4221-98c3-1a40f4ca1391
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.sign_post_iframe
+    - field.field.brick.sign_post_iframe.field_background_color_variation
+    - field.field.brick.sign_post_iframe.field_ifr_additional_parameter
+    - field.field.brick.sign_post_iframe.field_iframe_id
+    - field.field.brick.sign_post_iframe.field_iframe_signpost
+    - field.field.brick.sign_post_iframe.field_iframe_url
+    - field.field.brick.sign_post_iframe.field_links
+    - field.field.brick.sign_post_iframe.field_sp_iframe_title
+  module:
+    - link
+    - link_ex
+id: brick.sign_post_iframe.default
+targetEntityType: brick
+bundle: sign_post_iframe
+mode: default
+content:
+  field_background_color_variation:
+    weight: 7
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_ifr_additional_parameter:
+    weight: 5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_iframe_id:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_iframe_signpost:
+    weight: 8
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_iframe_url:
+    weight: 4
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_links:
+    weight: 9
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+      enabled_attributes:
+        title: title
+        target: target
+        class: class
+        imce: imce
+        id: 0
+        rel: 0
+        name: 0
+        accesskey: 0
+        download: 0
+        imce_private: 0
+    third_party_settings: {  }
+    type: link_ex
+    region: content
+  field_sp_iframe_title:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  langcode:
+    type: language_select
+    weight: 1
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

@@ -1,0 +1,24 @@
+uuid: 51870ace-021f-494a-92b5-ac2fe03f8c85
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.sign_post_social_post
+    - field.storage.brick.field_account_name_configured
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.sign_post_social_post.field_account_name_configured
+field_name: field_account_name_configured
+entity_type: brick
+bundle: sign_post_social_post
+label: 'Account Name Configured'
+description: 'Enter the account name added in the configuration at "/admin/config/id-social-feeds-config" path.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

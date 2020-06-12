@@ -1,0 +1,28 @@
+uuid: b2a5d956-9cb3-4411-ae63-b0091fe9ade7
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.sign_post_social_post
+    - field.storage.brick.field_display_number_of_tags
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.sign_post_social_post.field_display_number_of_tags
+field_name: field_display_number_of_tags
+entity_type: brick
+bundle: sign_post_social_post
+label: 'Display Number of tags'
+description: 'Number of tags to be display.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

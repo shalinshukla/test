@@ -1,0 +1,29 @@
+uuid: 94134ebd-09ec-4453-a0d6-6cbde88af964
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.quick-links
+  module:
+    - block_class
+    - system
+  theme:
+    - project_bootstrap
+third_party_settings:
+  block_class:
+    classes: 'col-xs-12 col-sm-5 col-md-5'
+id: quicklinks
+theme: project_bootstrap
+region: footer
+weight: -34
+provider: null
+plugin: 'system_menu_block:quick-links'
+settings:
+  id: 'system_menu_block:quick-links'
+  label: 'Quick Links'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

@@ -1,0 +1,25 @@
+uuid: 48b0feb9-9c38-4db6-bf97-75a9c57055c8
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.sign_post_event
+    - field.storage.brick.field_sp_all_day_event
+  module:
+    - content_translation
+    - options
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.sign_post_event.field_sp_all_day_event
+field_name: field_sp_all_day_event
+entity_type: brick
+bundle: sign_post_event
+label: 'All day event'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

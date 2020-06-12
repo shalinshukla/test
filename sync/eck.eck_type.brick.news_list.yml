@@ -1,0 +1,9 @@
+uuid: 1758cc47-fa5f-419f-9747-e028ccdb9594
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.brick
+name: 'List Component'
+type: news_list
+description: 'This is list component where user can pickup any Drupal view and view will be rendered on page as per predefined design.'

@@ -1,0 +1,80 @@
+uuid: 89066429-90de-4346-9310-72753e32ebbe
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.media
+    - field.field.brick.media.field_all_image_library_content
+    - field.field.brick.media.field_all_video_library_content
+    - field.field.brick.media.field_img_lib_featured_view
+    - field.field.brick.media.field_img_lib_view_display_name
+    - field.field.brick.media.field_video_lib_featured_view
+    - field.field.brick.media.field_video_lib_view_displayname
+id: brick.media.default
+targetEntityType: brick
+bundle: media
+mode: default
+content:
+  field_all_image_library_content:
+    weight: 4
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_all_video_library_content:
+    weight: 7
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_img_lib_featured_view:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_img_lib_view_display_name:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_video_lib_featured_view:
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_video_lib_view_displayname:
+    weight: 6
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  langcode:
+    type: language_select
+    weight: 1
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

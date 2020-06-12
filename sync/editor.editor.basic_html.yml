@@ -1,0 +1,43 @@
+uuid: a84124ea-2a52-4903-aee3-81306a0753d3
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+  module:
+    - ckeditor
+format: basic_html
+editor: ckeditor
+settings:
+  toolbar:
+    rows:
+      -
+        -
+          name: Formatting
+          items:
+            - Bold
+            - Italic
+        -
+          name: Lists
+          items:
+            - BulletedList
+            - NumberedList
+        -
+          name: Tools
+          items:
+            - Source
+  plugins:
+    language:
+      language_list: un
+    stylescombo:
+      styles: ''
+    linkit:
+      linkit_profile: ''
+image_upload:
+  status: false
+  scheme: public
+  directory: inline-images
+  max_size: ''
+  max_dimensions:
+    width: null
+    height: null

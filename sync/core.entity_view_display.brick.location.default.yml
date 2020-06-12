@@ -1,0 +1,82 @@
+uuid: 7fa54f22-a6bd-4467-8558-1a630d11a348
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.location
+    - field.field.brick.location.field_location_address
+    - field.field.brick.location.field_location_city
+    - field.field.brick.location.field_location_coordinates
+    - field.field.brick.location.field_location_description
+    - field.field.brick.location.field_location_email
+    - field.field.brick.location.field_location_image
+    - field.field.brick.location.field_location_link
+    - field.field.brick.location.field_location_phone
+    - field.field.brick.location.field_location_type
+    - image.style.location_list
+  module:
+    - id_location_list
+    - text
+_core:
+  default_config_hash: q2n5af9PdzPRE5rJa43E0m3cJNF-OvHB-LTlINsFPz0
+id: brick.location.default
+targetEntityType: brick
+bundle: location
+mode: default
+content:
+  field_location_address:
+    weight: 3
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_location_description:
+    weight: 4
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_location_email:
+    type: location_email_mailto
+    weight: 6
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_location_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: location_list
+      image_link: field
+      image_link_field: field_location_link
+    third_party_settings: {  }
+    type: location_image
+    region: content
+  field_location_phone:
+    type: location_telephone_link
+    weight: 7
+    region: content
+    label: hidden
+    settings:
+      title: ''
+    third_party_settings: {  }
+  title:
+    label: hidden
+    type: location_string
+    weight: 2
+    region: content
+    settings:
+      link_to_field: '1'
+      link_field: field_location_link
+      link_to_entity: 0
+    third_party_settings: {  }
+hidden:
+  field_location_city: true
+  field_location_coordinates: true
+  field_location_link: true
+  field_location_type: true
+  langcode: true

@@ -1,0 +1,28 @@
+uuid: 917d1f29-3c42-4033-96b8-c96e4c36ef8c
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.sign_post_social_post
+    - field.storage.brick.field_display_post_image
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.sign_post_social_post.field_display_post_image
+field_name: field_display_post_image
+entity_type: brick
+bundle: sign_post_social_post
+label: 'Display Post Image'
+description: 'Display post image.'
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

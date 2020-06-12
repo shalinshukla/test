@@ -1,0 +1,31 @@
+uuid: cf1e2325-39e3-4df3-8d63-27305c4b33de
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.media
+    - field.storage.brick.field_img_lib_featured_view
+    - views.view.media_gallery
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.media.field_img_lib_featured_view
+field_name: field_img_lib_featured_view
+entity_type: brick
+bundle: media
+label: 'Image Library Featured View'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    target_uuid: 5eb7f2de-7add-45b8-883f-d84f9bae83a5
+default_value_callback: ''
+settings:
+  handler: 'default:view'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: entity_reference

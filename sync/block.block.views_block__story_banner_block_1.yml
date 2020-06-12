@@ -1,0 +1,37 @@
+uuid: 958d0e24-920d-46fa-971b-898dbae494cb
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.story_banner
+  module:
+    - block_class
+    - node
+    - views
+  theme:
+    - project_bootstrap
+third_party_settings:
+  block_class:
+    classes: ''
+id: views_block__story_banner_block_1
+theme: project_bootstrap
+region: content_top
+weight: 0
+provider: null
+plugin: 'views_block:story_banner-block_1'
+settings:
+  id: 'views_block:story_banner-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      story_and_news: story_and_news
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

@@ -1,0 +1,24 @@
+uuid: df7e04e9-f5d0-436a-888d-ca6f572fcc8b
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.sign_post_email_signup
+    - field.storage.brick.field_signup_submit_button_value
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.sign_post_email_signup.field_signup_submit_button_value
+field_name: field_signup_submit_button_value
+entity_type: brick
+bundle: sign_post_email_signup
+label: 'Submit button text'
+description: 'Enter value to be shown as submit button''s value. If not provided, ''>'' will be used as default value.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

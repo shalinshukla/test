@@ -1,0 +1,27 @@
+uuid: 127f8b94-4acd-466a-a07c-41cf3b0dd84d
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.banner
+    - field.storage.brick.field_banner_link
+  module:
+    - content_translation
+    - link
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.banner.field_banner_link
+field_name: field_banner_link
+entity_type: brick
+bundle: banner
+label: 'Banner Link'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

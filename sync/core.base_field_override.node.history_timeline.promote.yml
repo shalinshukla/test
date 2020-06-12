@@ -1,0 +1,27 @@
+uuid: f96c508d-430a-41ae-aaa1-f69e37b53cd4
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.history_timeline
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: node.history_timeline.promote
+field_name: promote
+entity_type: node
+bundle: history_timeline
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

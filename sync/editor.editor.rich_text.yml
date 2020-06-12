@@ -1,0 +1,63 @@
+uuid: 48765efd-1851-4a70-8775-c50d6a90a228
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.rich_text
+  module:
+    - ckeditor
+_core:
+  default_config_hash: 0bVELtfx9sXhjZ6s6W-dJo8SW-IR9jiEIEylzm-2Cro
+format: rich_text
+editor: ckeditor
+settings:
+  toolbar:
+    rows:
+      -
+        -
+          name: Formatting
+          items:
+            - Bold
+            - Italic
+            - Underline
+            - '-'
+        -
+          name: Linking
+          items:
+            - Link
+            - Linkit
+            - Unlink
+        -
+          name: Lists
+          items:
+            - BulletedList
+            - NumberedList
+        -
+          name: Media
+          items:
+            - ImceImage
+            - ImceLink
+            - Table
+        -
+          name: 'Block Formatting'
+          items:
+            - Format
+        -
+          name: Tools
+          items:
+            - Source
+  plugins:
+    language:
+      language_list: un
+    stylescombo:
+      styles: ''
+    linkit:
+      linkit_profile: full_html
+image_upload:
+  status: true
+  scheme: public
+  directory: inline-images
+  max_size: ''
+  max_dimensions:
+    width: null
+    height: null

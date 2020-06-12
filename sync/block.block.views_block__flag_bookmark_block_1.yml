@@ -1,0 +1,34 @@
+uuid: d05e5183-684c-4f84-b121-6551b63aed66
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.flag_bookmark
+  module:
+    - block_class
+    - system
+    - views
+  theme:
+    - project_bootstrap
+third_party_settings:
+  block_class:
+    classes: ''
+id: views_block__flag_bookmark_block_1
+theme: project_bootstrap
+region: navigation
+weight: -22
+provider: null
+plugin: 'views_block:flag_bookmark-block_1'
+settings:
+  id: 'views_block:flag_bookmark-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /node/58750
+    negate: true
+    context_mapping: {  }

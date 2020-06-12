@@ -1,0 +1,37 @@
+uuid: 97a43258-1c54-4364-b270-13e6be452208
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_combination_address
+    - node.type.jobs
+    - taxonomy.vocabulary.combination_address
+  module:
+    - brick_modal
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+  brick_modal:
+    delete_referenced_entities: 0
+id: node.jobs.field_combination_address
+field_name: field_combination_address
+entity_type: node
+bundle: jobs
+label: 'Combination Address'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      combination_address: combination_address
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

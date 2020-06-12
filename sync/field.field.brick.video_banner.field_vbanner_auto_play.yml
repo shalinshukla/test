@@ -1,0 +1,28 @@
+uuid: bb589871-9c0e-49df-9bc5-91a0b15f84b6
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.video_banner
+    - field.storage.brick.field_vbanner_auto_play
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.video_banner.field_vbanner_auto_play
+field_name: field_vbanner_auto_play
+entity_type: brick
+bundle: video_banner
+label: 'Auto Play'
+description: 'To specify whether video is start playing automatically.'
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'True'
+  off_label: 'False'
+field_type: boolean

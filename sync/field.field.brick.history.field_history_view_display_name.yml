@@ -1,0 +1,26 @@
+uuid: 24486039-778a-478e-8d61-bbf48ff716cc
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.history
+    - field.storage.brick.field_history_view_display_name
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.history.field_history_view_display_name
+field_name: field_history_view_display_name
+entity_type: brick
+bundle: history
+label: 'History View Display Name'
+description: '<b>Warning:-</b> Component rendering is made with specific view with respective display. If wrong view or display format will be taken as a reference then this will break the UI.'
+required: false
+translatable: true
+default_value:
+  -
+    value: page_1
+default_value_callback: ''
+settings: {  }
+field_type: string

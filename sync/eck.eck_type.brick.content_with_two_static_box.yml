@@ -1,0 +1,9 @@
+uuid: 32fb1abc-c465-4a58-b07a-c22f234e2603
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.brick
+name: 'Content with two static box'
+type: content_with_two_static_box
+description: 'Add content with two different blocks'

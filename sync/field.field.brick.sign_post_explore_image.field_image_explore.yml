@@ -1,0 +1,40 @@
+uuid: a8dc9d6c-d4aa-4ef8-a260-3dda7545e4de
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.sign_post_explore_image
+    - eck.eck_type.brick.sign_post_image
+    - field.storage.brick.field_image_explore
+  module:
+    - brick_modal
+    - bricks
+    - content_translation
+    - tmgmt_content
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+  tmgmt_content:
+    excluded: false
+  brick_modal:
+    delete_referenced_entities: 1
+id: brick.sign_post_explore_image.field_image_explore
+field_name: field_image_explore
+entity_type: brick
+bundle: sign_post_explore_image
+label: 'Image Explore'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:brick'
+  handler_settings:
+    target_bundles:
+      sign_post_image: sign_post_image
+    sort:
+      field: _none
+    auto_create: 0
+    auto_create_bundle: sign_post_explore_image
+field_type: bricks

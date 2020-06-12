@@ -1,0 +1,79 @@
+uuid: 44a78194-8480-4fdb-bd01-d206d4d04aed
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.sign_post_key_facts_container
+    - field.field.brick.sign_post_key_facts_container.field_animation_speeds
+    - field.field.brick.sign_post_key_facts_container.field_background_variation
+    - field.field.brick.sign_post_key_facts_container.field_config_short_desc
+    - field.field.brick.sign_post_key_facts_container.field_sp_key_facts_fields
+    - field.field.brick.sign_post_key_facts_container.field_sp_kfacts_title
+    - field.field.brick.sign_post_key_facts_container.field_space_variation
+  module:
+    - bricks
+    - options
+id: brick.sign_post_key_facts_container.default
+targetEntityType: brick
+bundle: sign_post_key_facts_container
+mode: default
+content:
+  field_animation_speeds:
+    weight: 4
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_background_variation:
+    weight: 6
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_config_short_desc:
+    weight: 5
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_sp_key_facts_fields:
+    weight: 2
+    label: inline
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    type: bricks_nested
+    region: content
+  field_sp_kfacts_title:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_space_variation:
+    weight: 7
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  title:
+    label: hidden
+    type: string
+    weight: 0
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  search_api_excerpt: true

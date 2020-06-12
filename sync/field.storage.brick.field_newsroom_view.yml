@@ -1,0 +1,20 @@
+uuid: 9e63e38d-5d42-45b1-af80-28559066aee7
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+    - views
+id: brick.field_newsroom_view
+field_name: field_newsroom_view
+entity_type: brick
+type: entity_reference
+settings:
+  target_type: view
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,31 @@
+uuid: dbf7339f-04e7-40fd-bb64-50ed6acf43d6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_proxy_statement
+    - node.type.annual_report
+  module:
+    - file
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.annual_report.field_proxy_statement
+field_name: field_proxy_statement
+entity_type: node
+bundle: annual_report
+label: 'Proxy Statement'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'txt pdf doc xls docx xlsx'
+  max_filesize: ''
+  description_field: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

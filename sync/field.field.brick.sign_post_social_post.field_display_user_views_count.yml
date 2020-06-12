@@ -1,0 +1,28 @@
+uuid: 339acd70-d600-43f5-af2a-eb9c079f42fc
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.sign_post_social_post
+    - field.storage.brick.field_display_user_views_count
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.sign_post_social_post.field_display_user_views_count
+field_name: field_display_user_views_count
+entity_type: brick
+bundle: sign_post_social_post
+label: 'Display User Views count'
+description: 'Display number of the views from user.'
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,22 @@
+uuid: 552fd6b9-dc86-44dc-8bc4-4b50a52c6b2b
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - investis_bootstrap
+_core:
+  default_config_hash: fNNLN48MSGSLiqwIFywCuxH2Dk_IxDbaP0kYhg_IPrg
+id: investis_bootstrap_content
+theme: investis_bootstrap
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

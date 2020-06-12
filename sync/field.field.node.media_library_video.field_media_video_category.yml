@@ -1,0 +1,37 @@
+uuid: d2d690a7-7251-40bb-a678-4def5542ed2e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_media_video_category
+    - node.type.media_library_video
+    - taxonomy.vocabulary.media_image_category
+  module:
+    - brick_modal
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+  brick_modal:
+    delete_referenced_entities: 0
+id: node.media_library_video.field_media_video_category
+field_name: field_media_video_category
+entity_type: node
+bundle: media_library_video
+label: 'Media Video Category'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      media_image_category: media_image_category
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

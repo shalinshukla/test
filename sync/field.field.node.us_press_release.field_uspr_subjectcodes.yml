@@ -1,0 +1,21 @@
+uuid: 56492c2a-ecad-45b8-bdc7-6c658e6b4d72
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_uspr_subjectcodes
+    - node.type.us_press_release
+_core:
+  default_config_hash: EoaNyTt9bPhKVqMorN0cmF5KV-EjbQQ3efG7XY8yD6Y
+id: node.us_press_release.field_uspr_subjectcodes
+field_name: field_uspr_subjectcodes
+entity_type: node
+bundle: us_press_release
+label: SubjectCodes
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

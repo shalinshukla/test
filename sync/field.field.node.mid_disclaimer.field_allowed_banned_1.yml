@@ -1,0 +1,29 @@
+uuid: 54347caf-87e9-4ced-a320-6447ce5a33c9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_allowed_banned_1
+    - node.type.mid_disclaimer
+  module:
+    - content_translation
+    - options
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+_core:
+  default_config_hash: n26nRa7fi_q7gm_tjZhhNVZuaSysZ9jMa9QC5I5A5l8
+id: node.mid_disclaimer.field_allowed_banned_1
+field_name: field_allowed_banned_1
+entity_type: node
+bundle: mid_disclaimer
+label: 'Allowed Banned 1'
+description: 'This field will be used to validate step one country validation for origin country and physical presence country.'
+required: true
+translatable: true
+default_value:
+  -
+    value: allowed
+default_value_callback: ''
+settings: {  }
+field_type: list_string

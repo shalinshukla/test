@@ -1,0 +1,241 @@
+uuid: 8f6ac011-367b-4c8a-9ed8-3844c8daaa1d
+langcode: en
+status: true
+dependencies:
+  config:
+    - entity_browser.browser.image_browser
+    - field.field.node.bod_people.body
+    - field.field.node.bod_people.field_boards_description
+    - field.field.node.bod_people.field_bullet_point_title
+    - field.field.node.bod_people.field_components
+    - field.field.node.bod_people.field_do_not_show_description
+    - field.field.node.bod_people.field_linkedin_link
+    - field.field.node.bod_people.field_meta_tags
+    - field.field.node.bod_people.field_people_email
+    - field.field.node.bod_people.field_people_image
+    - field.field.node.bod_people.field_people_phone_number
+    - field.field.node.bod_people.field_position
+    - field.field.node.bod_people.field_related_articles
+    - field.field.node.bod_people.field_short_description_1
+    - field.field.node.bod_people.field_twitter_link
+    - node.type.bod_people
+  module:
+    - bricks
+    - content_moderation
+    - entity_browser
+    - link
+    - metatag
+    - path
+    - scheduler
+    - telephone
+    - text
+id: node.bod_people.default
+targetEntityType: node
+bundle: bod_people
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 121
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+    region: content
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_boards_description:
+    weight: 131
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_bullet_point_title:
+    weight: 122
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_components:
+    weight: 123
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    third_party_settings: {  }
+    type: bricks_tree_autocomplete
+    region: content
+  field_do_not_show_description:
+    weight: 124
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_linkedin_link:
+    weight: 127
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_meta_tags:
+    weight: 128
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_firehose
+    region: content
+  field_people_email:
+    weight: 125
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: email_default
+    region: content
+  field_people_image:
+    type: entity_browser_file
+    weight: 126
+    settings:
+      entity_browser: image_browser
+      field_widget_edit: true
+      field_widget_remove: true
+      view_mode: default
+      preview_image_style: thumbnail
+      open: true
+      field_widget_replace: false
+      selection_mode: selection_append
+    region: content
+    third_party_settings: {  }
+  field_people_phone_number:
+    weight: 129
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: telephone_default
+    region: content
+  field_position:
+    weight: 130
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_related_articles:
+    weight: 134
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_short_description_1:
+    weight: 132
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_twitter_link:
+    weight: 133
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  id_class:
+    type: string_textfield
+    weight: 35
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  moderation_state:
+    type: moderation_state_default
+    weight: 100
+    settings: {  }
+    region: content
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 15
+    region: content
+    third_party_settings: {  }
+  publish_on:
+    type: datetime_timestamp_no_default
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 120
+    region: content
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 16
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    region: content
+    third_party_settings: {  }
+  unpublish_on:
+    type: datetime_timestamp_no_default
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

@@ -1,0 +1,22 @@
+uuid: 2ba434cf-a10f-42ee-b41b-cf306ce762ae
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - investis_admin
+_core:
+  default_config_hash: EBZxIy4ZFjID_uEKZukTSeEcqfaOWmsYwQWpDolpaOc
+id: investis_admin_messages
+theme: investis_admin
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,9 @@
+uuid: b3266e2a-78f4-4675-8208-c53f668fcb08
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.brick
+name: Slide
+type: slide
+description: 'Add Slides to slider '

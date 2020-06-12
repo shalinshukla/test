@@ -1,0 +1,39 @@
+uuid: 90dfcb69-055c-48e5-a855-3ace99fc5eb5
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.external_feeds
+    - field.field.brick.external_feeds.field_external_feed_block
+id: brick.external_feeds.default
+targetEntityType: brick
+bundle: external_feeds
+mode: default
+content:
+  field_external_feed_block:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

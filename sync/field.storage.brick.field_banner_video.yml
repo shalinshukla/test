@@ -1,0 +1,19 @@
+uuid: 02a48f09-8bde-44fb-a4b2-fbee4424680a
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+    - video_embed_field
+id: brick.field_banner_video
+field_name: field_banner_video
+entity_type: brick
+type: video_embed_field
+settings: {  }
+module: video_embed_field
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

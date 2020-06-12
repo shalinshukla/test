@@ -1,0 +1,8 @@
+uuid: ed920f30-e7ba-4da5-b311-f38706f3640f
+langcode: en
+status: true
+dependencies: {  }
+id: header_mega_menu_contents
+label: 'Header Mega menu Contents'
+revision: 1
+description: 'To add the image with a content block'

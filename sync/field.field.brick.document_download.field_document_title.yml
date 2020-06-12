@@ -1,0 +1,24 @@
+uuid: ee8ae911-4293-4714-9297-3d8d9c6ce9a0
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.document_download
+    - field.storage.brick.field_document_title
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.document_download.field_document_title
+field_name: field_document_title
+entity_type: brick
+bundle: document_download
+label: 'Document Title'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

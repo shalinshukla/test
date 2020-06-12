@@ -1,0 +1,28 @@
+uuid: 62bd576f-2285-484c-8256-ea809faa27fb
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.media
+    - field.storage.brick.field_all_video_library_content
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.media.field_all_video_library_content
+field_name: field_all_video_library_content
+entity_type: brick
+bundle: media
+label: 'All Video Library Content'
+description: 'Check if you want to show all the video library content. If checked then child terms tabs will not be displayed.'
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,9 @@
+uuid: 56a71a71-c4d9-4c53-a724-1f05cb4aeaf4
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.brick
+name: 'Icon with description'
+type: icon_with_description
+description: 'add image with description'

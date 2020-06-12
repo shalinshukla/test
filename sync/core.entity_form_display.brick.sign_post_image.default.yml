@@ -1,0 +1,118 @@
+uuid: 7023886d-0dd6-4d57-ab81-66ad9414d61f
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.sign_post_image
+    - field.field.brick.sign_post_image.field_download_document
+    - field.field.brick.sign_post_image.field_sign_post_description
+    - field.field.brick.sign_post_image.field_sign_post_image
+    - field.field.brick.sign_post_image.field_sign_post_image_effect
+    - field.field.brick.sign_post_image.field_sign_post_image_over_link
+    - field.field.brick.sign_post_image.field_signpost_image_variation
+    - field.field.brick.sign_post_image.field_sp_image_title
+    - field.field.brick.sign_post_image.field_title_variation
+    - image.style.thumbnail
+  module:
+    - imce
+    - lightning_media
+    - link_ex
+    - svg_image
+id: brick.sign_post_image.default
+targetEntityType: brick
+bundle: sign_post_image
+mode: default
+content:
+  field_download_document:
+    weight: 7
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_sign_post_description:
+    weight: 5
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_sign_post_image:
+    weight: 4
+    settings:
+      preview_image_style: thumbnail
+      progress_indicator: throbber
+    third_party_settings:
+      imce:
+        enabled: true
+      lightning_media:
+        file_links: true
+        remove_button: true
+    type: image_image
+    region: content
+  field_sign_post_image_effect:
+    type: options_buttons
+    weight: 9
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_sign_post_image_over_link:
+    weight: 6
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+      enabled_attributes:
+        title: title
+        target: target
+        class: class
+        download: download
+        imce: imce
+        imce_private: imce_private
+        id: 0
+        rel: 0
+        name: 0
+        accesskey: 0
+    third_party_settings: {  }
+    type: link_ex
+    region: content
+  field_signpost_image_variation:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_sp_image_title:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_title_variation:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 8
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

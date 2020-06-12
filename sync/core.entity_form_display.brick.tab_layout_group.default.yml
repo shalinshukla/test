@@ -1,0 +1,63 @@
+uuid: f81d2e75-dee8-43c7-9c8c-a4119b471d6d
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.tab_layout_group
+    - field.field.brick.tab_layout_group.field_tab_content_reference
+    - field.field.brick.tab_layout_group.field_tab_layout_title
+    - field.field.brick.tab_layout_group.field_tabs_background_variation
+  module:
+    - brickex
+    - text
+id: brick.tab_layout_group.default
+targetEntityType: brick
+bundle: tab_layout_group
+mode: default
+content:
+  field_tab_content_reference:
+    weight: 3
+    settings:
+      form_mode: default
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      override_labels: false
+      collapsible: false
+      collapsed: false
+      allow_duplicate: false
+    third_party_settings: {  }
+    type: brickex_tree_inline
+    region: content
+  field_tab_layout_title:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+  field_tabs_background_variation:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  langcode:
+    type: language_select
+    weight: 1
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

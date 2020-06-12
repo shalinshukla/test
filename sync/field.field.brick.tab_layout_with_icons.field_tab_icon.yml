@@ -1,0 +1,42 @@
+uuid: 0a38cde3-aa49-4a83-a9be-c6da35a5b6d0
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.tab_layout_with_icons
+    - field.storage.brick.field_tab_icon
+  module:
+    - image
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: brick.tab_layout_with_icons.field_tab_icon
+field_name: field_tab_icon
+entity_type: brick
+bundle: tab_layout_with_icons
+label: 'Tab icon'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

@@ -1,0 +1,111 @@
+uuid: 6d4ccbae-4bb8-47e8-a34b-7fd1bf25c40b
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.result_presentation
+    - field.field.brick.result_presentation.field_present_archive_view_name
+    - field.field.brick.result_presentation.field_present_nonarchive_view_nm
+    - field.field.brick.result_presentation.field_present_year_term_view
+    - field.field.brick.result_presentation.field_present_year_term_viewname
+    - field.field.brick.result_presentation.field_presentation_featured_view
+    - field.field.brick.result_presentation.field_result_archive_view_name
+    - field.field.brick.result_presentation.field_result_nonarchive_viewname
+    - field.field.brick.result_presentation.field_result_year_term_view
+    - field.field.brick.result_presentation.field_result_year_term_view_name
+    - field.field.brick.result_presentation.field_views_reference
+id: brick.result_presentation.default
+targetEntityType: brick
+bundle: result_presentation
+mode: default
+content:
+  field_present_archive_view_name:
+    weight: -4
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_present_nonarchive_view_nm:
+    weight: -3
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_present_year_term_view:
+    weight: 3
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_present_year_term_viewname:
+    weight: -2
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_presentation_featured_view:
+    weight: 2
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_result_archive_view_name:
+    weight: -1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_result_nonarchive_viewname:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_result_year_term_view:
+    weight: 5
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_result_year_term_view_name:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_views_reference:
+    weight: 4
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  title:
+    label: hidden
+    type: string
+    weight: -5
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  langcode: true

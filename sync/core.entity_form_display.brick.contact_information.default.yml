@@ -1,0 +1,48 @@
+uuid: 873a7d89-4545-47d1-a42f-005ac8a99b68
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.contact_information
+    - field.field.brick.contact_information.field_contact_info
+  module:
+    - bricks_inline
+id: brick.contact_information.default
+targetEntityType: brick
+bundle: contact_information
+mode: default
+content:
+  field_contact_info:
+    weight: 11
+    settings:
+      form_mode: default
+      label_singular: ''
+      label_plural: ''
+      allow_new: '1'
+      allow_existing: '1'
+      match_operator: CONTAINS
+      override_labels: 0
+    third_party_settings: {  }
+    type: bricks_tree_inline
+    region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

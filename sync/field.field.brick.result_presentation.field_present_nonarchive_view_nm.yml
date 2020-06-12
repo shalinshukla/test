@@ -1,0 +1,26 @@
+uuid: 54d50858-65a0-48af-8f52-fc5d2053f5d8
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.result_presentation
+    - field.storage.brick.field_present_nonarchive_view_nm
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.result_presentation.field_present_nonarchive_view_nm
+field_name: field_present_nonarchive_view_nm
+entity_type: brick
+bundle: result_presentation
+label: 'Presentation Non Archive View Display Name'
+description: '<b>Warning:-</b> Component rendering is made with specific view with respective display. If wrong view or display format will be taken as a reference then this will break the UI.'
+required: false
+translatable: true
+default_value:
+  -
+    value: block_4
+default_value_callback: ''
+settings: {  }
+field_type: string

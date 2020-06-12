@@ -1,0 +1,174 @@
+uuid: d6ea90e0-8a1a-4d74-8381-d5695f710c1c
+langcode: fr
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.configurable_text
+    - field.field.brick.configurable_text.field_accordion_icon
+    - field.field.brick.configurable_text.field_bg_color_variation
+    - field.field.brick.configurable_text.field_config_short_desc
+    - field.field.brick.configurable_text.field_config_spacing_variation
+    - field.field.brick.configurable_text.field_config_text_title
+    - field.field.brick.configurable_text.field_config_text_variation
+    - field.field.brick.configurable_text.field_configurable_img_signpost
+    - field.field.brick.configurable_text.field_configurable_link
+    - field.field.brick.configurable_text.field_full_html_description
+    - field.field.brick.configurable_text.field_full_width_image_signpost
+    - field.field.brick.configurable_text.field_hide_title
+    - field.field.brick.configurable_text.field_image
+    - field.field.brick.configurable_text.field_links
+    - field.field.brick.configurable_text.field_page_introduction
+    - field.field.brick.configurable_text.field_text_config_tags
+    - image.style.thumbnail
+  module:
+    - imce
+    - link_ex
+    - svg_image
+    - text
+id: brick.configurable_text.default
+targetEntityType: brick
+bundle: configurable_text
+mode: default
+content:
+  field_accordion_icon:
+    type: image_image
+    weight: 17
+    settings:
+      preview_image_style: thumbnail
+      progress_indicator: throbber
+    region: content
+    third_party_settings:
+      imce:
+        enabled: true
+  field_bg_color_variation:
+    weight: 15
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_config_short_desc:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_config_spacing_variation:
+    weight: 16
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_config_text_title:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_config_text_variation:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_configurable_img_signpost:
+    weight: 11
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_configurable_link:
+    weight: 14
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_full_html_description:
+    type: text_textarea
+    weight: 5
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_full_width_image_signpost:
+    weight: 12
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_hide_title:
+    weight: 7
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_image:
+    type: image_image
+    weight: 9
+    settings:
+      preview_image_style: thumbnail
+      progress_indicator: throbber
+    region: content
+    third_party_settings:
+      imce:
+        enabled: true
+  field_links:
+    weight: 10
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+      enabled_attributes:
+        title: title
+        class: class
+        imce: imce
+        id: 0
+        rel: 0
+        name: 0
+        target: 0
+        accesskey: 0
+        download: 0
+        imce_private: 0
+    third_party_settings: {  }
+    type: link_ex
+    region: content
+  field_page_introduction:
+    weight: 13
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_text_config_tags:
+    weight: 6
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  langcode:
+    type: language_select
+    weight: 4
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 8
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

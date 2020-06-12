@@ -1,0 +1,23 @@
+uuid: 152cc210-0158-4a83-9747-08b701e8b459
+langcode: fr
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.inner_video
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.inner_video.metatag
+field_name: metatag
+entity_type: brick
+bundle: inner_video
+label: Metatags
+description: 'The metatags for the entity.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

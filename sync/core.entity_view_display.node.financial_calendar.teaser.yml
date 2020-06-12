@@ -1,0 +1,40 @@
+uuid: 9f614906-73ff-423c-9205-92ad27929733
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.financial_calendar.body
+    - field.field.node.financial_calendar.field_event_address
+    - field.field.node.financial_calendar.field_event_end_date
+    - field.field.node.financial_calendar.field_event_start_date
+    - field.field.node.financial_calendar.field_meta_tags
+    - node.type.financial_calendar
+  module:
+    - text
+    - user
+id: node.financial_calendar.teaser
+targetEntityType: node
+bundle: financial_calendar
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_event_address: true
+  field_event_end_date: true
+  field_event_start_date: true
+  field_meta_tags: true
+  langcode: true
+  scheduled_publication: true

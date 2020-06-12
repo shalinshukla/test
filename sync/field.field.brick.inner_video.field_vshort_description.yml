@@ -1,0 +1,24 @@
+uuid: 76a3ea6b-834e-4406-a2eb-151862478d3e
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.inner_video
+    - field.storage.brick.field_vshort_description
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.inner_video.field_vshort_description
+field_name: field_vshort_description
+entity_type: brick
+bundle: inner_video
+label: Description
+description: 'Enter short description of video.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

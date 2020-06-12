@@ -1,0 +1,28 @@
+uuid: 985b6dee-d0ce-4b74-a35a-bded9cd0b5b4
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.financial_calendar
+    - field.storage.brick.field_fin_cal_current_year_view
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.financial_calendar.field_fin_cal_current_year_view
+field_name: field_fin_cal_current_year_view
+entity_type: brick
+bundle: financial_calendar
+label: 'Financial Calendar Current Year Featured View'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:view'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: entity_reference

@@ -1,0 +1,20 @@
+uuid: 7a266eef-7123-40f1-8ac7-26b2cdbd5453
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+    - views
+id: brick.field_history_featured_view
+field_name: field_history_featured_view
+entity_type: brick
+type: entity_reference
+settings:
+  target_type: view
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

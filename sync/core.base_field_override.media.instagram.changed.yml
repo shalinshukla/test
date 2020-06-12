@@ -1,0 +1,18 @@
+uuid: 6cc490e1-6255-4404-9098-df9b0edea38d
+langcode: fr
+status: true
+dependencies:
+  config:
+    - media.type.instagram
+id: media.instagram.changed
+field_name: changed
+entity_type: media
+bundle: instagram
+label: Changed
+description: 'The time the media item was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

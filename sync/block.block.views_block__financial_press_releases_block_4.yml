@@ -1,0 +1,36 @@
+uuid: 965f83ae-2a22-4454-9b1b-74c017ed8159
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.financial_press_releases
+  module:
+    - block_class
+    - ctools
+    - views
+  theme:
+    - project_bootstrap
+third_party_settings:
+  block_class:
+    classes: ''
+id: views_block__financial_press_releases_block_4
+theme: project_bootstrap
+region: content
+weight: -27
+provider: null
+plugin: 'views_block:financial_press_releases-block_4'
+settings:
+  id: 'views_block:financial_press_releases-block_4'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      us_press_release: us_press_release
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

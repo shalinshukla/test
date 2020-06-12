@@ -1,0 +1,23 @@
+uuid: 6b75e4e9-7d7c-4a86-846d-6ceb070e4f76
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.investis_branding
+    - field.storage.block_content.field_link_branding
+  module:
+    - link
+id: block_content.investis_branding.field_link_branding
+field_name: field_link_branding
+entity_type: block_content
+bundle: investis_branding
+label: 'Branding link'
+description: 'Link to configure brand link URL on click on image'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 0
+field_type: link

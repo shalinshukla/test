@@ -1,0 +1,25 @@
+uuid: 96cbea39-212f-47fc-a0b6-e2f7a4004378
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.sliding_banner
+    - field.storage.brick.field_sb_control_options
+  module:
+    - content_translation
+    - options
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.sliding_banner.field_sb_control_options
+field_name: field_sb_control_options
+entity_type: brick
+bundle: sliding_banner
+label: 'Control options'
+description: 'Only Disable autoplay is applicable for variation 2'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

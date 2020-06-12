@@ -1,0 +1,22 @@
+uuid: aa0aa1a2-7134-4d4a-831f-9197c232df15
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.media_category
+id: taxonomy_term.media_category.status
+field_name: status
+entity_type: taxonomy_term
+bundle: media_category
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

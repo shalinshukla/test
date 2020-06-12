@@ -1,0 +1,23 @@
+uuid: a6eb31f1-eab6-4d7e-afa7-90e0e0e8de84
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.photo_gallery
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.photo_gallery.metatag
+field_name: metatag
+entity_type: brick
+bundle: photo_gallery
+label: Metatags
+description: 'The meta tags for the entity.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

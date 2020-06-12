@@ -1,0 +1,111 @@
+uuid: 50832dea-80ee-4dd2-a2a4-589c6b109b4d
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.sign_post_quote
+    - field.field.brick.sign_post_quote.field_quote_image
+    - field.field.brick.sign_post_quote.field_quote_image_position
+    - field.field.brick.sign_post_quote.field_quote_link
+    - field.field.brick.sign_post_quote.field_quote_variation
+    - field.field.brick.sign_post_quote.field_sp_quote_first_name
+    - field.field.brick.sign_post_quote.field_sp_quote_formatted
+    - field.field.brick.sign_post_quote.field_sp_quote_last_name
+    - field.field.brick.sign_post_quote.field_sp_quote_text
+    - field.field.brick.sign_post_quote.field_sp_quote_title
+    - field.field.brick.sign_post_quote.field_space_variation
+  module:
+    - link
+    - options
+    - svg_image
+    - text
+id: brick.sign_post_quote.default
+targetEntityType: brick
+bundle: sign_post_quote
+mode: default
+content:
+  field_quote_image:
+    weight: 5
+    label: above
+    settings:
+      svg_attributes:
+        width: ''
+        height: ''
+      svg_render_as_image: true
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_quote_image_position:
+    weight: 7
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_quote_link:
+    weight: 4
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_quote_variation:
+    weight: 6
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_sp_quote_first_name:
+    weight: 2
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_sp_quote_formatted:
+    weight: 3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_sp_quote_title:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_space_variation:
+    weight: 8
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  title:
+    label: hidden
+    type: string
+    weight: 0
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  field_sp_quote_last_name: true
+  field_sp_quote_text: true
+  langcode: true
+  search_api_excerpt: true

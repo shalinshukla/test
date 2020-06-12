@@ -1,0 +1,9 @@
+uuid: d452483e-d5f8-49b1-920f-2248ab6fa99d
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.brick
+name: 'Quote Full Width'
+type: quote_full_width
+description: 'Quote component for full width (full width page)'

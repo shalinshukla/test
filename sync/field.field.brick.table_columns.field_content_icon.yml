@@ -1,0 +1,25 @@
+uuid: 18b4f11b-198f-4ddf-a569-9f3a8af232fe
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.table_columns
+    - field.storage.brick.field_content_icon
+  module:
+    - options
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: brick.table_columns.field_content_icon
+field_name: field_content_icon
+entity_type: brick
+bundle: table_columns
+label: 'Content Icon'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

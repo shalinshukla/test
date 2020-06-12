@@ -1,0 +1,25 @@
+uuid: bbb9cf2e-738e-4787-8c0b-f1ae97ad2f28
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.sign_post_social_post
+    - field.storage.brick.field_channel
+  module:
+    - content_translation
+    - options
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.sign_post_social_post.field_channel
+field_name: field_channel
+entity_type: brick
+bundle: sign_post_social_post
+label: Channel
+description: 'Please select channel for signpost'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

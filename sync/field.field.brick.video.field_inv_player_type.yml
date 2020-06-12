@@ -1,0 +1,27 @@
+uuid: 3a0853ad-8f1a-4313-a5c3-841ce4db80ae
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.video
+    - field.storage.brick.field_inv_player_type
+  module:
+    - content_translation
+    - options
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.video.field_inv_player_type
+field_name: field_inv_player_type
+entity_type: brick
+bundle: video
+label: 'Player type'
+description: 'To specify Player Type'
+required: false
+translatable: true
+default_value:
+  -
+    value: singleplayer
+default_value_callback: ''
+settings: {  }
+field_type: list_string

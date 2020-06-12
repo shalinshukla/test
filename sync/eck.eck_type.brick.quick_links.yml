@@ -1,0 +1,9 @@
+uuid: 7d432ff7-8264-477d-b28e-bea7ab2685e5
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.brick
+name: 'Quick Links'
+type: quick_links
+description: 'To add the quick links'

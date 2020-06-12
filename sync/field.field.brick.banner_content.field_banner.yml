@@ -1,0 +1,25 @@
+uuid: 2c269b3c-0eac-4a8b-a4fa-7bb5f16862d3
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.banner_content
+    - field.storage.brick.field_banner
+  module:
+    - options
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: brick.banner_content.field_banner
+field_name: field_banner
+entity_type: brick
+bundle: banner_content
+label: 'Banner variation'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

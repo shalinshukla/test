@@ -1,0 +1,19 @@
+uuid: b505ccca-a9d3-4b98-be56-d0b70678b861
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_display_tab_label
+    - taxonomy.vocabulary.media_category
+id: taxonomy_term.media_category.field_display_tab_label
+field_name: field_display_tab_label
+entity_type: taxonomy_term
+bundle: media_category
+label: 'Display Tab Label'
+description: 'Please add the tab display label here. If no value provided then default term name will be used.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

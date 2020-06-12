@@ -1,0 +1,23 @@
+uuid: 06b5f896-1a74-4ea9-9ecc-a6f18df01e73
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.bricky
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: node.bricky.created
+field_name: created
+entity_type: node
+bundle: bricky
+label: 'Authored on'
+description: 'The time that the node was created.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

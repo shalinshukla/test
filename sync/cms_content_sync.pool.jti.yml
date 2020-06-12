@@ -1,0 +1,9 @@
+uuid: 6076ce29-fa08-4a31-9bd7-ac9a6314177b
+langcode: en
+status: true
+dependencies: {  }
+id: jti
+label: jti
+backend_url: 'http://investis:YloX6BpOO2bM7QBj@csc.prod-mid.investis.internal/rest'
+authentication_type: basic_auth
+site_id: t2stg

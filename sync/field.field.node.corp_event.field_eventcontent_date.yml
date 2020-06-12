@@ -1,0 +1,25 @@
+uuid: 0e62dbbe-2577-49dc-8504-a791af249c33
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_eventcontent_date
+    - node.type.corp_event
+  module:
+    - datetime
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.corp_event.field_eventcontent_date
+field_name: field_eventcontent_date
+entity_type: node
+bundle: corp_event
+label: 'Event end date'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

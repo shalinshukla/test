@@ -1,0 +1,32 @@
+uuid: 4b934817-cf2b-4144-8e83-8892e0052550
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.twitter_posts.body
+    - node.type.twitter_posts
+  module:
+    - text
+    - user
+id: node.twitter_posts.teaser
+targetEntityType: node
+bundle: twitter_posts
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

@@ -1,0 +1,39 @@
+uuid: 962e9d41-d524-4618-bd2d-9df0a5dd3ebd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pr_link_document_content
+    - node.type.link_document_content
+    - node.type.presentations
+  module:
+    - brick_modal
+    - content_translation
+    - tmgmt_content
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+  tmgmt_content:
+    excluded: false
+  brick_modal:
+    delete_referenced_entities: 1
+id: node.presentations.field_pr_link_document_content
+field_name: field_pr_link_document_content
+entity_type: node
+bundle: presentations
+label: 'Link document content'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      link_document_content: link_document_content
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

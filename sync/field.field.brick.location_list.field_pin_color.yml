@@ -1,0 +1,28 @@
+uuid: 9ead3cbf-535b-4b30-9281-85b151c8ae1a
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.location_list
+    - field.storage.brick.field_pin_color
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+_core:
+  default_config_hash: d4YqvP2n2rxJAltaGJBZPoyLcxGV2LFKP74TU-VV29A
+id: brick.location_list.field_pin_color
+field_name: field_pin_color
+entity_type: brick
+bundle: location_list
+label: 'Pin Color'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: '#2fdf95'
+default_value_callback: ''
+settings: {  }
+field_type: string

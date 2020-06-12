@@ -1,0 +1,29 @@
+uuid: 0cbfee21-066e-4a45-856f-918bb66a9e2c
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:investis_branding:2a05222e-038c-439b-96e4-a3f39c9b5f51'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - project_bootstrap
+third_party_settings:
+  block_class:
+    classes: ''
+id: investisbranding_2
+theme: project_bootstrap
+region: footer_bottom
+weight: 0
+provider: null
+plugin: 'block_content:2a05222e-038c-439b-96e4-a3f39c9b5f51'
+settings:
+  id: 'block_content:2a05222e-038c-439b-96e4-a3f39c9b5f51'
+  label: 'Investis branding'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

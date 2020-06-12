@@ -1,0 +1,23 @@
+uuid: 664fff9a-abf3-4a6d-a5e8-fb20faa02bf2
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.sign_post_portfolio_slides
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.sign_post_portfolio_slides.metatag
+field_name: metatag
+entity_type: brick
+bundle: sign_post_portfolio_slides
+label: Metatags
+description: 'The metatags for the entity.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

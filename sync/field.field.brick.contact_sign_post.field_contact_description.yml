@@ -1,0 +1,25 @@
+uuid: 1016f874-d651-4f32-a7d4-db73e984d8db
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.contact_sign_post
+    - field.storage.brick.field_contact_description
+  module:
+    - text
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: brick.contact_sign_post.field_contact_description
+field_name: field_contact_description
+entity_type: brick
+bundle: contact_sign_post
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

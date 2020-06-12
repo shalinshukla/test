@@ -1,0 +1,38 @@
+uuid: 3509438f-07da-4971-9291-974a468d9ee0
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.brick.ief_preview
+    - eck.eck_type.brick.sign_post_image
+    - field.field.brick.sign_post_image.field_download_document
+    - field.field.brick.sign_post_image.field_sign_post_description
+    - field.field.brick.sign_post_image.field_sign_post_image
+    - field.field.brick.sign_post_image.field_sign_post_image_effect
+    - field.field.brick.sign_post_image.field_sign_post_image_over_link
+    - field.field.brick.sign_post_image.field_sp_image_title
+    - image.style.thumbnail
+  module:
+    - image
+id: brick.sign_post_image.ief_preview
+targetEntityType: brick
+bundle: sign_post_image
+mode: ief_preview
+content:
+  field_sign_post_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: thumbnail
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  field_download_document: true
+  field_sign_post_description: true
+  field_sign_post_image_effect: true
+  field_sign_post_image_over_link: true
+  field_sp_image_title: true
+  langcode: true
+  title: true

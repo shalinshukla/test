@@ -1,0 +1,9 @@
+uuid: ee782a05-999a-4c56-962e-6c95d4134d78
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.brick
+name: 'Sign Post - Video'
+type: video
+description: 'Signpost component for Video content'

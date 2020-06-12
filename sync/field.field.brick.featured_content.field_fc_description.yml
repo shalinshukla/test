@@ -1,0 +1,24 @@
+uuid: 5083d5ce-f76d-4985-a3a4-b2c60c885261
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.featured_content
+    - field.storage.brick.field_fc_description
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.featured_content.field_fc_description
+field_name: field_fc_description
+entity_type: brick
+bundle: featured_content
+label: Description
+description: 'Enter description to be display'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

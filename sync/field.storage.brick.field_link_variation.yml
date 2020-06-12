@@ -1,0 +1,27 @@
+uuid: eabf6b92-3932-4c0a-a2d2-69f8752b0dcb
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+    - options
+id: brick.field_link_variation
+field_name: field_link_variation
+entity_type: brick
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: white_background
+      label: 'White Backgroud'
+    -
+      value: grey_background
+      label: 'Grey Background'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

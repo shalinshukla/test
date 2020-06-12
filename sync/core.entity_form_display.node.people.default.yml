@@ -1,0 +1,322 @@
+uuid: 30499d97-4de3-4a4f-9672-69bc3667e5fa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.people.body
+    - field.field.node.people.field_boards_description
+    - field.field.node.people.field_bod
+    - field.field.node.people.field_bullet_point_title
+    - field.field.node.people.field_components
+    - field.field.node.people.field_do_not_show_description
+    - field.field.node.people.field_linkedin_link
+    - field.field.node.people.field_meta_tags
+    - field.field.node.people.field_people_email
+    - field.field.node.people.field_people_image
+    - field.field.node.people.field_people_phone_number
+    - field.field.node.people.field_people_type
+    - field.field.node.people.field_position
+    - field.field.node.people.field_related_articles
+    - field.field.node.people.field_short_description_1
+    - field.field.node.people.field_twitter_link
+    - image.style.thumbnail
+    - node.type.people
+  module:
+    - brickex
+    - content_moderation
+    - field_group
+    - imce
+    - lightning_media
+    - link_ex
+    - metatag
+    - path
+    - scheduler
+    - svg_image
+    - text
+third_party_settings:
+  field_group:
+    group_social_profile_links:
+      children: {  }
+      parent_name: ''
+      weight: 22
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: open
+        description: ''
+        required_fields: true
+      label: 'Social profile links'
+      region: hidden
+    group_social_links:
+      children:
+        - field_twitter_link
+        - field_linkedin_link
+      parent_name: group_right_side_group
+      weight: 12
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+        open: false
+      label: 'Social links'
+      region: content
+    group_right_side_content:
+      children:
+        - field_boards_description
+      parent_name: group_right_side_group
+      weight: 13
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: 'Right side content'
+      region: hidden
+    group_right_side_group:
+      children:
+        - field_people_image
+        - group_social_links
+        - group_right_side_content
+      parent_name: ''
+      weight: 8
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+        open: false
+      label: 'Right side Group'
+      region: content
+    group_left_side_group:
+      children:
+        - field_position
+        - field_short_description_1
+        - body
+      parent_name: ''
+      weight: 6
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+        open: false
+      label: 'Left side group'
+      region: content
+id: node.people.default
+targetEntityType: node
+bundle: people
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 9
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+    region: content
+  field_boards_description:
+    weight: 15
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_components:
+    weight: 14
+    settings:
+      form_mode: default
+      label_singular: ''
+      label_plural: ''
+      allow_new: '1'
+      allow_existing: '1'
+      match_operator: CONTAINS
+      override_labels: 0
+      collapsible: 0
+      collapsed: 0
+      allow_duplicate: 0
+    third_party_settings: {  }
+    type: brickex_tree_inline
+    region: content
+  field_do_not_show_description:
+    type: boolean_checkbox
+    weight: 7
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_linkedin_link:
+    weight: 14
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+      enabled_attributes:
+        id: id
+        name: name
+        title: title
+        target: target
+        class: class
+        rel: 0
+        accesskey: 0
+        download: 0
+        imce: 0
+    third_party_settings: {  }
+    type: link_ex
+    region: content
+  field_meta_tags:
+    weight: 9
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_firehose
+    region: content
+  field_people_image:
+    type: image_image
+    weight: 11
+    settings:
+      preview_image_style: thumbnail
+      progress_indicator: throbber
+    region: content
+    third_party_settings:
+      imce:
+        enabled: true
+      lightning_media:
+        file_links: true
+        remove_button: true
+  field_people_type:
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_position:
+    weight: 7
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_related_articles:
+    weight: 26
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_short_description_1:
+    type: text_textarea
+    weight: 8
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_twitter_link:
+    weight: 13
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+      enabled_attributes:
+        id: id
+        name: name
+        title: title
+        target: target
+        class: class
+        rel: 0
+        accesskey: 0
+        download: 0
+        imce: 0
+    third_party_settings: {  }
+    type: link_ex
+    region: content
+  id_class:
+    type: string_textfield
+    weight: 12
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  moderation_state:
+    type: moderation_state_default
+    weight: 13
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  publish_on:
+    type: datetime_timestamp_no_default
+    weight: 11
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  scheduled_publication:
+    type: datetime_default
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  scheduler_settings:
+    weight: 11
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 4
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  unpublish_on:
+    type: datetime_timestamp_no_default
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_bod: true
+  field_bullet_point_title: true
+  field_people_email: true
+  field_people_phone_number: true
+  promote: true
+  sticky: true
+  uid: true

@@ -1,0 +1,34 @@
+uuid: da1ce53f-5977-4188-b3e0-69b6fb112f36
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.location_list
+    - field.field.brick.location_list.field_location_view
+    - field.field.brick.location_list.field_map_theme
+    - field.field.brick.location_list.field_marker_image
+    - field.field.brick.location_list.field_pin_color
+  module:
+    - id_location_list
+_core:
+  default_config_hash: VAkDJNNDGvZuFVHdiWBaQs8ejLj0jlUY1DvBkMnfOiI
+id: brick.location_list.default
+targetEntityType: brick
+bundle: location_list
+mode: default
+content:
+  field_location_view:
+    weight: 0
+    label: hidden
+    settings:
+      plugin_types:
+        - block
+    third_party_settings: {  }
+    type: location_viewsreference_formatter
+    region: content
+hidden:
+  field_map_theme: true
+  field_marker_image: true
+  field_pin_color: true
+  langcode: true
+  title: true

@@ -1,0 +1,9 @@
+uuid: 53be06d2-a957-40ae-94c6-848baa6af472
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.brick
+name: 'News Item Full Width'
+type: news_item_full_width
+description: 'This component will be used for showcasing top latest news with placing image alignment to be right or left. '

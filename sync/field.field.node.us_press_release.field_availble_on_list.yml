@@ -1,0 +1,28 @@
+uuid: cf566a8e-1fdc-44f4-bb9f-dd1a59f03bab
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_availble_on_list
+    - node.type.us_press_release
+  module:
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.us_press_release.field_availble_on_list
+field_name: field_availble_on_list
+entity_type: node
+bundle: us_press_release
+label: 'Availble On List'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

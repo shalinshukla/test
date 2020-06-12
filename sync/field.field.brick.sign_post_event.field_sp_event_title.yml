@@ -1,0 +1,24 @@
+uuid: a900a21f-f8d5-43d3-a6e7-ecc3dd43f84f
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.sign_post_event
+    - field.storage.brick.field_sp_event_title
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.sign_post_event.field_sp_event_title
+field_name: field_sp_event_title
+entity_type: brick
+bundle: sign_post_event
+label: 'Event Title'
+description: 'Provide title to be displayed'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

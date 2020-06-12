@@ -1,0 +1,18 @@
+uuid: 5d383e3a-5543-46fd-ad93-f32e047093c8
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.bricky
+id: node.bricky.scheduled_moderation_state
+field_name: scheduled_moderation_state
+entity_type: node
+bundle: bricky
+label: 'Scheduled moderation state'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

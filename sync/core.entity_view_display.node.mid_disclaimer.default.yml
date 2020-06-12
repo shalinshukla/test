@@ -1,0 +1,372 @@
+uuid: f069e15d-6188-45ae-b415-0abec0f82f9c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.mid_disclaimer.body
+    - field.field.node.mid_disclaimer.field_accept_button_label
+    - field.field.node.mid_disclaimer.field_accept_label_level_2
+    - field.field.node.mid_disclaimer.field_allowed_banned_1
+    - field.field.node.mid_disclaimer.field_allowed_banned_2
+    - field.field.node.mid_disclaimer.field_country_select1_label
+    - field.field.node.mid_disclaimer.field_country_select2_label
+    - field.field.node.mid_disclaimer.field_decline_button_label
+    - field.field.node.mid_disclaimer.field_decline_label_level_2
+    - field.field.node.mid_disclaimer.field_decline_page
+    - field.field.node.mid_disclaimer.field_description
+    - field.field.node.mid_disclaimer.field_disclaimer_1_text
+    - field.field.node.mid_disclaimer.field_disclaimer_1_title
+    - field.field.node.mid_disclaimer.field_disclaimer_2_text
+    - field.field.node.mid_disclaimer.field_disclaimer_2_title
+    - field.field.node.mid_disclaimer.field_disclaimer_radio_text_2
+    - field.field.node.mid_disclaimer.field_disclaimer_radiotext
+    - field.field.node.mid_disclaimer.field_display_countries_1
+    - field.field.node.mid_disclaimer.field_display_countries_2
+    - field.field.node.mid_disclaimer.field_display_origin_1_countries
+    - field.field.node.mid_disclaimer.field_display_origin_2_countries
+    - field.field.node.mid_disclaimer.field_display_physical_1_countri
+    - field.field.node.mid_disclaimer.field_display_physical_2_countri
+    - field.field.node.mid_disclaimer.field_ip_block
+    - field.field.node.mid_disclaimer.field_ip_validate_2
+    - field.field.node.mid_disclaimer.field_one_time_disclaimer
+    - field.field.node.mid_disclaimer.field_origin_country_list_2
+    - field.field.node.mid_disclaimer.field_origin_country_select_lbl2
+    - field.field.node.mid_disclaimer.field_original_country_allowed_l
+    - field.field.node.mid_disclaimer.field_physical_presence_country_
+    - field.field.node.mid_disclaimer.field_pp_countries_as_string_1
+    - field.field.node.mid_disclaimer.field_pp_countries_as_string_2
+    - field.field.node.mid_disclaimer.field_pp_country_list_2
+    - field.field.node.mid_disclaimer.field_pp_select_label_2
+    - field.field.node.mid_disclaimer.field_radio_button_no_label_1
+    - field.field.node.mid_disclaimer.field_radio_button_no_label_2
+    - field.field.node.mid_disclaimer.field_radio_button_yes_label_1
+    - field.field.node.mid_disclaimer.field_radio_button_yes_label_2
+    - field.field.node.mid_disclaimer.field_site_wide_disclaimer
+    - node.type.mid_disclaimer
+  module:
+    - options
+    - text
+    - user
+_core:
+  default_config_hash: CFihsmre1V4I5UesUgEIhWWuYN3j_YLfDAd8AY-C9dM
+id: node.mid_disclaimer.default
+targetEntityType: node
+bundle: mid_disclaimer
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  content_moderation_control:
+    weight: -20
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_accept_label_level_2:
+    weight: 161
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_allowed_banned_1:
+    weight: 156
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_allowed_banned_2:
+    weight: 157
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_country_select1_label:
+    weight: 121
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_country_select2_label:
+    weight: 120
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_decline_label_level_2:
+    weight: 162
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_decline_page:
+    weight: 112
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_description:
+    weight: 103
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_disclaimer_1_text:
+    weight: 105
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_disclaimer_1_title:
+    weight: 117
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_disclaimer_2_text:
+    weight: 109
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_disclaimer_2_title:
+    weight: 118
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_disclaimer_radio_text_2:
+    weight: 132
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_disclaimer_radiotext:
+    weight: 111
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_display_countries_1:
+    weight: 158
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_display_countries_2:
+    weight: 159
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_display_origin_1_countries:
+    weight: 40
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_display_origin_2_countries:
+    weight: 41
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_display_physical_1_countri:
+    type: boolean
+    weight: 43
+    region: content
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+  field_display_physical_2_countri:
+    weight: 42
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_ip_block:
+    weight: 107
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_ip_validate_2:
+    weight: 131
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_one_time_disclaimer:
+    weight: 113
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_origin_country_list_2:
+    weight: 134
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_origin_country_select_lbl2:
+    weight: 127
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_original_country_allowed_l:
+    weight: 115
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_physical_presence_country_:
+    weight: 116
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_pp_countries_as_string_1:
+    weight: 140
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_pp_countries_as_string_2:
+    weight: 141
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_pp_country_list_2:
+    weight: 133
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_pp_select_label_2:
+    weight: 129
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_radio_button_no_label_1:
+    weight: 166
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_radio_button_no_label_2:
+    weight: 164
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_radio_button_yes_label_1:
+    weight: 163
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_radio_button_yes_label_2:
+    weight: 165
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_site_wide_disclaimer:
+    weight: 114
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_accept_button_label: true
+  field_decline_button_label: true
+  langcode: true

@@ -1,0 +1,31 @@
+uuid: b5625506-e50e-493b-b116-10c411d2a394
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.result_presentation
+    - field.storage.brick.field_result_year_term_view
+    - views.view.results_year_term_view
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.result_presentation.field_result_year_term_view
+field_name: field_result_year_term_view
+entity_type: brick
+bundle: result_presentation
+label: 'Result Year Term View'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    target_uuid: 2a6a4fe0-b657-4542-97df-251d296fa5f4
+default_value_callback: ''
+settings:
+  handler: 'default:view'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: entity_reference

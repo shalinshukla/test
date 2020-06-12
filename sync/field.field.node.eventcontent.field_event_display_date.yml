@@ -1,0 +1,24 @@
+uuid: 709bd0c8-83dd-4bd5-816d-e366c4d272ff
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_event_display_date
+    - node.type.eventcontent
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: node.eventcontent.field_event_display_date
+field_name: field_event_display_date
+entity_type: node
+bundle: eventcontent
+label: 'Display date'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

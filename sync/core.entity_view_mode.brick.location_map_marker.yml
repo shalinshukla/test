@@ -1,0 +1,16 @@
+uuid: a5209194-d183-4585-b37a-1fc5b5d1607c
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+    - lightning_core
+third_party_settings:
+  lightning_core:
+    description: 'Used for theming info window on Geolocation map inside a location map component.'
+_core:
+  default_config_hash: c76GkeS3UrpqITbsFgv7947aeU1ofemqh6Y44jZDq3M
+id: brick.location_map_marker
+label: 'Location map marker'
+targetEntityType: brick
+cache: true

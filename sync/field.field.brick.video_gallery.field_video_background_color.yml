@@ -1,0 +1,24 @@
+uuid: d44bfae3-dcc5-4650-81ed-4b499221d187
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.video_gallery
+    - field.storage.brick.field_video_background_color
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.video_gallery.field_video_background_color
+field_name: field_video_background_color
+entity_type: brick
+bundle: video_gallery
+label: 'Background color'
+description: 'Select color to set as a background of video gallery container'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

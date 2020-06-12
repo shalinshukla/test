@@ -1,0 +1,27 @@
+uuid: 6f88dcb1-198e-437c-b1eb-1ed68f4704e5
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_class
+    - system
+  theme:
+    - project_bootstrap
+third_party_settings:
+  block_class:
+    classes: ''
+id: sitebranding
+theme: project_bootstrap
+region: navigation
+weight: -26
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: false
+visibility: {  }

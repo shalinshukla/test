@@ -1,0 +1,25 @@
+uuid: cf36e14e-f4c0-4ed6-afe8-fce6785383e2
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.featured_content
+    - field.storage.brick.field_spacing_variation
+  module:
+    - options
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: brick.featured_content.field_spacing_variation
+field_name: field_spacing_variation
+entity_type: brick
+bundle: featured_content
+label: 'Spacing Variation'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,23 @@
+uuid: 51c6abb1-3a50-424b-843c-44abe2fab559
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.location_list
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.location_list.metatag
+field_name: metatag
+entity_type: brick
+bundle: location_list
+label: Metatags
+description: 'The meta tags for the entity.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

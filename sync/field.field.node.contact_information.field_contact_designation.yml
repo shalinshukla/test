@@ -1,0 +1,24 @@
+uuid: a52c9f48-b854-408d-bdf4-7df70a683307
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contact_designation
+    - node.type.contact_information
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: node.contact_information.field_contact_designation
+field_name: field_contact_designation
+entity_type: node
+bundle: contact_information
+label: 'Contact Designation'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

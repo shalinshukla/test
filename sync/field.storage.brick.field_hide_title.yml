@@ -1,0 +1,24 @@
+uuid: 6d14e402-4187-46e2-97d0-df3681ba0e7d
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+    - options
+id: brick.field_hide_title
+field_name: field_hide_title
+entity_type: brick
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: hide-title
+      label: 'Hide Title'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

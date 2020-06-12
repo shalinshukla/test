@@ -1,0 +1,29 @@
+uuid: 197dbfc7-f39f-426b-9c7b-c57bcb57abbb
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:cc8d711b-bbbf-4a53-8313-9bbc596ce2b3'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - project_bootstrap
+third_party_settings:
+  block_class:
+    classes: ''
+id: megamenuclosebutton
+theme: project_bootstrap
+region: hiddne_region
+weight: 0
+provider: null
+plugin: 'block_content:cc8d711b-bbbf-4a53-8313-9bbc596ce2b3'
+settings:
+  id: 'block_content:cc8d711b-bbbf-4a53-8313-9bbc596ce2b3'
+  label: 'Mega menu close button'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

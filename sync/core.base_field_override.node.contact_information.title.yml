@@ -1,0 +1,23 @@
+uuid: 3d1faa24-39ba-412e-b2d4-f359fa231244
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.contact_information
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: node.contact_information.title
+field_name: title
+entity_type: node
+bundle: contact_information
+label: 'Contact Name'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

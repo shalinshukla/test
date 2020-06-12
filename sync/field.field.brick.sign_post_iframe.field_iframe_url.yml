@@ -1,0 +1,27 @@
+uuid: 8655563d-8900-46fb-a1ef-9a995ad06bba
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.sign_post_iframe
+    - field.storage.brick.field_iframe_url
+  module:
+    - content_translation
+    - link
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.sign_post_iframe.field_iframe_url
+field_name: field_iframe_url
+entity_type: brick
+bundle: sign_post_iframe
+label: 'Iframe URL'
+description: 'Enter Iframe based URL to be configured in component.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 0
+field_type: link

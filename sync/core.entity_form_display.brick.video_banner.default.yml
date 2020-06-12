@@ -1,0 +1,165 @@
+uuid: 0ccadd88-23b7-417d-8a48-af5e2200932f
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.video_banner
+    - field.field.brick.video_banner.field_back_video_data_type
+    - field.field.brick.video_banner.field_is_banner
+    - field.field.brick.video_banner.field_vbanner_auto_play
+    - field.field.brick.video_banner.field_vbanner_back_video_id
+    - field.field.brick.video_banner.field_vbanner_description
+    - field.field.brick.video_banner.field_vbanner_link
+    - field.field.brick.video_banner.field_vbanner_loop_enabled
+    - field.field.brick.video_banner.field_vbanner_player_type
+    - field.field.brick.video_banner.field_vbanner_poster_image
+    - field.field.brick.video_banner.field_vbanner_video_data_type
+    - field.field.brick.video_banner.field_vbanner_video_id
+    - field.field.brick.video_banner.field_video_banner_title
+    - field.field.brick.video_banner.field_video_banner_variation
+    - image.style.thumbnail
+  module:
+    - field_group
+    - image
+    - imce
+    - lightning_media
+    - link_ex
+third_party_settings:
+  field_group:
+    group_fron:
+      children:
+        - field_vbanner_video_data_type
+        - field_vbanner_video_id
+      parent_name: ''
+      weight: 3
+      format_type: fieldset
+      format_settings:
+        label: 'Front video configuration'
+        description: ''
+        required_fields: true
+        id: ''
+        classes: ''
+      label: 'Front video configuration'
+      region: content
+    group_background_video_config:
+      children:
+        - field_back_video_data_type
+        - field_vbanner_back_video_id
+      parent_name: ''
+      weight: 4
+      format_type: fieldset
+      format_settings:
+        label: 'Background video configuration'
+        description: ''
+        id: ''
+        classes: ''
+        required_fields: false
+      label: 'Background video configuration'
+      region: content
+id: brick.video_banner.default
+targetEntityType: brick
+bundle: video_banner
+mode: default
+content:
+  field_back_video_data_type:
+    weight: 24
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_vbanner_back_video_id:
+    weight: 25
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_vbanner_description:
+    weight: 2
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_vbanner_link:
+    weight: 8
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+      enabled_attributes:
+        title: title
+        target: target
+        class: class
+        id: 0
+        rel: 0
+        name: 0
+        accesskey: 0
+        download: 0
+        imce: 0
+        imce_private: 0
+    third_party_settings: {  }
+    type: link_ex
+    region: content
+  field_vbanner_poster_image:
+    type: image_image
+    weight: 5
+    settings:
+      preview_image_style: thumbnail
+      progress_indicator: throbber
+    region: content
+    third_party_settings:
+      imce:
+        enabled: true
+      lightning_media:
+        file_links: true
+        remove_button: true
+  field_vbanner_video_data_type:
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_vbanner_video_id:
+    weight: 6
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_video_banner_title:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  langcode:
+    type: language_select
+    weight: 7
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_is_banner: true
+  field_vbanner_auto_play: true
+  field_vbanner_loop_enabled: true
+  field_vbanner_player_type: true
+  field_video_banner_variation: true

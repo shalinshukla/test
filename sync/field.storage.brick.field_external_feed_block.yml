@@ -1,0 +1,20 @@
+uuid: c5ce6c57-64fe-4023-9f5e-12d574c0155a
+langcode: en
+status: true
+dependencies:
+  module:
+    - block
+    - eck
+id: brick.field_external_feed_block
+field_name: field_external_feed_block
+entity_type: brick
+type: entity_reference
+settings:
+  target_type: block
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,30 @@
+uuid: 4e8e8279-9a80-4c2c-afba-dc26507e68a3
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+    - options
+id: brick.field_config_spacing_variation
+field_name: field_config_spacing_variation
+entity_type: brick
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: mb-0
+      label: 'No bottom spacing'
+    -
+      value: mt-0
+      label: 'No top spacing'
+    -
+      value: m-0
+      label: 'No top and bottom spacing'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

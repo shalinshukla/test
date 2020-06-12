@@ -1,0 +1,9 @@
+uuid: 1df3fd4b-a6e9-4380-8bfd-9c8761309552
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.brick
+name: 'Sign Post - Key Facts Fields'
+type: sign_post_key_facts
+description: 'Sign post component - Key facts fields to be used in Key facts component'

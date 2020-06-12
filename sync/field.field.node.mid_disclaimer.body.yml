@@ -1,0 +1,32 @@
+uuid: a073a118-0635-4bbb-9d01-891775111c04
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.mid_disclaimer
+  enforced:
+    module:
+      - mid_disclaimer
+  module:
+    - content_translation
+    - text
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+_core:
+  default_config_hash: aYHzPc0bSiRm--GWlaRfRlq6-7OAhkx1LXVb0VPyLR4
+id: node.mid_disclaimer.body
+field_name: body
+entity_type: node
+bundle: mid_disclaimer
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

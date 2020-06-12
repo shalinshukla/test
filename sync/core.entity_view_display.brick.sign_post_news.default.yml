@@ -1,0 +1,90 @@
+uuid: e4284c82-9d59-413e-add8-2285b8df0c65
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.sign_post_news
+    - field.field.brick.sign_post_news.field_sp_news_category
+    - field.field.brick.sign_post_news.field_sp_news_date
+    - field.field.brick.sign_post_news.field_sp_news_description
+    - field.field.brick.sign_post_news.field_sp_news_link
+    - field.field.brick.sign_post_news.field_sp_news_sub_title
+    - field.field.brick.sign_post_news.field_sp_news_title
+  module:
+    - datetime
+    - link
+    - options
+id: brick.sign_post_news.default
+targetEntityType: brick
+bundle: sign_post_news
+mode: default
+content:
+  field_sp_news_category:
+    weight: 5
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_sp_news_date:
+    weight: 0
+    label: hidden
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_sp_news_description:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_sp_news_link:
+    weight: 4
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_sp_news_sub_title:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_sp_news_title:
+    weight: 7
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  langcode:
+    type: language
+    weight: 6
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+      native_language: false
+    third_party_settings: {  }
+  title:
+    label: hidden
+    type: string
+    weight: 1
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden: {  }

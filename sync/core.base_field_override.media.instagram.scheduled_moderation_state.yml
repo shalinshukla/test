@@ -1,0 +1,18 @@
+uuid: 544dfceb-cf49-44ac-a26d-016d9b00397d
+langcode: fr
+status: true
+dependencies:
+  config:
+    - media.type.instagram
+id: media.instagram.scheduled_moderation_state
+field_name: scheduled_moderation_state
+entity_type: media
+bundle: instagram
+label: 'Scheduled moderation state'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,23 @@
+uuid: 8cc444f6-8c0b-4978-af2c-c0454d062688
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_location_coordinates
+    - taxonomy.vocabulary.location_city
+  module:
+    - geolocation
+_core:
+  default_config_hash: AOwjOzAAPRyE2LNLfCCxzz18GdERyeZdm3BajgTJvrc
+id: taxonomy_term.location_city.field_location_coordinates
+field_name: field_location_coordinates
+entity_type: taxonomy_term
+bundle: location_city
+label: Coordinates
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: geolocation

@@ -1,0 +1,25 @@
+uuid: 7b7d3e94-0b16-4c8b-aaed-8c194a373edc
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.banner_content
+    - field.storage.brick.field_fdescription
+  module:
+    - text
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: brick.banner_content.field_fdescription
+field_name: field_fdescription
+entity_type: brick
+bundle: banner_content
+label: Description
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,25 @@
+uuid: 46fb66c2-b157-4bd3-99b4-db75c2dd7cf8
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.sign_post_key_facts_container
+    - field.storage.brick.field_background_variation
+  module:
+    - options
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: brick.sign_post_key_facts_container.field_background_variation
+field_name: field_background_variation
+entity_type: brick
+bundle: sign_post_key_facts_container
+label: 'Key fact variation'
+description: 'Select background variation'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

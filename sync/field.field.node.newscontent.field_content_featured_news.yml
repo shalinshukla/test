@@ -1,0 +1,44 @@
+uuid: 584bdeae-5112-4fda-9a05-5ff35c9e3df7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content_featured_news
+    - node.type.newscontent
+    - taxonomy.vocabulary.featured_news_taxonomy
+  content:
+    - 'taxonomy_term:featured_news_taxonomy:e5481d06-5f2c-44fb-adfb-ab3e34154de6'
+  module:
+    - brick_modal
+    - content_translation
+    - tmgmt_content
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+  tmgmt_content:
+    excluded: false
+  brick_modal:
+    delete_referenced_entities: 0
+id: node.newscontent.field_content_featured_news
+field_name: field_content_featured_news
+entity_type: node
+bundle: newscontent
+label: 'Featured news'
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    target_uuid: e5481d06-5f2c-44fb-adfb-ab3e34154de6
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      featured_news_taxonomy: featured_news_taxonomy
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

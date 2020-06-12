@@ -1,0 +1,164 @@
+uuid: 98da7bb3-5ac7-4561-a1bc-65c8afbd3d28
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.csr_documents.body
+    - field.field.node.csr_documents.field_available_documents
+    - field.field.node.csr_documents.field_csr_document_year
+    - field.field.node.csr_documents.field_english_attachment
+    - field.field.node.csr_documents.field_french_attachment
+    - field.field.node.csr_documents.field_report_date
+    - field.field.node.csr_documents.field_report_image
+    - field.field.node.csr_documents.field_spanish_attachment
+    - image.style.thumbnail
+    - node.type.csr_documents
+  module:
+    - content_moderation
+    - datetime
+    - file
+    - imce
+    - path
+    - scheduler
+    - svg_image
+id: node.csr_documents.default
+targetEntityType: node
+bundle: csr_documents
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_available_documents:
+    weight: 17
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_english_attachment:
+    weight: 14
+    settings:
+      progress_indicator: throbber
+    third_party_settings:
+      imce:
+        enabled: true
+    type: file_generic
+    region: content
+  field_french_attachment:
+    weight: 16
+    settings:
+      progress_indicator: throbber
+    third_party_settings:
+      imce:
+        enabled: true
+    type: file_generic
+    region: content
+  field_report_date:
+    weight: 12
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_report_image:
+    type: image_image
+    weight: 13
+    settings:
+      preview_image_style: thumbnail
+      progress_indicator: throbber
+    region: content
+    third_party_settings:
+      imce:
+        enabled: true
+  field_spanish_attachment:
+    weight: 15
+    settings:
+      progress_indicator: throbber
+    third_party_settings:
+      imce:
+        enabled: true
+    type: file_generic
+    region: content
+  id_class:
+    type: string_textfield
+    weight: 9
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 1
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  moderation_state:
+    type: moderation_state_default
+    weight: 10
+    settings: {  }
+    region: content
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 4
+    region: content
+    third_party_settings: {  }
+  publish_on:
+    type: datetime_timestamp_no_default
+    weight: 8
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 11
+    region: content
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 5
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 2
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    region: content
+    third_party_settings: {  }
+  unpublish_on:
+    type: datetime_timestamp_no_default
+    weight: 7
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  body: true
+  field_csr_document_year: true

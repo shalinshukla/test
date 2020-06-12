@@ -1,0 +1,30 @@
+uuid: d1df6535-7eb3-4017-b697-e7a1836ffc9e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.presentations.field_content_date
+    - field.field.node.presentations.field_meta_tags
+    - field.field.node.presentations.field_pr_link_document_content
+    - field.field.node.presentations.field_presentation_year
+    - node.type.presentations
+  module:
+    - user
+id: node.presentations.teaser
+targetEntityType: node
+bundle: presentations
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_content_date: true
+  field_meta_tags: true
+  field_pr_link_document_content: true
+  field_presentation_year: true
+  langcode: true
+  scheduled_publication: true

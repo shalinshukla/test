@@ -1,0 +1,23 @@
+uuid: 3aa71786-2e1d-49e8-8a5f-c9802cc29d57
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.history
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.history.metatag
+field_name: metatag
+entity_type: brick
+bundle: history
+label: Metatags
+description: 'The metatags for the entity.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

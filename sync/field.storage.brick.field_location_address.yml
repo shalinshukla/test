@@ -1,0 +1,23 @@
+uuid: 6e92a687-51df-478d-a7a1-8d066dfd8b04
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+_core:
+  default_config_hash: erb8ABr9Ic13TWS-S5pToehVrKSZ5YMQUymIAj7Sarg
+id: brick.field_location_address
+field_name: field_location_address
+entity_type: brick
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

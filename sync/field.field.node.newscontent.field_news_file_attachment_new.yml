@@ -1,0 +1,27 @@
+uuid: a75773ff-d5b5-4cb2-9506-b1c6e9be67eb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_news_file_attachment_new
+    - node.type.newscontent
+  module:
+    - content_translation
+    - link
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: node.newscontent.field_news_file_attachment_new
+field_name: field_news_file_attachment_new
+entity_type: node
+bundle: newscontent
+label: 'News file attachment'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 2
+field_type: link

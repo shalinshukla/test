@@ -1,0 +1,25 @@
+uuid: 1a6c785c-33a6-4e25-bffc-ff422f3ae51e
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.contact_sign_post
+    - field.storage.brick.field_email_id
+  module:
+    - text
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: brick.contact_sign_post.field_email_id
+field_name: field_email_id
+entity_type: brick
+bundle: contact_sign_post
+label: 'Email Id'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

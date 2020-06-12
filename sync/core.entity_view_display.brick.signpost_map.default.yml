@@ -1,0 +1,92 @@
+uuid: 0b5ac0d5-6272-4c33-84da-99fea1e39c32
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.signpost_map
+    - field.field.brick.signpost_map.field_fdescription
+    - field.field.brick.signpost_map.field_map_theme
+    - field.field.brick.signpost_map.field_marker_image
+    - field.field.brick.signpost_map.field_office_locations
+    - field.field.brick.signpost_map.field_pin_color
+    - field.field.brick.signpost_map.field_sp_map_display_title
+    - field.field.brick.signpost_map.field_sp_map_title
+    - field.field.brick.signpost_map.field_zoom
+  module:
+    - bricks
+    - image
+    - options
+    - text
+id: brick.signpost_map.default
+targetEntityType: brick
+bundle: signpost_map
+mode: default
+content:
+  field_fdescription:
+    weight: 7
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_map_theme:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_marker_image:
+    weight: 5
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_office_locations:
+    weight: 3
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    type: bricks_nested
+    region: content
+  field_pin_color:
+    weight: 2
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_sp_map_title:
+    weight: 6
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_zoom:
+    weight: 4
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  title:
+    label: hidden
+    type: string
+    weight: 0
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  field_sp_map_display_title: true
+  langcode: true

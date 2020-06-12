@@ -1,0 +1,27 @@
+uuid: 9e4a629d-b982-486a-89a7-423d1fd9683a
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.contact_information
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: node.contact_information.status
+field_name: status
+entity_type: node
+bundle: contact_information
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

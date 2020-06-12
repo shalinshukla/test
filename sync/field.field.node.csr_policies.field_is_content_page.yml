@@ -1,0 +1,28 @@
+uuid: bb3c4400-b81c-4de3-8a6d-05e8087c4f80
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_is_content_page
+    - node.type.csr_policies
+  module:
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.csr_policies.field_is_content_page
+field_name: field_is_content_page
+entity_type: node
+bundle: csr_policies
+label: 'is content page'
+description: 'If checked, this page will be treated as a content page and styling will be applied accordingly.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

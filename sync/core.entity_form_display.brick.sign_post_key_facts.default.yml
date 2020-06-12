@@ -1,0 +1,79 @@
+uuid: 7362a769-fb1e-4af8-8e07-64685a0ad117
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.sign_post_key_facts
+    - field.field.brick.sign_post_key_facts.field_keyfact_description
+    - field.field.brick.sign_post_key_facts.field_kf_display_title
+    - field.field.brick.sign_post_key_facts.field_sp_fact_figures
+    - field.field.brick.sign_post_key_facts.field_sp_fact_image_icon
+    - image.style.thumbnail
+  module:
+    - image
+    - imce
+    - lightning_media
+    - text
+id: brick.sign_post_key_facts.default
+targetEntityType: brick
+bundle: sign_post_key_facts
+mode: default
+content:
+  field_keyfact_description:
+    weight: 6
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_kf_display_title:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_sp_fact_figures:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_sp_fact_image_icon:
+    type: image_image
+    weight: 2
+    settings:
+      preview_image_style: thumbnail
+      progress_indicator: throbber
+    region: content
+    third_party_settings:
+      imce:
+        enabled: true
+      lightning_media:
+        file_links: true
+        remove_button: true
+  langcode:
+    type: language_select
+    weight: 4
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

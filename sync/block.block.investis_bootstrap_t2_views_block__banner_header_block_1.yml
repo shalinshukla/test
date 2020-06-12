@@ -1,0 +1,25 @@
+uuid: 868348eb-b467-4cc0-ae28-3b9e7d624807
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.banner_header
+  module:
+    - views
+  theme:
+    - investis_bootstrap_t2
+id: investis_bootstrap_t2_views_block__banner_header_block_1
+theme: investis_bootstrap_t2
+region: navigation
+weight: 0
+provider: null
+plugin: 'views_block:banner_header-block_1'
+settings:
+  id: 'views_block:banner_header-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility: {  }

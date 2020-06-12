@@ -1,0 +1,9 @@
+uuid: 6631d9af-2101-4d15-9ee8-aee4db65d575
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.brick
+name: 'Dynamic Block Contents'
+type: dynamic_block_contents
+description: ''

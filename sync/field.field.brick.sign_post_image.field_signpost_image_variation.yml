@@ -1,0 +1,25 @@
+uuid: dedc26ea-07a3-49fa-a664-df6cf8716d51
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.sign_post_image
+    - field.storage.brick.field_signpost_image_variation
+  module:
+    - options
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: brick.sign_post_image.field_signpost_image_variation
+field_name: field_signpost_image_variation
+entity_type: brick
+bundle: sign_post_image
+label: 'Signpost image variation'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

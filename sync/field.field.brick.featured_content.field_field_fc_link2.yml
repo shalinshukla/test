@@ -1,0 +1,27 @@
+uuid: 2d066d31-837c-472e-b8b6-864e4a7f5c08
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.featured_content
+    - field.storage.brick.field_field_fc_link2
+  module:
+    - link
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: brick.featured_content.field_field_fc_link2
+field_name: field_field_fc_link2
+entity_type: brick
+bundle: featured_content
+label: 'Link 2'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

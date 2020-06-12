@@ -1,0 +1,8 @@
+uuid: 6decd8fe-da1f-4dee-87e1-07c07d32b1aa
+langcode: en
+status: true
+dependencies: {  }
+id: investis_branding
+label: 'Investis branding'
+revision: 1
+description: 'Investis branding block to provide configurable link for footer region'

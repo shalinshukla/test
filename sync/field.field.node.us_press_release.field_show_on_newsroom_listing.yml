@@ -1,0 +1,25 @@
+uuid: d13acd44-feff-4cea-bbea-8e96a4b70dc1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_show_on_newsroom_listing
+    - node.type.us_press_release
+  module:
+    - options
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.us_press_release.field_show_on_newsroom_listing
+field_name: field_show_on_newsroom_listing
+entity_type: node
+bundle: us_press_release
+label: 'Show on Newsroom listing'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,28 @@
+uuid: 2d37e2f8-7e3e-4933-af77-f1334ef1d728
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_job_bottom_description
+    - node.type.jobs
+  module:
+    - text
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.jobs.field_job_bottom_description
+field_name: field_job_bottom_description
+entity_type: node
+bundle: jobs
+label: 'Job bottom description'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: "<p>Lowe’s is an equal opportunity affirmative action employer and administers all personnel practices without regard to race, color, religion, sex, age, national origin, disability, sexual orientation, gender identity or expression, marital status, veteran status, genetics or any other category protected under applicable law.</p>\r\n"
+    format: full_html
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,9 @@
+uuid: 9a322f25-0749-4495-8e3c-8ad4f7cf93ef
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.brick
+name: People
+type: people
+description: 'This is used to reference view for people component'

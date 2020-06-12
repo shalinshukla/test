@@ -1,0 +1,55 @@
+uuid: d08fa34e-e6ac-4373-a7f2-be4d61278084
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.document_tool_kit.field_document_date
+    - field.field.node.document_tool_kit.field_document_link
+    - field.field.node.document_tool_kit.field_document_type
+    - node.type.document_tool_kit
+  module:
+    - datetime
+    - link
+    - options
+    - user
+id: node.document_tool_kit.default
+targetEntityType: node
+bundle: document_tool_kit
+mode: default
+content:
+  field_document_date:
+    weight: 102
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_document_link:
+    weight: 103
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_document_type:
+    weight: 104
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

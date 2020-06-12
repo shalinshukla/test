@@ -1,0 +1,27 @@
+uuid: 4100ebad-5380-45e9-8db9-7c80cf6310f7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_html_link
+    - node.type.annual_report
+  module:
+    - link
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.annual_report.field_html_link
+field_name: field_html_link
+entity_type: node
+bundle: annual_report
+label: 'HTML Link'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

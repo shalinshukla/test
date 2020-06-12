@@ -1,0 +1,30 @@
+uuid: bedc9fbb-3304-4e03-bd9c-1b66914267da
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.results_year_term_view
+  module:
+    - system
+    - views
+  theme:
+    - investis_bootstrap_t2
+id: investis_bootstrap_t2_views_block__results_year_term_view_block_1
+theme: investis_bootstrap_t2
+region: content
+weight: -5
+provider: null
+plugin: 'views_block:results_year_term_view-block_1'
+settings:
+  id: 'views_block:results_year_term_view-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /node/142
+    negate: false
+    context_mapping: {  }

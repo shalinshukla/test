@@ -1,0 +1,28 @@
+uuid: 11b26631-5ad3-4fd9-a3e3-be85afec70a9
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.sign_post_social_post
+    - field.storage.brick.field_post_text_length
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.sign_post_social_post.field_post_text_length
+field_name: field_post_text_length
+entity_type: brick
+bundle: sign_post_social_post
+label: 'Post Text Length'
+description: 'Please insert the length of the post text.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 1
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

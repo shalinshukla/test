@@ -1,0 +1,21 @@
+uuid: 25890d74-e857-4bce-a1b6-44567f95938b
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.sign_post_iframe
+    - field.storage.brick.field_background_color_variation
+  module:
+    - options
+id: brick.sign_post_iframe.field_background_color_variation
+field_name: field_background_color_variation
+entity_type: brick
+bundle: sign_post_iframe
+label: 'Background color variation'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

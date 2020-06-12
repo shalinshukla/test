@@ -1,0 +1,20 @@
+uuid: fb0e516b-baf5-4b24-bae8-45b738e5f140
+langcode: en
+status: true
+dependencies:
+  module:
+    - bricks
+    - eck
+id: brick.field_image_explore
+field_name: field_image_explore
+entity_type: brick
+type: bricks
+settings:
+  target_type: brick
+module: bricks
+locked: false
+cardinality: 4
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

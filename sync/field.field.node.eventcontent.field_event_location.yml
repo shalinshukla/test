@@ -1,0 +1,24 @@
+uuid: 2132e89f-0bad-4093-9925-45d48cb4232d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_event_location
+    - node.type.eventcontent
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: node.eventcontent.field_event_location
+field_name: field_event_location
+entity_type: node
+bundle: eventcontent
+label: 'Event Location'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

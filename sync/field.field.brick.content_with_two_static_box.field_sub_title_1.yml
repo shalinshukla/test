@@ -1,0 +1,24 @@
+uuid: 0b27b066-28cf-4374-b2bd-81cca3936557
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.content_with_two_static_box
+    - field.storage.brick.field_sub_title_1
+  module:
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: brick.content_with_two_static_box.field_sub_title_1
+field_name: field_sub_title_1
+entity_type: brick
+bundle: content_with_two_static_box
+label: 'Sub Title 1'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

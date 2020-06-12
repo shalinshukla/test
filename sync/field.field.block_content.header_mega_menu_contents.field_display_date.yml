@@ -1,0 +1,24 @@
+uuid: f0acf5e7-da90-4dd9-8716-a740f48cec74
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.header_mega_menu_contents
+    - field.storage.block_content.field_display_date
+  module:
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: block_content.header_mega_menu_contents.field_display_date
+field_name: field_display_date
+entity_type: block_content
+bundle: header_mega_menu_contents
+label: 'Display Date'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,55 @@
+uuid: 50774128-f7cd-4211-945b-25588b5fe66a
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.table_module
+    - field.field.brick.table_module.field_columns_reference
+    - field.field.brick.table_module.field_table_header
+  module:
+    - brickex
+id: brick.table_module.default
+targetEntityType: brick
+bundle: table_module
+mode: default
+content:
+  field_columns_reference:
+    weight: 4
+    settings:
+      match_operator: CONTAINS
+      form_mode: default
+      override_labels: false
+      label_singular: ''
+      label_plural: ''
+      collapsible: false
+      collapsed: false
+      allow_new: true
+      allow_existing: false
+      allow_duplicate: false
+    third_party_settings: {  }
+    type: brickex_tree_inline
+    region: content
+  field_table_header:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

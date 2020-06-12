@@ -1,0 +1,31 @@
+uuid: 19668464-27c8-456a-8b0e-097d93823869
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_proxy_statement
+    - node.type.proxy_statement
+  module:
+    - file
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.proxy_statement.field_proxy_statement
+field_name: field_proxy_statement
+entity_type: node
+bundle: proxy_statement
+label: 'Proxy Statement'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'txt pdf doc xls docx xlsx'
+  max_filesize: ''
+  description_field: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

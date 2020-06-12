@@ -1,0 +1,9 @@
+uuid: 6175d5fc-2dcf-4e02-8972-f0293c210c40
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.brick
+name: Infographic
+type: infographic
+description: 'This is T2 Infographic component (#33)'

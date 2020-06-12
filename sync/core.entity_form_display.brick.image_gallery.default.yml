@@ -1,0 +1,57 @@
+uuid: c322781c-e206-416d-b9df-f4672ac9d1bb
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.image_gallery
+    - field.field.brick.image_gallery.field_gallery_slide
+    - field.field.brick.image_gallery.field_image_gallery_title
+  module:
+    - bricks_inline
+id: brick.image_gallery.default
+targetEntityType: brick
+bundle: image_gallery
+mode: default
+content:
+  field_gallery_slide:
+    weight: 2
+    settings:
+      form_mode: default
+      label_singular: ''
+      label_plural: ''
+      allow_new: '1'
+      match_operator: CONTAINS
+      override_labels: 0
+      allow_existing: 0
+    third_party_settings: {  }
+    type: bricks_tree_inline
+    region: content
+  field_image_gallery_title:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  langcode:
+    type: language_select
+    weight: 3
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

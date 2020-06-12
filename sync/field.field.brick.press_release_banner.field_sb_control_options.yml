@@ -1,0 +1,25 @@
+uuid: f3638765-8ff7-423a-bdba-0cea8e7c1dd7
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.press_release_banner
+    - field.storage.brick.field_sb_control_options
+  module:
+    - options
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: brick.press_release_banner.field_sb_control_options
+field_name: field_sb_control_options
+entity_type: brick
+bundle: press_release_banner
+label: 'Control options'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

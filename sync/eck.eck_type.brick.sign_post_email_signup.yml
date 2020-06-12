@@ -1,0 +1,9 @@
+uuid: 687882bc-32a9-4167-8536-7a44088db5e2
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.brick
+name: 'Sign Post - Email Signup'
+type: sign_post_email_signup
+description: 'Sign Post component for Email signup'

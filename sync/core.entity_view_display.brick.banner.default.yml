@@ -1,0 +1,97 @@
+uuid: adeaff06-4c10-40b5-9d19-278d850c2dd8
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.banner
+    - field.field.brick.banner.field_banner_background_image
+    - field.field.brick.banner.field_banner_description
+    - field.field.brick.banner.field_banner_image
+    - field.field.brick.banner.field_banner_link
+    - field.field.brick.banner.field_banner_video
+    - field.field.brick.banner.field_bannerdisplay
+  module:
+    - image
+    - link
+    - video_embed_field
+id: brick.banner.default
+targetEntityType: brick
+bundle: banner
+mode: default
+content:
+  field_banner_background_image:
+    weight: 4
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_banner_description:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_banner_image:
+    weight: 5
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_banner_link:
+    weight: 2
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_banner_video:
+    weight: 3
+    label: hidden
+    settings:
+      responsive: true
+      width: 854
+      height: 480
+      autoplay: true
+    third_party_settings: {  }
+    type: video_embed_field_video
+    region: content
+  field_bannerdisplay:
+    type: boolean
+    weight: 7
+    region: content
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+  langcode:
+    type: language
+    weight: 6
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+      native_language: false
+    third_party_settings: {  }
+  title:
+    label: hidden
+    type: string
+    weight: 0
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden: {  }

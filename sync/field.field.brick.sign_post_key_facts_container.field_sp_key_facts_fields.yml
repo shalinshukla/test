@@ -1,0 +1,40 @@
+uuid: 4365d0c6-e037-4a7d-9e20-df14c6df520d
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.sign_post_key_facts
+    - eck.eck_type.brick.sign_post_key_facts_container
+    - field.storage.brick.field_sp_key_facts_fields
+  module:
+    - brick_modal
+    - bricks
+    - content_translation
+    - tmgmt_content
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+  tmgmt_content:
+    excluded: false
+  brick_modal:
+    delete_referenced_entities: 1
+id: brick.sign_post_key_facts_container.field_sp_key_facts_fields
+field_name: field_sp_key_facts_fields
+entity_type: brick
+bundle: sign_post_key_facts_container
+label: 'Key Facts Fields'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:brick'
+  handler_settings:
+    target_bundles:
+      sign_post_key_facts: sign_post_key_facts
+    sort:
+      field: _none
+    auto_create: 0
+    auto_create_bundle: ''
+field_type: bricks

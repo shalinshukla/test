@@ -1,0 +1,62 @@
+uuid: 05c921ab-3a72-4d93-811c-8812cbf4b27e
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_class
+    - ctools
+    - node
+    - system
+  theme:
+    - project_bootstrap
+third_party_settings:
+  block_class:
+    classes: ''
+id: breadcrumbs
+theme: project_bootstrap
+region: content
+weight: -38
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      bod_people: bod_people
+      bricky: bricky
+      csr_policies: csr_policies
+      jobs: jobs
+      landing_page: landing_page
+      newscontent: newscontent
+      page: page
+      people: people
+      story_and_news: story_and_news
+      us_press_release: us_press_release
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+  node_type:
+    id: node_type
+    bundles:
+      bod_people: bod_people
+      bricky: bricky
+      csr_policies: csr_policies
+      jobs: jobs
+      newscontent: newscontent
+      page: page
+      people: people
+      story_and_news: story_and_news
+      us_press_release: us_press_release
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+  request_path:
+    id: request_path
+    pages: "/node/571\r\n/node/58750\r\n/node/60020\r\n<front> "
+    negate: true
+    context_mapping: {  }

@@ -1,0 +1,25 @@
+uuid: 4d32809c-d328-4095-b179-0667ae0557f8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_document_date
+    - node.type.document_tool_kit
+  module:
+    - datetime
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.document_tool_kit.field_document_date
+field_name: field_document_date
+entity_type: node
+bundle: document_tool_kit
+label: 'Document Date'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

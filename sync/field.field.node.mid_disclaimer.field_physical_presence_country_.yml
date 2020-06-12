@@ -1,0 +1,30 @@
+uuid: 7847960b-b894-48cf-b2dc-74406806b35a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_physical_presence_country_
+    - node.type.mid_disclaimer
+  enforced:
+    module:
+      - mid_disclaimer
+  module:
+    - content_translation
+    - options
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+_core:
+  default_config_hash: H4xns_KJV1I5yDP5_yzBJsr4w4cdMBp0XztWu5Ho7M0
+id: node.mid_disclaimer.field_physical_presence_country_
+field_name: field_physical_presence_country_
+entity_type: node
+bundle: mid_disclaimer
+label: 'Physical presence country allowed list'
+description: 'You can select allowed countries for the physical presence.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

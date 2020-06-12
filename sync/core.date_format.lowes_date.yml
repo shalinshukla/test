@@ -1,0 +1,8 @@
+uuid: 62047fe5-017e-4c9f-9ad4-dc97eb34f802
+langcode: en
+status: true
+dependencies: {  }
+id: lowes_date
+label: 'Lowes Date'
+locked: false
+pattern: m-d-Y

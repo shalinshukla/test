@@ -1,0 +1,34 @@
+uuid: acd54d3b-e798-4e08-a64f-ec13a1cebd59
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.corp_event.field_all_day_event
+    - field.field.node.corp_event.field_dynamic_event_start_date
+    - field.field.node.corp_event.field_event_display_date
+    - field.field.node.corp_event.field_event_location
+    - field.field.node.corp_event.field_eventcontent_date
+    - field.field.node.corp_event.field_eventcontent_description
+    - node.type.corp_event
+  module:
+    - user
+id: node.corp_event.teaser
+targetEntityType: node
+bundle: corp_event
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_all_day_event: true
+  field_dynamic_event_start_date: true
+  field_event_display_date: true
+  field_event_location: true
+  field_eventcontent_date: true
+  field_eventcontent_description: true
+  langcode: true
+  search_api_excerpt: true

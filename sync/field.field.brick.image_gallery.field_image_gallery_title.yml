@@ -1,0 +1,24 @@
+uuid: 86e63e8b-1a37-4207-af8d-4643585937d5
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.image_gallery
+    - field.storage.brick.field_image_gallery_title
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.image_gallery.field_image_gallery_title
+field_name: field_image_gallery_title
+entity_type: brick
+bundle: image_gallery
+label: 'Image gallery title'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,76 @@
+uuid: 52c0595b-e2aa-4da8-b740-432d5b75a8ad
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.configurable_image
+    - field.field.brick.configurable_image.field_config_image_variation
+    - field.field.brick.configurable_image.field_image
+    - field.field.brick.configurable_image.field_image_description
+    - field.field.brick.configurable_image.field_image_title
+    - image.style.thumbnail
+  module:
+    - imce
+    - lightning_media
+    - svg_image
+id: brick.configurable_image.default
+targetEntityType: brick
+bundle: configurable_image
+mode: default
+content:
+  field_config_image_variation:
+    weight: 7
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_image:
+    weight: 3
+    settings:
+      preview_image_style: thumbnail
+      progress_indicator: throbber
+    third_party_settings:
+      imce:
+        enabled: true
+      lightning_media:
+        file_links: true
+        remove_button: true
+    type: image_image
+    region: content
+  field_image_description:
+    weight: 4
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_image_title:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

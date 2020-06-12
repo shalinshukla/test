@@ -1,0 +1,21 @@
+uuid: 8d7d86ee-0e10-46c5-90c3-156b0685364c
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+    - text
+_core:
+  default_config_hash: LgNaH3MgDjGZrXyHfDFtTEWGgulBCp7_G4kFew0AXPU
+id: brick.field_location_description
+field_name: field_location_description
+entity_type: brick
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

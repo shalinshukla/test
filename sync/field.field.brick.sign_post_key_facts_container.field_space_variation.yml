@@ -1,0 +1,25 @@
+uuid: 9e081531-292c-4a9c-9879-cf6e44869ea8
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.sign_post_key_facts_container
+    - field.storage.brick.field_space_variation
+  module:
+    - options
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: brick.sign_post_key_facts_container.field_space_variation
+field_name: field_space_variation
+entity_type: brick
+bundle: sign_post_key_facts_container
+label: 'Spacing Variation'
+description: 'Select margin class for spacing'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

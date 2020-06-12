@@ -1,0 +1,55 @@
+uuid: 6f318a77-4ebf-45ce-9bd7-16030dfa53ad
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.description_with_background
+    - field.field.brick.description_with_background.field_link
+    - field.field.brick.description_with_background.field_space_variations
+    - field.field.brick.description_with_background.field_title
+  module:
+    - link
+    - options
+id: brick.description_with_background.default
+targetEntityType: brick
+bundle: description_with_background
+mode: default
+content:
+  field_link:
+    weight: -3
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_space_variations:
+    weight: -2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_title:
+    weight: -4
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  title:
+    label: hidden
+    type: string
+    weight: -5
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  search_api_excerpt: true

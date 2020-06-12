@@ -1,0 +1,68 @@
+uuid: caf186f9-4851-4546-8c15-b4b3730351db
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.dynamic_content
+    - eck.eck_type.brick.image
+    - eck.eck_type.brick.layout
+    - eck.eck_type.brick.sign_post_email_signup
+    - eck.eck_type.brick.sign_post_event
+    - eck.eck_type.brick.sign_post_explore_image
+    - eck.eck_type.brick.sign_post_iframe
+    - eck.eck_type.brick.sign_post_image
+    - eck.eck_type.brick.sign_post_key_facts
+    - eck.eck_type.brick.sign_post_key_facts_container
+    - eck.eck_type.brick.sign_post_portfolio_carousel
+    - eck.eck_type.brick.sign_post_portfolio_slides
+    - eck.eck_type.brick.sign_post_quote
+    - eck.eck_type.brick.sign_post_social_post
+    - eck.eck_type.brick.wrapper
+    - field.storage.node.field_body
+    - node.type.page
+  module:
+    - brick_modal
+    - bricks
+    - content_translation
+    - tmgmt_content
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+  tmgmt_content:
+    excluded: false
+  brick_modal:
+    delete_referenced_entities: 0
+id: node.page.field_body
+field_name: field_body
+entity_type: node
+bundle: page
+label: Component
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:brick'
+  handler_settings:
+    target_bundles:
+      dynamic_content: dynamic_content
+      sign_post_iframe: sign_post_iframe
+      image: image
+      layout: layout
+      sign_post_email_signup: sign_post_email_signup
+      sign_post_event: sign_post_event
+      sign_post_explore_image: sign_post_explore_image
+      sign_post_image: sign_post_image
+      sign_post_key_facts: sign_post_key_facts
+      sign_post_key_facts_container: sign_post_key_facts_container
+      sign_post_portfolio_carousel: sign_post_portfolio_carousel
+      sign_post_portfolio_slides: sign_post_portfolio_slides
+      sign_post_quote: sign_post_quote
+      sign_post_social_post: sign_post_social_post
+      wrapper: wrapper
+    sort:
+      field: _none
+    auto_create: 0
+    auto_create_bundle: sign_post_iframe
+field_type: bricks

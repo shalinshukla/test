@@ -1,0 +1,27 @@
+uuid: 8c4ac8a1-ee05-4bab-af8a-f9e1cc292c64
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.sliding_banner
+    - field.storage.brick.field_banner_variation
+  module:
+    - content_translation
+    - options
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.sliding_banner.field_banner_variation
+field_name: field_banner_variation
+entity_type: brick
+bundle: sliding_banner
+label: 'Banner Variation'
+description: 'Select variation to be displayed'
+required: true
+translatable: true
+default_value:
+  -
+    value: variation-1
+default_value_callback: ''
+settings: {  }
+field_type: list_string

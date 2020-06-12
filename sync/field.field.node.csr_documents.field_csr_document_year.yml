@@ -1,0 +1,37 @@
+uuid: 185b5d3e-d25e-4ea0-9ce2-a7b1b57a87f6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_csr_document_year
+    - node.type.csr_documents
+    - taxonomy.vocabulary.csr_report_year
+  module:
+    - brick_modal
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+  brick_modal:
+    delete_referenced_entities: 0
+id: node.csr_documents.field_csr_document_year
+field_name: field_csr_document_year
+entity_type: node
+bundle: csr_documents
+label: 'CSR Document Year'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      csr_report_year: csr_report_year
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

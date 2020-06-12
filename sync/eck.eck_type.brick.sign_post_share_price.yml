@@ -1,0 +1,9 @@
+uuid: 7e5e4caf-0dc5-4822-8b04-41221fa3ba0d
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.brick
+name: 'Sign Post - Share Price'
+type: sign_post_share_price
+description: 'Sign Post component for Share price'

@@ -1,0 +1,24 @@
+uuid: 54e0930a-099c-4bdc-903f-7d25247bfb4f
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.media_library
+  module:
+    - content_translation
+    - path
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: node.media_library.path
+field_name: path
+entity_type: node
+bundle: media_library
+label: 'URL alias'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

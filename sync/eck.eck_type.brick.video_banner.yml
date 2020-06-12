@@ -1,0 +1,9 @@
+uuid: dc4f9274-3b25-4c5b-a340-304aa4fb1df3
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.brick
+name: 'Video Banner'
+type: video_banner
+description: 'Video banner to show video along with poster image in Page banner'

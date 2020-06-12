@@ -1,0 +1,28 @@
+uuid: a5b83fc9-7cd5-455d-aa17-ea93ea64f90b
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.map_office_details
+    - field.storage.brick.field_latitude
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.map_office_details.field_latitude
+field_name: field_latitude
+entity_type: brick
+bundle: map_office_details
+label: Latitude
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

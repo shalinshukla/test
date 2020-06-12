@@ -1,0 +1,25 @@
+uuid: 69d44825-ae64-4719-8a23-b08f9570ed4b
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.signpost_map
+    - field.storage.brick.field_map_theme
+  module:
+    - content_translation
+    - options
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.signpost_map.field_map_theme
+field_name: field_map_theme
+entity_type: brick
+bundle: signpost_map
+label: 'Map theme'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

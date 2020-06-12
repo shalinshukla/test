@@ -1,0 +1,33 @@
+uuid: cf25fcd3-3f3e-4c28-9d14-4da87062874e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pp_countries_as_string_1
+    - node.type.mid_disclaimer
+  enforced:
+    module:
+      - mid_disclaimer
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+_core:
+  default_config_hash: rA9NVj3s09yN-vKfez-CLQyIS15w4QGsgIT9tNinCCo
+id: node.mid_disclaimer.field_pp_countries_as_string_1
+field_name: field_pp_countries_as_string_1
+entity_type: node
+bundle: mid_disclaimer
+label: 'Render Physical presence countries as string 1'
+description: 'Check only if you want to show physical presence countries in string format.'
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'As string'
+  off_label: 'As select'
+field_type: boolean

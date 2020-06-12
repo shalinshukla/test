@@ -1,0 +1,9 @@
+uuid: f6f4ad9e-9a3f-4694-bf72-16f9871b5cb5
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.brick
+name: 'Table Columns'
+type: table_columns
+description: ''

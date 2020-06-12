@@ -1,0 +1,29 @@
+uuid: b1bed047-a2ed-4da5-889f-5056d2e09197
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:ac2908e7-4891-49a9-8b8c-3aadc818f147'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - project_bootstrap
+third_party_settings:
+  block_class:
+    classes: 'col-xs-12 col-sm-6 col-md-3'
+id: annualreport
+theme: project_bootstrap
+region: footer
+weight: -32
+provider: null
+plugin: 'block_content:ac2908e7-4891-49a9-8b8c-3aadc818f147'
+settings:
+  id: 'block_content:ac2908e7-4891-49a9-8b8c-3aadc818f147'
+  label: 'Annual Report'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

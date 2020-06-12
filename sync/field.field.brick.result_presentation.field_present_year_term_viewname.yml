@@ -1,0 +1,26 @@
+uuid: cf074d8e-9768-4597-8aa9-50ffe0455f2f
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.result_presentation
+    - field.storage.brick.field_present_year_term_viewname
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.result_presentation.field_present_year_term_viewname
+field_name: field_present_year_term_viewname
+entity_type: brick
+bundle: result_presentation
+label: 'Presentation Year Term View Display Name'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: block_1
+default_value_callback: ''
+settings: {  }
+field_type: string

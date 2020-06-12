@@ -1,0 +1,31 @@
+uuid: 6eea6165-314c-4aa3-b21d-43f2d0614da8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_custom_pdf
+    - node.type.us_press_release
+  module:
+    - file
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.us_press_release.field_custom_pdf
+field_name: field_custom_pdf
+entity_type: node
+bundle: us_press_release
+label: 'Custom PDF'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: pdf
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

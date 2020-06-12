@@ -1,0 +1,9 @@
+uuid: 39026354-39e9-4036-95bd-2a046fc00e45
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.brick
+name: 'Story Banner'
+type: story_banner
+description: 'To add the story as a banner'

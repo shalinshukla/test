@@ -1,0 +1,27 @@
+uuid: f1fbdf04-218d-4111-9028-36267dc152da
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.featured_content
+    - field.storage.brick.field_fc_text_alignment
+  module:
+    - content_translation
+    - options
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.featured_content.field_fc_text_alignment
+field_name: field_fc_text_alignment
+entity_type: brick
+bundle: featured_content
+label: 'Text alignment'
+description: 'Select alignment to position text content. By default, text alignment will be top.'
+required: false
+translatable: true
+default_value:
+  -
+    value: text-align-top
+default_value_callback: ''
+settings: {  }
+field_type: list_string

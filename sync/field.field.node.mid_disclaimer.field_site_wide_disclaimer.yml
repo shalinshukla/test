@@ -1,0 +1,33 @@
+uuid: 9cfba8e2-ba6b-4a23-bc68-eeedb80adc0a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_site_wide_disclaimer
+    - node.type.mid_disclaimer
+  enforced:
+    module:
+      - mid_disclaimer
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+_core:
+  default_config_hash: qqSehtMQXBQNnTXXsVxBg7RaYm1al-DKiPVqXNO6Y9s
+id: node.mid_disclaimer.field_site_wide_disclaimer
+field_name: field_site_wide_disclaimer
+entity_type: node
+bundle: mid_disclaimer
+label: 'Site wide Disclaimer'
+description: 'Check, if you want to apply the disclaimer as site wide.'
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Is site wide disclaimer'
+  off_label: 'Is site wide disclaimer'
+field_type: boolean

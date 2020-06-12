@@ -1,0 +1,49 @@
+uuid: 9de97524-2475-4aae-abca-e1c4c7cb8ec8
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.reference_block
+    - eck.eck_type.brick.banner_content
+    - eck.eck_type.brick.news_list
+    - eck.eck_type.brick.sign_post_event
+    - eck.eck_type.brick.sign_post_image
+    - eck.eck_type.brick.sign_post_news
+    - eck.eck_type.brick.sign_post_quote
+    - eck.eck_type.brick.sign_post_share_price
+    - field.storage.block_content.field_reference_block
+  module:
+    - brick_modal
+    - bricks
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+  brick_modal:
+    delete_referenced_entities: 0
+id: block_content.reference_block.field_reference_block
+field_name: field_reference_block
+entity_type: block_content
+bundle: reference_block
+label: 'Reference Block'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:brick'
+  handler_settings:
+    target_bundles:
+      banner_content: banner_content
+      news_list: news_list
+      sign_post_event: sign_post_event
+      sign_post_image: sign_post_image
+      sign_post_news: sign_post_news
+      sign_post_quote: sign_post_quote
+      sign_post_share_price: sign_post_share_price
+    sort:
+      field: _none
+    auto_create: 0
+    auto_create_bundle: sign_post_image
+field_type: bricks

@@ -1,0 +1,37 @@
+uuid: 4c5f2181-2b72-422e-8378-a2d56bcf8f27
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_story_and_news_author
+    - node.type.story_and_news
+    - taxonomy.vocabulary.story_and_news_author
+  module:
+    - brick_modal
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+  brick_modal:
+    delete_referenced_entities: 0
+id: node.story_and_news.field_story_and_news_author
+field_name: field_story_and_news_author
+entity_type: node
+bundle: story_and_news
+label: 'Story And News Author'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      story_and_news_author: story_and_news_author
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

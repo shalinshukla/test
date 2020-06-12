@@ -1,0 +1,23 @@
+uuid: 49959859-3ab3-443b-b12b-260b0c4c30eb
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.landing_page
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: node.landing_page.unpublish_on
+field_name: unpublish_on
+entity_type: node
+bundle: landing_page
+label: 'Unpublish on'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

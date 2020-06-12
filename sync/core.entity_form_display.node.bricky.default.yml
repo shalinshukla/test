@@ -1,0 +1,176 @@
+uuid: 4410b56c-74f4-40c3-8913-a8e76a076be2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.bricky.field_banner_reference
+    - field.field.node.bricky.field_body
+    - field.field.node.bricky.field_breadcrumb_in_banner
+    - field.field.node.bricky.field_landing_page
+    - field.field.node.bricky.field_meta_description
+    - field.field.node.bricky.field_meta_tags
+    - field.field.node.bricky.field_node_disclaimer
+    - node.type.bricky
+  module:
+    - brickex
+    - content_moderation
+    - metatag
+    - path
+    - scheduler
+_core:
+  default_config_hash: hj_dqkG2Wondg3RN_GoLWIcTmTWRdjlIVZ2VYYFz9Lc
+id: node.bricky.default
+targetEntityType: node
+bundle: bricky
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_banner_reference:
+    weight: 14
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_body:
+    weight: 17
+    settings:
+      form_mode: default
+      label_singular: ''
+      label_plural: ''
+      allow_new: '1'
+      allow_existing: '1'
+      match_operator: CONTAINS
+      override_labels: 0
+      collapsible: false
+      collapsed: false
+      allow_duplicate: false
+    third_party_settings: {  }
+    type: brickex_tree_inline
+    region: content
+  field_breadcrumb_in_banner:
+    weight: 2
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_landing_page:
+    weight: 1
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_meta_tags:
+    weight: 16
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_firehose
+    region: content
+  field_node_disclaimer:
+    weight: 18
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  id_class:
+    type: string_textfield
+    weight: 12
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 3
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  moderation_state:
+    weight: 15
+    settings: {  }
+    third_party_settings: {  }
+    type: moderation_state_default
+    region: content
+  path:
+    type: path
+    weight: 8
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 6
+    third_party_settings: {  }
+    region: content
+  publish_on:
+    type: datetime_timestamp_no_default
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  scheduled_publication:
+    type: datetime_default
+    weight: 20
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  scheduler_settings:
+    weight: 8
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 13
+    region: content
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 7
+    third_party_settings: {  }
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  translation:
+    weight: 9
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 4
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    third_party_settings: {  }
+    region: content
+  unpublish_on:
+    type: datetime_timestamp_no_default
+    weight: 11
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_meta_description: true

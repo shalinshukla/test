@@ -1,0 +1,21 @@
+uuid: bf75a9ef-d422-4c0b-af3c-be5801cbbcab
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_uspr_language
+    - node.type.us_press_release
+_core:
+  default_config_hash: orFgI5BodTzK8W7MBpm_XZ_gsCbvdkR_9r1JGT3hpZY
+id: node.us_press_release.field_uspr_language
+field_name: field_uspr_language
+entity_type: node
+bundle: us_press_release
+label: Language
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

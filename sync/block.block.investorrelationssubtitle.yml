@@ -1,0 +1,29 @@
+uuid: 0628991e-32f5-45cf-8215-2a295ad5807d
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:74bdf073-e027-4e07-9b7b-ec49c283b0e6'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - project_bootstrap
+third_party_settings:
+  block_class:
+    classes: ''
+id: investorrelationssubtitle
+theme: project_bootstrap
+region: hiddne_region
+weight: 0
+provider: null
+plugin: 'block_content:74bdf073-e027-4e07-9b7b-ec49c283b0e6'
+settings:
+  id: 'block_content:74bdf073-e027-4e07-9b7b-ec49c283b0e6'
+  label: 'Investor Relations subtitle'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

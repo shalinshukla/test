@@ -1,0 +1,29 @@
+uuid: 34a69f4f-5867-4a9c-8782-d5050f78f633
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.business-relations
+  module:
+    - block_class
+    - system
+  theme:
+    - project_bootstrap
+third_party_settings:
+  block_class:
+    classes: ''
+id: businessrelations
+theme: project_bootstrap
+region: footer_bottom
+weight: 0
+provider: null
+plugin: 'system_menu_block:business-relations'
+settings:
+  id: 'system_menu_block:business-relations'
+  label: 'Business Relations'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

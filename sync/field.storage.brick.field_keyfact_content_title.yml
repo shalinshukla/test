@@ -1,0 +1,21 @@
+uuid: 0c091706-e878-44e9-9ece-54ceb712b4ce
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+id: brick.field_keyfact_content_title
+field_name: field_keyfact_content_title
+entity_type: brick
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

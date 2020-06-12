@@ -1,0 +1,29 @@
+uuid: 9fca1e69-8581-4690-9976-1f29537302d3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.landing_page
+  module:
+    - content_translation
+    - text
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+_core:
+  default_config_hash: rucUkoeuSWIppIt6Yc0z6lvSs21vZoskeQohzXD_FTo
+id: node.landing_page.body
+field_name: body
+entity_type: node
+bundle: landing_page
+label: Description
+description: 'A description of this page, for use in teasers and lists of content.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

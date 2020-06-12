@@ -1,0 +1,27 @@
+uuid: 52f9668a-b103-4fd7-902b-c126aa379780
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - investis_bootstrap
+_core:
+  default_config_hash: GT_zYl7I9VAILH8OxMRe-VDvFadCDHxRcnmBc5xEmf0
+id: investis_bootstrap_main_menu
+theme: investis_bootstrap
+region: navigation
+weight: -5
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 4
+  expand_all_items: false
+visibility: {  }

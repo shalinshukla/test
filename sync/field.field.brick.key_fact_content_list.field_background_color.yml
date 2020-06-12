@@ -1,0 +1,25 @@
+uuid: bbed2a3c-b343-4ee6-a810-5b969e5fdebf
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.key_fact_content_list
+    - field.storage.brick.field_background_color
+  module:
+    - options
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: brick.key_fact_content_list.field_background_color
+field_name: field_background_color
+entity_type: brick
+bundle: key_fact_content_list
+label: 'Background Color'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

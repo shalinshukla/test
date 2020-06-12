@@ -1,0 +1,24 @@
+uuid: 0e3ae105-8cfd-4114-873c-2938d24ab35c
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.video_gallery
+    - field.storage.brick.field_video_gallery_title
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.video_gallery.field_video_gallery_title
+field_name: field_video_gallery_title
+entity_type: brick
+bundle: video_gallery
+label: 'Video gallery title'
+description: 'Provide title to be displayed in component'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,25 @@
+uuid: 6514a195-7a1e-43ac-8645-da87c21e2e74
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.sign_post_quote
+    - field.storage.brick.field_sp_quote_formatted
+  module:
+    - content_translation
+    - text
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.sign_post_quote.field_sp_quote_formatted
+field_name: field_sp_quote_formatted
+entity_type: brick
+bundle: sign_post_quote
+label: 'Quote text'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

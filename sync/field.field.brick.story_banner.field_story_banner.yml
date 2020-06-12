@@ -1,0 +1,33 @@
+uuid: 7b413dd8-d222-4a13-808d-202cad9337fc
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.story_banner
+    - field.storage.brick.field_story_banner
+  module:
+    - brick_modal
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+  brick_modal:
+    delete_referenced_entities: 0
+id: brick.story_banner.field_story_banner
+field_name: field_story_banner
+entity_type: brick
+bundle: story_banner
+label: 'Story Banner'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: story_news_banner
+      display_name: entity_reference_1
+      arguments: {  }
+field_type: entity_reference

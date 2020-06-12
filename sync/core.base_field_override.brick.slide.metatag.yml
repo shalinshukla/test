@@ -1,0 +1,23 @@
+uuid: cc7b739a-5de4-41bc-bfd6-235e6306cda6
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.slide
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.slide.metatag
+field_name: metatag
+entity_type: brick
+bundle: slide
+label: Metatags
+description: 'The metatags for the entity.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

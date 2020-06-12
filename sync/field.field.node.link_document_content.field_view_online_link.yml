@@ -1,0 +1,39 @@
+uuid: 7fd43a35-f78d-47ad-964f-216bfe36c8a7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_view_online_link
+    - node.type.link_document_content
+  module:
+    - content_translation
+    - link
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: node.link_document_content.field_view_online_link
+field_name: field_view_online_link
+entity_type: node
+bundle: link_document_content
+label: 'View online link'
+description: "<p>Uploading file size limit is 10mb.</p><p>To display tooltip, you can use the title field in attributes</p><p>Link text field can be configured with custom text or provided attributes in attributes section</p>\r\n"
+required: false
+translatable: true
+default_value:
+  -
+    attributes:
+      title: 'Open in new window'
+      target: _blank
+      class: link-online
+    uri: 'internal:/'
+    options:
+      attributes:
+        title: 'Open in new window'
+        target: _blank
+        class: link-online
+    title: 'View online'
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

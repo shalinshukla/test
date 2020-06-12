@@ -1,0 +1,29 @@
+uuid: deee0e1b-27d4-4344-8141-704c11ad645e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_description
+    - node.type.mid_disclaimer
+  enforced:
+    module:
+      - mid_disclaimer
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+_core:
+  default_config_hash: Usm7uth_AymJbgUpJVxdIV8LavUksOnUC-dk43MNeKE
+id: node.mid_disclaimer.field_description
+field_name: field_description
+entity_type: node
+bundle: mid_disclaimer
+label: Description
+description: 'The Description of the Mid Disclaimer entity.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

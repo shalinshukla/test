@@ -1,0 +1,23 @@
+uuid: d18bf208-da26-45db-8db0-b63b6903ef83
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.landing_page
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: node.landing_page.publish_on
+field_name: publish_on
+entity_type: node
+bundle: landing_page
+label: 'Publish on'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

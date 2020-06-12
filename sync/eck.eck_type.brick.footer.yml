@@ -1,0 +1,9 @@
+uuid: 55297c20-064b-481d-a13b-6ba83850a92e
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.brick
+name: footer
+type: footer
+description: 'footer component  containing the menus links and email signup etc'

@@ -1,0 +1,28 @@
+uuid: 06715415-05e0-45a9-82c2-56c76cb3ed17
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.video_banner
+    - field.storage.brick.field_is_banner
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.video_banner.field_is_banner
+field_name: field_is_banner
+entity_type: brick
+bundle: video_banner
+label: 'Is Banner'
+description: 'To specify whether player is Banner Player. In general case Banner Player doesn’t have Video Player Controls.'
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'True'
+  off_label: 'False'
+field_type: boolean

@@ -1,0 +1,23 @@
+uuid: 7a9c1972-e7b3-4527-bb51-752cf05af87e
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.wrapper
+_core:
+  default_config_hash: YJilc_WIupltLTvb8_SlHNkoPkfERN9De_v1CEie_T8
+id: brick.wrapper.default
+targetEntityType: brick
+bundle: wrapper
+mode: default
+content:
+  title:
+    type: string
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  langcode: true

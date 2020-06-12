@@ -1,0 +1,79 @@
+uuid: c7096fea-28dc-4f69-a787-57d673ff379d
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.investis_branding
+    - field.field.block_content.investis_branding.field_icon
+    - field.field.block_content.investis_branding.field_link_branding
+    - image.style.thumbnail
+  module:
+    - content_moderation
+    - image
+    - imce
+    - lightning_media
+    - link_ex
+id: block_content.investis_branding.default
+targetEntityType: block_content
+bundle: investis_branding
+mode: default
+content:
+  field_icon:
+    type: image_image
+    weight: 1
+    settings:
+      preview_image_style: thumbnail
+      progress_indicator: throbber
+    region: content
+    third_party_settings:
+      imce:
+        enabled: true
+      lightning_media:
+        remove_button: true
+        file_links: false
+  field_link_branding:
+    weight: 2
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+      enabled_attributes:
+        title: title
+        target: target
+        class: class
+        id: 0
+        rel: 0
+        name: 0
+        accesskey: 0
+        download: 0
+        imce: 0
+        imce_private: 0
+    third_party_settings: {  }
+    type: link_ex
+    region: content
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 3
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  moderation_state:
+    type: moderation_state_default
+    weight: 4
+    settings: {  }
+    region: content
+    third_party_settings: {  }
+  translation:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

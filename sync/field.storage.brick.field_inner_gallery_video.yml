@@ -1,0 +1,20 @@
+uuid: 61756189-2918-4ccd-a199-a0c843ef5105
+langcode: en
+status: true
+dependencies:
+  module:
+    - bricks
+    - eck
+id: brick.field_inner_gallery_video
+field_name: field_inner_gallery_video
+entity_type: brick
+type: bricks
+settings:
+  target_type: brick
+module: bricks
+locked: false
+cardinality: 4
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

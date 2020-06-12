@@ -1,0 +1,23 @@
+uuid: d660ab15-cc05-41ad-843e-aa5a04a99756
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.sign_post_event
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.sign_post_event.metatag
+field_name: metatag
+entity_type: brick
+bundle: sign_post_event
+label: Metatags
+description: 'The metatags for the entity.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

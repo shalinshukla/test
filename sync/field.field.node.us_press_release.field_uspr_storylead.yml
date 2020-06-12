@@ -1,0 +1,25 @@
+uuid: b9987e3b-eeae-4fb7-bd0c-1f2e526b4f08
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_uspr_storylead
+    - node.type.us_press_release
+  module:
+    - text
+_core:
+  default_config_hash: 8ques4rm7Amc4FVCscDRjv6KaAvRmjla6RBURz1XmjY
+id: node.us_press_release.field_uspr_storylead
+field_name: field_uspr_storylead
+entity_type: node
+bundle: us_press_release
+label: StoryLead
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

@@ -1,0 +1,25 @@
+uuid: 3dfbd7ea-d790-43c1-9095-dd7738c45fc9
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.video_gallery
+    - field.storage.brick.field_vgallery_data_type
+  module:
+    - content_translation
+    - options
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.video_gallery.field_vgallery_data_type
+field_name: field_vgallery_data_type
+entity_type: brick
+bundle: video_gallery
+label: 'Data Type/Source'
+description: 'To specify Type of Data / Video Source'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

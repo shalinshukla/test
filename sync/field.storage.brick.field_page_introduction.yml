@@ -1,0 +1,18 @@
+uuid: 2287d153-85dc-409d-bd1a-526032f29c7b
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+id: brick.field_page_introduction
+field_name: field_page_introduction
+entity_type: brick
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

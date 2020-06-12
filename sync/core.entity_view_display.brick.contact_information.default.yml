@@ -1,0 +1,33 @@
+uuid: 2ae39406-f2e4-478d-8fac-dd73a7964398
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.contact_information
+    - field.field.brick.contact_information.field_contact_info
+  module:
+    - bricks
+id: brick.contact_information.default
+targetEntityType: brick
+bundle: contact_information
+mode: default
+content:
+  field_contact_info:
+    weight: -4
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    type: bricks_nested
+    region: content
+  title:
+    label: hidden
+    type: string
+    weight: -5
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  langcode: true

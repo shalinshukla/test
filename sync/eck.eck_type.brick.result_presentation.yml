@@ -1,0 +1,9 @@
+uuid: d45dca46-27d5-4271-a810-1b655902e6b1
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.brick
+name: Result/Presentation
+type: result_presentation
+description: ''

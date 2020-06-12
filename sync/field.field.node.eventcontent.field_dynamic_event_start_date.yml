@@ -1,0 +1,28 @@
+uuid: 4efd016b-f8ae-4692-a1c1-462fb7db37e5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_dynamic_event_start_date
+    - node.type.eventcontent
+  module:
+    - content_translation
+    - datetime
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: node.eventcontent.field_dynamic_event_start_date
+field_name: field_dynamic_event_start_date
+entity_type: node
+bundle: eventcontent
+label: 'Event start date'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

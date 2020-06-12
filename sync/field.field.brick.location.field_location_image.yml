@@ -1,0 +1,47 @@
+uuid: 7e030ebd-9d9a-4d30-962e-564984bb29f8
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.location
+    - field.storage.brick.field_location_image
+  module:
+    - content_translation
+    - image
+third_party_settings:
+  content_translation:
+    translation_sync:
+      file: file
+      alt: alt
+      title: title
+_core:
+  default_config_hash: WKhtNOG-w090eBdtneNvJyeWmMKodEw3zj6O-4dqSOs
+id: brick.location.field_location_image
+field_name: field_location_image
+entity_type: brick
+bundle: location
+label: Image
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: 'location/[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: fdfe7534-f038-4df3-bd8b-66053f0dd492
+    alt: ''
+    title: ''
+    width: 640
+    height: 480
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

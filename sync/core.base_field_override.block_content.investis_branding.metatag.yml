@@ -1,0 +1,18 @@
+uuid: e4eb4348-bce8-48ab-a775-c42c00584ed4
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.investis_branding
+id: block_content.investis_branding.metatag
+field_name: metatag
+entity_type: block_content
+bundle: investis_branding
+label: Metatags
+description: 'The metatags for the entity.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

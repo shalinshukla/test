@@ -1,0 +1,95 @@
+uuid: 91dff0ec-3d77-421d-b8ad-541ef79844f5
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.sign_post_email_signup
+    - field.field.brick.sign_post_email_signup.field_display_variation
+    - field.field.brick.sign_post_email_signup.field_email_signup_back_image
+    - field.field.brick.sign_post_email_signup.field_email_validation_message
+    - field.field.brick.sign_post_email_signup.field_signup_submit_button_value
+    - field.field.brick.sign_post_email_signup.field_sp_email_input_value
+    - field.field.brick.sign_post_email_signup.field_sp_email_su_sub_title
+    - field.field.brick.sign_post_email_signup.field_sp_email_up_frame_url
+    - field.field.brick.sign_post_email_signup.field_sp_signup_title
+  module:
+    - image
+    - link
+id: brick.sign_post_email_signup.default
+targetEntityType: brick
+bundle: sign_post_email_signup
+mode: default
+content:
+  field_display_variation:
+    weight: 7
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_email_signup_back_image:
+    weight: 6
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_signup_submit_button_value:
+    weight: 5
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_sp_email_su_sub_title:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_sp_email_up_frame_url:
+    weight: 3
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_sp_signup_title:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  langcode:
+    type: language
+    weight: 4
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+      native_language: false
+    third_party_settings: {  }
+  title:
+    label: hidden
+    type: string
+    weight: 0
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  field_email_validation_message: true
+  field_sp_email_input_value: true

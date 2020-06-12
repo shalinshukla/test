@@ -1,0 +1,37 @@
+uuid: e0896de8-b613-4983-a331-a2e8c2963875
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_story_news_year_category
+    - node.type.story_and_news
+    - taxonomy.vocabulary.story_year
+  module:
+    - brick_modal
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+  brick_modal:
+    delete_referenced_entities: 0
+id: node.story_and_news.field_story_news_year_category
+field_name: field_story_news_year_category
+entity_type: node
+bundle: story_and_news
+label: 'Story/News Year Category'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      story_year: story_year
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

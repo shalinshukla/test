@@ -1,0 +1,36 @@
+uuid: 9838f44c-1f76-4ea8-94d2-119753d35aaf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_related_articles
+    - node.type.corporate_article
+    - node.type.people
+  module:
+    - brick_modal
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+  brick_modal:
+    delete_referenced_entities: 0
+id: node.people.field_related_articles
+field_name: field_related_articles
+entity_type: node
+bundle: people
+label: 'Related Articles'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      corporate_article: corporate_article
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

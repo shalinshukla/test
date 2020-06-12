@@ -1,0 +1,17 @@
+uuid: 9ce2b1f1-569c-4c56-a3ed-01c80ed8cf97
+langcode: en
+status: true
+dependencies: {  }
+id: draft_to_review_mail
+workflow: editorial
+transitions:
+  draft_to_review: draft_to_review
+roles:
+  bricky_reviewer: bricky_reviewer
+author: false
+emails: ''
+subject: '[node:title] for review '
+body:
+  value: "Hi Reviewer,<br />\r\n<br />\r\nContent \" [node:title] \" has been added for your review. Please review by clicking on url - [node:url]<br />\r\n<br />\r\nThanks\r\n"
+  format: basic_html
+label: 'Draft to review mail'

@@ -1,0 +1,24 @@
+uuid: c3614bd2-14c9-4f9a-add7-16d9d9cb6aab
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.dynamic_content
+    - field.storage.brick.field_display_name
+  module:
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: brick.dynamic_content.field_display_name
+field_name: field_display_name
+entity_type: brick
+bundle: dynamic_content
+label: 'Display Name'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

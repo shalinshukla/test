@@ -1,0 +1,27 @@
+uuid: 8bb183ef-f0ce-4464-9011-5a3b0538479b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_page_private_file
+    - node.type.page
+  module:
+    - content_translation
+    - link
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: node.page.field_page_private_file
+field_name: field_page_private_file
+entity_type: node
+bundle: page
+label: 'Page File or Link'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

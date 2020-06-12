@@ -1,0 +1,41 @@
+uuid: 6bf2194d-b50e-4c8c-9824-1b578e6d504a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_story_news_category
+    - node.type.story_and_news
+    - taxonomy.vocabulary.story_and_news_category
+  content:
+    - 'taxonomy_term:story_and_news_category:5e6d6dbf-7ec0-402f-820d-0c7e38cd7178'
+  module:
+    - brick_modal
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+  brick_modal:
+    delete_referenced_entities: 0
+id: node.story_and_news.field_story_news_category
+field_name: field_story_news_category
+entity_type: node
+bundle: story_and_news
+label: 'Story/News Category'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    target_uuid: 5e6d6dbf-7ec0-402f-820d-0c7e38cd7178
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      story_and_news_category: story_and_news_category
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

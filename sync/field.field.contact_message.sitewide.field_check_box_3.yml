@@ -1,0 +1,23 @@
+uuid: 30c7ddbf-4547-4ade-b349-0c8fedb8cb26
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.sitewide
+    - field.storage.contact_message.field_check_box_3
+id: contact_message.sitewide.field_check_box_3
+field_name: field_check_box_3
+entity_type: contact_message
+bundle: sitewide
+label: 'Check box 3'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

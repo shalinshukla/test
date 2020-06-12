@@ -1,0 +1,151 @@
+uuid: 657feba2-66a6-4a07-a791-4d5aa6c05ff7
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.banner_content
+    - eck.eck_type.brick.call_to_action
+    - eck.eck_type.brick.configurable_image
+    - eck.eck_type.brick.configurable_text
+    - eck.eck_type.brick.contact_information
+    - eck.eck_type.brick.contact_sign_post
+    - eck.eck_type.brick.content_with_two_static_box
+    - eck.eck_type.brick.description_with_background
+    - eck.eck_type.brick.document_download
+    - eck.eck_type.brick.dynamic_block_contents
+    - eck.eck_type.brick.dynamic_content
+    - eck.eck_type.brick.external_feeds
+    - eck.eck_type.brick.featured_content
+    - eck.eck_type.brick.financial_calendar
+    - eck.eck_type.brick.footer
+    - eck.eck_type.brick.gallery_slide
+    - eck.eck_type.brick.history
+    - eck.eck_type.brick.image
+    - eck.eck_type.brick.image_gallery
+    - eck.eck_type.brick.infographic
+    - eck.eck_type.brick.key_fact_content_list
+    - eck.eck_type.brick.layout
+    - eck.eck_type.brick.location_list
+    - eck.eck_type.brick.media
+    - eck.eck_type.brick.news_item_full_width
+    - eck.eck_type.brick.news_list
+    - eck.eck_type.brick.news_room_text_only
+    - eck.eck_type.brick.newsroom
+    - eck.eck_type.brick.people
+    - eck.eck_type.brick.photo_gallery
+    - eck.eck_type.brick.press_release_banner
+    - eck.eck_type.brick.quick_links
+    - eck.eck_type.brick.quote_full_width
+    - eck.eck_type.brick.result_presentation
+    - eck.eck_type.brick.sign_post_email_signup
+    - eck.eck_type.brick.sign_post_event
+    - eck.eck_type.brick.sign_post_explore_image
+    - eck.eck_type.brick.sign_post_iframe
+    - eck.eck_type.brick.sign_post_image
+    - eck.eck_type.brick.sign_post_key_facts_container
+    - eck.eck_type.brick.sign_post_news
+    - eck.eck_type.brick.sign_post_portfolio_carousel
+    - eck.eck_type.brick.sign_post_quote
+    - eck.eck_type.brick.sign_post_share_price
+    - eck.eck_type.brick.sign_post_social_post
+    - eck.eck_type.brick.signpost_map
+    - eck.eck_type.brick.slider
+    - eck.eck_type.brick.sliding_banner
+    - eck.eck_type.brick.story_banner
+    - eck.eck_type.brick.tab_layout_group
+    - eck.eck_type.brick.table_module
+    - eck.eck_type.brick.text
+    - eck.eck_type.brick.video
+    - eck.eck_type.brick.video_banner
+    - eck.eck_type.brick.video_gallery
+    - eck.eck_type.brick.webform_
+    - eck.eck_type.brick.wrapper
+    - field.storage.node.field_body
+    - node.type.bricky
+  module:
+    - brick_modal
+    - bricks
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+  brick_modal:
+    delete_referenced_entities: 0
+_core:
+  default_config_hash: gxzTSPk2lDuzWVpIDfpQFeUqlZ8ZmM9EN-W_StPYKvg
+id: node.bricky.field_body
+field_name: field_body
+entity_type: node
+bundle: bricky
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:brick'
+  handler_settings:
+    target_bundles:
+      banner_content: banner_content
+      call_to_action: call_to_action
+      configurable_image: configurable_image
+      configurable_text: configurable_text
+      contact_information: contact_information
+      contact_sign_post: contact_sign_post
+      content_with_two_static_box: content_with_two_static_box
+      description_with_background: description_with_background
+      document_download: document_download
+      dynamic_block_contents: dynamic_block_contents
+      dynamic_content: dynamic_content
+      external_feeds: external_feeds
+      featured_content: featured_content
+      financial_calendar: financial_calendar
+      gallery_slide: gallery_slide
+      history: history
+      sign_post_iframe: sign_post_iframe
+      image: image
+      image_gallery: image_gallery
+      infographic: infographic
+      key_fact_content_list: key_fact_content_list
+      layout: layout
+      news_list: news_list
+      location_list: location_list
+      media: media
+      news_item_full_width: news_item_full_width
+      newsroom: newsroom
+      news_room_text_only: news_room_text_only
+      people: people
+      photo_gallery: photo_gallery
+      press_release_banner: press_release_banner
+      quick_links: quick_links
+      quote_full_width: quote_full_width
+      result_presentation: result_presentation
+      sign_post_email_signup: sign_post_email_signup
+      sign_post_event: sign_post_event
+      sign_post_explore_image: sign_post_explore_image
+      sign_post_image: sign_post_image
+      sign_post_key_facts_container: sign_post_key_facts_container
+      sign_post_news: sign_post_news
+      sign_post_portfolio_carousel: sign_post_portfolio_carousel
+      sign_post_quote: sign_post_quote
+      sign_post_share_price: sign_post_share_price
+      sign_post_social_post: sign_post_social_post
+      video: video
+      signpost_map: signpost_map
+      slider: slider
+      sliding_banner: sliding_banner
+      story_banner: story_banner
+      tab_layout_group: tab_layout_group
+      table_module: table_module
+      text: text
+      video_banner: video_banner
+      video_gallery: video_gallery
+      webform_: webform_
+      wrapper: wrapper
+      footer: footer
+    sort:
+      field: _none
+    auto_create: 0
+    auto_create_bundle: text
+field_type: bricks

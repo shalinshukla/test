@@ -1,0 +1,29 @@
+uuid: 31de5b0f-3e85-45b8-94cb-5c64b143bc6e
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.who-we-are
+  module:
+    - block_class
+    - system
+  theme:
+    - project_bootstrap
+third_party_settings:
+  block_class:
+    classes: ''
+id: whoweare
+theme: project_bootstrap
+region: footer_bottom
+weight: 0
+provider: null
+plugin: 'system_menu_block:who-we-are'
+settings:
+  id: 'system_menu_block:who-we-are'
+  label: 'Who we are'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

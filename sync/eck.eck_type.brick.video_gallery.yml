@@ -1,0 +1,9 @@
+uuid: 0f80b94a-6906-41c9-a6ef-2b9ca05e9c86
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.brick
+name: 'Video Gallery'
+type: video_gallery
+description: 'Video Gallery container for video component'

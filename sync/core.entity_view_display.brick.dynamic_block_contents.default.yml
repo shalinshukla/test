@@ -1,0 +1,25 @@
+uuid: 278589c6-ccb1-4f28-8870-d8d99992ecc6
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.dynamic_block_contents
+    - field.field.brick.dynamic_block_contents.field_block_reference
+id: brick.dynamic_block_contents.default
+targetEntityType: brick
+bundle: dynamic_block_contents
+mode: default
+content:
+  field_block_reference:
+    weight: 0
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true
+  title: true

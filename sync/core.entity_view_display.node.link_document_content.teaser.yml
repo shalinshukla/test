@@ -1,0 +1,33 @@
+uuid: 81b009ff-4c26-490f-86e4-faa063c4da02
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.link_document_content.field_download_content_link
+    - field.field.node.link_document_content.field_ld_display_date
+    - field.field.node.link_document_content.field_link_document_date
+    - field.field.node.link_document_content.field_pr_category
+    - field.field.node.link_document_content.field_result_category
+    - field.field.node.link_document_content.field_view_online_link
+    - node.type.link_document_content
+  module:
+    - user
+id: node.link_document_content.teaser
+targetEntityType: node
+bundle: link_document_content
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_download_content_link: true
+  field_ld_display_date: true
+  field_link_document_date: true
+  field_pr_category: true
+  field_result_category: true
+  field_view_online_link: true
+  langcode: true

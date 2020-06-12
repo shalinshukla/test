@@ -1,0 +1,29 @@
+uuid: 0d003b7c-f1f3-4252-9998-f4510e0696c3
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:1d405def-489f-404c-adaa-8db1b2410edb'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - project_bootstrap
+third_party_settings:
+  block_class:
+    classes: 'col-xs-12 col-sm-12 col-md-3'
+id: footerlogo
+theme: project_bootstrap
+region: footer
+weight: -35
+provider: null
+plugin: 'block_content:1d405def-489f-404c-adaa-8db1b2410edb'
+settings:
+  id: 'block_content:1d405def-489f-404c-adaa-8db1b2410edb'
+  label: 'Footer Logo'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

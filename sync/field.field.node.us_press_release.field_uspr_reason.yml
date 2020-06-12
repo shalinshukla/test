@@ -1,0 +1,21 @@
+uuid: 8d701ea3-b027-46c0-a2f8-abe81518e99b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_uspr_reason
+    - node.type.us_press_release
+_core:
+  default_config_hash: vSA_d5GT2TxR90HeaeJSvvmm3eRTt-LQuxe6V7Gt8bQ
+id: node.us_press_release.field_uspr_reason
+field_name: field_uspr_reason
+entity_type: node
+bundle: us_press_release
+label: Reason
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

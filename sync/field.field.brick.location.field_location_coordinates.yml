@@ -1,0 +1,27 @@
+uuid: 7f953a53-4f4c-4de3-9573-8de97a436197
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.location
+    - field.storage.brick.field_location_coordinates
+  module:
+    - content_translation
+    - geolocation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+_core:
+  default_config_hash: f5yklbKj9-TfbosvroPUY3WdPK_r_ZCxd1_G4DWeZ-M
+id: brick.location.field_location_coordinates
+field_name: field_location_coordinates
+entity_type: brick
+bundle: location
+label: Coordinates
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: geolocation

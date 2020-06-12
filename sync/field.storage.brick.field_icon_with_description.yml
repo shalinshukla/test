@@ -1,0 +1,20 @@
+uuid: da77f99f-9d27-44df-92be-7f92b32fdd7b
+langcode: en
+status: true
+dependencies:
+  module:
+    - bricks
+    - eck
+id: brick.field_icon_with_description
+field_name: field_icon_with_description
+entity_type: brick
+type: bricks
+settings:
+  target_type: brick
+module: bricks
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

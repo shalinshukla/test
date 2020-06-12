@@ -1,0 +1,25 @@
+uuid: 0a9b6691-8314-4f52-a3b1-ebd0de5e7100
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - investis_bootstrap_t2
+id: investis_bootstrap_t2_pagetitle
+theme: investis_bootstrap_t2
+region: content
+weight: -11
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: "/node/46\r\n/fr/node/46\r\n<front>\r\n/media-gallery"
+    negate: true
+    context_mapping: {  }

@@ -1,0 +1,25 @@
+uuid: 26506f2b-d1d8-4199-b369-172059b5da98
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.key_fact_content
+    - field.storage.brick.field_keyfact_cont_description
+  module:
+    - text
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: brick.key_fact_content.field_keyfact_cont_description
+field_name: field_keyfact_cont_description
+entity_type: brick
+bundle: key_fact_content
+label: Description
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

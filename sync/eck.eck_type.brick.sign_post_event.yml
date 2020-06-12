@@ -1,0 +1,9 @@
+uuid: b5a8aff5-e66e-4743-9cab-dd8051cb6f68
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.brick
+name: 'Sign Post - Event'
+type: sign_post_event
+description: 'Sign Post component for Event'

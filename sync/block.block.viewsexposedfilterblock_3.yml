@@ -1,0 +1,39 @@
+uuid: be4d4a57-b380-4189-b270-bd202b0fb83f
+langcode: en
+status: false
+dependencies:
+  module:
+    - block_class
+    - ctools
+    - system
+    - views_exposed_filter_blocks
+  theme:
+    - project_bootstrap
+third_party_settings:
+  block_class:
+    classes: job-filter-box
+id: viewsexposedfilterblock_3
+theme: project_bootstrap
+region: content
+weight: -17
+provider: null
+plugin: views_exposed_filter_blocks_block
+settings:
+  id: views_exposed_filter_blocks_block
+  label: 'Views exposed filter block'
+  provider: views_exposed_filter_blocks
+  label_display: '0'
+  view_display: 'job_list_view:block_1'
+visibility:
+  request_path:
+    id: request_path
+    pages: "<front>\r\n/node/571\r\n/node/2327\r\n/node/569\r\n/node/58747\r\n/node/58784"
+    negate: true
+    context_mapping: {  }
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      bricky: bricky
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

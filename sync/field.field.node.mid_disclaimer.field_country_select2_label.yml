@@ -1,0 +1,31 @@
+uuid: bc5eeace-6c35-4497-9d89-c198f27fedc0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_country_select2_label
+    - node.type.mid_disclaimer
+  enforced:
+    module:
+      - mid_disclaimer
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+_core:
+  default_config_hash: i3WumGrDscwASs5JozYLHHiqFjpyZSJw3UYgCYUoH5s
+id: node.mid_disclaimer.field_country_select2_label
+field_name: field_country_select2_label
+entity_type: node
+bundle: mid_disclaimer
+label: 'Physical presence select label'
+description: 'Please add the label for physical presence country select box.'
+required: true
+translatable: true
+default_value:
+  -
+    value: 'Please select your physical presence country'
+default_value_callback: ''
+settings: {  }
+field_type: string

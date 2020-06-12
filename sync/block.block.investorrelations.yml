@@ -1,0 +1,29 @@
+uuid: 269a4742-aa92-4422-80d1-76cf2535bfbc
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.investor-relations
+  module:
+    - block_class
+    - system
+  theme:
+    - project_bootstrap
+third_party_settings:
+  block_class:
+    classes: ''
+id: investorrelations
+theme: project_bootstrap
+region: footer_bottom
+weight: 0
+provider: null
+plugin: 'system_menu_block:investor-relations'
+settings:
+  id: 'system_menu_block:investor-relations'
+  label: 'Investor Relations'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

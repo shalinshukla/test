@@ -1,0 +1,7 @@
+uuid: 551fa43c-d55a-4522-bf85-2388e469517f
+langcode: en
+status: true
+dependencies: {  }
+id: view_structure_menu
+label: 'View structure menu'
+route: system.admin_structure

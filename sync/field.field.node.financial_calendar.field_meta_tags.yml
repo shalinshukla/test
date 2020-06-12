@@ -1,0 +1,27 @@
+uuid: e5c802d2-8ff9-4d98-b0c4-43d6f03627bd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_meta_tags
+    - node.type.financial_calendar
+  module:
+    - content_translation
+    - metatag
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: node.financial_calendar.field_meta_tags
+field_name: field_meta_tags
+entity_type: node
+bundle: financial_calendar
+label: 'Meta tags'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 'a:0:{}'
+default_value_callback: ''
+settings: {  }
+field_type: metatag

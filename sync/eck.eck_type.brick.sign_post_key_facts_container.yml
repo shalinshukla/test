@@ -1,0 +1,9 @@
+uuid: 35c92f46-1513-4651-b22e-282f98bc03f3
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.brick
+name: 'Sign Post - Key facts'
+type: sign_post_key_facts_container
+description: 'Sign Post - Key facts Container for key facts fields component'

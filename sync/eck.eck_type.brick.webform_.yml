@@ -1,0 +1,9 @@
+uuid: 21b829d0-39e1-4b2e-bf34-ac10c69ff0f1
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.brick
+name: Webform
+type: webform_
+description: 'Add webform reference'

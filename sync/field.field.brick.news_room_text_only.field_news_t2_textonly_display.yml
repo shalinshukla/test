@@ -1,0 +1,26 @@
+uuid: 5a235ef3-4fcb-417a-8760-a88bfa66e9d8
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.news_room_text_only
+    - field.storage.brick.field_news_t2_textonly_display
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.news_room_text_only.field_news_t2_textonly_display
+field_name: field_news_t2_textonly_display
+entity_type: brick
+bundle: news_room_text_only
+label: 'Newsroom textonly display (T2)'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: default
+default_value_callback: ''
+settings: {  }
+field_type: string

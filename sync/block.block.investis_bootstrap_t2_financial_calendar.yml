@@ -1,0 +1,25 @@
+uuid: be774099-7f02-4462-b7e6-d590c890367d
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - investis_bootstrap_t2
+id: investis_bootstrap_t2_financial_calendar
+theme: investis_bootstrap_t2
+region: content
+weight: 0
+provider: null
+plugin: 'mid_url_proxy:1'
+settings:
+  id: 'mid_url_proxy:1'
+  label: 'Financial calendar'
+  provider: mid_url_proxy
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    pages: /node/195
+    negate: false
+    context_mapping: {  }

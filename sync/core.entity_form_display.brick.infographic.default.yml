@@ -1,0 +1,112 @@
+uuid: 83d837c8-8cc6-41b1-ad90-ab902ad85f4c
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.infographic
+    - field.field.brick.infographic.field_display_variation
+    - field.field.brick.infographic.field_info_component_title
+    - field.field.brick.infographic.field_info_description
+    - field.field.brick.infographic.field_infographic_image
+    - field.field.brick.infographic.field_share_on_email
+    - field.field.brick.infographic.field_share_on_facebook
+    - field.field.brick.infographic.field_share_on_linkedin
+    - field.field.brick.infographic.field_share_on_twitter
+    - image.style.thumbnail
+  module:
+    - image
+    - imce
+    - lightning_media
+id: brick.infographic.default
+targetEntityType: brick
+bundle: infographic
+mode: default
+content:
+  field_display_variation:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_info_component_title:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_info_description:
+    weight: 5
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_infographic_image:
+    type: image_image
+    weight: 6
+    settings:
+      preview_image_style: thumbnail
+      progress_indicator: throbber
+    region: content
+    third_party_settings:
+      imce:
+        enabled: true
+      lightning_media:
+        file_links: true
+        remove_button: true
+  field_share_on_email:
+    weight: 10
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_share_on_facebook:
+    weight: 7
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_share_on_linkedin:
+    weight: 8
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_share_on_twitter:
+    weight: 9
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

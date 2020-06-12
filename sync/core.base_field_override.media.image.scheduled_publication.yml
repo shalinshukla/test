@@ -1,0 +1,20 @@
+uuid: acef36be-8d1d-4921-9f2e-637af4e91c86
+langcode: fr
+status: true
+dependencies:
+  config:
+    - media.type.image
+  module:
+    - datetime
+id: media.image.scheduled_publication
+field_name: scheduled_publication
+entity_type: media
+bundle: image
+label: 'Scheduled publication'
+description: 'A date and time when the moderation state should be changed automatically.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

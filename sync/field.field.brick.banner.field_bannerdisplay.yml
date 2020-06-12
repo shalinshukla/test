@@ -1,0 +1,28 @@
+uuid: 57fcbb5c-8948-4a75-a6cf-8979c10f6dd5
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.banner
+    - field.storage.brick.field_bannerdisplay
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.banner.field_bannerdisplay
+field_name: field_bannerdisplay
+entity_type: brick
+bundle: banner
+label: 'Banner Display'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

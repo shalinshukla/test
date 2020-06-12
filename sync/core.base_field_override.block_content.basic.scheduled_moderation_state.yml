@@ -1,0 +1,18 @@
+uuid: 3d7d564a-ac42-4311-b6d7-2801d706b9d8
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.basic
+id: block_content.basic.scheduled_moderation_state
+field_name: scheduled_moderation_state
+entity_type: block_content
+bundle: basic
+label: 'Scheduled moderation state'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

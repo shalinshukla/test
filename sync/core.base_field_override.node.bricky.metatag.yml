@@ -1,0 +1,23 @@
+uuid: 6b964230-53c2-4319-b2eb-4fbcb6db1f82
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.bricky
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: node.bricky.metatag
+field_name: metatag
+entity_type: node
+bundle: bricky
+label: Metatags
+description: 'The metatags for the entity.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

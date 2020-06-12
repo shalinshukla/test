@@ -1,0 +1,30 @@
+uuid: f94d17ee-f791-430c-bc4b-c8211dcd8943
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.sliding_banner
+    - field.storage.brick.field_transition_speed
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.sliding_banner.field_transition_speed
+field_name: field_transition_speed
+entity_type: brick
+bundle: sliding_banner
+label: 'Slide Transition Speed (in milliseconds)'
+description: 'Applicable only for variation 2 to control slide transition speed'
+required: false
+translatable: true
+default_value:
+  -
+    value: 650
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

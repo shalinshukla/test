@@ -1,0 +1,25 @@
+uuid: 86c1c2a0-2fb6-4db1-b625-c5cadb7d0b7a
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.child_event
+    - field.storage.brick.field_event_end_date
+  module:
+    - datetime
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: brick.child_event.field_event_end_date
+field_name: field_event_end_date
+entity_type: brick
+bundle: child_event
+label: 'Event End Date'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

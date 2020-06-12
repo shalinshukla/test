@@ -1,0 +1,30 @@
+uuid: 9659801c-2221-49b0-a1b7-d1fa20a9703d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_display_physical_2_countri
+    - node.type.mid_disclaimer
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+_core:
+  default_config_hash: TaMbmMMqnEBoVhZ5QYlzN1aW_HDX5cfm7Rtn6JhV078
+id: node.mid_disclaimer.field_display_physical_2_countri
+field_name: field_display_physical_2_countri
+entity_type: node
+bundle: mid_disclaimer
+label: 'Display Physical Presence Countries Step Two'
+description: 'Display Physical Presence Countries Step Two'
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,22 @@
+uuid: 239f60c6-73b5-45c9-9847-9bf67ce9bbb3
+langcode: en
+status: false
+dependencies:
+  config:
+    - 'mid_url_proxy:mid_url_proxy:4a353202-3de1-4bce-93a9-88639248fb86'
+  module:
+    - mid_url_proxy
+  theme:
+    - project_bootstrap
+id: news
+theme: project_bootstrap
+region: content
+weight: -21
+provider: null
+plugin: 'mid_url_proxy:2'
+settings:
+  id: 'mid_url_proxy:2'
+  label: News
+  provider: mid_url_proxy
+  label_display: visible
+visibility: {  }

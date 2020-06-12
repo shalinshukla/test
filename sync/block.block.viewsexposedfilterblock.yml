@@ -1,0 +1,25 @@
+uuid: cd32aed9-1255-43c7-8931-9338fde38687
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_class
+    - views_exposed_filter_blocks
+  theme:
+    - project_bootstrap
+third_party_settings:
+  block_class:
+    classes: ''
+id: viewsexposedfilterblock
+theme: project_bootstrap
+region: hiddne_region
+weight: -24
+provider: null
+plugin: views_exposed_filter_blocks_block
+settings:
+  id: views_exposed_filter_blocks_block
+  label: 'Views exposed filter block'
+  provider: views_exposed_filter_blocks
+  label_display: '0'
+  view_display: 'job_list_view:block_1'
+visibility: {  }

@@ -1,0 +1,26 @@
+uuid: 105e99a7-3363-43c1-8016-c7124128c470
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.financial_calendar
+    - field.storage.brick.field_archive_display_name
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.financial_calendar.field_archive_display_name
+field_name: field_archive_display_name
+entity_type: brick
+bundle: financial_calendar
+label: 'Financial Calendar Archive View Display Name'
+description: '<b>Warning:-</b> Component rendering is made with specific view with respective display. If wrong view or display format will be taken as a reference then this will break the UI.'
+required: false
+translatable: true
+default_value:
+  -
+    value: default
+default_value_callback: ''
+settings: {  }
+field_type: string

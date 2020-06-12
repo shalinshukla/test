@@ -1,0 +1,30 @@
+uuid: a25d9313-3ad3-434c-806d-0e4f59bc182f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_original_country_allowed_l
+    - node.type.mid_disclaimer
+  enforced:
+    module:
+      - mid_disclaimer
+  module:
+    - content_translation
+    - options
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+_core:
+  default_config_hash: wTzBNLrga4XqaAkrfB5pyegnDBv073DNtIAnVCtKfUk
+id: node.mid_disclaimer.field_original_country_allowed_l
+field_name: field_original_country_allowed_l
+entity_type: node
+bundle: mid_disclaimer
+label: 'Original Country Allowed list'
+description: 'Origin country allowed select box. You can select here the allowed countries for country select box one.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

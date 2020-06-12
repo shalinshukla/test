@@ -1,0 +1,23 @@
+uuid: a63f263a-95b7-4fdc-9ba7-3a72bc2623f8
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.media_library
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: node.media_library.changed
+field_name: changed
+entity_type: node
+bundle: media_library
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

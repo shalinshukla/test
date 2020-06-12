@@ -1,0 +1,55 @@
+uuid: d46d8a95-749c-4dbb-8b7b-487fa6177273
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.story_widget
+    - field.field.node.story_and_news.body
+    - field.field.node.story_and_news.field_body
+    - field.field.node.story_and_news.field_story_banner_description
+    - field.field.node.story_and_news.field_story_news_banner_image
+    - field.field.node.story_and_news.field_story_news_category
+    - field.field.node.story_and_news.field_story_news_date
+    - field.field.node.story_and_news.field_story_news_image
+    - field.field.node.story_and_news.field_story_news_year_category
+    - image.style.thumbnail
+    - node.type.story_and_news
+  module:
+    - panelizer
+    - svg_image
+    - user
+third_party_settings:
+  panelizer:
+    enable: false
+    custom: false
+    allow: false
+    default: default
+id: node.story_and_news.story_widget
+targetEntityType: node
+bundle: story_and_news
+mode: story_widget
+content:
+  field_story_news_banner_image:
+    weight: 0
+    label: above
+    settings:
+      image_style: thumbnail
+      image_link: ''
+      svg_render_as_image: '1'
+      svg_attributes:
+        width: ''
+        height: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  body: true
+  field_body: true
+  field_story_banner_description: true
+  field_story_news_category: true
+  field_story_news_date: true
+  field_story_news_image: true
+  field_story_news_year_category: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

@@ -1,0 +1,14 @@
+uuid: 63d4a34c-efa9-46a0-9353-e6fd47b595e7
+langcode: en
+status: true
+dependencies:
+  module:
+    - lightning_core
+    - node
+third_party_settings:
+  lightning_core:
+    description: ''
+id: node.ief_preview
+label: 'IEF Preview'
+targetEntityType: node
+cache: true

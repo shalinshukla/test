@@ -1,0 +1,16 @@
+uuid: 27685da3-6496-4016-8de9-32b67baf5a66
+langcode: en
+status: true
+dependencies: {  }
+id: review_to_draft_email
+workflow: editorial
+transitions:
+  review_to_draft: review_to_draft
+roles: {  }
+author: true
+emails: ''
+subject: '[node:title] in draft'
+body:
+  value: "Hi Creator,<br />\r\n<br />\r\nContent \" [node:title] \" has been added again in draft for your review. Please do the necessary changes by clicking on url - [node:url]<br />\r\n<br />\r\nThanks\r\n"
+  format: basic_html
+label: 'Review to draft email'

@@ -1,0 +1,27 @@
+uuid: 41a146af-cf14-4379-8069-d157c6e2c5da
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.sign_post_share_price
+    - field.storage.brick.field_sign_post_iframe_url
+  module:
+    - content_translation
+    - link
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.sign_post_share_price.field_sign_post_iframe_url
+field_name: field_sign_post_iframe_url
+entity_type: brick
+bundle: sign_post_share_price
+label: 'Iframe URL'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 0
+field_type: link

@@ -1,0 +1,76 @@
+uuid: 26de1c9c-c640-4903-94ca-b7620dbb40de
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.us_press_release.body
+    - field.field.node.us_press_release.field_creation_time
+    - field.field.node.us_press_release.field_is_notified
+    - field.field.node.us_press_release.field_is_published
+    - field.field.node.us_press_release.field_isalertable
+    - field.field.node.us_press_release.field_modified_time
+    - field.field.node.us_press_release.field_pr_publish_date
+    - field.field.node.us_press_release.field_prclientid
+    - field.field.node.us_press_release.field_prclientname
+    - field.field.node.us_press_release.field_pruid
+    - field.field.node.us_press_release.field_uspr_active
+    - field.field.node.us_press_release.field_uspr_categories
+    - field.field.node.us_press_release.field_uspr_categories_items
+    - field.field.node.us_press_release.field_uspr_css
+    - field.field.node.us_press_release.field_uspr_description
+    - field.field.node.us_press_release.field_uspr_headline
+    - field.field.node.us_press_release.field_uspr_language
+    - field.field.node.us_press_release.field_uspr_provider
+    - field.field.node.us_press_release.field_uspr_reason
+    - field.field.node.us_press_release.field_uspr_rendition
+    - field.field.node.us_press_release.field_uspr_storylead
+    - field.field.node.us_press_release.field_uspr_subjectcodes
+    - field.field.node.us_press_release.field_uspr_ticker
+    - node.type.us_press_release
+  module:
+    - text
+    - user
+_core:
+  default_config_hash: TQYXOnq3LRa9aIwEfKdD8xVAMBCSnQegqt-DaHRzKr8
+id: node.us_press_release.teaser
+targetEntityType: node
+bundle: us_press_release
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_creation_time: true
+  field_is_notified: true
+  field_is_published: true
+  field_isalertable: true
+  field_modified_time: true
+  field_pr_publish_date: true
+  field_prclientid: true
+  field_prclientname: true
+  field_pruid: true
+  field_uspr_active: true
+  field_uspr_categories: true
+  field_uspr_categories_items: true
+  field_uspr_css: true
+  field_uspr_description: true
+  field_uspr_headline: true
+  field_uspr_language: true
+  field_uspr_provider: true
+  field_uspr_reason: true
+  field_uspr_rendition: true
+  field_uspr_storylead: true
+  field_uspr_subjectcodes: true
+  field_uspr_ticker: true
+  langcode: true
+  search_api_excerpt: true

@@ -1,0 +1,20 @@
+uuid: cb2812b5-a478-426d-861e-f6fca9473755
+langcode: en
+status: true
+dependencies:
+  module:
+    - mid_solr_search
+  theme:
+    - investis_bootstrap_t2
+id: investis_bootstrap_t2_midsolrsearchform
+theme: investis_bootstrap_t2
+region: navigation
+weight: -9
+provider: null
+plugin: mid_solr_search_form
+settings:
+  id: mid_solr_search_form
+  label: 'Mid Solr Search Form'
+  provider: mid_solr_search
+  label_display: '0'
+visibility: {  }

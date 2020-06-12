@@ -1,0 +1,23 @@
+uuid: ddb36174-d049-451b-a7d6-3c6ad67bd151
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.landing_page
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: node.landing_page.created
+field_name: created
+entity_type: node
+bundle: landing_page
+label: 'Authored on'
+description: 'The time that the node was created.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

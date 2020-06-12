@@ -1,0 +1,25 @@
+uuid: deac053b-d2b9-4d8a-b43b-358fe0565358
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.content_with_two_static_box
+    - field.storage.brick.field_body_description_2
+  module:
+    - text
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: brick.content_with_two_static_box.field_body_description_2
+field_name: field_body_description_2
+entity_type: brick
+bundle: content_with_two_static_box
+label: 'Body Description 2'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

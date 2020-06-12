@@ -1,0 +1,9 @@
+uuid: 6f40a08b-852a-4c0b-9d45-a9cc868703e8
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.brick
+name: 'Sign Post - Image/Image with Rollover/Document Download'
+type: sign_post_image
+description: 'Sign Post component providing features - Image/Image with Rollover/Document Download'

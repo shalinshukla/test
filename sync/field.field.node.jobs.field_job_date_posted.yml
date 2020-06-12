@@ -1,0 +1,25 @@
+uuid: 0d12b538-3efa-44d4-a3be-825c3607787d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_job_date_posted
+    - node.type.jobs
+  module:
+    - datetime
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.jobs.field_job_date_posted
+field_name: field_job_date_posted
+entity_type: node
+bundle: jobs
+label: 'Date Posted'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

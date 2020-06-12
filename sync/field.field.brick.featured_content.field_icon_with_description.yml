@@ -1,0 +1,37 @@
+uuid: 5c324b0c-2f25-4f65-869a-4b3b6fb57769
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.featured_content
+    - eck.eck_type.brick.icon_with_description
+    - field.storage.brick.field_icon_with_description
+  module:
+    - brick_modal
+    - bricks
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+  brick_modal:
+    delete_referenced_entities: 0
+id: brick.featured_content.field_icon_with_description
+field_name: field_icon_with_description
+entity_type: brick
+bundle: featured_content
+label: 'Icon with description'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:brick'
+  handler_settings:
+    target_bundles:
+      icon_with_description: icon_with_description
+    sort:
+      field: _none
+    auto_create: 0
+    auto_create_bundle: ''
+field_type: bricks

@@ -1,0 +1,147 @@
+uuid: 55d3cd3c-f9b9-4dc3-9d4f-43dc53bb2686
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.result_presentation
+    - field.field.brick.result_presentation.field_present_archive_view_name
+    - field.field.brick.result_presentation.field_present_nonarchive_view_nm
+    - field.field.brick.result_presentation.field_present_year_term_view
+    - field.field.brick.result_presentation.field_present_year_term_viewname
+    - field.field.brick.result_presentation.field_presentation_featured_view
+    - field.field.brick.result_presentation.field_result_archive_view_name
+    - field.field.brick.result_presentation.field_result_nonarchive_viewname
+    - field.field.brick.result_presentation.field_result_year_term_view
+    - field.field.brick.result_presentation.field_result_year_term_view_name
+    - field.field.brick.result_presentation.field_views_reference
+  module:
+    - field_group
+third_party_settings:
+  field_group:
+    group_results:
+      children:
+        - field_result_year_term_view
+        - field_result_year_term_view_name
+        - field_views_reference
+        - field_result_archive_view_name
+        - field_result_nonarchive_viewname
+      parent_name: ''
+      weight: 2
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: Results
+      region: content
+    group_presentations:
+      children:
+        - field_present_year_term_view
+        - field_present_year_term_viewname
+        - field_presentation_featured_view
+        - field_present_archive_view_name
+        - field_present_nonarchive_view_nm
+      parent_name: ''
+      weight: 3
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: Presentations
+      region: content
+id: brick.result_presentation.default
+targetEntityType: brick
+bundle: result_presentation
+mode: default
+content:
+  field_present_archive_view_name:
+    weight: 7
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_present_nonarchive_view_nm:
+    weight: 8
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_present_year_term_view:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_present_year_term_viewname:
+    weight: 5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_presentation_featured_view:
+    weight: 6
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_result_archive_view_name:
+    weight: 6
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_result_nonarchive_viewname:
+    weight: 7
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_result_year_term_view:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_result_year_term_view_name:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_views_reference:
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  langcode:
+    type: language_select
+    weight: 1
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

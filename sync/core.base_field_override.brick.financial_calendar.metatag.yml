@@ -1,0 +1,23 @@
+uuid: fa76c9f5-17fa-4c8b-9aec-42d90bad706b
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.financial_calendar
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.financial_calendar.metatag
+field_name: metatag
+entity_type: brick
+bundle: financial_calendar
+label: Metatags
+description: 'The metatags for the entity.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

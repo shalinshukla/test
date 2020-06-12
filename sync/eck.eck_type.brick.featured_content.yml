@@ -1,0 +1,9 @@
+uuid: b48dc500-d831-43d4-aad2-7dfb1a61ccbe
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.brick
+name: 'Featured content'
+type: featured_content
+description: 'Component to feature a specific content on site'

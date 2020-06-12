@@ -1,0 +1,22 @@
+uuid: 501c6d83-1d0e-4422-9a61-2666490221e1
+langcode: en
+status: false
+dependencies:
+  config:
+    - 'mid_url_proxy:mid_url_proxy:2971b38a-a641-4231-8c0d-cada68cccf4c'
+  module:
+    - mid_url_proxy
+  theme:
+    - project_bootstrap
+id: rns
+theme: project_bootstrap
+region: content
+weight: -20
+provider: null
+plugin: 'mid_url_proxy:3'
+settings:
+  id: 'mid_url_proxy:3'
+  label: RNS
+  provider: mid_url_proxy
+  label_display: visible
+visibility: {  }

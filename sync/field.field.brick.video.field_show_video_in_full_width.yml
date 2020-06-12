@@ -1,0 +1,28 @@
+uuid: 387062f0-a8b5-49f8-82ff-2796d23cb0e6
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.video
+    - field.storage.brick.field_show_video_in_full_width
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.video.field_show_video_in_full_width
+field_name: field_show_video_in_full_width
+entity_type: brick
+bundle: video
+label: 'Show video in full-width'
+description: 'Tick checkbox if need to show video in full width'
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'True'
+  off_label: 'False'
+field_type: boolean

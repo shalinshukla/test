@@ -1,0 +1,39 @@
+uuid: 01e15ccd-b1aa-469d-b50a-3260a34752a4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_link_document_content
+    - node.type.link_document_content
+    - node.type.result
+  module:
+    - brick_modal
+    - content_translation
+    - tmgmt_content
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+  tmgmt_content:
+    excluded: false
+  brick_modal:
+    delete_referenced_entities: 1
+id: node.result.field_link_document_content
+field_name: field_link_document_content
+entity_type: node
+bundle: result
+label: 'Link Document Content'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      link_document_content: link_document_content
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,70 @@
+uuid: 6f800872-7d94-4a86-a878-e319b9cb981e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.history_timeline.body
+    - field.field.node.history_timeline.field_history_date
+    - field.field.node.history_timeline.field_history_image
+    - field.field.node.history_timeline.field_image_position
+    - field.field.node.history_timeline.field_meta_tags
+    - node.type.history_timeline
+  module:
+    - datetime
+    - image
+    - metatag
+    - options
+    - text
+    - user
+id: node.history_timeline.default
+targetEntityType: node
+bundle: history_timeline
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_history_date:
+    weight: 102
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_history_image:
+    weight: 103
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_image_position:
+    weight: 104
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_meta_tags:
+    weight: 105
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_empty_formatter
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  scheduled_publication: true

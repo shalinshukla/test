@@ -1,0 +1,18 @@
+uuid: 8c091597-0200-4888-838d-df4266033079
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.sign_post_event
+id: brick.sign_post_event.title
+field_name: title
+entity_type: brick
+bundle: sign_post_event
+label: Title
+description: 'The title of the entity.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

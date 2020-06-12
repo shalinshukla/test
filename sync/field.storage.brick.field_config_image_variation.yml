@@ -1,0 +1,30 @@
+uuid: 41410249-1a49-4556-9146-c16322f76d3b
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+    - options
+id: brick.field_config_image_variation
+field_name: field_config_image_variation
+entity_type: brick
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'custom_image_3 col-md-4 col-sm-6 col-xs-12'
+      label: 'Image with 3 column grid'
+    -
+      value: 'custom_image_6 col-md-6 col-xs-12'
+      label: 'Image with 2 column grid'
+    -
+      value: W100
+      label: 'Fullwidth configurable image'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

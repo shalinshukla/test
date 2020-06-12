@@ -1,0 +1,20 @@
+uuid: 1b21a938-b373-4ce1-8adb-be8bb8b3d3c0
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - investis_bootstrap_t2
+id: investis_bootstrap_t2_poweredbydrupal
+theme: investis_bootstrap_t2
+region: footer
+weight: -1
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Delivered by .Investis'
+  provider: system
+  label_display: visible
+visibility: {  }

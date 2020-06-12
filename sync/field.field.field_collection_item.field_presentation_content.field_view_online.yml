@@ -1,0 +1,22 @@
+uuid: 3e91da87-2a53-4ec5-8d67-397381cae474
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.field_collection_item.field_view_online
+    - field_collection.field_collection.field_presentation_content
+  module:
+    - field_collection
+id: field_collection_item.field_presentation_content.field_view_online
+field_name: field_view_online
+entity_type: field_collection_item
+bundle: field_presentation_content
+label: 'View online'
+description: ''
+required: false
+translatable: true
+default_value:
+  - {  }
+default_value_callback: ''
+settings: {  }
+field_type: field_collection

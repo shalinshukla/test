@@ -1,0 +1,26 @@
+uuid: 5149ae50-7556-40b7-8845-a97791b2e87d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_address_location
+    - node.type.jobs
+  module:
+    - geofield
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.jobs.field_address_location
+field_name: field_address_location
+entity_type: node
+bundle: jobs
+label: 'Address Location'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  backend: geofield_backend_default
+field_type: geofield

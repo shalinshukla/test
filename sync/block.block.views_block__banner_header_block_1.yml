@@ -1,0 +1,29 @@
+uuid: 27f69b0f-c4bb-497e-9398-7865cb93e9f1
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.banner_header
+  module:
+    - block_class
+    - views
+  theme:
+    - project_bootstrap
+third_party_settings:
+  block_class:
+    classes: ''
+id: views_block__banner_header_block_1
+theme: project_bootstrap
+region: content_top
+weight: 0
+provider: null
+plugin: 'views_block:banner_header-block_1'
+settings:
+  id: 'views_block:banner_header-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility: {  }

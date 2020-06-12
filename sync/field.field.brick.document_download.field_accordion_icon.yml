@@ -1,0 +1,48 @@
+uuid: 144150c3-92ed-407c-b34f-9b12abb0898b
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.document_download
+    - field.storage.brick.field_accordion_icon
+  module:
+    - content_translation
+    - image
+    - tmgmt_content
+third_party_settings:
+  content_translation:
+    translation_sync:
+      alt: alt
+      title: title
+      file: '0'
+  tmgmt_content:
+    excluded: false
+id: brick.document_download.field_accordion_icon
+field_name: field_accordion_icon
+entity_type: brick
+bundle: document_download
+label: 'Document Preview Image'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

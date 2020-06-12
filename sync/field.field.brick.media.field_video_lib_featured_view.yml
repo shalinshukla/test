@@ -1,0 +1,31 @@
+uuid: 4a1b6d78-b101-42a6-9690-16ab94cbad8b
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.media
+    - field.storage.brick.field_video_lib_featured_view
+    - views.view.media_library_video
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.media.field_video_lib_featured_view
+field_name: field_video_lib_featured_view
+entity_type: brick
+bundle: media
+label: 'Video Library Featured View'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    target_uuid: c17ddc29-48c1-454a-8247-b206c859dba9
+default_value_callback: ''
+settings:
+  handler: 'default:view'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: entity_reference

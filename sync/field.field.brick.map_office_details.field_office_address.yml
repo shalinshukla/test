@@ -1,0 +1,25 @@
+uuid: 1aeacecd-207c-4d47-b42e-fa95c19400b4
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.map_office_details
+    - field.storage.brick.field_office_address
+  module:
+    - content_translation
+    - text
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.map_office_details.field_office_address
+field_name: field_office_address
+entity_type: brick
+bundle: map_office_details
+label: Address
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

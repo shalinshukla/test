@@ -1,0 +1,86 @@
+uuid: 64392201-8b57-4ba0-8c9a-86963ce42393
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.page.body
+    - field.field.node.page.field_banner_reference
+    - field.field.node.page.field_body
+    - field.field.node.page.field_meta_description
+    - field.field.node.page.field_meta_tags
+    - field.field.node.page.field_node_disclaimer
+    - field.field.node.page.field_page_private_file
+    - field.field.node.page.panelizer
+    - node.type.page
+  module:
+    - bricks
+    - link
+    - metatag
+    - panelizer
+    - text
+    - user
+third_party_settings:
+  panelizer:
+    enable: false
+    custom: false
+    allow: false
+    default: default
+_core:
+  default_config_hash: Kfxnq5Imio9VFBoNa_PIkzXoTmjz_T-EY3mOrwDTddU
+id: node.page.default
+targetEntityType: node
+bundle: page
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  content_moderation_control:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_body:
+    weight: 4
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    type: bricks_nested
+    region: content
+  field_meta_tags:
+    type: metatag_empty_formatter
+    region: content
+    weight: 3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  field_page_private_file:
+    weight: 5
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  links:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_banner_reference: true
+  field_meta_description: true
+  field_node_disclaimer: true
+  langcode: true
+  panelizer: true
+  scheduled_publication: true

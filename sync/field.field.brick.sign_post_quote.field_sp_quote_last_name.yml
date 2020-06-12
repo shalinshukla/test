@@ -1,0 +1,24 @@
+uuid: 0911f07c-b0a7-4908-b639-27d85d2fbadd
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.sign_post_quote
+    - field.storage.brick.field_sp_quote_last_name
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.sign_post_quote.field_sp_quote_last_name
+field_name: field_sp_quote_last_name
+entity_type: brick
+bundle: sign_post_quote
+label: 'Last name'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

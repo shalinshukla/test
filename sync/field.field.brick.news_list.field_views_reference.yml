@@ -1,0 +1,28 @@
+uuid: 8a1f77fb-f5b4-4187-adca-ab7dd5a27f3b
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.news_list
+    - field.storage.brick.field_views_reference
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.news_list.field_views_reference
+field_name: field_views_reference
+entity_type: brick
+bundle: news_list
+label: 'View reference'
+description: 'Please select desired view name for rendering.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:view'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: entity_reference

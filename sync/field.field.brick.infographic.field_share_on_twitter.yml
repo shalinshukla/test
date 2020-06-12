@@ -1,0 +1,26 @@
+uuid: 2fdab636-1ec5-4899-b654-d03d60c7536e
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.infographic
+    - field.storage.brick.field_share_on_twitter
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.infographic.field_share_on_twitter
+field_name: field_share_on_twitter
+entity_type: brick
+bundle: infographic
+label: 'Share on twitter'
+description: 'Please enter twitter social sharing url'
+required: false
+translatable: true
+default_value:
+  -
+    value: 'http://twitter.com/share'
+default_value_callback: ''
+settings: {  }
+field_type: string

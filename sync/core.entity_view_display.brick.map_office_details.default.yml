@@ -1,0 +1,83 @@
+uuid: 39c897b6-bd22-43a4-b719-ccbfb7869dc2
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.map_office_details
+    - field.field.brick.map_office_details.field_latitude
+    - field.field.brick.map_office_details.field_longitude
+    - field.field.brick.map_office_details.field_office_address
+    - field.field.brick.map_office_details.field_office_email
+    - field.field.brick.map_office_details.field_office_image
+    - field.field.brick.map_office_details.field_office_phone
+  module:
+    - image
+    - text
+id: brick.map_office_details.default
+targetEntityType: brick
+bundle: map_office_details
+mode: default
+content:
+  field_latitude:
+    weight: -4
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_longitude:
+    weight: -3
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_office_address:
+    weight: 5
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_office_email:
+    weight: 4
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_office_image:
+    weight: 3
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_office_phone:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  title:
+    label: hidden
+    type: string
+    weight: -5
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  langcode: true

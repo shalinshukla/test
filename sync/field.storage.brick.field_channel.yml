@@ -1,0 +1,30 @@
+uuid: 8d8d5a49-9eb9-4c66-9701-4aa0e9466f62
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+    - options
+id: brick.field_channel
+field_name: field_channel
+entity_type: brick
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: twitter
+      label: Twitter
+    -
+      value: facebook
+      label: facebook
+    -
+      value: linkedin
+      label: Linkedin
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

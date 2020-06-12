@@ -1,0 +1,95 @@
+uuid: d41a0bbe-b50a-476c-a7bd-31d6f1c222e0
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.infographic
+    - field.field.brick.infographic.field_display_variation
+    - field.field.brick.infographic.field_info_component_title
+    - field.field.brick.infographic.field_info_description
+    - field.field.brick.infographic.field_infographic_image
+    - field.field.brick.infographic.field_share_on_email
+    - field.field.brick.infographic.field_share_on_facebook
+    - field.field.brick.infographic.field_share_on_linkedin
+    - field.field.brick.infographic.field_share_on_twitter
+  module:
+    - image
+id: brick.infographic.default
+targetEntityType: brick
+bundle: infographic
+mode: default
+content:
+  field_display_variation:
+    weight: 3
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_info_component_title:
+    weight: -4
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_info_description:
+    weight: -3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_infographic_image:
+    weight: -2
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_share_on_email:
+    weight: 2
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_share_on_facebook:
+    weight: -1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_share_on_linkedin:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_share_on_twitter:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  title:
+    label: hidden
+    type: string
+    weight: -5
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  langcode: true

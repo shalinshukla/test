@@ -1,0 +1,25 @@
+uuid: faa62ea4-6307-4bbf-a4f5-7c8526af6260
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_meta_tags
+    - node.type.bod_people
+  module:
+    - metatag
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.bod_people.field_meta_tags
+field_name: field_meta_tags
+entity_type: node
+bundle: bod_people
+label: 'Meta tags'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

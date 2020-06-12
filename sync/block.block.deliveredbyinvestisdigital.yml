@@ -1,0 +1,29 @@
+uuid: bde13820-6b25-44f0-8f4e-dcc00caece20
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:a75abed3-f650-4663-b0fc-6d9b353fe37b'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - project_bootstrap
+third_party_settings:
+  block_class:
+    classes: branding-text
+id: deliveredbyinvestisdigital
+theme: project_bootstrap
+region: footer_bottom
+weight: 0
+provider: null
+plugin: 'block_content:a75abed3-f650-4663-b0fc-6d9b353fe37b'
+settings:
+  id: 'block_content:a75abed3-f650-4663-b0fc-6d9b353fe37b'
+  label: 'Delivered by investis digital'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

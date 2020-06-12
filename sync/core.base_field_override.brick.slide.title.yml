@@ -1,0 +1,18 @@
+uuid: 3365e6eb-2903-490a-937e-55ac4e4ba081
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.slide
+id: brick.slide.title
+field_name: title
+entity_type: brick
+bundle: slide
+label: Title
+description: 'The title of the entity.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

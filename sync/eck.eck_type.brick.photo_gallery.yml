@@ -1,0 +1,9 @@
+uuid: a195c4d9-c52c-4377-833a-40e15d8f5bad
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.brick
+name: 'Photo Gallery'
+type: photo_gallery
+description: ''

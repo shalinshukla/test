@@ -1,0 +1,42 @@
+uuid: b37047c2-d4d4-40e3-8078-0395623ae7b3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_press_release_banner
+    - node.type.us_press_release
+  module:
+    - image
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.us_press_release.field_press_release_banner
+field_name: field_press_release_banner
+entity_type: node
+bundle: us_press_release
+label: 'Press Release Banner'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ed944682-fc26-437b-8d68-98f151a4ddbd
+    alt: ''
+    title: ''
+    width: 1200
+    height: 500
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

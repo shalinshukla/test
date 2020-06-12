@@ -1,0 +1,27 @@
+uuid: c5df1713-9070-49b1-9d10-fbdc82e839fd
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.news_list
+    - field.storage.brick.field_see_all_news_link
+  module:
+    - content_translation
+    - link
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.news_list.field_see_all_news_link
+field_name: field_see_all_news_link
+entity_type: brick
+bundle: news_list
+label: 'See all link'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

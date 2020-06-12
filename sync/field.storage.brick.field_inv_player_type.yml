@@ -1,0 +1,24 @@
+uuid: f99a95d8-6486-4db7-ae74-5a9ed9aa7b93
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+    - options
+id: brick.field_inv_player_type
+field_name: field_inv_player_type
+entity_type: brick
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: singleplayer
+      label: 'Single Player'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

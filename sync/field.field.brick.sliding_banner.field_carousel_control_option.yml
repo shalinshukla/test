@@ -1,0 +1,25 @@
+uuid: 3b1e1a0b-0c84-47ff-95e5-53f7ff61fde1
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.sliding_banner
+    - field.storage.brick.field_carousel_control_option
+  module:
+    - content_translation
+    - options
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.sliding_banner.field_carousel_control_option
+field_name: field_carousel_control_option
+entity_type: brick
+bundle: sliding_banner
+label: 'Carousel control option'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

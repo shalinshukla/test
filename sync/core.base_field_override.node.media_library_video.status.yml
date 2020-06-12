@@ -1,0 +1,27 @@
+uuid: b92d3ef7-5abb-42ef-850d-80908ab7f095
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.media_library_video
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: node.media_library_video.status
+field_name: status
+entity_type: node
+bundle: media_library_video
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

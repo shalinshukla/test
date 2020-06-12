@@ -1,0 +1,27 @@
+uuid: 8076701e-fab6-4e79-ac7c-cca9b8a479e0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_file_attachment
+    - node.type.quarterly_earnings
+  module:
+    - link
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.quarterly_earnings.field_file_attachment
+field_name: field_file_attachment
+entity_type: node
+bundle: quarterly_earnings
+label: 'File Attachment'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

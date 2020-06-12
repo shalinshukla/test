@@ -1,0 +1,29 @@
+uuid: 90bc9fdf-38d3-43da-86d8-ab7157c11939
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.location_list
+    - field.storage.brick.field_map_theme
+  module:
+    - content_translation
+    - options
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+_core:
+  default_config_hash: 74VRUvraR4kgCWfrld_NnokwlOTvuK5e7vFFDXkwrb8
+id: brick.location_list.field_map_theme
+field_name: field_map_theme
+entity_type: brick
+bundle: location_list
+label: 'Map theme'
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: default
+default_value_callback: ''
+settings: {  }
+field_type: list_string

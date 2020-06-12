@@ -1,0 +1,9 @@
+uuid: 9a4e1d6d-120f-4961-b876-f3c259d4b5bc
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.brick
+name: 'Media Library'
+type: media
+description: ''

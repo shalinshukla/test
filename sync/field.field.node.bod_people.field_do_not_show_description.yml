@@ -1,0 +1,28 @@
+uuid: 8e5c78b6-7421-4a1e-b877-d147c2d413cf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_do_not_show_description
+    - node.type.bod_people
+  module:
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.bod_people.field_do_not_show_description
+field_name: field_do_not_show_description
+entity_type: node
+bundle: bod_people
+label: 'Don''t show description'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

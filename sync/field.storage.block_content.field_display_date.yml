@@ -1,0 +1,21 @@
+uuid: 6e3459c7-1632-491f-9fa8-96deab13e12f
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+id: block_content.field_display_date
+field_name: field_display_date
+entity_type: block_content
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

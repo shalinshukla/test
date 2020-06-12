@@ -1,0 +1,9 @@
+uuid: 174fd257-7682-4962-bf1f-3f472109a950
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.brick
+name: 'Sign Post - Portfolio slides'
+type: sign_post_portfolio_slides
+description: 'Sign Post component for Portfolio slides. '

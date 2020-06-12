@@ -1,0 +1,18 @@
+uuid: ee4d5cc9-9f17-470a-b322-5e9d365c820d
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.webform_
+id: brick.webform_.title
+field_name: title
+entity_type: brick
+bundle: webform_
+label: Title
+description: 'The title of the entity.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

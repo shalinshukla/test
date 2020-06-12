@@ -1,0 +1,9 @@
+uuid: df403c1d-257b-4865-be84-160f29c36f9b
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.brick
+name: 'Map -Office Details'
+type: map_office_details
+description: 'It containing the office location ,address ,email and phone no details'

@@ -1,0 +1,25 @@
+uuid: 383f5954-b7fb-47e0-8b1b-078678ab1292
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contentnews_description
+    - node.type.newscontent
+  module:
+    - content_translation
+    - text
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: node.newscontent.field_contentnews_description
+field_name: field_contentnews_description
+entity_type: node
+bundle: newscontent
+label: 'News description'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

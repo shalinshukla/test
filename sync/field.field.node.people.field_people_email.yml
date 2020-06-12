@@ -1,0 +1,24 @@
+uuid: 395e4a3e-277d-46ce-9825-0423763310a6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_people_email
+    - node.type.people
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: node.people.field_people_email
+field_name: field_people_email
+entity_type: node
+bundle: people
+label: Email
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

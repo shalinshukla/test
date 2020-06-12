@@ -1,0 +1,27 @@
+uuid: 17261f6a-8d1f-4b86-b5d5-fb1591754a62
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.wrapper
+id: brick.wrapper.default
+targetEntityType: brick
+bundle: wrapper
+mode: default
+content:
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

@@ -1,0 +1,23 @@
+uuid: 45e1e66b-fb1b-4b22-99cf-080b6c055a04
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.document_download
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.document_download.metatag
+field_name: metatag
+entity_type: brick
+bundle: document_download
+label: Metatags
+description: 'The metatags for the entity.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

@@ -1,0 +1,48 @@
+uuid: 583b165f-a13f-46de-92ac-a344e44af849
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.sign_post_explore_image
+    - field.field.brick.sign_post_explore_image.field_image_explore
+  module:
+    - bricks_inline
+id: brick.sign_post_explore_image.default
+targetEntityType: brick
+bundle: sign_post_explore_image
+mode: default
+content:
+  field_image_explore:
+    weight: 3
+    settings:
+      match_operator: CONTAINS
+      form_mode: default
+      override_labels: false
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: false
+    third_party_settings: {  }
+    type: bricks_tree_inline
+    region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

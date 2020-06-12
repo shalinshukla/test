@@ -1,0 +1,18 @@
+uuid: be2b504f-1d30-4c8b-bd34-4d9578a03b2c
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+id: brick.field_iframe_signpost
+field_name: field_iframe_signpost
+entity_type: brick
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

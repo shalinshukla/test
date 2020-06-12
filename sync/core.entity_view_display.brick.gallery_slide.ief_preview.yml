@@ -1,0 +1,30 @@
+uuid: c9b9e770-865c-4b94-86ec-039672d34b7c
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.brick.ief_preview
+    - eck.eck_type.brick.gallery_slide
+    - field.field.brick.gallery_slide.field_image_gallery_image
+    - field.field.brick.gallery_slide.field_img_gal_description
+    - image.style.thumbnail
+  module:
+    - image
+id: brick.gallery_slide.ief_preview
+targetEntityType: brick
+bundle: gallery_slide
+mode: ief_preview
+content:
+  field_image_gallery_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: thumbnail
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  field_img_gal_description: true
+  langcode: true
+  title: true

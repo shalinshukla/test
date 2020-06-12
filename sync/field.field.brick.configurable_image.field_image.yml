@@ -1,0 +1,45 @@
+uuid: f3bc4d07-359c-4d0a-a13e-65f680d0b064
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.configurable_image
+    - field.storage.brick.field_image
+  module:
+    - content_translation
+    - image
+third_party_settings:
+  content_translation:
+    translation_sync:
+      file: file
+      alt: alt
+      title: title
+id: brick.configurable_image.field_image
+field_name: field_image
+entity_type: brick
+bundle: configurable_image
+label: Image
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: false
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

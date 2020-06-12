@@ -1,0 +1,27 @@
+uuid: bc68b555-b1b1-4e9d-ab7c-d2f5a620c7f3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.history_timeline
+  module:
+    - content_translation
+    - text
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: node.history_timeline.body
+field_name: body
+entity_type: node
+bundle: history_timeline
+label: Description
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

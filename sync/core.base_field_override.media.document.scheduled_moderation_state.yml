@@ -1,0 +1,18 @@
+uuid: 8c2b5089-ad4a-43e7-88c3-20a346c8ced6
+langcode: fr
+status: true
+dependencies:
+  config:
+    - media.type.document
+id: media.document.scheduled_moderation_state
+field_name: scheduled_moderation_state
+entity_type: media
+bundle: document
+label: 'Scheduled moderation state'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

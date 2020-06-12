@@ -1,0 +1,24 @@
+uuid: b31d6f4b-2872-444e-bc21-9c3a2fb9c258
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.signpost_map
+    - field.storage.brick.field_sp_map_display_title
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.signpost_map.field_sp_map_display_title
+field_name: field_sp_map_display_title
+entity_type: brick
+bundle: signpost_map
+label: 'Display title'
+description: 'Title that would be displayed on site when component is rendered'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

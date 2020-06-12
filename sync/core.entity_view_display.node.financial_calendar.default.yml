@@ -1,0 +1,69 @@
+uuid: 061206a1-f89d-45ff-be6e-99dbb91d967b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.financial_calendar.body
+    - field.field.node.financial_calendar.field_event_address
+    - field.field.node.financial_calendar.field_event_end_date
+    - field.field.node.financial_calendar.field_event_start_date
+    - field.field.node.financial_calendar.field_meta_tags
+    - node.type.financial_calendar
+  module:
+    - datetime
+    - metatag
+    - text
+    - user
+id: node.financial_calendar.default
+targetEntityType: node
+bundle: financial_calendar
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_event_address:
+    weight: 104
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_event_end_date:
+    weight: 103
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_event_start_date:
+    weight: 102
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_meta_tags:
+    weight: 105
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_empty_formatter
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  scheduled_publication: true

@@ -1,0 +1,28 @@
+uuid: 00850672-cb22-48f9-87dc-00529bb088f0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_accept_button_label
+    - node.type.mid_disclaimer
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+_core:
+  default_config_hash: E5QrU2IMZTXIm7EOC1ptTY42qBMCXymnRloQ7qLY7VM
+id: node.mid_disclaimer.field_accept_button_label
+field_name: field_accept_button_label
+entity_type: node
+bundle: mid_disclaimer
+label: 'Accept Button Label'
+description: 'This value is displayed on the "Accept" button label.'
+required: false
+translatable: true
+default_value:
+  -
+    value: Accept
+default_value_callback: ''
+settings: {  }
+field_type: string

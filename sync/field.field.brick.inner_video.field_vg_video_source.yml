@@ -1,0 +1,25 @@
+uuid: 824238cd-3dc8-488f-a164-850161d53667
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.inner_video
+    - field.storage.brick.field_vg_video_source
+  module:
+    - content_translation
+    - options
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.inner_video.field_vg_video_source
+field_name: field_vg_video_source
+entity_type: brick
+bundle: inner_video
+label: 'Video source'
+description: 'To specify video source either Brightcove or YouTube'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

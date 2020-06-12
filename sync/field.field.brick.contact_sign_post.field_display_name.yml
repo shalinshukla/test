@@ -1,0 +1,24 @@
+uuid: ec0b3cf7-f4b1-4eb7-81fd-10644d752171
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.contact_sign_post
+    - field.storage.brick.field_display_name
+  module:
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: brick.contact_sign_post.field_display_name
+field_name: field_display_name
+entity_type: brick
+bundle: contact_sign_post
+label: Title
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

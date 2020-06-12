@@ -1,0 +1,18 @@
+uuid: ed354bf1-1dca-4ed4-874b-ec5f88884a61
+langcode: fr
+status: true
+dependencies:
+  config:
+    - media.type.video
+id: media.video.scheduled_moderation_state
+field_name: scheduled_moderation_state
+entity_type: media
+bundle: video
+label: 'Scheduled moderation state'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

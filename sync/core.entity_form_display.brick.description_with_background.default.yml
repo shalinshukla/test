@@ -1,0 +1,65 @@
+uuid: 4726f760-b538-41ac-bd9f-a0144e934d9b
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.description_with_background
+    - field.field.brick.description_with_background.field_link
+    - field.field.brick.description_with_background.field_space_variations
+    - field.field.brick.description_with_background.field_title
+  module:
+    - link_ex
+id: brick.description_with_background.default
+targetEntityType: brick
+bundle: description_with_background
+mode: default
+content:
+  field_link:
+    weight: 4
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+      enabled_attributes:
+        title: title
+        class: class
+        imce: imce
+        id: 0
+        rel: 0
+        name: 0
+        target: 0
+        accesskey: 0
+        download: 0
+        imce_private: 0
+    third_party_settings: {  }
+    type: link_ex
+    region: content
+  field_space_variations:
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_title:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

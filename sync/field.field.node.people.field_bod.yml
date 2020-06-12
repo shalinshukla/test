@@ -1,0 +1,28 @@
+uuid: 60c62ca8-6066-484a-9b15-a59eedcf6f92
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_bod
+    - node.type.people
+  module:
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.people.field_bod
+field_name: field_bod
+entity_type: node
+bundle: people
+label: BOD
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

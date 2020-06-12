@@ -1,0 +1,18 @@
+uuid: 2dc67a95-ca79-496a-ade6-de1f521f29eb
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.video
+id: brick.video.title
+field_name: title
+entity_type: brick
+bundle: video
+label: Title
+description: 'The title of the entity.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

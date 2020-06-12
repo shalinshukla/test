@@ -1,0 +1,80 @@
+uuid: 118153d9-6835-4481-b54f-d185a438a014
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.news_room_text_only
+    - field.field.brick.news_room_text_only.field_display_variation
+    - field.field.brick.news_room_text_only.field_news_t2_textonly_display
+    - field.field.brick.news_room_text_only.field_news_t2_textonly_view
+    - field.field.brick.news_room_text_only.field_newsroom_empty_message
+    - field.field.brick.news_room_text_only.field_newsroom_textonly_display
+    - field.field.brick.news_room_text_only.field_newsroom_textonly_view
+id: brick.news_room_text_only.default
+targetEntityType: brick
+bundle: news_room_text_only
+mode: default
+content:
+  field_display_variation:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_news_t2_textonly_display:
+    weight: 5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_news_t2_textonly_view:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_newsroom_empty_message:
+    weight: 8
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_newsroom_textonly_display:
+    weight: 7
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_newsroom_textonly_view:
+    weight: 6
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

@@ -1,0 +1,45 @@
+uuid: 93b21636-38d4-4333-8ac7-f8160266b7a1
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.signpost_map
+    - field.storage.brick.field_marker_image
+  module:
+    - content_translation
+    - image
+third_party_settings:
+  content_translation:
+    translation_sync:
+      file: file
+      alt: alt
+      title: title
+id: brick.signpost_map.field_marker_image
+field_name: field_marker_image
+entity_type: brick
+bundle: signpost_map
+label: 'Marker Image'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'svg png'
+  max_filesize: ''
+  max_resolution: 25x50
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: false
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: 5327647b-252c-407b-ac89-ea245ead7df1
+    alt: ''
+    title: ''
+    width: 10
+    height: 10
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

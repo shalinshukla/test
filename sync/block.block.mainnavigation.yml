@@ -1,0 +1,24 @@
+uuid: 3d37f39d-5c73-45eb-88bb-c76255a56d98
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_class
+    - we_megamenu
+  theme:
+    - project_bootstrap
+third_party_settings:
+  block_class:
+    classes: corp-megamenu
+id: mainnavigation
+theme: project_bootstrap
+region: navigation
+weight: -25
+provider: null
+plugin: 'we_megamenu_block:main'
+settings:
+  id: 'we_megamenu_block:main'
+  label: 'Main navigation'
+  provider: we_megamenu
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,109 @@
+uuid: 36c93ba3-b3e8-431b-9354-8d45452b6099
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.mid_disclaimer.body
+    - field.field.node.mid_disclaimer.field_accept_button_label
+    - field.field.node.mid_disclaimer.field_accept_label_level_2
+    - field.field.node.mid_disclaimer.field_allowed_banned_1
+    - field.field.node.mid_disclaimer.field_allowed_banned_2
+    - field.field.node.mid_disclaimer.field_country_select1_label
+    - field.field.node.mid_disclaimer.field_country_select2_label
+    - field.field.node.mid_disclaimer.field_decline_button_label
+    - field.field.node.mid_disclaimer.field_decline_label_level_2
+    - field.field.node.mid_disclaimer.field_decline_page
+    - field.field.node.mid_disclaimer.field_description
+    - field.field.node.mid_disclaimer.field_disclaimer_1_text
+    - field.field.node.mid_disclaimer.field_disclaimer_1_title
+    - field.field.node.mid_disclaimer.field_disclaimer_2_text
+    - field.field.node.mid_disclaimer.field_disclaimer_2_title
+    - field.field.node.mid_disclaimer.field_disclaimer_radio_text_2
+    - field.field.node.mid_disclaimer.field_disclaimer_radiotext
+    - field.field.node.mid_disclaimer.field_display_countries_1
+    - field.field.node.mid_disclaimer.field_display_countries_2
+    - field.field.node.mid_disclaimer.field_display_origin_1_countries
+    - field.field.node.mid_disclaimer.field_display_origin_2_countries
+    - field.field.node.mid_disclaimer.field_display_physical_1_countri
+    - field.field.node.mid_disclaimer.field_display_physical_2_countri
+    - field.field.node.mid_disclaimer.field_ip_block
+    - field.field.node.mid_disclaimer.field_ip_validate_2
+    - field.field.node.mid_disclaimer.field_one_time_disclaimer
+    - field.field.node.mid_disclaimer.field_origin_country_list_2
+    - field.field.node.mid_disclaimer.field_origin_country_select_lbl2
+    - field.field.node.mid_disclaimer.field_original_country_allowed_l
+    - field.field.node.mid_disclaimer.field_physical_presence_country_
+    - field.field.node.mid_disclaimer.field_pp_countries_as_string_1
+    - field.field.node.mid_disclaimer.field_pp_countries_as_string_2
+    - field.field.node.mid_disclaimer.field_pp_country_list_2
+    - field.field.node.mid_disclaimer.field_pp_select_label_2
+    - field.field.node.mid_disclaimer.field_radio_button_no_label_1
+    - field.field.node.mid_disclaimer.field_radio_button_no_label_2
+    - field.field.node.mid_disclaimer.field_radio_button_yes_label_1
+    - field.field.node.mid_disclaimer.field_radio_button_yes_label_2
+    - field.field.node.mid_disclaimer.field_site_wide_disclaimer
+    - node.type.mid_disclaimer
+  module:
+    - text
+    - user
+_core:
+  default_config_hash: '-D9cSN6nuNo_Hib810DPrfEA2kdbLi32hqSJngIKLxI'
+id: node.mid_disclaimer.teaser
+targetEntityType: node
+bundle: mid_disclaimer
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_accept_button_label: true
+  field_accept_label_level_2: true
+  field_allowed_banned_1: true
+  field_allowed_banned_2: true
+  field_country_select1_label: true
+  field_country_select2_label: true
+  field_decline_button_label: true
+  field_decline_label_level_2: true
+  field_decline_page: true
+  field_description: true
+  field_disclaimer_1_text: true
+  field_disclaimer_1_title: true
+  field_disclaimer_2_text: true
+  field_disclaimer_2_title: true
+  field_disclaimer_radio_text_2: true
+  field_disclaimer_radiotext: true
+  field_display_countries_1: true
+  field_display_countries_2: true
+  field_display_origin_1_countries: true
+  field_display_origin_2_countries: true
+  field_display_physical_1_countri: true
+  field_display_physical_2_countri: true
+  field_ip_block: true
+  field_ip_validate_2: true
+  field_one_time_disclaimer: true
+  field_origin_country_list_2: true
+  field_origin_country_select_lbl2: true
+  field_original_country_allowed_l: true
+  field_physical_presence_country_: true
+  field_pp_countries_as_string_1: true
+  field_pp_countries_as_string_2: true
+  field_pp_country_list_2: true
+  field_pp_select_label_2: true
+  field_radio_button_no_label_1: true
+  field_radio_button_no_label_2: true
+  field_radio_button_yes_label_1: true
+  field_radio_button_yes_label_2: true
+  field_site_wide_disclaimer: true
+  langcode: true

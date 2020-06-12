@@ -1,0 +1,21 @@
+uuid: d9f1e799-ac5a-4ca9-a2fe-2090728ce887
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+id: brick.field_news_nifw_empty_message
+field_name: field_news_nifw_empty_message
+entity_type: brick
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,27 @@
+uuid: 021db455-94cf-414e-b2f1-16d040c9f5e7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_download_video
+    - node.type.media_library_video
+  module:
+    - link
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.media_library_video.field_download_video
+field_name: field_download_video
+entity_type: node
+bundle: media_library_video
+label: 'Download Video'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

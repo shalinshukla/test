@@ -1,0 +1,25 @@
+uuid: 95f16a5e-816f-4e66-92be-7eb17d34a43d
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.banner_content
+    - field.storage.brick.field_banner_heading
+  module:
+    - text
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: brick.banner_content.field_banner_heading
+field_name: field_banner_heading
+entity_type: brick
+bundle: banner_content
+label: 'Banner Heading'
+description: 'add content within span tag for different text'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

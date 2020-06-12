@@ -1,0 +1,22 @@
+uuid: ab7e60db-07ae-401c-ab14-25e27355f059
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.quarterly_earnings
+id: node.quarterly_earnings.promote
+field_name: promote
+entity_type: node
+bundle: quarterly_earnings
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

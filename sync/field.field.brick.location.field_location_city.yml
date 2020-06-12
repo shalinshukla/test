@@ -1,0 +1,36 @@
+uuid: ac6da09d-68ed-4ca5-974f-87376b0f3dd3
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.location
+    - field.storage.brick.field_location_city
+    - taxonomy.vocabulary.location_city
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+_core:
+  default_config_hash: vq2zZcviJqhXmy80puTabhM09n7zaSGLYkSREj-m2No
+id: brick.location.field_location_city
+field_name: field_location_city
+entity_type: brick
+bundle: location
+label: City
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      location_city: location_city
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: location_city
+field_type: entity_reference

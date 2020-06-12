@@ -1,0 +1,27 @@
+uuid: 93c0b93f-2870-435b-bf69-80905bc48784
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.news_item_full_width
+    - field.storage.brick.field_nifw_image_position
+  module:
+    - content_translation
+    - options
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.news_item_full_width.field_nifw_image_position
+field_name: field_nifw_image_position
+entity_type: brick
+bundle: news_item_full_width
+label: 'Image position'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: image-right
+default_value_callback: ''
+settings: {  }
+field_type: list_string

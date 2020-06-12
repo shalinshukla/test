@@ -1,0 +1,28 @@
+uuid: eb352371-0a2d-4a00-930a-5808ef47f377
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.configurable_text
+    - field.storage.brick.field_configurable_img_signpost
+  module:
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: brick.configurable_text.field_configurable_img_signpost
+field_name: field_configurable_img_signpost
+entity_type: brick
+bundle: configurable_text
+label: 'Configurable Image signpost'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,23 @@
+uuid: 3edc7420-8e2f-4b6f-b72b-50c4d4bf2782
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.twitter_posts
+  module:
+    - text
+id: node.twitter_posts.body
+field_name: body
+entity_type: node
+bundle: twitter_posts
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

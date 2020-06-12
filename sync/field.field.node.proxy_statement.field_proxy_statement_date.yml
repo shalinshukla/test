@@ -1,0 +1,25 @@
+uuid: 5596b483-f408-432f-9927-003d4f3b94e6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_proxy_statement_date
+    - node.type.proxy_statement
+  module:
+    - datetime
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.proxy_statement.field_proxy_statement_date
+field_name: field_proxy_statement_date
+entity_type: node
+bundle: proxy_statement
+label: 'Proxy Statement Date'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

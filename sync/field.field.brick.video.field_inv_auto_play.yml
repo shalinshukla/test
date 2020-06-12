@@ -1,0 +1,28 @@
+uuid: ff5c0b8e-c7be-464b-a4a2-2e0721aef448
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.video
+    - field.storage.brick.field_inv_auto_play
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.video.field_inv_auto_play
+field_name: field_inv_auto_play
+entity_type: brick
+bundle: video
+label: 'Auto play'
+description: 'To specify whether video is start playing automatically. <b> (Not applicable for Video Full Width) </b>'
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'True'
+  off_label: 'False'
+field_type: boolean

@@ -1,0 +1,19 @@
+uuid: f4ca1482-1b05-4b9a-b909-8e0af485e099
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+    - link
+id: brick.field_links
+field_name: field_links
+entity_type: brick
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,32 @@
+uuid: e096a44b-2523-4a0e-bcd4-1015a0c5a2a9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.story_and_news_author.field_mapping_id
+    - taxonomy.vocabulary.story_and_news_author
+  module:
+    - text
+id: taxonomy_term.story_and_news_author.default
+targetEntityType: taxonomy_term
+bundle: story_and_news_author
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_mapping_id:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

@@ -1,0 +1,25 @@
+uuid: 7b1f3ba5-9b1a-4c77-bea1-e04bea2c21eb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_last_updated_date
+    - node.type.jobs
+  module:
+    - datetime
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.jobs.field_last_updated_date
+field_name: field_last_updated_date
+entity_type: node
+bundle: jobs
+label: 'Last Updated Date'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

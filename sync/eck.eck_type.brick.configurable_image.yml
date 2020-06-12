@@ -1,0 +1,9 @@
+uuid: f35eeff7-b976-4798-889b-c0847f2b6dc2
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.brick
+name: 'Configurable Image'
+type: configurable_image
+description: 'Configurable Image : Showing Image with text'

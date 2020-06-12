@@ -1,0 +1,31 @@
+uuid: cec08907-97d7-422b-a91f-acb3361c626e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content_date
+    - node.type.presentations
+  module:
+    - content_translation
+    - datetime
+    - tmgmt_content
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+  tmgmt_content:
+    excluded: false
+id: node.presentations.field_content_date
+field_name: field_content_date
+entity_type: node
+bundle: presentations
+label: 'Content Date'
+description: 'The year in which this item will be grouped and displayed within the relevant year tab on the site'
+required: false
+translatable: true
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

@@ -1,0 +1,37 @@
+uuid: 54efd176-a04a-4881-b345-79b954d47a9e
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.table_columns_data
+    - eck.eck_type.brick.table_module
+    - field.storage.brick.field_columns_reference
+  module:
+    - brick_modal
+    - bricks
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+  brick_modal:
+    delete_referenced_entities: 0
+id: brick.table_module.field_columns_reference
+field_name: field_columns_reference
+entity_type: brick
+bundle: table_module
+label: 'Columns Reference'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:brick'
+  handler_settings:
+    target_bundles:
+      table_columns_data: table_columns_data
+    sort:
+      field: _none
+    auto_create: 0
+    auto_create_bundle: table_columns
+field_type: bricks

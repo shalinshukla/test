@@ -1,0 +1,27 @@
+uuid: 91735647-6b0d-426f-a264-ef633902e1ea
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.sign_post_portfolio_carousel
+    - field.storage.brick.field_pf_slider_link
+  module:
+    - content_translation
+    - link
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.sign_post_portfolio_carousel.field_pf_slider_link
+field_name: field_pf_slider_link
+entity_type: brick
+bundle: sign_post_portfolio_carousel
+label: Link
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

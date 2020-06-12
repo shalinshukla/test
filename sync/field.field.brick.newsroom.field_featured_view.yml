@@ -1,0 +1,31 @@
+uuid: 217530eb-fa04-472f-861b-16946ddcfe78
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.newsroom
+    - field.storage.brick.field_featured_view
+    - views.view.featured_news
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.newsroom.field_featured_view
+field_name: field_featured_view
+entity_type: brick
+bundle: newsroom
+label: 'Featured View'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    target_uuid: 4c67b24c-2399-4789-8c23-aa3d54a8fa78
+default_value_callback: ''
+settings:
+  handler: 'default:view'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: entity_reference

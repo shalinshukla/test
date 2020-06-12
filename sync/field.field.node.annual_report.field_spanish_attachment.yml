@@ -1,0 +1,31 @@
+uuid: 65bb1365-ccba-40bd-9d46-cb3d2dbe59f8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_spanish_attachment
+    - node.type.annual_report
+  module:
+    - file
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.annual_report.field_spanish_attachment
+field_name: field_spanish_attachment
+entity_type: node
+bundle: annual_report
+label: 'Spanish Attachment'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'txt pdf doc xls docx xlsx'
+  max_filesize: ''
+  description_field: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

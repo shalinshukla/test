@@ -1,0 +1,43 @@
+uuid: fbc73b5e-2f83-4c97-adfe-6f6012277abd
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.media_library.body
+    - field.field.node.media_library.field_media_category
+    - field.field.node.media_library.field_media_image
+    - field.field.node.media_library.field_meta_tags
+    - node.type.media_library
+  module:
+    - text
+    - user
+id: node.media_library.teaser
+targetEntityType: node
+bundle: media_library
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  content_moderation_control:
+    weight: -20
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_media_category: true
+  field_media_image: true
+  field_meta_tags: true
+  langcode: true
+  scheduled_publication: true

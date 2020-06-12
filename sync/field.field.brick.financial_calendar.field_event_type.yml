@@ -1,0 +1,35 @@
+uuid: 46a8e4c7-67be-4f6b-bf86-7d50709165a9
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.financial_calendar
+    - field.storage.brick.field_event_type
+    - taxonomy.vocabulary.event_type
+  module:
+    - bricks
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.financial_calendar.field_event_type
+field_name: field_event_type
+entity_type: brick
+bundle: financial_calendar
+label: 'Event Type'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      event_type: event_type
+    sort:
+      field: name
+      direction: asc
+    auto_create: 0
+    auto_create_bundle: ''
+field_type: bricks

@@ -1,0 +1,33 @@
+uuid: a8ae57e9-fa10-4fc5-a369-685305aec2c3
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.sign_post_explore_image
+    - field.field.brick.sign_post_explore_image.field_image_explore
+  module:
+    - bricks
+id: brick.sign_post_explore_image.default
+targetEntityType: brick
+bundle: sign_post_explore_image
+mode: default
+content:
+  field_image_explore:
+    weight: -4
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    type: bricks_nested
+    region: content
+  title:
+    label: hidden
+    type: string
+    weight: -5
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  langcode: true

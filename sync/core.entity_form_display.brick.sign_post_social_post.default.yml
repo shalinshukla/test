@@ -1,0 +1,142 @@
+uuid: a2b0e8fe-91dd-413b-9679-3664a343366d
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.sign_post_social_post
+    - field.field.brick.sign_post_social_post.field_account_name_configured
+    - field.field.brick.sign_post_social_post.field_channel
+    - field.field.brick.sign_post_social_post.field_date_format
+    - field.field.brick.sign_post_social_post.field_display_comment_count
+    - field.field.brick.sign_post_social_post.field_display_like_count
+    - field.field.brick.sign_post_social_post.field_display_number_of_tags
+    - field.field.brick.sign_post_social_post.field_display_post_image
+    - field.field.brick.sign_post_social_post.field_display_tags
+    - field.field.brick.sign_post_social_post.field_display_user_views_count
+    - field.field.brick.sign_post_social_post.field_number_of_posts
+    - field.field.brick.sign_post_social_post.field_post_ids
+    - field.field.brick.sign_post_social_post.field_post_text_length
+    - field.field.brick.sign_post_social_post.field_sppost_display_title
+    - field.field.brick.sign_post_social_post.field_time_day_elapsed
+    - field.field.brick.sign_post_social_post.field_trim_post_fix_append
+id: brick.sign_post_social_post.default
+targetEntityType: brick
+bundle: sign_post_social_post
+mode: default
+content:
+  field_account_name_configured:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_channel:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_date_format:
+    weight: 5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_display_comment_count:
+    weight: 6
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_display_like_count:
+    weight: 7
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_display_post_image:
+    weight: 8
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_display_tags:
+    weight: 9
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_display_user_views_count:
+    weight: 10
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_number_of_posts:
+    weight: 11
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_post_text_length:
+    weight: 13
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_sppost_display_title:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_time_day_elapsed:
+    weight: 15
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_trim_post_fix_append:
+    weight: 14
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 12
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_display_number_of_tags: true
+  field_post_ids: true

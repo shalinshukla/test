@@ -1,0 +1,26 @@
+uuid: 7c75f909-72a5-4224-a044-5eb406a74146
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.location
+    - field.storage.brick.field_location_email
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+_core:
+  default_config_hash: nL94RFTZtqLXXHKx0G3ZLS60xCtO5tJqOcgRnbG8Vdc
+id: brick.location.field_location_email
+field_name: field_location_email
+entity_type: brick
+bundle: location
+label: Email
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

@@ -1,0 +1,29 @@
+uuid: 973e675b-9211-4619-85cf-606c0eb8ef13
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:header_mega_menu_contents:585006d9-6a21-4b37-8869-4240a4ba8522'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - project_bootstrap
+third_party_settings:
+  block_class:
+    classes: ''
+id: newsroom1
+theme: project_bootstrap
+region: hiddne_region
+weight: 0
+provider: null
+plugin: 'block_content:585006d9-6a21-4b37-8869-4240a4ba8522'
+settings:
+  id: 'block_content:585006d9-6a21-4b37-8869-4240a4ba8522'
+  label: 'Newsroom 1'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

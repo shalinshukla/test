@@ -1,0 +1,23 @@
+uuid: 6cb65c9d-8acb-4130-a23b-85151fe7a8e5
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.header_mega_menu_contents
+    - field.storage.block_content.body
+  module:
+    - text
+id: block_content.header_mega_menu_contents.body
+field_name: body
+entity_type: block_content
+bundle: header_mega_menu_contents
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

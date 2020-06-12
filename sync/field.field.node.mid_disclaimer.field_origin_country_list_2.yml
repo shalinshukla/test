@@ -1,0 +1,30 @@
+uuid: 5404bfec-174c-4383-b459-bf01ef2e1472
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_origin_country_list_2
+    - node.type.mid_disclaimer
+  enforced:
+    module:
+      - mid_disclaimer
+  module:
+    - content_translation
+    - options
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+_core:
+  default_config_hash: l7Nl9Ie8zG5mfZeipbaUCp2CeTD83IrJ_EAGvlfT0F0
+id: node.mid_disclaimer.field_origin_country_list_2
+field_name: field_origin_country_list_2
+entity_type: node
+bundle: mid_disclaimer
+label: 'Origin Country List 2'
+description: 'You can configure countries here.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

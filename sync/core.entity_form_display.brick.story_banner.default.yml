@@ -1,0 +1,71 @@
+uuid: b8d1af4f-ff6d-4c3a-b95c-f8a7b5924aa7
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.story_banner
+    - field.field.brick.story_banner.field_autoplay_delay_in_millisec
+    - field.field.brick.story_banner.field_carousel_control_option
+    - field.field.brick.story_banner.field_sb_control_options
+    - field.field.brick.story_banner.field_story_banner
+    - field.field.brick.story_banner.field_transition_speed
+  module:
+    - inline_entity_form
+id: brick.story_banner.default
+targetEntityType: brick
+bundle: story_banner
+mode: default
+content:
+  field_autoplay_delay_in_millisec:
+    weight: 4
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_sb_control_options:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_story_banner:
+    weight: 2
+    settings:
+      form_mode: default
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      override_labels: false
+      collapsible: false
+      collapsed: false
+      allow_duplicate: false
+    third_party_settings: {  }
+    type: inline_entity_form_complex
+    region: content
+  field_transition_speed:
+    weight: 5
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  langcode:
+    type: language_select
+    weight: 1
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  field_carousel_control_option: true

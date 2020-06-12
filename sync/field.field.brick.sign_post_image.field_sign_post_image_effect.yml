@@ -1,0 +1,25 @@
+uuid: 669070bd-55b5-4150-b3a4-643b095b18e6
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.sign_post_image
+    - field.storage.brick.field_sign_post_image_effect
+  module:
+    - content_translation
+    - options
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.sign_post_image.field_sign_post_image_effect
+field_name: field_sign_post_image_effect
+entity_type: brick
+bundle: sign_post_image
+label: 'Image Effect'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

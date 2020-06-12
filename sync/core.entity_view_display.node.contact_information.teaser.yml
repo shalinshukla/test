@@ -1,0 +1,44 @@
+uuid: 043ba1bb-e3c7-4a73-afa3-a6246dbe8783
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.contact_information.body
+    - field.field.node.contact_information.field_contact_designation
+    - field.field.node.contact_information.field_contact_email
+    - field.field.node.contact_information.field_contact_image
+    - field.field.node.contact_information.field_contact_linkedin
+    - field.field.node.contact_information.field_contact_phone_number
+    - field.field.node.contact_information.field_meta_tags
+    - node.type.contact_information
+  module:
+    - text
+    - user
+id: node.contact_information.teaser
+targetEntityType: node
+bundle: contact_information
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_contact_designation: true
+  field_contact_email: true
+  field_contact_image: true
+  field_contact_linkedin: true
+  field_contact_phone_number: true
+  field_meta_tags: true
+  langcode: true
+  scheduled_publication: true

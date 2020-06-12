@@ -1,0 +1,27 @@
+uuid: 01101b88-797b-48cf-b6c9-c0bdaf5bdf79
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.media_library_video
+  module:
+    - content_translation
+    - text
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: node.media_library_video.body
+field_name: body
+entity_type: node
+bundle: media_library_video
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

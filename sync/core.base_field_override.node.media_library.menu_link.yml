@@ -1,0 +1,25 @@
+uuid: ceaf2840-9b17-49f3-97ec-6e4f29262b4e
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.media_library
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: node.media_library.menu_link
+field_name: menu_link
+entity_type: node
+bundle: media_library
+label: 'Menu link'
+description: 'Computed menu link for the node (only available during node saving).'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

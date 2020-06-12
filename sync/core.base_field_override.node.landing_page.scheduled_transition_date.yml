@@ -1,0 +1,24 @@
+uuid: 8d69fb49-3696-498d-b8c9-20c62f96ef36
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.landing_page
+  module:
+    - content_translation
+    - datetime
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: node.landing_page.scheduled_transition_date
+field_name: scheduled_transition_date
+entity_type: node
+bundle: landing_page
+label: null
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

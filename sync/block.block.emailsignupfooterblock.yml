@@ -1,0 +1,29 @@
+uuid: dc0e830d-da29-430c-9720-af26fb21bbfa
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:28aa13ef-3217-4e83-9585-66a82f87ef34'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - project_bootstrap
+third_party_settings:
+  block_class:
+    classes: 'col-xs-12 col-sm-6 col-md-4'
+id: emailsignupfooterblock
+theme: project_bootstrap
+region: footer
+weight: -31
+provider: null
+plugin: 'block_content:28aa13ef-3217-4e83-9585-66a82f87ef34'
+settings:
+  id: 'block_content:28aa13ef-3217-4e83-9585-66a82f87ef34'
+  label: 'Email Signup Footer Block'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

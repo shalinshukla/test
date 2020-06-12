@@ -1,0 +1,25 @@
+uuid: 114c504a-3f80-485e-8986-e667de7479eb
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.sign_post_key_facts
+    - field.storage.brick.field_keyfact_description
+  module:
+    - text
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: brick.sign_post_key_facts.field_keyfact_description
+field_name: field_keyfact_description
+entity_type: brick
+bundle: sign_post_key_facts
+label: 'Keyfact Description'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

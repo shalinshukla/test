@@ -1,0 +1,45 @@
+uuid: baa9e39b-da00-4b19-b29c-2dc2e49ba47d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.jobs.field_job_category
+    - field.field.node.jobs.field_job_country
+    - field.field.node.jobs.field_job_date_posted
+    - field.field.node.jobs.field_job_department
+    - field.field.node.jobs.field_job_display_title
+    - field.field.node.jobs.field_job_eeo_statement
+    - field.field.node.jobs.field_job_employment_type_2
+    - field.field.node.jobs.field_job_employment_type_i
+    - field.field.node.jobs.field_job_id
+    - field.field.node.jobs.field_job_location_info
+    - field.field.node.jobs.field_job_qualifications
+    - field.field.node.jobs.field_job_state
+    - node.type.jobs
+  module:
+    - user
+id: node.jobs.teaser
+targetEntityType: node
+bundle: jobs
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_job_category: true
+  field_job_country: true
+  field_job_date_posted: true
+  field_job_department: true
+  field_job_display_title: true
+  field_job_eeo_statement: true
+  field_job_employment_type_2: true
+  field_job_employment_type_i: true
+  field_job_id: true
+  field_job_location_info: true
+  field_job_qualifications: true
+  field_job_state: true
+  langcode: true

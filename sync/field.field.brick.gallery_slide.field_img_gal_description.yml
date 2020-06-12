@@ -1,0 +1,24 @@
+uuid: ecd24204-5151-418e-b721-164d72730594
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.gallery_slide
+    - field.storage.brick.field_img_gal_description
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.gallery_slide.field_img_gal_description
+field_name: field_img_gal_description
+entity_type: brick
+bundle: gallery_slide
+label: Description
+description: 'Enter value for description to be display'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

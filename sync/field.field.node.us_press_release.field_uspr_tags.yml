@@ -1,0 +1,37 @@
+uuid: 5a594c1d-f437-490a-a8da-55a6929b1e14
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_uspr_tags
+    - node.type.us_press_release
+    - taxonomy.vocabulary.uspr_tags
+  module:
+    - brick_modal
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+  brick_modal:
+    delete_referenced_entities: 0
+id: node.us_press_release.field_uspr_tags
+field_name: field_uspr_tags
+entity_type: node
+bundle: us_press_release
+label: 'USPR Tags'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      uspr_tags: uspr_tags
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

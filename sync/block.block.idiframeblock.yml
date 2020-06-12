@@ -1,0 +1,28 @@
+uuid: b07d22b7-fd6b-4303-97f4-bfd0885886d3
+langcode: en
+status: false
+dependencies:
+  module:
+    - block_class
+    - mid_common
+  theme:
+    - project_bootstrap
+third_party_settings:
+  block_class:
+    classes: ''
+id: idiframeblock
+theme: project_bootstrap
+region: navigation
+weight: -18
+provider: null
+plugin: id_iframe_header_block
+settings:
+  id: id_iframe_header_block
+  label: IdIframeBlock
+  provider: mid_common
+  label_display: '0'
+  additional_parameter: 'class="responsive" style="height:15px;width:100%;scrolling:no"'
+  iframe_id: iframe-header-shareprice-id
+  iframe_title: 'This is title'
+  iframe_url: 'https://irs.tools.investis.com/Clients/(S(yiaxibrnvmqlwapwzzw1afst))/uk/demo_mid/Ticker/Ticker.aspx?culture=en-GB'
+visibility: {  }

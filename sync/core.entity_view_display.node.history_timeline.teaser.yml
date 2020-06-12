@@ -1,0 +1,40 @@
+uuid: ccf23bf2-4400-4443-8729-985e2d02d808
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.history_timeline.body
+    - field.field.node.history_timeline.field_history_date
+    - field.field.node.history_timeline.field_history_image
+    - field.field.node.history_timeline.field_image_position
+    - field.field.node.history_timeline.field_meta_tags
+    - node.type.history_timeline
+  module:
+    - text
+    - user
+id: node.history_timeline.teaser
+targetEntityType: node
+bundle: history_timeline
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_history_date: true
+  field_history_image: true
+  field_image_position: true
+  field_meta_tags: true
+  langcode: true
+  scheduled_publication: true

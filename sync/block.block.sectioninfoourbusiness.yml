@@ -1,0 +1,29 @@
+uuid: 35c02be9-c4d2-4ab2-8d1b-40eecd6e0ac1
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:fd643187-5589-46b8-859e-1c931036d4f7'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - project_bootstrap
+third_party_settings:
+  block_class:
+    classes: ''
+id: sectioninfoourbusiness
+theme: project_bootstrap
+region: footer_bottom
+weight: 0
+provider: null
+plugin: 'block_content:fd643187-5589-46b8-859e-1c931036d4f7'
+settings:
+  id: 'block_content:fd643187-5589-46b8-859e-1c931036d4f7'
+  label: 'Section Info'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

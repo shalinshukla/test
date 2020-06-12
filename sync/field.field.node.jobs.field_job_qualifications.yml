@@ -1,0 +1,37 @@
+uuid: b75635ec-7a80-4c29-82ba-d61974d976e6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_job_qualifications
+    - node.type.jobs
+    - taxonomy.vocabulary.job_qualifications
+  module:
+    - brick_modal
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+  brick_modal:
+    delete_referenced_entities: 0
+id: node.jobs.field_job_qualifications
+field_name: field_job_qualifications
+entity_type: node
+bundle: jobs
+label: 'Qualifications (Preferred Qualifications)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      job_qualifications: job_qualifications
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

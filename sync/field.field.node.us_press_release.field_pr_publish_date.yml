@@ -1,0 +1,26 @@
+uuid: 8849a117-e694-4482-aa18-139701ef8b7f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pr_publish_date
+    - node.type.us_press_release
+  module:
+    - datetime
+_core:
+  default_config_hash: A8ybG3vZwhBCwjW3e6i8B3NWBD8iZvInh2EKNaXTme4
+id: node.us_press_release.field_pr_publish_date
+field_name: field_pr_publish_date
+entity_type: node
+bundle: us_press_release
+label: 'PR Publish Date'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

@@ -1,0 +1,25 @@
+uuid: 57bfb972-a84a-45f8-81e5-188afb794648
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_short_description_1
+    - node.type.people
+  module:
+    - content_translation
+    - text
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: node.people.field_short_description_1
+field_name: field_short_description_1
+entity_type: node
+bundle: people
+label: 'Short Description'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,39 @@
+uuid: baff7abb-445d-4cba-a5bb-1b52e0dd3cfb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_download_content_link
+    - node.type.link_document_content
+  module:
+    - content_translation
+    - link
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: node.link_document_content.field_download_content_link
+field_name: field_download_content_link
+entity_type: node
+bundle: link_document_content
+label: 'Download content link'
+description: "<p>Uploading file size limit is 10mb.</p><p>To display tooltip, you can use the title field in attributes</p><p>Link text field can be configured with custom text or provided attributes in attributes section</p>\r\n<b>Note:</b> Please keep Link Text field empty if no file is added in the Download Content section.\r\n"
+required: false
+translatable: true
+default_value:
+  -
+    attributes:
+      title: 'Open in new window'
+      target: _blank
+      class: link-online
+    uri: 'internal:/'
+    options:
+      attributes:
+        title: 'Open in new window'
+        target: _blank
+        class: link-online
+    title: '<extension> (<size>)'
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

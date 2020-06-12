@@ -1,0 +1,39 @@
+uuid: 4bf17fe3-dc6a-4c67-b27b-1f71c9567e12
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.investis_branding
+    - field.field.block_content.investis_branding.field_icon
+    - field.field.block_content.investis_branding.field_link_branding
+  module:
+    - image
+    - link
+id: block_content.investis_branding.default
+targetEntityType: block_content
+bundle: investis_branding
+mode: default
+content:
+  field_icon:
+    weight: 0
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_link_branding:
+    weight: 1
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+hidden:
+  langcode: true

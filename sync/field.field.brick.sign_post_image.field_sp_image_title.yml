@@ -1,0 +1,24 @@
+uuid: 1a8406f9-4f7e-4bfe-a1bc-cbea791a36e8
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.sign_post_image
+    - field.storage.brick.field_sp_image_title
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.sign_post_image.field_sp_image_title
+field_name: field_sp_image_title
+entity_type: brick
+bundle: sign_post_image
+label: Title
+description: 'Provide title to be displayed'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

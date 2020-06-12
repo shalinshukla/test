@@ -1,0 +1,30 @@
+uuid: 38b4bb2c-ba2d-42fe-9c14-4ba45a402d01
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.results_year_term_view
+  module:
+    - system
+    - views
+  theme:
+    - project_bootstrap
+id: views_block__results_year_term_view_block_1
+theme: project_bootstrap
+region: content
+weight: -33
+provider: null
+plugin: 'views_block:results_year_term_view-block_1'
+settings:
+  id: 'views_block:results_year_term_view-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /node/142
+    negate: false
+    context_mapping: {  }

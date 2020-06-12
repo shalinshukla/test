@@ -1,0 +1,9 @@
+uuid: adbf40c9-58af-4684-9af7-c30544d2abb2
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.brick
+name: 'Gallery Slide'
+type: gallery_slide
+description: 'Gallery slides to be part of Image gallery'

@@ -1,0 +1,24 @@
+uuid: c2a9f406-0d69-403f-b760-c25433aab967
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.quote_full_width
+    - field.storage.brick.field_fwq_role
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.quote_full_width.field_fwq_role
+field_name: field_fwq_role
+entity_type: brick
+bundle: quote_full_width
+label: Role
+description: 'Provide role to be displayed'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,28 @@
+uuid: 3c342ba6-3634-4ddb-94df-7a95836c4450
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_link_to_profile_page
+    - taxonomy.vocabulary.people_category
+  module:
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: taxonomy_term.people_category.field_link_to_profile_page
+field_name: field_link_to_profile_page
+entity_type: taxonomy_term
+bundle: people_category
+label: 'Link to profile page'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,143 @@
+uuid: 4737e8ec-1112-4193-b8da-8b18b7ed4ea5
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.video
+    - field.field.brick.video.field_inv_auto_play
+    - field.field.brick.video.field_inv_loop_enabled
+    - field.field.brick.video.field_inv_player_type
+    - field.field.brick.video.field_inv_video_data_type
+    - field.field.brick.video.field_inv_video_id
+    - field.field.brick.video.field_play_video_in_lightbox
+    - field.field.brick.video.field_poster_image
+    - field.field.brick.video.field_show_video_in_full_width
+    - field.field.brick.video.field_signpost_video_variation
+    - field.field.brick.video.field_sp_video_title
+    - field.field.brick.video.field_video_short_description
+    - field.field.brick.video.field_watch_now
+  module:
+    - link
+    - options
+    - svg_image
+id: brick.video.default
+targetEntityType: brick
+bundle: video
+mode: default
+content:
+  field_inv_auto_play:
+    weight: 3
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_inv_loop_enabled:
+    weight: 2
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_inv_player_type:
+    weight: -1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_inv_video_data_type:
+    weight: -4
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_inv_video_id:
+    weight: -2
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_play_video_in_lightbox:
+    weight: 9
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_poster_image:
+    weight: 5
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_show_video_in_full_width:
+    weight: 11
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_signpost_video_variation:
+    weight: 12
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_sp_video_title:
+    weight: 10
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_video_short_description:
+    weight: 7
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_watch_now:
+    weight: 8
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  title:
+    label: hidden
+    type: string
+    weight: -5
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  search_api_excerpt: true

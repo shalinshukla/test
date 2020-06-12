@@ -1,0 +1,30 @@
+uuid: d36a9dd1-5b63-4390-b49d-8b6db7ca048a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_display_origin_1_countries
+    - node.type.mid_disclaimer
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+_core:
+  default_config_hash: NQq6QRsThtLgPcuKJlq21xdadz9qVvMgIrEU4tmcoSc
+id: node.mid_disclaimer.field_display_origin_1_countries
+field_name: field_display_origin_1_countries
+entity_type: node
+bundle: mid_disclaimer
+label: 'Display Origin Countries Step One'
+description: 'Display Origin Countries Step One'
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,44 @@
+uuid: 985a6b64-fcbc-4fa8-84fb-7ec0a4c824af
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.corporate_article.body
+    - field.field.node.corporate_article.field_article_link
+    - node.type.corporate_article
+  module:
+    - link
+    - text
+    - user
+id: node.corporate_article.default
+targetEntityType: node
+bundle: corporate_article
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_article_link:
+    weight: 102
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

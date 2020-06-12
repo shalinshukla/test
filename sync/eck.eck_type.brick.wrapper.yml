@@ -1,0 +1,11 @@
+uuid: be26630e-750f-4b72-aa00-4d6031de76a1
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.brick
+_core:
+  default_config_hash: CnVyvEjvQpeDFbru8EzNDFjIZy7B4lCOeTHicSHfk_w
+name: Wrapper
+type: wrapper
+description: ''

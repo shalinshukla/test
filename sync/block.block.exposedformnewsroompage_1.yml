@@ -1,0 +1,19 @@
+uuid: 5b56cccb-624d-4f35-bb8f-b93f1553573d
+langcode: en
+status: true
+dependencies:
+  theme:
+    - investis_bootstrap
+id: exposedformnewsroompage_1
+theme: investis_bootstrap
+region: content
+weight: 0
+provider: null
+plugin: 'views_exposed_filter_block:newsroom-page_1'
+settings:
+  id: 'views_exposed_filter_block:newsroom-page_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+visibility: {  }

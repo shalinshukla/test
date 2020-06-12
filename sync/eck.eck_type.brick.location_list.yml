@@ -1,0 +1,11 @@
+uuid: 06f7e06b-9cf8-4faf-872e-5a52a6cd5987
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.brick
+_core:
+  default_config_hash: CYg51OmYSDUFoTPLRvTgEhZdDeiII6RaDjzDma-zG0g
+name: 'Location list'
+type: location_list
+description: 'Show a list of locations.'

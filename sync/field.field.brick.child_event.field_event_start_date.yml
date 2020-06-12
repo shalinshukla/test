@@ -1,0 +1,25 @@
+uuid: 96a64bce-fd83-4f43-baa4-77ef5850383a
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.child_event
+    - field.storage.brick.field_event_start_date
+  module:
+    - datetime
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: brick.child_event.field_event_start_date
+field_name: field_event_start_date
+entity_type: brick
+bundle: child_event
+label: 'Event Start Date'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

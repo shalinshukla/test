@@ -1,0 +1,26 @@
+uuid: 670c7b3f-01d4-4b9f-8b6c-2daccb33b848
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.sign_post_email_signup
+    - field.storage.brick.field_email_validation_message
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.sign_post_email_signup.field_email_validation_message
+field_name: field_email_validation_message
+entity_type: brick
+bundle: sign_post_email_signup
+label: 'Email validation message'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 'Not a valid e-mail address'
+default_value_callback: ''
+settings: {  }
+field_type: string

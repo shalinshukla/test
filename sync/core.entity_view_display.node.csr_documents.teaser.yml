@@ -1,0 +1,32 @@
+uuid: 75c7d522-4d05-4475-96ec-34bd7ac874a8
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.csr_documents.body
+    - node.type.csr_documents
+  module:
+    - text
+    - user
+id: node.csr_documents.teaser
+targetEntityType: node
+bundle: csr_documents
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

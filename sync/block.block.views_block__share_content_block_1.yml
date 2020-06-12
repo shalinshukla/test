@@ -1,0 +1,25 @@
+uuid: 89964b7e-d6ee-4d6e-aeee-2b2eab2204ed
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.share_content
+  module:
+    - views
+  theme:
+    - project_bootstrap
+id: views_block__share_content_block_1
+theme: project_bootstrap
+region: navigation
+weight: -19
+provider: null
+plugin: 'views_block:share_content-block_1'
+settings:
+  id: 'views_block:share_content-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility: {  }

@@ -1,0 +1,80 @@
+uuid: 20b0ec08-ec28-49c7-8658-fdda88f869b8
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.sliding_banner
+    - field.field.brick.sliding_banner.field_autoplay_delay_in_millisec
+    - field.field.brick.sliding_banner.field_banner_slides
+    - field.field.brick.sliding_banner.field_banner_variation
+    - field.field.brick.sliding_banner.field_carousel_control_option
+    - field.field.brick.sliding_banner.field_sb_control_options
+    - field.field.brick.sliding_banner.field_transition_speed
+  module:
+    - bricks_inline
+id: brick.sliding_banner.default
+targetEntityType: brick
+bundle: sliding_banner
+mode: default
+content:
+  field_autoplay_delay_in_millisec:
+    weight: 4
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_banner_slides:
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      form_mode: default
+      override_labels: false
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: false
+    third_party_settings: {  }
+    type: bricks_tree_inline
+    region: content
+  field_banner_variation:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_sb_control_options:
+    type: options_buttons
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_transition_speed:
+    weight: 7
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  langcode:
+    type: language_select
+    weight: 5
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_carousel_control_option: true

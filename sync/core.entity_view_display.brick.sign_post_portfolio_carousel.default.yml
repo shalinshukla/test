@@ -1,0 +1,56 @@
+uuid: d9b5889a-a816-423e-b132-aa75044aab77
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.sign_post_portfolio_carousel
+    - field.field.brick.sign_post_portfolio_carousel.field_pf_slider_link
+    - field.field.brick.sign_post_portfolio_carousel.field_pf_slider_slides
+    - field.field.brick.sign_post_portfolio_carousel.field_pf_title
+  module:
+    - bricks
+    - link
+id: brick.sign_post_portfolio_carousel.default
+targetEntityType: brick
+bundle: sign_post_portfolio_carousel
+mode: default
+content:
+  field_pf_slider_link:
+    weight: -3
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link_separate
+    region: content
+  field_pf_slider_slides:
+    weight: -4
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    type: bricks_nested
+    region: content
+  field_pf_title:
+    weight: -2
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  title:
+    label: hidden
+    type: string
+    weight: -5
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  langcode: true

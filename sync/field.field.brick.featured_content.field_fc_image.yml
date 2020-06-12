@@ -1,0 +1,48 @@
+uuid: 3d414209-0d87-4c8d-8390-b13fc4f6833f
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.featured_content
+    - field.storage.brick.field_fc_image
+  module:
+    - content_translation
+    - image
+    - tmgmt_content
+third_party_settings:
+  content_translation:
+    translation_sync:
+      file: file
+      alt: '0'
+      title: '0'
+  tmgmt_content:
+    excluded: false
+id: brick.featured_content.field_fc_image
+field_name: field_fc_image
+entity_type: brick
+bundle: featured_content
+label: 'Featured Image'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg svg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: false
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

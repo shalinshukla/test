@@ -1,0 +1,36 @@
+uuid: 62b77f47-76c5-4378-8fa0-2b3087d0b1ab
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.press_release_banner
+    - field.storage.brick.field_press_releases
+    - node.type.us_press_release
+  module:
+    - brick_modal
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+  brick_modal:
+    delete_referenced_entities: 0
+id: brick.press_release_banner.field_press_releases
+field_name: field_press_releases
+entity_type: brick
+bundle: press_release_banner
+label: 'Press Releases'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      us_press_release: us_press_release
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

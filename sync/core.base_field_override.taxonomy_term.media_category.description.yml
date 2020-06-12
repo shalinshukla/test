@@ -1,0 +1,20 @@
+uuid: 493a350e-a091-41e0-986a-d68cf5a0ba19
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.media_category
+  module:
+    - text
+id: taxonomy_term.media_category.description
+field_name: description
+entity_type: taxonomy_term
+bundle: media_category
+label: Description
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

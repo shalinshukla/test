@@ -1,0 +1,29 @@
+uuid: 9b4a0bc4-902c-44e0-8c68-7bc12bf323c5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_allowed_banned_2
+    - node.type.mid_disclaimer
+  module:
+    - content_translation
+    - options
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+_core:
+  default_config_hash: MjuxBKutVRZwadXyJcyDPaErBbVmzvb_13cZv88k9VA
+id: node.mid_disclaimer.field_allowed_banned_2
+field_name: field_allowed_banned_2
+entity_type: node
+bundle: mid_disclaimer
+label: 'Allowed Banned 2'
+description: 'This field will be used to validate step two country validation for origin country and physical presence country.'
+required: true
+translatable: true
+default_value:
+  -
+    value: allowed
+default_value_callback: ''
+settings: {  }
+field_type: list_string

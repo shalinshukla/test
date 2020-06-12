@@ -1,0 +1,22 @@
+uuid: dc8fd690-8c66-464b-b890-72ed1eefb767
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.child_event
+  module:
+    - user
+id: node.child_event.teaser
+targetEntityType: node
+bundle: child_event
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

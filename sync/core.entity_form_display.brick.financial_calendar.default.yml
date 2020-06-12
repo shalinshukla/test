@@ -1,0 +1,89 @@
+uuid: 9e6ba956-d76f-42ad-bf22-5068419e0dab
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.financial_calendar
+    - field.field.brick.financial_calendar.field_archive_display_name
+    - field.field.brick.financial_calendar.field_current_year_display_name
+    - field.field.brick.financial_calendar.field_event_type
+    - field.field.brick.financial_calendar.field_fc_message_empty_archive
+    - field.field.brick.financial_calendar.field_fc_message_empty_content
+    - field.field.brick.financial_calendar.field_fin_cal_archive_view
+    - field.field.brick.financial_calendar.field_fin_cal_current_year_view
+id: brick.financial_calendar.default
+targetEntityType: brick
+bundle: financial_calendar
+mode: default
+content:
+  field_archive_display_name:
+    weight: 8
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_current_year_display_name:
+    weight: 5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_event_type:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_fc_message_empty_archive:
+    weight: 9
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_fc_message_empty_content:
+    weight: 6
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_fin_cal_archive_view:
+    weight: 7
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_fin_cal_current_year_view:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  langcode:
+    type: language_select
+    weight: 1
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: 'Enter Event Type Title here'
+    third_party_settings: {  }
+  translation:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

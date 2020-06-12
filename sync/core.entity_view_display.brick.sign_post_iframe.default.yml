@@ -1,0 +1,97 @@
+uuid: aedd538e-4fb8-422f-b82c-0e198ff8b02f
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.sign_post_iframe
+    - field.field.brick.sign_post_iframe.field_background_color_variation
+    - field.field.brick.sign_post_iframe.field_ifr_additional_parameter
+    - field.field.brick.sign_post_iframe.field_iframe_id
+    - field.field.brick.sign_post_iframe.field_iframe_signpost
+    - field.field.brick.sign_post_iframe.field_iframe_url
+    - field.field.brick.sign_post_iframe.field_links
+    - field.field.brick.sign_post_iframe.field_sp_iframe_title
+  module:
+    - link
+    - options
+id: brick.sign_post_iframe.default
+targetEntityType: brick
+bundle: sign_post_iframe
+mode: default
+content:
+  field_background_color_variation:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_ifr_additional_parameter:
+    weight: -1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_iframe_id:
+    weight: -2
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_iframe_signpost:
+    weight: 1
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_iframe_url:
+    weight: -3
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link_separate
+    region: content
+  field_links:
+    weight: 2
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_sp_iframe_title:
+    weight: -4
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  title:
+    label: hidden
+    type: string
+    weight: -5
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  search_api_excerpt: true

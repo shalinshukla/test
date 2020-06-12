@@ -1,0 +1,27 @@
+uuid: bc1760f5-ba87-4945-8f14-ee1bd681c5b5
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.configurable_text
+    - field.storage.brick.field_links
+  module:
+    - link
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: brick.configurable_text.field_links
+field_name: field_links
+entity_type: brick
+bundle: configurable_text
+label: 'Configurable Link'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

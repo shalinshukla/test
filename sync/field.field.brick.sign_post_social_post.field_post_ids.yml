@@ -1,0 +1,24 @@
+uuid: 2798e011-b8c3-42f0-adce-e18fae5b4d87
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.sign_post_social_post
+    - field.storage.brick.field_post_ids
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.sign_post_social_post.field_post_ids
+field_name: field_post_ids
+entity_type: brick
+bundle: sign_post_social_post
+label: 'Post Ids'
+description: 'Enter the post ids here. Please enter "," separated posts ids.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

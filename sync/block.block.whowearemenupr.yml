@@ -1,0 +1,29 @@
+uuid: 94723b63-73b3-4ead-a8b4-1aea0415abc3
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:header_mega_menu_contents:0a4073b0-1d6a-4b36-bccf-92550ef58104'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - project_bootstrap
+third_party_settings:
+  block_class:
+    classes: ''
+id: whowearemenupr
+theme: project_bootstrap
+region: hiddne_region
+weight: 0
+provider: null
+plugin: 'block_content:0a4073b0-1d6a-4b36-bccf-92550ef58104'
+settings:
+  id: 'block_content:0a4073b0-1d6a-4b36-bccf-92550ef58104'
+  label: 'Who we are - Menu PR'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

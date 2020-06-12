@@ -1,0 +1,29 @@
+uuid: 37df8d95-6527-4ee3-bf4f-29329839c6b1
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:header_mega_menu_contents:0fbf67ae-e9be-483f-b0eb-61438cd66b9a'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - project_bootstrap
+third_party_settings:
+  block_class:
+    classes: ''
+id: whoweare_header_block_1
+theme: project_bootstrap
+region: hiddne_region
+weight: 0
+provider: null
+plugin: 'block_content:0fbf67ae-e9be-483f-b0eb-61438cd66b9a'
+settings:
+  id: 'block_content:0fbf67ae-e9be-483f-b0eb-61438cd66b9a'
+  label: 'Who we are -- header block 1'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

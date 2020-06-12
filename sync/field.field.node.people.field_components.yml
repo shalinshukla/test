@@ -1,0 +1,39 @@
+uuid: 9d5aaccd-092c-4649-8dd0-f81caa5413a6
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.layout
+    - eck.eck_type.brick.sliding_banner
+    - field.storage.node.field_components
+    - node.type.people
+  module:
+    - brick_modal
+    - bricks
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+  brick_modal:
+    delete_referenced_entities: 0
+id: node.people.field_components
+field_name: field_components
+entity_type: node
+bundle: people
+label: Components
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:brick'
+  handler_settings:
+    target_bundles:
+      layout: layout
+      sliding_banner: sliding_banner
+    sort:
+      field: _none
+    auto_create: 0
+    auto_create_bundle: layout
+field_type: bricks

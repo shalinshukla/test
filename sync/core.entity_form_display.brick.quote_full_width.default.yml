@@ -1,0 +1,65 @@
+uuid: e4d2c3b0-9f3e-4755-b398-a5d158984db7
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.quote_full_width
+    - field.field.brick.quote_full_width.field_fwq_first_name
+    - field.field.brick.quote_full_width.field_fwq_last_name
+    - field.field.brick.quote_full_width.field_fwq_quote_formatted
+    - field.field.brick.quote_full_width.field_fwq_quote_text
+    - field.field.brick.quote_full_width.field_fwq_role
+  module:
+    - text
+id: brick.quote_full_width.default
+targetEntityType: brick
+bundle: quote_full_width
+mode: default
+content:
+  field_fwq_first_name:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_fwq_quote_formatted:
+    weight: 5
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_fwq_role:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  langcode:
+    type: language_select
+    weight: 1
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: 'Enter your role/title'
+    third_party_settings: {  }
+  translation:
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_fwq_last_name: true
+  field_fwq_quote_text: true

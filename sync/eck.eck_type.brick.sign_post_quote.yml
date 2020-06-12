@@ -1,0 +1,9 @@
+uuid: a0276430-4bbd-4793-91aa-77f1ce85e6de
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.brick
+name: 'Sign Post - Quote'
+type: sign_post_quote
+description: 'Sign post - Quote component'

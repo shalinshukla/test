@@ -1,0 +1,22 @@
+uuid: f996b929-184c-49d1-9aea-ee301445153d
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - investis_bootstrap
+_core:
+  default_config_hash: iggZSiUKz4mYP1YPJ8SsUfFu79HIgOTt6IDy3Up59aM
+id: investis_bootstrap_powered
+theme: investis_bootstrap
+region: footer
+weight: -7
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

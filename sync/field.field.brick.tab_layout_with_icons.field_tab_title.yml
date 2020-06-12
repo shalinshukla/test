@@ -1,0 +1,24 @@
+uuid: 5466e112-18ff-4fe7-8c6d-b78ed77cda12
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.tab_layout_with_icons
+    - field.storage.brick.field_tab_title
+  module:
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: brick.tab_layout_with_icons.field_tab_title
+field_name: field_tab_title
+entity_type: brick
+bundle: tab_layout_with_icons
+label: 'Tab title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,28 @@
+uuid: 631e2978-40c1-465b-840c-d2edaae8fd03
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_landing_page
+    - node.type.bricky
+  module:
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.bricky.field_landing_page
+field_name: field_landing_page
+entity_type: node
+bundle: bricky
+label: 'Landing Page'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

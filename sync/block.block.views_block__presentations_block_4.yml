@@ -1,0 +1,34 @@
+uuid: cfdb0778-0e26-49df-8591-acce627ec76f
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.presentations
+  module:
+    - block_class
+    - system
+    - views
+  theme:
+    - project_bootstrap
+third_party_settings:
+  block_class:
+    classes: ''
+id: views_block__presentations_block_4
+theme: project_bootstrap
+region: content
+weight: -31
+provider: null
+plugin: 'views_block:presentations-block_4'
+settings:
+  id: 'views_block:presentations-block_4'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: "/node/115\r\n/node/93"
+    negate: false
+    context_mapping: {  }

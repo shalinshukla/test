@@ -1,0 +1,35 @@
+uuid: 0c220c85-8b69-41c9-9c72-075ccc435da0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_linkedin_link
+    - node.type.people
+  module:
+    - content_translation
+    - link
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: node.people.field_linkedin_link
+field_name: field_linkedin_link
+entity_type: node
+bundle: people
+label: 'Linkedin link'
+description: 'Linked in account link of person.'
+required: false
+translatable: true
+default_value:
+  -
+    attributes: {  }
+    uri: 'http://linkedin.com/'
+    options:
+      attributes:
+        target: _blank
+        class: linkedin-link
+    title: ''
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

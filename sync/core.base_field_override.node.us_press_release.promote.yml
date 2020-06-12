@@ -1,0 +1,24 @@
+uuid: a9f55338-3ab4-4796-b6dd-3dd0152950d6
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.us_press_release
+_core:
+  default_config_hash: Z35ZC1VgILgj1L_TTGJ5te5GgQjsxFNICP19OOfJr7Y
+id: node.us_press_release.promote
+field_name: promote
+entity_type: node
+bundle: us_press_release
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

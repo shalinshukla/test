@@ -1,0 +1,29 @@
+uuid: 49eb0ac1-1d4d-468b-a73c-9bb35731c6d6
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer
+  module:
+    - block_class
+    - system
+  theme:
+    - project_bootstrap
+third_party_settings:
+  block_class:
+    classes: 'col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5'
+id: footer
+theme: project_bootstrap
+region: footer_bottom
+weight: -12
+provider: null
+plugin: 'system_menu_block:footer'
+settings:
+  id: 'system_menu_block:footer'
+  label: Footer
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

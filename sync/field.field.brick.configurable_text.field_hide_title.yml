@@ -1,0 +1,25 @@
+uuid: dca83206-7a1c-4d10-9de1-8ffe37762428
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.configurable_text
+    - field.storage.brick.field_hide_title
+  module:
+    - content_translation
+    - options
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.configurable_text.field_hide_title
+field_name: field_hide_title
+entity_type: brick
+bundle: configurable_text
+label: 'Hide Title'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

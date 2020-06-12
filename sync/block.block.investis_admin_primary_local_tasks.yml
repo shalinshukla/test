@@ -1,0 +1,22 @@
+uuid: 8cf44d38-bddb-4b49-af8e-2a1a775bad0d
+langcode: en
+status: true
+dependencies:
+  theme:
+    - investis_admin
+_core:
+  default_config_hash: gjrSidK-E7gQM4A-TEv8ckQNEXQPgDFNnTLCVoUvpvw
+id: investis_admin_primary_local_tasks
+theme: investis_admin
+region: header
+weight: 0
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: false
+visibility: {  }

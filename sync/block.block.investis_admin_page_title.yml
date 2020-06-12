@@ -1,0 +1,20 @@
+uuid: 074377a7-793d-4a83-94e8-866101ee637b
+langcode: en
+status: true
+dependencies:
+  theme:
+    - investis_admin
+_core:
+  default_config_hash: 5SbWwkFzOdrYabTjCwRlq6WL25mWrTBCoxe9V75H028
+id: investis_admin_page_title
+theme: investis_admin
+region: header
+weight: -30
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

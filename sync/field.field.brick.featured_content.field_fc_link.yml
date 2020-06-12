@@ -1,0 +1,27 @@
+uuid: 7bf24090-4b3e-404f-92f3-cd10520e195b
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.featured_content
+    - field.storage.brick.field_fc_link
+  module:
+    - content_translation
+    - link
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.featured_content.field_fc_link
+field_name: field_fc_link
+entity_type: brick
+bundle: featured_content
+label: Link
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

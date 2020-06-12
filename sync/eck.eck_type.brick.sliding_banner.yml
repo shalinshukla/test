@@ -1,0 +1,9 @@
+uuid: 488e11ca-3797-47f6-a82b-0bab41513ef9
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.brick
+name: 'Sliding Banner'
+type: sliding_banner
+description: 'Sliding banner bundle to display different slider banner variations'

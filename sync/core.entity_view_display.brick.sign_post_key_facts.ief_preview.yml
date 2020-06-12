@@ -1,0 +1,32 @@
+uuid: 9a487c40-3d76-4c01-9308-253b64bac768
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.brick.ief_preview
+    - eck.eck_type.brick.sign_post_key_facts
+    - field.field.brick.sign_post_key_facts.field_kf_display_title
+    - field.field.brick.sign_post_key_facts.field_sp_fact_figures
+    - field.field.brick.sign_post_key_facts.field_sp_fact_image_icon
+    - image.style.thumbnail
+  module:
+    - image
+id: brick.sign_post_key_facts.ief_preview
+targetEntityType: brick
+bundle: sign_post_key_facts
+mode: ief_preview
+content:
+  field_sp_fact_image_icon:
+    type: image
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      image_style: thumbnail
+      image_link: ''
+    third_party_settings: {  }
+hidden:
+  field_kf_display_title: true
+  field_sp_fact_figures: true
+  langcode: true
+  title: true

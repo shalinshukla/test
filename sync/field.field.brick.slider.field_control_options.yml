@@ -1,0 +1,25 @@
+uuid: f1709237-0ed2-42b5-a73b-74a6283ec051
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.slider
+    - field.storage.brick.field_control_options
+  module:
+    - content_translation
+    - options
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.slider.field_control_options
+field_name: field_control_options
+entity_type: brick
+bundle: slider
+label: 'Control options'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

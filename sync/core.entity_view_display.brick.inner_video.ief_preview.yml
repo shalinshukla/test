@@ -1,0 +1,34 @@
+uuid: 77529301-1641-4976-80d0-b6b51e83b39f
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.brick.ief_preview
+    - eck.eck_type.brick.inner_video
+    - field.field.brick.inner_video.field_inner_video_id
+    - field.field.brick.inner_video.field_vg_video_source
+    - field.field.brick.inner_video.field_video_poster_image
+    - field.field.brick.inner_video.field_vshort_description
+    - image.style.thumbnail
+  module:
+    - image
+id: brick.inner_video.ief_preview
+targetEntityType: brick
+bundle: inner_video
+mode: ief_preview
+content:
+  field_video_poster_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: thumbnail
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  field_inner_video_id: true
+  field_vg_video_source: true
+  field_vshort_description: true
+  langcode: true
+  title: true

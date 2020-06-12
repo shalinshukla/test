@@ -1,0 +1,36 @@
+uuid: 602db4d7-abce-4b8d-a355-e74636d3ce16
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.location_type
+_core:
+  default_config_hash: 3CiaN6JMp_JEPm1WARovp7_bd-Cz7_IbPSKuWfwnJ-I
+id: taxonomy_term.location_type.default
+targetEntityType: taxonomy_term
+bundle: location_type
+mode: default
+content:
+  langcode:
+    type: language_select
+    weight: 1
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  description: true
+  path: true

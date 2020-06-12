@@ -1,0 +1,27 @@
+uuid: 9fd5dda4-6373-45c7-85ee-07e6fd47dca7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_press_release_link
+    - node.type.corp_event
+  module:
+    - link
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.corp_event.field_press_release_link
+field_name: field_press_release_link
+entity_type: node
+bundle: corp_event
+label: 'Press Release Link'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

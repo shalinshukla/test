@@ -1,0 +1,25 @@
+uuid: 5f88e081-bb5c-4683-b9ec-5341865d737e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_media_video_source
+    - node.type.media_library_video
+  module:
+    - content_translation
+    - options
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: node.media_library_video.field_media_video_source
+field_name: field_media_video_source
+entity_type: node
+bundle: media_library_video
+label: 'Video Source'
+description: 'To specify type of video source'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

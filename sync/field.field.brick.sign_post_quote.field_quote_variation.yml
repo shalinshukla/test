@@ -1,0 +1,25 @@
+uuid: 42babc0d-6f7e-4b26-b1f7-c358bfd2af48
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.sign_post_quote
+    - field.storage.brick.field_quote_variation
+  module:
+    - options
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: brick.sign_post_quote.field_quote_variation
+field_name: field_quote_variation
+entity_type: brick
+bundle: sign_post_quote
+label: 'Quote variation'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

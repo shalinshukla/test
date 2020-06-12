@@ -1,0 +1,25 @@
+uuid: d9ae7537-652b-486d-845c-ab5a442a9f05
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_is_notified
+    - node.type.us_press_release
+_core:
+  default_config_hash: ZwRFRWDPj65LoSKm5JsfMrbSW2L7NIUyi7V4YIOp-C0
+id: node.us_press_release.field_is_notified
+field_name: field_is_notified
+entity_type: node
+bundle: us_press_release
+label: 'Is Notified'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Is Notified'
+  off_label: 'Is Notified'
+field_type: boolean

@@ -1,0 +1,27 @@
+uuid: 59a4d574-1eb2-4ef3-a89a-b3b0c65a3437
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.presentations
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: node.presentations.status
+field_name: status
+entity_type: node
+bundle: presentations
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

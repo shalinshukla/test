@@ -1,0 +1,27 @@
+uuid: 4816a336-dd51-4ffd-bf6e-530c463311e3
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.video_gallery
+    - field.storage.brick.field_link_for_listing_page
+  module:
+    - content_translation
+    - link
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.video_gallery.field_link_for_listing_page
+field_name: field_link_for_listing_page
+entity_type: brick
+bundle: video_gallery
+label: 'Link for listing page'
+description: 'Enter link URL and link text to show listing page link in gallery '
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

@@ -1,0 +1,27 @@
+uuid: 6e6cf7f0-1bed-4852-9230-30fc74d036f5
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.header_mega_menu_contents
+    - field.storage.block_content.field_block_link_title
+  module:
+    - link
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: block_content.header_mega_menu_contents.field_block_link_title
+field_name: field_block_link_title
+entity_type: block_content
+bundle: header_mega_menu_contents
+label: 'Block Link Title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

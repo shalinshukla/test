@@ -1,0 +1,42 @@
+uuid: fefaed11-2b89-4519-a03f-db6760ba4b98
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.webform_
+    - field.field.brick.webform_.field_form_description
+    - field.field.brick.webform_.field_web
+  module:
+    - bricks
+    - text
+id: brick.webform_.default
+targetEntityType: brick
+bundle: webform_
+mode: default
+content:
+  field_form_description:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_web:
+    weight: 2
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    type: bricks_nested
+    region: content
+  title:
+    type: string
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  langcode: true

@@ -1,0 +1,34 @@
+uuid: d3a9fdcf-7e06-4de3-804a-280cb6e4718f
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.news_list
+    - field.storage.brick.field_display_variation
+    - taxonomy.vocabulary.tier_variation
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.news_list.field_display_variation
+field_name: field_display_variation
+entity_type: brick
+bundle: news_list
+label: 'Display Variation'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tier_variation: tier_variation
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

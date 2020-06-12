@@ -1,0 +1,21 @@
+uuid: bf0cff92-712e-46ef-ba81-b336686f6353
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+id: brick.field_image_gallery_title
+field_name: field_image_gallery_title
+entity_type: brick
+type: string
+settings:
+  max_length: 100
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

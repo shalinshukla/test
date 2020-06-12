@@ -1,0 +1,29 @@
+uuid: 409dc4fb-915a-4f6c-b708-4760318485f1
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:reference_block:5e653de5-2aef-4d91-87a7-704bfe1779b6'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - project_bootstrap
+third_party_settings:
+  block_class:
+    classes: ''
+id: whowearereference
+theme: project_bootstrap
+region: footer_bottom
+weight: 0
+provider: null
+plugin: 'block_content:5e653de5-2aef-4d91-87a7-704bfe1779b6'
+settings:
+  id: 'block_content:5e653de5-2aef-4d91-87a7-704bfe1779b6'
+  label: 'Featured Content'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

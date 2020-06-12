@@ -1,0 +1,9 @@
+uuid: e9c5f534-457a-4f5d-ab6c-649cfaa34143
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.brick
+name: 'Key Fact Content'
+type: key_fact_content
+description: ''

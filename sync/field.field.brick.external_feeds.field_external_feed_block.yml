@@ -1,0 +1,28 @@
+uuid: 0b962420-c818-4f78-b990-1390360ce2e6
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.external_feeds
+    - field.storage.brick.field_external_feed_block
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.external_feeds.field_external_feed_block
+field_name: field_external_feed_block
+entity_type: brick
+bundle: external_feeds
+label: 'External feed block'
+description: 'Select external feed block reference that is created using ID URL Proxy.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:block'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: entity_reference

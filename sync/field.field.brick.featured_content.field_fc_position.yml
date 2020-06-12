@@ -1,0 +1,27 @@
+uuid: 1e2e2b30-3878-4b27-b96f-84020bcba0e0
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.featured_content
+    - field.storage.brick.field_fc_position
+  module:
+    - content_translation
+    - options
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.featured_content.field_fc_position
+field_name: field_fc_position
+entity_type: brick
+bundle: featured_content
+label: 'Image position'
+description: 'Select if image should be positioned to the right or left side of the text content.'
+required: false
+translatable: true
+default_value:
+  -
+    value: image-right
+default_value_callback: ''
+settings: {  }
+field_type: list_string

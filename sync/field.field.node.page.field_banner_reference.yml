@@ -1,0 +1,42 @@
+uuid: 154e8d2d-be06-4b38-90dc-596577ba9e07
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.banner_content
+    - eck.eck_type.brick.signpost_map
+    - eck.eck_type.brick.slider
+    - eck.eck_type.brick.sliding_banner
+    - eck.eck_type.brick.video_banner
+    - field.storage.node.field_banner_reference
+    - node.type.page
+  module:
+    - bricks
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: node.page.field_banner_reference
+field_name: field_banner_reference
+entity_type: node
+bundle: page
+label: 'Add banner'
+description: 'Select from one of the banner component variations to add to this page'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:brick'
+  handler_settings:
+    target_bundles:
+      banner_content: banner_content
+      signpost_map: signpost_map
+      slider: slider
+      sliding_banner: sliding_banner
+      video_banner: video_banner
+    sort:
+      field: _none
+    auto_create: 0
+    auto_create_bundle: banner_content
+field_type: bricks

@@ -1,0 +1,27 @@
+uuid: 31ea940c-6342-461d-8097-e49d74c19451
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.location
+    - field.storage.brick.field_location_phone
+  module:
+    - content_translation
+    - telephone
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+_core:
+  default_config_hash: 4QReUVgR3lGdKLyv1dARxu_YqYQiwAej3MLFvdhGFSY
+id: brick.location.field_location_phone
+field_name: field_location_phone
+entity_type: brick
+bundle: location
+label: Phone
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

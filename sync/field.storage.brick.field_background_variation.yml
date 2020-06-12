@@ -1,0 +1,36 @@
+uuid: 2ced95ad-0a1b-4772-8efd-03095c7387ca
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+    - options
+id: brick.field_background_variation
+field_name: field_background_variation
+entity_type: brick
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: whitebg-keyfact
+      label: 'Fullwidth white background'
+    -
+      value: graybg-keyfact
+      label: 'Fullwidth gray background'
+    -
+      value: bluebg-keyfact
+      label: 'Fullwidth blue background'
+    -
+      value: icon-with-description
+      label: 'Icon with description in White box'
+    -
+      value: simple-icon-wrapper
+      label: 'Only Simple Icon with description'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

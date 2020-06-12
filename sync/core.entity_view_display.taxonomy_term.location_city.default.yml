@@ -1,0 +1,33 @@
+uuid: f73d0fc9-7908-4ab5-aaf3-553c67dc52ee
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.location_city.field_location_coordinates
+    - taxonomy.vocabulary.location_city
+  module:
+    - geolocation
+    - text
+_core:
+  default_config_hash: vR9ZH5n2gXg1dXLajOIb8wp5tn7pPFTeDGkGZNdynh0
+id: taxonomy_term.location_city.default
+targetEntityType: taxonomy_term
+bundle: location_city
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_location_coordinates:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: geolocation_latlng
+    region: content
+hidden:
+  langcode: true

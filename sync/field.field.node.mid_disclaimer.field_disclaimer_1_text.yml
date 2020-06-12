@@ -1,0 +1,30 @@
+uuid: 3e848bf0-1cef-4462-8e4b-55268b445ec6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_disclaimer_1_text
+    - node.type.mid_disclaimer
+  enforced:
+    module:
+      - mid_disclaimer
+  module:
+    - content_translation
+    - text
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+_core:
+  default_config_hash: mGuostt39_yo7EHsge7O1a-7j-J51y3TIN82qXz0al0
+id: node.mid_disclaimer.field_disclaimer_1_text
+field_name: field_disclaimer_1_text
+entity_type: node
+bundle: mid_disclaimer
+label: 'Disclaimer 1 Text'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

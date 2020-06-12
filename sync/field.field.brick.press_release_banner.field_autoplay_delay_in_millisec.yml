@@ -1,0 +1,30 @@
+uuid: cb2787fc-1072-487d-aa12-4bd6b8c17b11
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.press_release_banner
+    - field.storage.brick.field_autoplay_delay_in_millisec
+  module:
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: brick.press_release_banner.field_autoplay_delay_in_millisec
+field_name: field_autoplay_delay_in_millisec
+entity_type: brick
+bundle: press_release_banner
+label: 'Autoplay delay (in milliseconds)'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 5000
+default_value_callback: ''
+settings:
+  min: 500
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

@@ -1,0 +1,27 @@
+uuid: ddb958ac-a2ec-4b2e-908e-137e4544b179
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+    - options
+id: brick.field_banner
+field_name: field_banner
+entity_type: brick
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: landing-banner
+      label: 'Landing page Banner'
+    -
+      value: internal-banner
+      label: 'Internal page Banner'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

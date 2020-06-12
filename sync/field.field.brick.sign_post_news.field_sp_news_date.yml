@@ -1,0 +1,28 @@
+uuid: b5bde42f-cbba-4796-bfa2-4ab717086579
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.sign_post_news
+    - field.storage.brick.field_sp_news_date
+  module:
+    - content_translation
+    - datetime
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.sign_post_news.field_sp_news_date
+field_name: field_sp_news_date
+entity_type: brick
+bundle: sign_post_news
+label: Date
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

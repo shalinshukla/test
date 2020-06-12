@@ -1,0 +1,49 @@
+uuid: 98dd3323-bfcc-4fd6-b867-7a56712f174a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.child_event.field_event_end_date
+    - field.field.node.child_event.field_event_start_date
+    - node.type.child_event
+  module:
+    - datetime
+    - panelizer
+    - user
+third_party_settings:
+  panelizer:
+    enable: false
+    custom: false
+    allow: false
+    default: default
+id: node.child_event.default
+targetEntityType: node
+bundle: child_event
+mode: default
+content:
+  field_event_end_date:
+    weight: 102
+    label: hidden
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_event_start_date:
+    weight: 101
+    label: hidden
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  search_api_excerpt: true

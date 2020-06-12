@@ -1,0 +1,29 @@
+uuid: db14062a-5b56-4762-a13c-9dac14831405
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.webform_
+    - field.storage.brick.field_web
+  module:
+    - bricks
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.webform_.field_web
+field_name: field_web
+entity_type: brick
+bundle: webform_
+label: 'Webform reference'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:webform'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: bricks

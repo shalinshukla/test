@@ -1,0 +1,95 @@
+uuid: 409a6040-c8f7-482a-b7e9-eeb24a95146a
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.map_office_details
+    - field.field.brick.map_office_details.field_latitude
+    - field.field.brick.map_office_details.field_longitude
+    - field.field.brick.map_office_details.field_office_address
+    - field.field.brick.map_office_details.field_office_email
+    - field.field.brick.map_office_details.field_office_image
+    - field.field.brick.map_office_details.field_office_phone
+    - image.style.thumbnail
+  module:
+    - image
+    - imce
+    - lightning_media
+    - text
+id: brick.map_office_details.default
+targetEntityType: brick
+bundle: map_office_details
+mode: default
+content:
+  field_latitude:
+    weight: 2
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_longitude:
+    weight: 3
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_office_address:
+    weight: 4
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_office_email:
+    weight: 5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: email_default
+    region: content
+  field_office_image:
+    type: image_image
+    weight: 8
+    settings:
+      preview_image_style: thumbnail
+      progress_indicator: throbber
+    region: content
+    third_party_settings:
+      imce:
+        enabled: true
+      lightning_media:
+        file_links: true
+        remove_button: true
+  field_office_phone:
+    weight: 6
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  langcode:
+    type: language_select
+    weight: 1
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 7
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

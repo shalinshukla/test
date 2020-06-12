@@ -1,0 +1,27 @@
+uuid: 9f0ced52-f8b8-4f2e-9680-91dc7947afeb
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.slide
+    - field.storage.brick.field_link
+  module:
+    - content_translation
+    - link
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.slide.field_link
+field_name: field_link
+entity_type: brick
+bundle: slide
+label: Link
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

@@ -1,0 +1,25 @@
+uuid: 808a8f92-ec34-4f5b-91b6-7bfbc8370fe9
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.slider
+    - field.storage.brick.field_slider_indicator_position
+  module:
+    - content_translation
+    - options
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.slider.field_slider_indicator_position
+field_name: field_slider_indicator_position
+entity_type: brick
+bundle: slider
+label: 'Indicator Position'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

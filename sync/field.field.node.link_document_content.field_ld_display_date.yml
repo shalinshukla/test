@@ -1,0 +1,24 @@
+uuid: 08ec4aed-808a-4015-9333-1ecf13a9e8c8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ld_display_date
+    - node.type.link_document_content
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: node.link_document_content.field_ld_display_date
+field_name: field_ld_display_date
+entity_type: node
+bundle: link_document_content
+label: 'Display date'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

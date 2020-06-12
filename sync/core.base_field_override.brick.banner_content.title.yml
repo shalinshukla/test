@@ -1,0 +1,18 @@
+uuid: bac3b1ab-ecfe-448f-b444-129afcc9bd2e
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.banner_content
+id: brick.banner_content.title
+field_name: title
+entity_type: brick
+bundle: banner_content
+label: Title
+description: 'The title of the entity.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,41 @@
+uuid: 209d9fde-524d-4268-8c4a-0755f0d2f560
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - node
+    - system
+  theme:
+    - investis_bootstrap_t2
+id: investis_bootstrap_t2_breadcrumbs
+theme: investis_bootstrap_t2
+region: content
+weight: -12
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      bricky: bricky
+      landing_page: landing_page
+      newscontent: newscontent
+      page: page
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+  node_type:
+    id: node_type
+    bundles:
+      bricky: bricky
+      newscontent: newscontent
+      page: page
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

@@ -1,0 +1,25 @@
+uuid: 2e2bf4f3-ba57-41e9-8b31-dccc0dc55fa4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_media_date
+    - node.type.media_library_video
+  module:
+    - datetime
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.media_library_video.field_media_date
+field_name: field_media_date
+entity_type: node
+bundle: media_library_video
+label: 'Media Date'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

@@ -1,0 +1,69 @@
+uuid: 069cb57f-a9dc-46e6-902e-32bdd388d826
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.story_banner
+    - field.field.brick.story_banner.field_autoplay_delay_in_millisec
+    - field.field.brick.story_banner.field_carousel_control_option
+    - field.field.brick.story_banner.field_sb_control_options
+    - field.field.brick.story_banner.field_story_banner
+    - field.field.brick.story_banner.field_transition_speed
+  module:
+    - options
+id: brick.story_banner.default
+targetEntityType: brick
+bundle: story_banner
+mode: default
+content:
+  field_autoplay_delay_in_millisec:
+    weight: -3
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_carousel_control_option:
+    weight: -2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_sb_control_options:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_story_banner:
+    weight: -4
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_transition_speed:
+    weight: 0
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  title:
+    label: hidden
+    type: string
+    weight: -5
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  search_api_excerpt: true

@@ -1,0 +1,21 @@
+uuid: 3b6fd4df-2cc3-42d0-8e82-8f3768ebdf8f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_uspr_css
+    - node.type.us_press_release
+_core:
+  default_config_hash: zi_NbPH5NxcPB1OsKltdQpAcmgNnGsR_R6ZBbQcthXE
+id: node.us_press_release.field_uspr_css
+field_name: field_uspr_css
+entity_type: node
+bundle: us_press_release
+label: Css
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

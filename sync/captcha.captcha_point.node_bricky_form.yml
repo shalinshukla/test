@@ -1,0 +1,7 @@
+uuid: fbab9e4f-4dec-4331-bee6-3b51e8fcceb0
+langcode: en
+status: false
+dependencies: {  }
+formId: node_bricky_form
+captchaType: default
+label: null

@@ -1,0 +1,22 @@
+uuid: b421b75e-8bb3-4007-9a38-9fad60153027
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - investis_admin
+_core:
+  default_config_hash: gmFizFIQS9BX8bcuHhyEa1l4m-xTDXQhFnN_w9CeVwg
+id: investis_admin_help
+theme: investis_admin
+region: help
+weight: 0
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

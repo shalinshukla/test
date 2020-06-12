@@ -1,0 +1,25 @@
+uuid: 40e5b7b8-6fbf-43ed-8a24-26e42faa9066
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_story_short_desc
+    - node.type.story_and_news
+  module:
+    - text
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.story_and_news.field_story_short_desc
+field_name: field_story_short_desc
+entity_type: node
+bundle: story_and_news
+label: 'Story Short Description'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

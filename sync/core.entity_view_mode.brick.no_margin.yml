@@ -1,0 +1,14 @@
+uuid: fb4ea6f0-9fab-4e14-9685-0bc19b209871
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+    - lightning_core
+third_party_settings:
+  lightning_core:
+    description: ''
+id: brick.no_margin
+label: 'No Margin'
+targetEntityType: brick
+cache: true

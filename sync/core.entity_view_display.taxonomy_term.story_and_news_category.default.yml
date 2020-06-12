@@ -1,0 +1,32 @@
+uuid: 9c62da45-7c9e-43ab-a29f-e93708bfb3e4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.story_and_news_category.field_mapping_id
+    - taxonomy.vocabulary.story_and_news_category
+  module:
+    - text
+id: taxonomy_term.story_and_news_category.default
+targetEntityType: taxonomy_term
+bundle: story_and_news_category
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_mapping_id:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

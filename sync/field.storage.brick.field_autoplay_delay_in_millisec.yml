@@ -1,0 +1,20 @@
+uuid: fd62e740-ff78-406f-b5d2-11fecfbbddbb
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+id: brick.field_autoplay_delay_in_millisec
+field_name: field_autoplay_delay_in_millisec
+entity_type: brick
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

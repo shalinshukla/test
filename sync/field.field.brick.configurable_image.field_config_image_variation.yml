@@ -1,0 +1,21 @@
+uuid: cba4b764-f563-4416-8f4e-9af55654f015
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.configurable_image
+    - field.storage.brick.field_config_image_variation
+  module:
+    - options
+id: brick.configurable_image.field_config_image_variation
+field_name: field_config_image_variation
+entity_type: brick
+bundle: configurable_image
+label: 'Config. image variation'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

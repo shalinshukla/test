@@ -1,0 +1,20 @@
+uuid: cfed218b-0f8a-4d41-90f0-624e202b5490
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+id: brick.field_display_number_of_tags
+field_name: field_display_number_of_tags
+entity_type: brick
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

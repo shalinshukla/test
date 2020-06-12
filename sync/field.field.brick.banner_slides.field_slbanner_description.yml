@@ -1,0 +1,27 @@
+uuid: f82e6720-3774-4230-8826-37eb9cdaaef2
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.banner_slides
+    - field.storage.brick.field_slbanner_description
+  module:
+    - content_translation
+    - tmgmt_content
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+  tmgmt_content:
+    excluded: false
+id: brick.banner_slides.field_slbanner_description
+field_name: field_slbanner_description
+entity_type: brick
+bundle: banner_slides
+label: Description
+description: 'Enter description to be displayed on banner.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

@@ -1,0 +1,110 @@
+uuid: 5470671e-3565-43a4-a2bc-85597bb63815
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.contact_sign_post
+    - field.field.brick.contact_sign_post.field_contact_description
+    - field.field.brick.contact_sign_post.field_display_name
+    - field.field.brick.contact_sign_post.field_email_icon
+    - field.field.brick.contact_sign_post.field_email_id
+    - field.field.brick.contact_sign_post.field_phone_icon
+    - field.field.brick.contact_sign_post.field_phone_number
+    - field.field.brick.contact_sign_post.field_twitter_icon
+    - field.field.brick.contact_sign_post.field_twitter_profile
+    - image.style.thumbnail
+  module:
+    - imce
+    - svg_image
+    - text
+id: brick.contact_sign_post.default
+targetEntityType: brick
+bundle: contact_sign_post
+mode: default
+content:
+  field_contact_description:
+    weight: 7
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_display_name:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_email_icon:
+    type: image_image
+    weight: 5
+    settings:
+      preview_image_style: thumbnail
+      progress_indicator: throbber
+    region: content
+    third_party_settings:
+      imce:
+        enabled: true
+  field_email_id:
+    weight: 9
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_phone_icon:
+    type: image_image
+    weight: 4
+    settings:
+      preview_image_style: thumbnail
+      progress_indicator: throbber
+    region: content
+    third_party_settings:
+      imce:
+        enabled: true
+  field_phone_number:
+    weight: 8
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_twitter_icon:
+    type: image_image
+    weight: 6
+    settings:
+      preview_image_style: thumbnail
+      progress_indicator: throbber
+    region: content
+    third_party_settings:
+      imce:
+        enabled: true
+  field_twitter_profile:
+    weight: 10
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

@@ -1,0 +1,27 @@
+uuid: 53edaf97-dc8e-45a9-a63f-0ef00bdc1014
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+    - options
+id: brick.field_nifw_image_position
+field_name: field_nifw_image_position
+entity_type: brick
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: image-right
+      label: Right
+    -
+      value: reverse-row
+      label: Left
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

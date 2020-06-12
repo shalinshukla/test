@@ -1,0 +1,70 @@
+uuid: e7a900ef-f5e5-47b5-8735-2b4edd3769e7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.media_press_kit.field_media_date
+    - field.field.node.media_press_kit.field_media_file
+    - field.field.node.media_press_kit.field_media_pcategory
+    - field.field.node.media_press_kit.field_media_press_kit_poster
+    - node.type.media_press_kit
+  module:
+    - datetime
+    - link
+    - svg_image
+    - user
+id: node.media_press_kit.default
+targetEntityType: node
+bundle: media_press_kit
+mode: default
+content:
+  field_media_date:
+    weight: 103
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_media_file:
+    weight: 102
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_media_pcategory:
+    weight: 105
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_media_press_kit_poster:
+    weight: 104
+    label: above
+    settings:
+      svg_attributes:
+        width: ''
+        height: ''
+      svg_render_as_image: true
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

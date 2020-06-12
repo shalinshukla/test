@@ -1,0 +1,99 @@
+uuid: 94f5c07d-3f08-41b8-9a04-53179edb2c2c
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.banner_slides
+    - field.field.brick.banner_slides.field_links
+    - field.field.brick.banner_slides.field_short_description
+    - field.field.brick.banner_slides.field_slbanner_description
+    - field.field.brick.banner_slides.field_slbanner_image
+    - image.style.banner_variation_i
+  module:
+    - imce
+    - lightning_media
+    - link_ex
+    - maxlength
+    - svg_image
+id: brick.banner_slides.default
+targetEntityType: brick
+bundle: banner_slides
+mode: default
+content:
+  field_links:
+    weight: 6
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+      enabled_attributes:
+        title: title
+        target: target
+        class: class
+        id: 0
+        rel: 0
+        name: 0
+        accesskey: 0
+        download: 0
+        imce: 0
+        imce_private: 0
+    third_party_settings: {  }
+    type: link_ex
+    region: content
+  field_short_description:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_slbanner_description:
+    weight: 3
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings:
+      maxlength:
+        maxlength_js: null
+        maxlength_js_label: ''
+        maxlength_js_enforce: false
+        maxlength_js_truncate_html: false
+    type: string_textarea
+    region: content
+  field_slbanner_image:
+    type: image_image
+    weight: 4
+    settings:
+      preview_image_style: banner_variation_i
+      progress_indicator: throbber
+    region: content
+    third_party_settings:
+      imce:
+        enabled: true
+      lightning_media:
+        file_links: true
+        remove_button: true
+  langcode:
+    type: language_select
+    weight: 1
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 100
+      placeholder: 'Enter title to be displayed. By default, 40 characters will be display.'
+    third_party_settings:
+      maxlength:
+        maxlength_js: 100
+        maxlength_js_label: 'Content limited to @limit characters, remaining: <strong>@remaining</strong>'
+  translation:
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

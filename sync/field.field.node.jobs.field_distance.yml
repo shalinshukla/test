@@ -1,0 +1,25 @@
+uuid: c2ad691b-8633-488b-a31f-9b347f468f0f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_distance
+    - node.type.jobs
+  module:
+    - options
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.jobs.field_distance
+field_name: field_distance
+entity_type: node
+bundle: jobs
+label: Distance
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,25 @@
+uuid: c2ea065f-830e-433e-9658-8c11cc061f2b
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.tab_layout_group
+    - field.storage.brick.field_tab_layout_title
+  module:
+    - text
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: brick.tab_layout_group.field_tab_layout_title
+field_name: field_tab_layout_title
+entity_type: brick
+bundle: tab_layout_group
+label: 'Tab layout title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

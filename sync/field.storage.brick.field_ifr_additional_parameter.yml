@@ -1,0 +1,21 @@
+uuid: 0e561a6a-6e9b-43cf-a359-5e77621d7585
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+id: brick.field_ifr_additional_parameter
+field_name: field_ifr_additional_parameter
+entity_type: brick
+type: string
+settings:
+  max_length: 100
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

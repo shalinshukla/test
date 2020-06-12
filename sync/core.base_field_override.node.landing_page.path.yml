@@ -1,0 +1,24 @@
+uuid: fe732507-67df-4080-8f12-46bdfd46e06d
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.landing_page
+  module:
+    - content_translation
+    - path
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: node.landing_page.path
+field_name: path
+entity_type: node
+bundle: landing_page
+label: 'URL alias'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

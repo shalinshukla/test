@@ -1,0 +1,23 @@
+uuid: 2a439c73-8a3b-486b-81bf-d18c14ab7a4a
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.news_item_full_width
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.news_item_full_width.metatag
+field_name: metatag
+entity_type: brick
+bundle: news_item_full_width
+label: Metatags
+description: 'The metatags for the entity.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

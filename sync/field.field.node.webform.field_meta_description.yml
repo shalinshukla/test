@@ -1,0 +1,24 @@
+uuid: 89fddf4f-a6ec-4116-a0f7-da538d80754f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_meta_description
+    - node.type.webform
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: node.webform.field_meta_description
+field_name: field_meta_description
+entity_type: node
+bundle: webform
+label: 'Meta description'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

@@ -1,0 +1,23 @@
+uuid: 2b977e2e-0e06-45e0-ba7e-0b8215a1febc
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.landing_page
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: node.landing_page.title
+field_name: title
+entity_type: node
+bundle: landing_page
+label: Title
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

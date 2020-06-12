@@ -1,0 +1,22 @@
+uuid: af14b3eb-4245-4dbd-922c-78818fab353f
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+    - taxonomy
+_core:
+  default_config_hash: T4dX9QwyS3B2p5ynhc74n-FuimmFI0_P6BXQOxx5t2s
+id: brick.field_location_city
+field_name: field_location_city
+entity_type: brick
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,25 @@
+uuid: a6bf8c3f-4076-4b96-b028-edf3d12e0d03
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_meta_tags
+    - node.type.media_library
+  module:
+    - content_translation
+    - metatag
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: node.media_library.field_meta_tags
+field_name: field_meta_tags
+entity_type: node
+bundle: media_library
+label: 'Meta tags'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

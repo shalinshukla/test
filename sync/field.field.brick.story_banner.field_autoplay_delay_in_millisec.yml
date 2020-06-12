@@ -1,0 +1,30 @@
+uuid: daa2c9e7-13eb-4bdd-87fe-70dcce299bb2
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.story_banner
+    - field.storage.brick.field_autoplay_delay_in_millisec
+  module:
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: brick.story_banner.field_autoplay_delay_in_millisec
+field_name: field_autoplay_delay_in_millisec
+entity_type: brick
+bundle: story_banner
+label: 'Autoplay delay (in milliseconds)'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 5000
+default_value_callback: ''
+settings:
+  min: 500
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

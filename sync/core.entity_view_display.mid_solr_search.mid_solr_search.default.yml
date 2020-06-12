@@ -1,0 +1,94 @@
+uuid: a22944ed-5536-4f96-9309-568909a79b53
+langcode: en
+status: true
+dependencies:
+  module:
+    - mid_solr_search
+    - options
+id: mid_solr_search.mid_solr_search.default
+targetEntityType: mid_solr_search
+bundle: mid_solr_search
+mode: default
+content:
+  facet_fields:
+    label: hidden
+    type: string
+    weight: 4
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  popular_trends_source_url:
+    label: hidden
+    type: uri_link
+    weight: 8
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  popularsearch:
+    settings:
+      format: unicode-yes-no
+      format_custom_false: ''
+      format_custom_true: ''
+    weight: 9
+    region: content
+    label: above
+    third_party_settings: {  }
+    type: boolean
+  real_time_indexing_source_url:
+    label: hidden
+    type: uri_link
+    weight: 7
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  request_method:
+    label: hidden
+    type: list_key
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  rows_number:
+    label: hidden
+    type: string
+    weight: 6
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  search_solr_key:
+    label: hidden
+    type: string
+    max_length: 255
+    weight: 1
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  solr_client_name:
+    label: hidden
+    type: string
+    weight: 2
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  source_url:
+    label: hidden
+    type: uri_link
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  start:
+    label: hidden
+    type: string
+    weight: 5
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  solr_document_type: true
+  solr_sort: true

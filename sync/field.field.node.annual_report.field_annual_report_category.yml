@@ -1,0 +1,37 @@
+uuid: c296a51b-128f-4873-82c3-1573b4c9a0c6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_annual_report_category
+    - node.type.annual_report
+    - taxonomy.vocabulary.annual_report_category
+  module:
+    - brick_modal
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+  brick_modal:
+    delete_referenced_entities: 0
+id: node.annual_report.field_annual_report_category
+field_name: field_annual_report_category
+entity_type: node
+bundle: annual_report
+label: 'Annual Report Category'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      annual_report_category: annual_report_category
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

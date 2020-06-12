@@ -1,0 +1,25 @@
+uuid: c4ea5ce1-bb7c-4acf-b310-deefe2a1dc15
+langcode: fr
+status: true
+dependencies:
+  config:
+    - system.menu.social-links
+  module:
+    - system
+  theme:
+    - investis_bootstrap_t2
+id: investis_bootstrap_t2_sociallinks
+theme: investis_bootstrap_t2
+region: footer
+weight: -4
+provider: null
+plugin: 'system_menu_block:social-links'
+settings:
+  id: 'system_menu_block:social-links'
+  label: 'Social Links'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

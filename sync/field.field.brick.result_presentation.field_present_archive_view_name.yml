@@ -1,0 +1,26 @@
+uuid: 9ee7e80c-2256-4cf7-9683-60f6c946d38b
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.result_presentation
+    - field.storage.brick.field_present_archive_view_name
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.result_presentation.field_present_archive_view_name
+field_name: field_present_archive_view_name
+entity_type: brick
+bundle: result_presentation
+label: 'Presentation Archive View Display Name'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: block_5
+default_value_callback: ''
+settings: {  }
+field_type: string

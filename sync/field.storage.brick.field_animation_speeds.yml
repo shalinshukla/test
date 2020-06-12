@@ -1,0 +1,20 @@
+uuid: a75de72c-0286-4a92-a8d5-b2cfb798251c
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+id: brick.field_animation_speeds
+field_name: field_animation_speeds
+entity_type: brick
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

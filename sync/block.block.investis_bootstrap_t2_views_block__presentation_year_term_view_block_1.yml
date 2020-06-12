@@ -1,0 +1,30 @@
+uuid: ee75d714-8c3c-46f2-9b24-b966abf012ec
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.presentation_year_term_view
+  module:
+    - system
+    - views
+  theme:
+    - investis_bootstrap_t2
+id: investis_bootstrap_t2_views_block__presentation_year_term_view_block_1
+theme: investis_bootstrap_t2
+region: content
+weight: -8
+provider: null
+plugin: 'views_block:presentation_year_term_view-block_1'
+settings:
+  id: 'views_block:presentation_year_term_view-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /node/115
+    negate: false
+    context_mapping: {  }

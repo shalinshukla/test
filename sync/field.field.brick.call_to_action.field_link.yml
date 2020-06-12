@@ -1,0 +1,27 @@
+uuid: 7fdd7f32-7f4a-4fd9-9c94-51e6b589a000
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.call_to_action
+    - field.storage.brick.field_link
+  module:
+    - link
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: brick.call_to_action.field_link
+field_name: field_link
+entity_type: brick
+bundle: call_to_action
+label: Link
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

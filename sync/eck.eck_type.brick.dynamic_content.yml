@@ -1,0 +1,9 @@
+uuid: ed33e621-d909-466f-9ec5-332f7b6dab09
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.brick
+name: 'Dynamic Content'
+type: dynamic_content
+description: 'To add the support for the views list'

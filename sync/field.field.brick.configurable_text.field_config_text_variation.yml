@@ -1,0 +1,25 @@
+uuid: 6c3c6671-cd80-42b6-b3b5-4cf78345e20f
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.configurable_text
+    - field.storage.brick.field_config_text_variation
+  module:
+    - options
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: brick.configurable_text.field_config_text_variation
+field_name: field_config_text_variation
+entity_type: brick
+bundle: configurable_text
+label: 'Config text variation'
+description: 'Configuration text title variations'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

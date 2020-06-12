@@ -1,0 +1,31 @@
+uuid: 15ef410f-55b5-4635-9d58-4869874de97f
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.history
+    - field.storage.brick.field_history_featured_view
+    - views.view.history
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.history.field_history_featured_view
+field_name: field_history_featured_view
+entity_type: brick
+bundle: history
+label: 'History Featured VIew'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    target_uuid: 959512d8-544f-4a58-a5ee-fa12560182c2
+default_value_callback: ''
+settings:
+  handler: 'default:view'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: entity_reference

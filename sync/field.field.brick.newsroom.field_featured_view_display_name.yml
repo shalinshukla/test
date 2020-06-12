@@ -1,0 +1,26 @@
+uuid: 5a58cb47-0166-4091-be70-74fcb5950c16
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.newsroom
+    - field.storage.brick.field_featured_view_display_name
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.newsroom.field_featured_view_display_name
+field_name: field_featured_view_display_name
+entity_type: brick
+bundle: newsroom
+label: 'Featured view display name'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: block_1
+default_value_callback: ''
+settings: {  }
+field_type: string

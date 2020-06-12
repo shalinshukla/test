@@ -1,0 +1,20 @@
+uuid: ada350a0-e7ff-49b8-9f59-fd158cf52f04
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.bricky
+  module:
+    - datetime
+id: node.bricky.scheduled_publication
+field_name: scheduled_publication
+entity_type: node
+bundle: bricky
+label: 'Scheduled publication'
+description: 'A date and time when the moderation state should be changed automatically.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

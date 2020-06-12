@@ -1,0 +1,24 @@
+uuid: 7e4acac3-c92c-4736-81b7-baf2a340fe42
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.video_banner
+    - field.storage.brick.field_video_banner_title
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.video_banner.field_video_banner_title
+field_name: field_video_banner_title
+entity_type: brick
+bundle: video_banner
+label: 'Display title'
+description: 'Title that would be displayed on site when component is rendered'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

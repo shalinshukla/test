@@ -1,0 +1,44 @@
+uuid: 7c89fc55-bb09-4562-bbf3-670528a7558e
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.custom_logo
+    - field.field.block_content.custom_logo.body
+    - field.field.block_content.custom_logo.field_logo_image
+    - image.style.thumbnail
+  module:
+    - imce
+    - svg_image
+id: block_content.custom_logo.default
+targetEntityType: block_content
+bundle: custom_logo
+mode: default
+content:
+  field_logo_image:
+    type: image_image
+    weight: 2
+    settings:
+      preview_image_style: thumbnail
+      progress_indicator: throbber
+    region: content
+    third_party_settings:
+      imce:
+        enabled: true
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 1
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+hidden:
+  body: true

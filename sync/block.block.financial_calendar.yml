@@ -1,0 +1,22 @@
+uuid: 2146d1ee-e190-4778-94de-bdc310260fea
+langcode: en
+status: false
+dependencies:
+  config:
+    - 'mid_url_proxy:mid_url_proxy:74c389dc-5107-4456-a92a-17af6f69dbe5'
+  module:
+    - mid_url_proxy
+  theme:
+    - project_bootstrap
+id: financial_calendar
+theme: project_bootstrap
+region: content
+weight: -22
+provider: null
+plugin: 'mid_url_proxy:1'
+settings:
+  id: 'mid_url_proxy:1'
+  label: 'Financial calendar'
+  provider: mid_url_proxy
+  label_display: visible
+visibility: {  }

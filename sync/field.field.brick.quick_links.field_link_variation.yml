@@ -1,0 +1,25 @@
+uuid: fd68e516-78aa-4af6-88f3-f84b8dd0edbd
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.quick_links
+    - field.storage.brick.field_link_variation
+  module:
+    - options
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: brick.quick_links.field_link_variation
+field_name: field_link_variation
+entity_type: brick
+bundle: quick_links
+label: Variation
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

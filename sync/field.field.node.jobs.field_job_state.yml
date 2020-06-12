@@ -1,0 +1,37 @@
+uuid: 62b3cc57-401b-45c1-912e-c6c47646589a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_job_state
+    - node.type.jobs
+    - taxonomy.vocabulary.job_state
+  module:
+    - brick_modal
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+  brick_modal:
+    delete_referenced_entities: 0
+id: node.jobs.field_job_state
+field_name: field_job_state
+entity_type: node
+bundle: jobs
+label: State
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      job_state: job_state
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

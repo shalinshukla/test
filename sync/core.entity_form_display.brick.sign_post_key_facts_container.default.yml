@@ -1,0 +1,91 @@
+uuid: 8d1508fd-7a56-4ec9-ae02-c99e9adee554
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.sign_post_key_facts_container
+    - field.field.brick.sign_post_key_facts_container.field_animation_speeds
+    - field.field.brick.sign_post_key_facts_container.field_background_variation
+    - field.field.brick.sign_post_key_facts_container.field_config_short_desc
+    - field.field.brick.sign_post_key_facts_container.field_sp_key_facts_fields
+    - field.field.brick.sign_post_key_facts_container.field_sp_kfacts_title
+    - field.field.brick.sign_post_key_facts_container.field_space_variation
+  module:
+    - bricks_inline
+id: brick.sign_post_key_facts_container.default
+targetEntityType: brick
+bundle: sign_post_key_facts_container
+mode: default
+content:
+  field_animation_speeds:
+    weight: 6
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_background_variation:
+    weight: 7
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_config_short_desc:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_sp_key_facts_fields:
+    weight: 3
+    settings:
+      match_operator: CONTAINS
+      form_mode: default
+      override_labels: false
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: false
+      collapsible: false
+      collapsed: false
+      allow_duplicate: false
+    third_party_settings: {  }
+    type: bricks_tree_inline
+    region: content
+  field_sp_kfacts_title:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_space_variation:
+    weight: 8
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  langcode:
+    type: language_select
+    weight: 4
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

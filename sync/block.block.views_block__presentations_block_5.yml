@@ -1,0 +1,30 @@
+uuid: b53f9a11-8cce-4b2f-9cae-935e2bb518ae
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.presentations
+  module:
+    - system
+    - views
+  theme:
+    - project_bootstrap
+id: views_block__presentations_block_5
+theme: project_bootstrap
+region: content
+weight: -32
+provider: null
+plugin: 'views_block:presentations-block_5'
+settings:
+  id: 'views_block:presentations-block_5'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /node/115
+    negate: false
+    context_mapping: {  }

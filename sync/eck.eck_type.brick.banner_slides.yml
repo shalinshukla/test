@@ -1,0 +1,9 @@
+uuid: 2ee888bd-a14e-400d-8f55-02ef03c4a58c
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.brick
+name: 'Banner slides'
+type: banner_slides
+description: 'Banner slides to be part of sliding banner component'

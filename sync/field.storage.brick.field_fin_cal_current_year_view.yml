@@ -1,0 +1,20 @@
+uuid: d79f8a47-9906-47f4-97cb-c3f6e54516bc
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+    - views
+id: brick.field_fin_cal_current_year_view
+field_name: field_fin_cal_current_year_view
+entity_type: brick
+type: entity_reference
+settings:
+  target_type: view
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

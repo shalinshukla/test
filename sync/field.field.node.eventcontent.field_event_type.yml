@@ -1,0 +1,35 @@
+uuid: 6a8d67e6-78c1-4652-ae4d-41af459b8b1a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_event_type
+    - node.type.eventcontent
+    - taxonomy.vocabulary.event_type
+  module:
+    - bricks
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: node.eventcontent.field_event_type
+field_name: field_event_type
+entity_type: node
+bundle: eventcontent
+label: 'Event Type'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      event_type: event_type
+    sort:
+      field: name
+      direction: asc
+    auto_create: 0
+    auto_create_bundle: ''
+field_type: bricks

@@ -1,0 +1,22 @@
+uuid: 6e7bafdb-7405-4f91-8c50-777ca186a682
+langcode: en
+status: false
+dependencies:
+  module:
+    - help
+  theme:
+    - investis_bootstrap
+_core:
+  default_config_hash: MhtNdV__HKRTab0ZPjkPNfYL4Ng4UPBucDLoC7Rg5Eo
+id: investis_bootstrap_help
+theme: investis_bootstrap
+region: navigation
+weight: -4
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

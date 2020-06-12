@@ -1,0 +1,24 @@
+uuid: 2b202ddb-c3f7-478e-87c0-72a3341edd34
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.field_collection_item.field_presentation_content_date
+    - field_collection.field_collection.field_presentation_content
+  module:
+    - datetime
+id: field_collection_item.field_presentation_content.field_presentation_content_date
+field_name: field_presentation_content_date
+entity_type: field_collection_item
+bundle: field_presentation_content
+label: 'Presentation Content Date'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

@@ -1,0 +1,25 @@
+uuid: a9a5af31-c0c6-4bb3-9eb3-76feb2cf9abe
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.tab_layout_group
+    - field.storage.brick.field_tabs_background_variation
+  module:
+    - options
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: brick.tab_layout_group.field_tabs_background_variation
+field_name: field_tabs_background_variation
+entity_type: brick
+bundle: tab_layout_group
+label: 'Tabs Background Variation'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

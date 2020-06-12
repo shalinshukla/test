@@ -1,0 +1,25 @@
+uuid: 069937ab-70c8-4ab9-8e53-419e940a9f66
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_meta_tags
+    - node.type.story_and_news
+  module:
+    - metatag
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.story_and_news.field_meta_tags
+field_name: field_meta_tags
+entity_type: node
+bundle: story_and_news
+label: 'Meta tags'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

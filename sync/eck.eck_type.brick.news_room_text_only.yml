@@ -1,0 +1,9 @@
+uuid: 6ec965da-67bd-45d3-9db3-1cebc4795a65
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.brick
+name: 'News Room Text Only'
+type: news_room_text_only
+description: 'This component is variation of news room component. It will show list without image with different design.'

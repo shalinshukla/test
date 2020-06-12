@@ -1,0 +1,25 @@
+uuid: a943fc21-1ac8-4927-887e-44142b1e5cad
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_report_date
+    - node.type.csr_documents
+  module:
+    - datetime
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.csr_documents.field_report_date
+field_name: field_report_date
+entity_type: node
+bundle: csr_documents
+label: 'Report Date'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

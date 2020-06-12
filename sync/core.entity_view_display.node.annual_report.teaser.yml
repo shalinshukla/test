@@ -1,0 +1,32 @@
+uuid: d2ee68e0-b717-4301-9f60-06c9cf9e173b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.annual_report.field_annual_report_category
+    - field.field.node.annual_report.field_annual_report_date
+    - field.field.node.annual_report.field_english_attachment
+    - field.field.node.annual_report.field_report_image
+    - field.field.node.annual_report.field_spanish_attachment
+    - node.type.annual_report
+  module:
+    - user
+id: node.annual_report.teaser
+targetEntityType: node
+bundle: annual_report
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_annual_report_category: true
+  field_annual_report_date: true
+  field_english_attachment: true
+  field_report_image: true
+  field_spanish_attachment: true
+  langcode: true
+  search_api_excerpt: true

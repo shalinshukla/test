@@ -1,0 +1,28 @@
+uuid: 8ab0f94c-f4cc-4e36-84ea-5558ae555316
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.people
+    - field.storage.brick.field_hide_tabs
+  module:
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: brick.people.field_hide_tabs
+field_name: field_hide_tabs
+entity_type: brick
+bundle: people
+label: 'Hide Tabs'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

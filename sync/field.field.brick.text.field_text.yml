@@ -1,0 +1,27 @@
+uuid: a3f50ebc-0db2-4aa1-bf7a-8a2188c57484
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.text
+    - field.storage.brick.field_text
+  module:
+    - content_translation
+    - text
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+_core:
+  default_config_hash: WY1uPwnfP2qHHyBeC2gkyqxQabhqcOTtgb5udbgtrXE
+id: brick.text.field_text
+field_name: field_text
+entity_type: brick
+bundle: text
+label: Text
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

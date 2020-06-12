@@ -1,0 +1,26 @@
+uuid: 7dd7c9ea-82ff-4e42-b28f-b4745c72ca7e
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.signpost_map
+    - field.storage.brick.field_pin_color
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.signpost_map.field_pin_color
+field_name: field_pin_color
+entity_type: brick
+bundle: signpost_map
+label: 'Pin Color'
+description: 'Applicable only when marker image is not present'
+required: false
+translatable: true
+default_value:
+  -
+    value: '#2fdf95'
+default_value_callback: ''
+settings: {  }
+field_type: string

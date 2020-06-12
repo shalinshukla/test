@@ -1,0 +1,25 @@
+uuid: b810e805-c4a8-430f-88f6-12b43545064d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_document_type
+    - node.type.document_tool_kit
+  module:
+    - options
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.document_tool_kit.field_document_type
+field_name: field_document_type
+entity_type: node
+bundle: document_tool_kit
+label: 'Document Type'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

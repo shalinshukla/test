@@ -1,0 +1,27 @@
+uuid: 2349f6fd-8d8d-471d-bbc2-2cee33e001ca
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.people
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: node.people.promote
+field_name: promote
+entity_type: node
+bundle: people
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

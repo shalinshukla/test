@@ -1,0 +1,23 @@
+uuid: dbc27437-e738-40ea-9d1c-afd7b98a84c2
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.sitewide
+    - field.storage.contact_message.field_check_box_4
+id: contact_message.sitewide.field_check_box_4
+field_name: field_check_box_4
+entity_type: contact_message
+bundle: sitewide
+label: 'Check box 4'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

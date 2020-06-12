@@ -1,0 +1,105 @@
+uuid: 397ca370-d3d0-4e8f-87ab-8ed5d2b44aae
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.banner
+    - eck.eck_type.brick.banner_content
+    - eck.eck_type.brick.configurable_image
+    - eck.eck_type.brick.configurable_text
+    - eck.eck_type.brick.contact_details_
+    - eck.eck_type.brick.contact_information
+    - eck.eck_type.brick.contact_sign_post
+    - eck.eck_type.brick.content_with_two_static_box
+    - eck.eck_type.brick.description_with_background
+    - eck.eck_type.brick.document_download
+    - eck.eck_type.brick.dynamic_block_contents
+    - eck.eck_type.brick.dynamic_content
+    - eck.eck_type.brick.featured_content
+    - eck.eck_type.brick.gallery_slide
+    - eck.eck_type.brick.icon_with_description
+    - eck.eck_type.brick.image
+    - eck.eck_type.brick.image_gallery
+    - eck.eck_type.brick.infographic
+    - eck.eck_type.brick.key_fact_content
+    - eck.eck_type.brick.key_fact_content_list
+    - eck.eck_type.brick.layout
+    - eck.eck_type.brick.photo_gallery
+    - eck.eck_type.brick.quick_links
+    - eck.eck_type.brick.quote_full_width
+    - eck.eck_type.brick.sign_post_iframe
+    - eck.eck_type.brick.sign_post_image
+    - eck.eck_type.brick.sign_post_key_facts
+    - eck.eck_type.brick.sign_post_quote
+    - eck.eck_type.brick.slide
+    - eck.eck_type.brick.slider
+    - eck.eck_type.brick.sliding_banner
+    - eck.eck_type.brick.tab_layout_group
+    - eck.eck_type.brick.tab_layout_with_icons
+    - eck.eck_type.brick.text
+    - eck.eck_type.brick.video
+    - field.storage.node.field_body
+    - node.type.story_and_news
+  module:
+    - brick_modal
+    - bricks
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+  brick_modal:
+    delete_referenced_entities: 0
+id: node.story_and_news.field_body
+field_name: field_body
+entity_type: node
+bundle: story_and_news
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:brick'
+  handler_settings:
+    target_bundles:
+      banner: banner
+      banner_content: banner_content
+      configurable_image: configurable_image
+      configurable_text: configurable_text
+      contact_information: contact_information
+      contact_details_: contact_details_
+      contact_sign_post: contact_sign_post
+      content_with_two_static_box: content_with_two_static_box
+      description_with_background: description_with_background
+      document_download: document_download
+      dynamic_block_contents: dynamic_block_contents
+      dynamic_content: dynamic_content
+      featured_content: featured_content
+      gallery_slide: gallery_slide
+      icon_with_description: icon_with_description
+      sign_post_iframe: sign_post_iframe
+      image: image
+      image_gallery: image_gallery
+      infographic: infographic
+      key_fact_content: key_fact_content
+      key_fact_content_list: key_fact_content_list
+      layout: layout
+      photo_gallery: photo_gallery
+      quick_links: quick_links
+      quote_full_width: quote_full_width
+      sign_post_image: sign_post_image
+      sign_post_key_facts: sign_post_key_facts
+      sign_post_quote: sign_post_quote
+      video: video
+      slide: slide
+      slider: slider
+      sliding_banner: sliding_banner
+      tab_layout_group: tab_layout_group
+      tab_layout_with_icons: tab_layout_with_icons
+      text: text
+    sort:
+      field: _none
+    auto_create: 0
+    auto_create_bundle: banner
+field_type: bricks

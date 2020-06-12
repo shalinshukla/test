@@ -1,0 +1,102 @@
+uuid: 4bca2d4a-d4a9-4b92-bc9a-d249a558450b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.csr_documents.body
+    - field.field.node.csr_documents.field_available_documents
+    - field.field.node.csr_documents.field_csr_document_year
+    - field.field.node.csr_documents.field_english_attachment
+    - field.field.node.csr_documents.field_french_attachment
+    - field.field.node.csr_documents.field_report_date
+    - field.field.node.csr_documents.field_report_image
+    - field.field.node.csr_documents.field_spanish_attachment
+    - node.type.csr_documents
+  module:
+    - datetime
+    - file
+    - svg_image
+    - text
+    - user
+id: node.csr_documents.default
+targetEntityType: node
+bundle: csr_documents
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_available_documents:
+    weight: 108
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_csr_document_year:
+    weight: 109
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_english_attachment:
+    weight: 105
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  field_french_attachment:
+    weight: 107
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  field_report_date:
+    weight: 102
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_report_image:
+    weight: 104
+    label: above
+    settings:
+      svg_attributes:
+        width: ''
+        height: ''
+      svg_render_as_image: true
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_spanish_attachment:
+    weight: 106
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

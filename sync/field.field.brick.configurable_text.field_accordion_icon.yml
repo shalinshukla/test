@@ -1,0 +1,42 @@
+uuid: 5bf6c902-c631-4b13-944b-37f680b08273
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.configurable_text
+    - field.storage.brick.field_accordion_icon
+  module:
+    - image
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: brick.configurable_text.field_accordion_icon
+field_name: field_accordion_icon
+entity_type: brick
+bundle: configurable_text
+label: 'Accordion icon'
+description: 'Add image icon only in case of accordion layout'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

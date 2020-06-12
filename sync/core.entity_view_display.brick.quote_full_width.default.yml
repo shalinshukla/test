@@ -1,0 +1,53 @@
+uuid: 0468684b-2d78-460c-9c4d-7446e0e31a7b
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.quote_full_width
+    - field.field.brick.quote_full_width.field_fwq_first_name
+    - field.field.brick.quote_full_width.field_fwq_last_name
+    - field.field.brick.quote_full_width.field_fwq_quote_formatted
+    - field.field.brick.quote_full_width.field_fwq_quote_text
+    - field.field.brick.quote_full_width.field_fwq_role
+  module:
+    - text
+id: brick.quote_full_width.default
+targetEntityType: brick
+bundle: quote_full_width
+mode: default
+content:
+  field_fwq_first_name:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_fwq_quote_formatted:
+    weight: 3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_fwq_role:
+    weight: 2
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  title:
+    label: above
+    type: string
+    weight: 0
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  field_fwq_last_name: true
+  field_fwq_quote_text: true
+  langcode: true

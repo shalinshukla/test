@@ -1,0 +1,9 @@
+uuid: 45481395-b1c6-4288-b812-aaee597aa1f4
+langcode: fr
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.brick
+name: 'Configurable Text'
+type: configurable_text
+description: 'Text Component - providing features like render title based on HTML tag selection '

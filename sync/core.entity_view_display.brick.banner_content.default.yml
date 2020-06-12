@@ -1,0 +1,74 @@
+uuid: d88ff0de-2a20-40f5-948d-10186ba1f285
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.banner_content
+    - field.field.brick.banner_content.field_banner
+    - field.field.brick.banner_content.field_banner_heading
+    - field.field.brick.banner_content.field_banner_inner_page
+    - field.field.brick.banner_content.field_fdescription
+    - field.field.brick.banner_content.field_link
+  module:
+    - link
+    - options
+    - svg_image
+    - text
+id: brick.banner_content.default
+targetEntityType: brick
+bundle: banner_content
+mode: default
+content:
+  field_banner:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_banner_heading:
+    weight: -3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_banner_inner_page:
+    weight: -4
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_fdescription:
+    weight: -2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_link:
+    weight: -1
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  title:
+    label: hidden
+    type: string
+    weight: -5
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  search_api_excerpt: true

@@ -1,0 +1,27 @@
+uuid: 8de0ceb9-223a-4d36-b6ec-0c12ea068603
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_display_countries_1
+    - node.type.mid_disclaimer
+  module:
+    - content_translation
+    - options
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+_core:
+  default_config_hash: xbeQXWN968hq_S87WcxEsNejmZyUxlzxZXFd2-SqAZE
+id: node.mid_disclaimer.field_display_countries_1
+field_name: field_display_countries_1
+entity_type: node
+bundle: mid_disclaimer
+label: 'Display Countries 1'
+description: 'Countries selected will be displayed on the front end for Origin country as well as Physical presence fields in step 1 form.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

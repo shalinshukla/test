@@ -1,0 +1,116 @@
+uuid: 1138da6d-8922-4aee-9181-e9e2d23ad974
+langcode: en
+status: false
+dependencies:
+  module:
+    - block_class
+    - social_media_links
+  theme:
+    - project_bootstrap
+third_party_settings:
+  block_class:
+    classes: 'col-xs-12 col-sm-4 col-md-4'
+id: socialmedialinks
+theme: project_bootstrap
+region: footer
+weight: -33
+provider: null
+plugin: social_media_links_block
+settings:
+  id: social_media_links_block
+  label: 'Stay in touch'
+  provider: social_media_links
+  label_display: visible
+  platforms:
+    facebook:
+      value: lowescareers/
+      description: 'Facebook - Open in new window'
+      weight: '-30'
+    linkedin:
+      value: 'company/lowe''s-home-improvement/jobs'
+      description: 'linkedin - Open in new window '
+      weight: '-29'
+    email:
+      value: ''
+      description: Email
+      weight: '-28'
+    twitter:
+      value: lowescareers
+      description: 'Twitter - Open in new window'
+      weight: '-27'
+    youtube:
+      value: ''
+      description: youtube
+      weight: '-26'
+    flickr:
+      value: ''
+      description: ''
+      weight: '-25'
+    slideshare:
+      value: ''
+      description: ''
+      weight: '-24'
+    vimeo:
+      value: ''
+      description: ''
+      weight: '-23'
+    tumblr:
+      value: ''
+      description: ''
+      weight: '-22'
+    rss:
+      value: ''
+      description: ''
+      weight: '-21'
+    github:
+      value: ''
+      description: ''
+      weight: '-20'
+    vkontakte:
+      value: ''
+      description: ''
+      weight: '-19'
+    bitbucket:
+      value: ''
+      description: ''
+      weight: '-18'
+    googleplus:
+      value: ''
+      description: ''
+      weight: '-17'
+    drupal:
+      value: ''
+      description: ''
+      weight: '-16'
+    instagram:
+      value: ''
+      description: ''
+      weight: '-15'
+    behance:
+      value: ''
+      description: ''
+      weight: '-14'
+    pinterest:
+      value: ''
+      description: ''
+      weight: '-13'
+    youtube_channel:
+      value: ''
+      description: ''
+      weight: '-12'
+    contact:
+      value: ''
+      description: ''
+      weight: '-11'
+  appearance:
+    orientation: h
+    show_name: 0
+  link_attributes:
+    target: _blank
+    rel: '<none>'
+  iconset:
+    style: 'fontawesome:in'
+    installed_iconsets:
+      fontawesome:
+        examples: ''
+visibility: {  }

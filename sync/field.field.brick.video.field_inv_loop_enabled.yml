@@ -1,0 +1,28 @@
+uuid: 62a5931f-57e4-4a22-822c-3d2f02495201
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.video
+    - field.storage.brick.field_inv_loop_enabled
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.video.field_inv_loop_enabled
+field_name: field_inv_loop_enabled
+entity_type: brick
+bundle: video
+label: 'Loop enabled'
+description: 'To specify whether video playing in loop, it means once video is complete it will start playing again.'
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'True'
+  off_label: 'False'
+field_type: boolean

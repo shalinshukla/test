@@ -1,0 +1,30 @@
+uuid: 15dce39e-f5fb-453f-a5bf-87ae86381d11
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.presentations
+  module:
+    - system
+    - views
+  theme:
+    - investis_bootstrap_t2
+id: investis_bootstrap_t2_views_block__presentations_block_4
+theme: investis_bootstrap_t2
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:presentations-block_4'
+settings:
+  id: 'views_block:presentations-block_4'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: "/node/115\r\n/node/93"
+    negate: false
+    context_mapping: {  }

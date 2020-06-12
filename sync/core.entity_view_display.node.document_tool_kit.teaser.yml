@@ -1,0 +1,26 @@
+uuid: a0c56aa7-c15a-47ff-8c6e-4cb10797d00a
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.document_tool_kit.field_document_date
+    - field.field.node.document_tool_kit.field_document_link
+    - node.type.document_tool_kit
+  module:
+    - user
+id: node.document_tool_kit.teaser
+targetEntityType: node
+bundle: document_tool_kit
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_document_date: true
+  field_document_link: true
+  langcode: true
+  search_api_excerpt: true

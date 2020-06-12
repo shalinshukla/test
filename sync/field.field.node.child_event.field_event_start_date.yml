@@ -1,0 +1,25 @@
+uuid: 9a6a5e1f-1440-4b0f-8d1b-0a501f63d81a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_event_start_date
+    - node.type.child_event
+  module:
+    - datetime
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.child_event.field_event_start_date
+field_name: field_event_start_date
+entity_type: node
+bundle: child_event
+label: 'Event Start Date'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

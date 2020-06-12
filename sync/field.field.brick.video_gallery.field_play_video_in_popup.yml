@@ -1,0 +1,28 @@
+uuid: 463e18d1-80bf-44ea-96c1-bd1b2a3626bb
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.video_gallery
+    - field.storage.brick.field_play_video_in_popup
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.video_gallery.field_play_video_in_popup
+field_name: field_play_video_in_popup
+entity_type: brick
+bundle: video_gallery
+label: 'Play video in popup'
+description: 'Select checkbox if you want to play video in Lightbox pop-up'
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'True'
+  off_label: 'False'
+field_type: boolean

@@ -1,0 +1,20 @@
+uuid: 99714d59-857b-413a-b273-9e5f6a5d9c37
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+    - text
+id: brick.field_banner_heading
+field_name: field_banner_heading
+entity_type: brick
+type: text
+settings:
+  max_length: 1000
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

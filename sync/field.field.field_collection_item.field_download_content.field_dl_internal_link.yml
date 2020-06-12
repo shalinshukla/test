@@ -1,0 +1,23 @@
+uuid: 53f99322-b0e0-4ce4-b6c3-86ad4d067acf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.field_collection_item.field_dl_internal_link
+    - field_collection.field_collection.field_download_content
+  module:
+    - link
+id: field_collection_item.field_download_content.field_dl_internal_link
+field_name: field_dl_internal_link
+entity_type: field_collection_item
+bundle: field_download_content
+label: 'Internal Link'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 1
+  title: 0
+field_type: link

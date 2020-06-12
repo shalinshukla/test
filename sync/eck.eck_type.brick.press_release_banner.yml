@@ -1,0 +1,9 @@
+uuid: 752dadb8-c03d-4b1f-b683-1cf53e66c641
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.brick
+name: 'Press Release Banner'
+type: press_release_banner
+description: ''

@@ -1,0 +1,27 @@
+uuid: 329cd4af-8c34-4990-8119-39ac90c88755
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.quick_links
+    - field.storage.brick.field_quick_links
+  module:
+    - link
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: brick.quick_links.field_quick_links
+field_name: field_quick_links
+entity_type: brick
+bundle: quick_links
+label: 'Quick Links'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

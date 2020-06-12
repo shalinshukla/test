@@ -1,0 +1,28 @@
+uuid: 73407362-0b74-495f-8bec-993271e44bbe
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.configurable_text
+    - field.storage.brick.field_configurable_link
+  module:
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: brick.configurable_text.field_configurable_link
+field_name: field_configurable_link
+entity_type: brick
+bundle: configurable_text
+label: 'If there is only Configurable link is exist'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

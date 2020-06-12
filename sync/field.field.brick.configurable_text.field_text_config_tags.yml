@@ -1,0 +1,30 @@
+uuid: 517cf622-ecb5-46ae-a19a-08a2619ff059
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.configurable_text
+    - field.storage.brick.field_text_config_tags
+  module:
+    - content_translation
+    - options
+    - tmgmt_content
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+  tmgmt_content:
+    excluded: false
+id: brick.configurable_text.field_text_config_tags
+field_name: field_text_config_tags
+entity_type: brick
+bundle: configurable_text
+label: 'HTML Tags'
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: h2
+default_value_callback: ''
+settings: {  }
+field_type: list_string

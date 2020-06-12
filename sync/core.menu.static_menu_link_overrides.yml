@@ -1,0 +1,3315 @@
+definitions:
+  contact__site_page:
+    weight: -49
+    menu_name: footer
+    parent: ''
+    expanded: false
+    enabled: false
+  entity__entity_form_display__brick__defaultwrapper:
+    menu_name: admin
+    parent: entity.brick_type.edit_form.wrapper
+    weight: 2
+    expanded: false
+    enabled: true
+  entity__entity_view_display__brick__default__wrapper:
+    menu_name: admin
+    parent: entity.brick_type.edit_form.wrapper
+    weight: 3
+    expanded: false
+    enabled: true
+  entity__brick_type__delete_form__wrapper:
+    menu_name: admin
+    parent: entity.brick_type.edit_form.wrapper
+    weight: 5
+    expanded: false
+    enabled: true
+  entity__field_collection__edit_form__field_download_content:
+    menu_name: admin
+    parent: ''
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__field_collection_item__field_ui_fieldsfield_download_content:
+    menu_name: admin
+    parent: entity.field_collection.edit_form.field_download_content
+    weight: 1
+    expanded: false
+    enabled: true
+  entity__entity_form_display__field_collection_item__defaultfield_download_content:
+    menu_name: admin
+    parent: entity.field_collection.edit_form.field_download_content
+    weight: 2
+    expanded: false
+    enabled: true
+  entity__entity_view_display__field_collection_item__default__field_download_content:
+    menu_name: admin
+    parent: entity.field_collection.edit_form.field_download_content
+    weight: 3
+    expanded: false
+    enabled: true
+  entity__field_collection__edit_form__field_presentation_content:
+    menu_name: admin
+    parent: ''
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__field_collection_item__field_ui_fieldsfield_presentation_content:
+    menu_name: admin
+    parent: entity.field_collection.edit_form.field_presentation_content
+    weight: 1
+    expanded: false
+    enabled: true
+  entity__entity_form_display__field_collection_item__defaultfield_presentation_content:
+    menu_name: admin
+    parent: entity.field_collection.edit_form.field_presentation_content
+    weight: 2
+    expanded: false
+    enabled: true
+  entity__entity_view_display__field_collection_item__default__field_presentation_content:
+    menu_name: admin
+    parent: entity.field_collection.edit_form.field_presentation_content
+    weight: 3
+    expanded: false
+    enabled: true
+  entity__field_collection__edit_form__field_result_content:
+    menu_name: admin
+    parent: ''
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__field_collection_item__field_ui_fieldsfield_result_content:
+    menu_name: admin
+    parent: entity.field_collection.edit_form.field_result_content
+    weight: 1
+    expanded: false
+    enabled: true
+  entity__entity_form_display__field_collection_item__defaultfield_result_content:
+    menu_name: admin
+    parent: entity.field_collection.edit_form.field_result_content
+    weight: 2
+    expanded: false
+    enabled: true
+  entity__entity_view_display__field_collection_item__default__field_result_content:
+    menu_name: admin
+    parent: entity.field_collection.edit_form.field_result_content
+    weight: 3
+    expanded: false
+    enabled: true
+  entity__field_collection__edit_form__field_view_online:
+    menu_name: admin
+    parent: ''
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__field_collection_item__field_ui_fieldsfield_view_online:
+    menu_name: admin
+    parent: entity.field_collection.edit_form.field_view_online
+    weight: 1
+    expanded: false
+    enabled: true
+  entity__entity_form_display__field_collection_item__defaultfield_view_online:
+    menu_name: admin
+    parent: entity.field_collection.edit_form.field_view_online
+    weight: 2
+    expanded: false
+    enabled: true
+  entity__entity_view_display__field_collection_item__default__field_view_online:
+    menu_name: admin
+    parent: entity.field_collection.edit_form.field_view_online
+    weight: 3
+    expanded: false
+    enabled: true
+  entity__brick_type__edit_form__footer:
+    menu_name: admin
+    parent: ''
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__brick__field_ui_fieldsfooter:
+    menu_name: admin
+    parent: entity.brick_type.edit_form.footer
+    weight: 1
+    expanded: false
+    enabled: true
+  entity__entity_form_display__brick__defaultfooter:
+    menu_name: admin
+    parent: entity.brick_type.edit_form.footer
+    weight: 2
+    expanded: false
+    enabled: true
+  entity__entity_view_display__brick__default__footer:
+    menu_name: admin
+    parent: entity.brick_type.edit_form.footer
+    weight: 3
+    expanded: false
+    enabled: true
+  entity__brick_type__delete_form__footer:
+    menu_name: admin
+    parent: entity.brick_type.edit_form.footer
+    weight: 5
+    expanded: false
+    enabled: true
+  system__admin:
+    menu_name: admin
+    parent: ''
+    weight: 9
+    expanded: false
+    enabled: true
+  admin_toolbar_tools__help:
+    weight: -99
+    menu_name: admin
+    parent: system.admin
+    enabled: true
+    expanded: false
+  system__admin_index:
+    menu_name: admin
+    parent: admin_toolbar_tools.help
+    weight: -100
+    expanded: false
+    enabled: true
+  admin_toolbar_tools__flush:
+    menu_name: admin
+    parent: admin_toolbar_tools.help
+    weight: -9
+    expanded: false
+    enabled: true
+  admin_toolbar_tools__cssjs:
+    menu_name: admin
+    parent: admin_toolbar_tools.flush
+    weight: 0
+    expanded: false
+    enabled: true
+  admin_toolbar_tools__plugin:
+    menu_name: admin
+    parent: admin_toolbar_tools.flush
+    weight: 0
+    expanded: false
+    enabled: true
+  admin_toolbar_tools__flush_rendercache:
+    menu_name: admin
+    parent: admin_toolbar_tools.flush
+    weight: 0
+    expanded: false
+    enabled: true
+  admin_toolbar_tools__flush_menu:
+    menu_name: admin
+    parent: admin_toolbar_tools.flush
+    weight: 0
+    expanded: false
+    enabled: true
+  admin_toolbar_tools__flush_static:
+    menu_name: admin
+    parent: admin_toolbar_tools.flush
+    weight: 0
+    expanded: false
+    enabled: true
+  admin_toolbar_tools__flush_twig:
+    menu_name: admin
+    parent: admin_toolbar_tools.flush
+    weight: 0
+    expanded: false
+    enabled: true
+  admin_toolbar_tools__flush_views:
+    menu_name: admin
+    parent: admin_toolbar_tools.flush
+    weight: 0
+    expanded: false
+    enabled: true
+  system__run_cron:
+    menu_name: admin
+    parent: admin_toolbar_tools.help
+    weight: -8
+    expanded: false
+    enabled: true
+  system__db_update:
+    menu_name: admin
+    parent: admin_toolbar_tools.help
+    weight: -6
+    expanded: false
+    enabled: true
+  admin_toolbar_tools__drupalorg:
+    menu_name: admin
+    parent: admin_toolbar_tools.help
+    weight: -5
+    expanded: false
+    enabled: true
+  admin_toolbar_tools__listchanges:
+    menu_name: admin
+    parent: admin_toolbar_tools.drupalorg
+    weight: -6
+    expanded: false
+    enabled: true
+  admin_toolbar_tools__doc:
+    menu_name: admin
+    parent: admin_toolbar_tools.drupalorg
+    weight: -5
+    expanded: false
+    enabled: true
+  admin_toolbar_tools__user__logout:
+    menu_name: admin
+    parent: admin_toolbar_tools.help
+    weight: 10
+    expanded: false
+    enabled: true
+  system__admin_content:
+    weight: -98
+    menu_name: admin
+    parent: system.admin
+    expanded: false
+    enabled: true
+  admin_toolbar_tools__add_content:
+    menu_name: admin
+    parent: system.admin_content
+    weight: 0
+    expanded: false
+    enabled: true
+  node__add__page:
+    menu_name: admin
+    parent: admin_toolbar_tools.add_content
+    weight: 0
+    expanded: false
+    enabled: true
+  node__add__bricky:
+    menu_name: admin
+    parent: admin_toolbar_tools.add_content
+    weight: 0
+    expanded: false
+    enabled: true
+  node__add__contact_information:
+    menu_name: admin
+    parent: admin_toolbar_tools.add_content
+    weight: 0
+    expanded: false
+    enabled: true
+  node__add__mid_disclaimer:
+    menu_name: admin
+    parent: admin_toolbar_tools.add_content
+    weight: 0
+    expanded: false
+    enabled: true
+  node__add__eventcontent:
+    menu_name: admin
+    parent: admin_toolbar_tools.add_content
+    weight: 0
+    expanded: false
+    enabled: true
+  node__add__financial_calendar:
+    menu_name: admin
+    parent: admin_toolbar_tools.add_content
+    weight: 0
+    expanded: false
+    enabled: true
+  node__add__history_timeline:
+    menu_name: admin
+    parent: admin_toolbar_tools.add_content
+    weight: 0
+    expanded: false
+    enabled: true
+  node__add__landing_page:
+    menu_name: admin
+    parent: admin_toolbar_tools.add_content
+    weight: 0
+    expanded: false
+    enabled: true
+  node__add__link_document_content:
+    menu_name: admin
+    parent: admin_toolbar_tools.add_content
+    weight: 0
+    expanded: false
+    enabled: true
+  node__add__media_library:
+    menu_name: admin
+    parent: admin_toolbar_tools.add_content
+    weight: 0
+    expanded: false
+    enabled: true
+  node__add__media_library_video:
+    menu_name: admin
+    parent: admin_toolbar_tools.add_content
+    weight: 0
+    expanded: false
+    enabled: true
+  node__add__newscontent:
+    menu_name: admin
+    parent: admin_toolbar_tools.add_content
+    weight: 0
+    expanded: false
+    enabled: true
+  node__add__people:
+    menu_name: admin
+    parent: admin_toolbar_tools.add_content
+    weight: 0
+    expanded: false
+    enabled: true
+  node__add__presentations:
+    menu_name: admin
+    parent: admin_toolbar_tools.add_content
+    weight: 0
+    expanded: false
+    enabled: true
+  node__add__result:
+    menu_name: admin
+    parent: admin_toolbar_tools.add_content
+    weight: 0
+    expanded: false
+    enabled: true
+  node__add__webform:
+    menu_name: admin
+    parent: admin_toolbar_tools.add_content
+    weight: 0
+    expanded: false
+    enabled: true
+  admin_toolbar_tools__add_media:
+    menu_name: admin
+    parent: system.admin_content
+    weight: 0
+    expanded: false
+    enabled: true
+  media__add__document:
+    menu_name: admin
+    parent: admin_toolbar_tools.add_media
+    weight: 0
+    expanded: false
+    enabled: true
+  media__add__image:
+    menu_name: admin
+    parent: admin_toolbar_tools.add_media
+    weight: 0
+    expanded: false
+    enabled: true
+  media__add__instagram:
+    menu_name: admin
+    parent: admin_toolbar_tools.add_media
+    weight: 0
+    expanded: false
+    enabled: true
+  media__add__tweet:
+    menu_name: admin
+    parent: admin_toolbar_tools.add_media
+    weight: 0
+    expanded: false
+    enabled: true
+  media__add__video:
+    menu_name: admin
+    parent: admin_toolbar_tools.add_media
+    weight: 0
+    expanded: false
+    enabled: true
+  comment__admin:
+    menu_name: admin
+    parent: system.admin_content
+    weight: 0
+    expanded: false
+    enabled: true
+  admin_toolbar_tools__view__files:
+    menu_name: admin
+    parent: system.admin_content
+    weight: 0
+    expanded: false
+    enabled: true
+  system__admin_structure:
+    weight: -95
+    menu_name: admin
+    parent: system.admin
+    enabled: true
+    expanded: false
+  block__admin_display:
+    menu_name: admin
+    parent: system.admin_structure
+    weight: 0
+    expanded: false
+    enabled: true
+  block_content__add_page:
+    menu_name: admin
+    parent: block.admin_display
+    weight: -100
+    expanded: false
+    enabled: true
+  entity__block_content__collection:
+    menu_name: admin
+    parent: block.admin_display
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__block_content_type__collection:
+    menu_name: admin
+    parent: block.admin_display
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__block_content_type__edit_form__basic:
+    menu_name: admin
+    parent: entity.block_content_type.collection
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__block_content__field_ui_fieldsbasic:
+    menu_name: admin
+    parent: entity.block_content_type.edit_form.basic
+    weight: 1
+    expanded: false
+    enabled: true
+  entity__entity_form_display__block_content__defaultbasic:
+    menu_name: admin
+    parent: entity.block_content_type.edit_form.basic
+    weight: 2
+    expanded: false
+    enabled: true
+  entity__entity_view_display__block_content__default__basic:
+    menu_name: admin
+    parent: entity.block_content_type.edit_form.basic
+    weight: 3
+    expanded: false
+    enabled: true
+  entity__block_content_type__delete_form__basic:
+    menu_name: admin
+    parent: entity.block_content_type.edit_form.basic
+    weight: 5
+    expanded: false
+    enabled: true
+  entity__block_content_type__edit_form__reference_block:
+    menu_name: admin
+    parent: entity.block_content_type.collection
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__block_content__field_ui_fieldsreference_block:
+    menu_name: admin
+    parent: entity.block_content_type.edit_form.reference_block
+    weight: 1
+    expanded: false
+    enabled: true
+  entity__entity_form_display__block_content__defaultreference_block:
+    menu_name: admin
+    parent: entity.block_content_type.edit_form.reference_block
+    weight: 2
+    expanded: false
+    enabled: true
+  entity__entity_view_display__block_content__default__reference_block:
+    menu_name: admin
+    parent: entity.block_content_type.edit_form.reference_block
+    weight: 3
+    expanded: false
+    enabled: true
+  entity__block_content_type__delete_form__reference_block:
+    menu_name: admin
+    parent: entity.block_content_type.edit_form.reference_block
+    weight: 5
+    expanded: false
+    enabled: true
+  entity__comment_type__collection:
+    weight: 1
+    menu_name: admin
+    parent: system.admin_structure
+    expanded: false
+    enabled: true
+  entity__contact_form__collection:
+    weight: 2
+    menu_name: admin
+    parent: system.admin_structure
+    expanded: false
+    enabled: true
+  contact__form_add:
+    menu_name: admin
+    parent: entity.contact_form.collection
+    weight: -5
+    expanded: false
+    enabled: true
+  entity__contact_form__edit_form__sitewide:
+    menu_name: admin
+    parent: entity.contact_form.collection
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__contact_message__field_ui_fieldssitewide:
+    menu_name: admin
+    parent: entity.contact_form.edit_form.sitewide
+    weight: 1
+    expanded: false
+    enabled: true
+  entity__entity_form_display__contact_message__defaultsitewide:
+    menu_name: admin
+    parent: entity.contact_form.edit_form.sitewide
+    weight: 2
+    expanded: false
+    enabled: true
+  entity__entity_view_display__contact_message__default__sitewide:
+    menu_name: admin
+    parent: entity.contact_form.edit_form.sitewide
+    weight: 3
+    expanded: false
+    enabled: true
+  entity__contact_form__delete_form__sitewide:
+    menu_name: admin
+    parent: entity.contact_form.edit_form.sitewide
+    weight: 5
+    expanded: false
+    enabled: true
+  entity__contact_form__edit_form__personal:
+    menu_name: admin
+    parent: entity.contact_form.collection
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__contact_message__field_ui_fieldspersonal:
+    menu_name: admin
+    parent: entity.contact_form.edit_form.personal
+    weight: 1
+    expanded: false
+    enabled: true
+  entity__entity_form_display__contact_message__defaultpersonal:
+    menu_name: admin
+    parent: entity.contact_form.edit_form.personal
+    weight: 2
+    expanded: false
+    enabled: true
+  entity__entity_view_display__contact_message__default__personal:
+    menu_name: admin
+    parent: entity.contact_form.edit_form.personal
+    weight: 3
+    expanded: false
+    enabled: true
+  entity__contact_form__delete_form__personal:
+    menu_name: admin
+    parent: entity.contact_form.edit_form.personal
+    weight: 5
+    expanded: false
+    enabled: true
+  entity__node_type__collection:
+    weight: 3
+    menu_name: admin
+    parent: system.admin_structure
+    expanded: false
+    enabled: true
+  node__type_add:
+    menu_name: admin
+    parent: entity.node_type.collection
+    weight: -5
+    expanded: false
+    enabled: true
+  entity__node_type__edit_form__page:
+    menu_name: admin
+    parent: entity.node_type.collection
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__node__field_ui_fieldspage:
+    menu_name: admin
+    parent: entity.node_type.edit_form.page
+    weight: 1
+    expanded: false
+    enabled: true
+  entity__entity_form_display__node__defaultpage:
+    menu_name: admin
+    parent: entity.node_type.edit_form.page
+    weight: 2
+    expanded: false
+    enabled: true
+  entity__entity_view_display__node__default__page:
+    menu_name: admin
+    parent: entity.node_type.edit_form.page
+    weight: 3
+    expanded: false
+    enabled: true
+  entity__node_type__delete_form__page:
+    menu_name: admin
+    parent: entity.node_type.edit_form.page
+    weight: 5
+    expanded: false
+    enabled: true
+  entity__node_type__edit_form__bricky:
+    menu_name: admin
+    parent: entity.node_type.collection
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__node__field_ui_fieldsbricky:
+    menu_name: admin
+    parent: entity.node_type.edit_form.bricky
+    weight: 1
+    expanded: false
+    enabled: true
+  entity__entity_form_display__node__defaultbricky:
+    menu_name: admin
+    parent: entity.node_type.edit_form.bricky
+    weight: 2
+    expanded: false
+    enabled: true
+  entity__entity_view_display__node__default__bricky:
+    menu_name: admin
+    parent: entity.node_type.edit_form.bricky
+    weight: 3
+    expanded: false
+    enabled: true
+  entity__node_type__delete_form__bricky:
+    menu_name: admin
+    parent: entity.node_type.edit_form.bricky
+    weight: 5
+    expanded: false
+    enabled: true
+  entity__node_type__edit_form__contact_information:
+    menu_name: admin
+    parent: entity.node_type.collection
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__node__field_ui_fieldscontact_information:
+    menu_name: admin
+    parent: entity.node_type.edit_form.contact_information
+    weight: 1
+    expanded: false
+    enabled: true
+  entity__entity_form_display__node__defaultcontact_information:
+    menu_name: admin
+    parent: entity.node_type.edit_form.contact_information
+    weight: 2
+    expanded: false
+    enabled: true
+  entity__entity_view_display__node__default__contact_information:
+    menu_name: admin
+    parent: entity.node_type.edit_form.contact_information
+    weight: 3
+    expanded: false
+    enabled: true
+  entity__node_type__delete_form__contact_information:
+    menu_name: admin
+    parent: entity.node_type.edit_form.contact_information
+    weight: 5
+    expanded: false
+    enabled: true
+  entity__node_type__edit_form__mid_disclaimer:
+    menu_name: admin
+    parent: entity.node_type.collection
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__node__field_ui_fieldsmid_disclaimer:
+    menu_name: admin
+    parent: entity.node_type.edit_form.mid_disclaimer
+    weight: 1
+    expanded: false
+    enabled: true
+  entity__entity_form_display__node__defaultmid_disclaimer:
+    menu_name: admin
+    parent: entity.node_type.edit_form.mid_disclaimer
+    weight: 2
+    expanded: false
+    enabled: true
+  entity__entity_view_display__node__default__mid_disclaimer:
+    menu_name: admin
+    parent: entity.node_type.edit_form.mid_disclaimer
+    weight: 3
+    expanded: false
+    enabled: true
+  entity__node_type__delete_form__mid_disclaimer:
+    menu_name: admin
+    parent: entity.node_type.edit_form.mid_disclaimer
+    weight: 5
+    expanded: false
+    enabled: true
+  entity__node_type__edit_form__eventcontent:
+    menu_name: admin
+    parent: entity.node_type.collection
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__node__field_ui_fieldseventcontent:
+    menu_name: admin
+    parent: entity.node_type.edit_form.eventcontent
+    weight: 1
+    expanded: false
+    enabled: true
+  entity__entity_form_display__node__defaulteventcontent:
+    menu_name: admin
+    parent: entity.node_type.edit_form.eventcontent
+    weight: 2
+    expanded: false
+    enabled: true
+  entity__entity_view_display__node__default__eventcontent:
+    menu_name: admin
+    parent: entity.node_type.edit_form.eventcontent
+    weight: 3
+    expanded: false
+    enabled: true
+  entity__node_type__delete_form__eventcontent:
+    menu_name: admin
+    parent: entity.node_type.edit_form.eventcontent
+    weight: 5
+    expanded: false
+    enabled: true
+  entity__node_type__edit_form__financial_calendar:
+    menu_name: admin
+    parent: entity.node_type.collection
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__node__field_ui_fieldsfinancial_calendar:
+    menu_name: admin
+    parent: entity.node_type.edit_form.financial_calendar
+    weight: 1
+    expanded: false
+    enabled: true
+  entity__entity_form_display__node__defaultfinancial_calendar:
+    menu_name: admin
+    parent: entity.node_type.edit_form.financial_calendar
+    weight: 2
+    expanded: false
+    enabled: true
+  entity__entity_view_display__node__default__financial_calendar:
+    menu_name: admin
+    parent: entity.node_type.edit_form.financial_calendar
+    weight: 3
+    expanded: false
+    enabled: true
+  entity__node_type__delete_form__financial_calendar:
+    menu_name: admin
+    parent: entity.node_type.edit_form.financial_calendar
+    weight: 5
+    expanded: false
+    enabled: true
+  entity__node_type__edit_form__history_timeline:
+    menu_name: admin
+    parent: entity.node_type.collection
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__node__field_ui_fieldshistory_timeline:
+    menu_name: admin
+    parent: entity.node_type.edit_form.history_timeline
+    weight: 1
+    expanded: false
+    enabled: true
+  entity__entity_form_display__node__defaulthistory_timeline:
+    menu_name: admin
+    parent: entity.node_type.edit_form.history_timeline
+    weight: 2
+    expanded: false
+    enabled: true
+  entity__entity_view_display__node__default__history_timeline:
+    menu_name: admin
+    parent: entity.node_type.edit_form.history_timeline
+    weight: 3
+    expanded: false
+    enabled: true
+  entity__node_type__delete_form__history_timeline:
+    menu_name: admin
+    parent: entity.node_type.edit_form.history_timeline
+    weight: 5
+    expanded: false
+    enabled: true
+  entity__node_type__edit_form__landing_page:
+    menu_name: admin
+    parent: entity.node_type.collection
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__node__field_ui_fieldslanding_page:
+    menu_name: admin
+    parent: entity.node_type.edit_form.landing_page
+    weight: 1
+    expanded: false
+    enabled: true
+  entity__entity_form_display__node__defaultlanding_page:
+    menu_name: admin
+    parent: entity.node_type.edit_form.landing_page
+    weight: 2
+    expanded: false
+    enabled: true
+  entity__entity_view_display__node__default__landing_page:
+    menu_name: admin
+    parent: entity.node_type.edit_form.landing_page
+    weight: 3
+    expanded: false
+    enabled: true
+  entity__node_type__delete_form__landing_page:
+    menu_name: admin
+    parent: entity.node_type.edit_form.landing_page
+    weight: 5
+    expanded: false
+    enabled: true
+  entity__node_type__edit_form__link_document_content:
+    menu_name: admin
+    parent: entity.node_type.collection
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__node__field_ui_fieldslink_document_content:
+    menu_name: admin
+    parent: entity.node_type.edit_form.link_document_content
+    weight: 1
+    expanded: false
+    enabled: true
+  entity__entity_form_display__node__defaultlink_document_content:
+    menu_name: admin
+    parent: entity.node_type.edit_form.link_document_content
+    weight: 2
+    expanded: false
+    enabled: true
+  entity__entity_view_display__node__default__link_document_content:
+    menu_name: admin
+    parent: entity.node_type.edit_form.link_document_content
+    weight: 3
+    expanded: false
+    enabled: true
+  entity__node_type__delete_form__link_document_content:
+    menu_name: admin
+    parent: entity.node_type.edit_form.link_document_content
+    weight: 5
+    expanded: false
+    enabled: true
+  entity__node_type__edit_form__media_library:
+    menu_name: admin
+    parent: entity.node_type.collection
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__node__field_ui_fieldsmedia_library:
+    menu_name: admin
+    parent: entity.node_type.edit_form.media_library
+    weight: 1
+    expanded: false
+    enabled: true
+  entity__entity_form_display__node__defaultmedia_library:
+    menu_name: admin
+    parent: entity.node_type.edit_form.media_library
+    weight: 2
+    expanded: false
+    enabled: true
+  entity__entity_view_display__node__default__media_library:
+    menu_name: admin
+    parent: entity.node_type.edit_form.media_library
+    weight: 3
+    expanded: false
+    enabled: true
+  entity__node_type__delete_form__media_library:
+    menu_name: admin
+    parent: entity.node_type.edit_form.media_library
+    weight: 5
+    expanded: false
+    enabled: true
+  entity__node_type__edit_form__media_library_video:
+    menu_name: admin
+    parent: entity.node_type.collection
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__node__field_ui_fieldsmedia_library_video:
+    menu_name: admin
+    parent: entity.node_type.edit_form.media_library_video
+    weight: 1
+    expanded: false
+    enabled: true
+  entity__entity_form_display__node__defaultmedia_library_video:
+    menu_name: admin
+    parent: entity.node_type.edit_form.media_library_video
+    weight: 2
+    expanded: false
+    enabled: true
+  entity__entity_view_display__node__default__media_library_video:
+    menu_name: admin
+    parent: entity.node_type.edit_form.media_library_video
+    weight: 3
+    expanded: false
+    enabled: true
+  entity__node_type__delete_form__media_library_video:
+    menu_name: admin
+    parent: entity.node_type.edit_form.media_library_video
+    weight: 5
+    expanded: false
+    enabled: true
+  entity__node_type__edit_form__newscontent:
+    menu_name: admin
+    parent: entity.node_type.collection
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__node__field_ui_fieldsnewscontent:
+    menu_name: admin
+    parent: entity.node_type.edit_form.newscontent
+    weight: 1
+    expanded: false
+    enabled: true
+  entity__entity_form_display__node__defaultnewscontent:
+    menu_name: admin
+    parent: entity.node_type.edit_form.newscontent
+    weight: 2
+    expanded: false
+    enabled: true
+  entity__entity_view_display__node__default__newscontent:
+    menu_name: admin
+    parent: entity.node_type.edit_form.newscontent
+    weight: 3
+    expanded: false
+    enabled: true
+  entity__node_type__delete_form__newscontent:
+    menu_name: admin
+    parent: entity.node_type.edit_form.newscontent
+    weight: 5
+    expanded: false
+    enabled: true
+  entity__node_type__edit_form__people:
+    menu_name: admin
+    parent: entity.node_type.collection
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__node__field_ui_fieldspeople:
+    menu_name: admin
+    parent: entity.node_type.edit_form.people
+    weight: 1
+    expanded: false
+    enabled: true
+  entity__entity_form_display__node__defaultpeople:
+    menu_name: admin
+    parent: entity.node_type.edit_form.people
+    weight: 2
+    expanded: false
+    enabled: true
+  entity__entity_view_display__node__default__people:
+    menu_name: admin
+    parent: entity.node_type.edit_form.people
+    weight: 3
+    expanded: false
+    enabled: true
+  entity__node_type__delete_form__people:
+    menu_name: admin
+    parent: entity.node_type.edit_form.people
+    weight: 5
+    expanded: false
+    enabled: true
+  entity__node_type__edit_form__presentations:
+    menu_name: admin
+    parent: entity.node_type.collection
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__node__field_ui_fieldspresentations:
+    menu_name: admin
+    parent: entity.node_type.edit_form.presentations
+    weight: 1
+    expanded: false
+    enabled: true
+  entity__entity_form_display__node__defaultpresentations:
+    menu_name: admin
+    parent: entity.node_type.edit_form.presentations
+    weight: 2
+    expanded: false
+    enabled: true
+  entity__entity_view_display__node__default__presentations:
+    menu_name: admin
+    parent: entity.node_type.edit_form.presentations
+    weight: 3
+    expanded: false
+    enabled: true
+  entity__node_type__delete_form__presentations:
+    menu_name: admin
+    parent: entity.node_type.edit_form.presentations
+    weight: 5
+    expanded: false
+    enabled: true
+  entity__node_type__edit_form__result:
+    menu_name: admin
+    parent: entity.node_type.collection
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__node__field_ui_fieldsresult:
+    menu_name: admin
+    parent: entity.node_type.edit_form.result
+    weight: 1
+    expanded: false
+    enabled: true
+  entity__entity_form_display__node__defaultresult:
+    menu_name: admin
+    parent: entity.node_type.edit_form.result
+    weight: 2
+    expanded: false
+    enabled: true
+  entity__entity_view_display__node__default__result:
+    menu_name: admin
+    parent: entity.node_type.edit_form.result
+    weight: 3
+    expanded: false
+    enabled: true
+  entity__node_type__delete_form__result:
+    menu_name: admin
+    parent: entity.node_type.edit_form.result
+    weight: 5
+    expanded: false
+    enabled: true
+  entity__node_type__edit_form__webform:
+    menu_name: admin
+    parent: entity.node_type.collection
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__node__field_ui_fieldswebform:
+    menu_name: admin
+    parent: entity.node_type.edit_form.webform
+    weight: 1
+    expanded: false
+    enabled: true
+  entity__entity_form_display__node__defaultwebform:
+    menu_name: admin
+    parent: entity.node_type.edit_form.webform
+    weight: 2
+    expanded: false
+    enabled: true
+  entity__entity_view_display__node__default__webform:
+    menu_name: admin
+    parent: entity.node_type.edit_form.webform
+    weight: 3
+    expanded: false
+    enabled: true
+  entity__node_type__delete_form__webform:
+    menu_name: admin
+    parent: entity.node_type.edit_form.webform
+    weight: 5
+    expanded: false
+    enabled: true
+  field_ui__display_mode:
+    weight: 4
+    menu_name: admin
+    parent: system.admin_structure
+    expanded: false
+    enabled: true
+  entity__entity_form_mode__collection:
+    menu_name: admin
+    parent: field_ui.display_mode
+    weight: 0
+    expanded: false
+    enabled: true
+  field_ui__entity_form_mode_add:
+    menu_name: admin
+    parent: entity.entity_form_mode.collection
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__entity_view_mode__collection:
+    menu_name: admin
+    parent: field_ui.display_mode
+    weight: 0
+    expanded: false
+    enabled: true
+  field_ui__entity_view_mode_add:
+    menu_name: admin
+    parent: entity.entity_view_mode.collection
+    weight: 0
+    expanded: false
+    enabled: true
+  we_megamenu__admin:
+    weight: -87
+    menu_name: admin
+    parent: system.admin
+    expanded: false
+    enabled: true
+  eck__entity_type__admin__structure__settings:
+    weight: 6
+    menu_name: admin
+    parent: system.admin_structure
+    expanded: false
+    enabled: true
+  field_collection__overview_field_collections:
+    weight: 7
+    menu_name: admin
+    parent: system.admin_structure
+    expanded: false
+    enabled: true
+  entity__media_type__collection:
+    weight: 8
+    menu_name: admin
+    parent: system.admin_structure
+    expanded: false
+    enabled: true
+  entity__media_type__edit_form__document:
+    menu_name: admin
+    parent: entity.media_type.collection
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__media__field_ui_fieldsdocument:
+    menu_name: admin
+    parent: entity.media_type.edit_form.document
+    weight: 1
+    expanded: false
+    enabled: true
+  entity__entity_form_display__media__defaultdocument:
+    menu_name: admin
+    parent: entity.media_type.edit_form.document
+    weight: 2
+    expanded: false
+    enabled: true
+  entity__entity_view_display__media__default__document:
+    menu_name: admin
+    parent: entity.media_type.edit_form.document
+    weight: 3
+    expanded: false
+    enabled: true
+  entity__media_type__delete_form__document:
+    menu_name: admin
+    parent: entity.media_type.edit_form.document
+    weight: 5
+    expanded: false
+    enabled: true
+  entity__media_type__edit_form__image:
+    menu_name: admin
+    parent: entity.media_type.collection
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__media__field_ui_fieldsimage:
+    menu_name: admin
+    parent: entity.media_type.edit_form.image
+    weight: 1
+    expanded: false
+    enabled: true
+  entity__entity_form_display__media__defaultimage:
+    menu_name: admin
+    parent: entity.media_type.edit_form.image
+    weight: 2
+    expanded: false
+    enabled: true
+  entity__entity_view_display__media__default__image:
+    menu_name: admin
+    parent: entity.media_type.edit_form.image
+    weight: 3
+    expanded: false
+    enabled: true
+  entity__media_type__delete_form__image:
+    menu_name: admin
+    parent: entity.media_type.edit_form.image
+    weight: 5
+    expanded: false
+    enabled: true
+  entity__media_type__edit_form__instagram:
+    menu_name: admin
+    parent: entity.media_type.collection
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__media__field_ui_fieldsinstagram:
+    menu_name: admin
+    parent: entity.media_type.edit_form.instagram
+    weight: 1
+    expanded: false
+    enabled: true
+  entity__entity_form_display__media__defaultinstagram:
+    menu_name: admin
+    parent: entity.media_type.edit_form.instagram
+    weight: 2
+    expanded: false
+    enabled: true
+  entity__entity_view_display__media__default__instagram:
+    menu_name: admin
+    parent: entity.media_type.edit_form.instagram
+    weight: 3
+    expanded: false
+    enabled: true
+  entity__media_type__delete_form__instagram:
+    menu_name: admin
+    parent: entity.media_type.edit_form.instagram
+    weight: 5
+    expanded: false
+    enabled: true
+  entity__media_type__edit_form__tweet:
+    menu_name: admin
+    parent: entity.media_type.collection
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__media__field_ui_fieldstweet:
+    menu_name: admin
+    parent: entity.media_type.edit_form.tweet
+    weight: 1
+    expanded: false
+    enabled: true
+  entity__entity_form_display__media__defaulttweet:
+    menu_name: admin
+    parent: entity.media_type.edit_form.tweet
+    weight: 2
+    expanded: false
+    enabled: true
+  entity__entity_view_display__media__default__tweet:
+    menu_name: admin
+    parent: entity.media_type.edit_form.tweet
+    weight: 3
+    expanded: false
+    enabled: true
+  entity__media_type__delete_form__tweet:
+    menu_name: admin
+    parent: entity.media_type.edit_form.tweet
+    weight: 5
+    expanded: false
+    enabled: true
+  entity__media_type__edit_form__video:
+    menu_name: admin
+    parent: entity.media_type.collection
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__media__field_ui_fieldsvideo:
+    menu_name: admin
+    parent: entity.media_type.edit_form.video
+    weight: 1
+    expanded: false
+    enabled: true
+  entity__entity_form_display__media__defaultvideo:
+    menu_name: admin
+    parent: entity.media_type.edit_form.video
+    weight: 2
+    expanded: false
+    enabled: true
+  entity__entity_view_display__media__default__video:
+    menu_name: admin
+    parent: entity.media_type.edit_form.video
+    weight: 3
+    expanded: false
+    enabled: true
+  entity__media_type__delete_form__video:
+    menu_name: admin
+    parent: entity.media_type.edit_form.video
+    weight: 5
+    expanded: false
+    enabled: true
+  entity__menu__collection:
+    weight: 9
+    menu_name: admin
+    parent: system.admin_structure
+    expanded: false
+    enabled: true
+  entity__menu__add_form:
+    menu_name: admin
+    parent: entity.menu.collection
+    weight: -50
+    expanded: false
+    enabled: true
+  entity__menu__edit_form__admin:
+    menu_name: admin
+    parent: entity.menu.collection
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__menu__add_link_form__admin:
+    menu_name: admin
+    parent: entity.menu.edit_form.admin
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__menu__delete_form__admin:
+    menu_name: admin
+    parent: entity.menu.edit_form.admin
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__menu__edit_form__business-relations:
+    menu_name: admin
+    parent: entity.menu.collection
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__menu__add_link_form__business-relations:
+    menu_name: admin
+    parent: entity.menu.edit_form.business-relations
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__menu__delete_form__business-relations:
+    menu_name: admin
+    parent: entity.menu.edit_form.business-relations
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__menu__edit_form__footer:
+    menu_name: admin
+    parent: entity.menu.collection
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__menu__add_link_form__footer:
+    menu_name: admin
+    parent: entity.menu.edit_form.footer
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__menu__delete_form__footer:
+    menu_name: admin
+    parent: entity.menu.edit_form.footer
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__menu__edit_form__investor-relations:
+    menu_name: admin
+    parent: entity.menu.collection
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__menu__add_link_form__investor-relations:
+    menu_name: admin
+    parent: entity.menu.edit_form.investor-relations
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__menu__delete_form__investor-relations:
+    menu_name: admin
+    parent: entity.menu.edit_form.investor-relations
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__menu__edit_form__main:
+    menu_name: admin
+    parent: entity.menu.collection
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__menu__add_link_form__main:
+    menu_name: admin
+    parent: entity.menu.edit_form.main
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__menu__delete_form__main:
+    menu_name: admin
+    parent: entity.menu.edit_form.main
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__menu__edit_form__quick-links:
+    menu_name: admin
+    parent: entity.menu.collection
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__menu__add_link_form__quick-links:
+    menu_name: admin
+    parent: entity.menu.edit_form.quick-links
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__menu__delete_form__quick-links:
+    menu_name: admin
+    parent: entity.menu.edit_form.quick-links
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__menu__edit_form__social-links:
+    menu_name: admin
+    parent: entity.menu.collection
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__menu__add_link_form__social-links:
+    menu_name: admin
+    parent: entity.menu.edit_form.social-links
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__menu__delete_form__social-links:
+    menu_name: admin
+    parent: entity.menu.edit_form.social-links
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__menu__edit_form__tools:
+    menu_name: admin
+    parent: entity.menu.collection
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__menu__add_link_form__tools:
+    menu_name: admin
+    parent: entity.menu.edit_form.tools
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__menu__delete_form__tools:
+    menu_name: admin
+    parent: entity.menu.edit_form.tools
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__menu__edit_form__account:
+    menu_name: admin
+    parent: entity.menu.collection
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__menu__add_link_form__account:
+    menu_name: admin
+    parent: entity.menu.edit_form.account
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__menu__delete_form__account:
+    menu_name: admin
+    parent: entity.menu.edit_form.account
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__menu__edit_form__what-we-do:
+    menu_name: admin
+    parent: entity.menu.collection
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__menu__add_link_form__what-we-do:
+    menu_name: admin
+    parent: entity.menu.edit_form.what-we-do
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__menu__delete_form__what-we-do:
+    menu_name: admin
+    parent: entity.menu.edit_form.what-we-do
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__menu__edit_form__who-we-are:
+    menu_name: admin
+    parent: entity.menu.collection
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__menu__add_link_form__who-we-are:
+    menu_name: admin
+    parent: entity.menu.edit_form.who-we-are
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__menu__delete_form__who-we-are:
+    menu_name: admin
+    parent: entity.menu.edit_form.who-we-are
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__taxonomy_vocabulary__collection:
+    weight: 13
+    menu_name: admin
+    parent: system.admin_structure
+    expanded: false
+    enabled: true
+  entity__taxonomy_vocabulary__add_form:
+    menu_name: admin
+    parent: entity.taxonomy_vocabulary.collection
+    weight: -5
+    expanded: false
+    enabled: true
+  entity__taxonomy_vocabulary__overview_form__event_type:
+    menu_name: admin
+    parent: entity.taxonomy_vocabulary.collection
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__taxonomy_vocabulary__edit_form__event_type:
+    menu_name: admin
+    parent: entity.taxonomy_vocabulary.overview_form.event_type
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__taxonomy_term__field_ui_fieldsevent_type:
+    menu_name: admin
+    parent: entity.taxonomy_vocabulary.overview_form.event_type
+    weight: 1
+    expanded: false
+    enabled: true
+  entity__entity_form_display__taxonomy_term__defaultevent_type:
+    menu_name: admin
+    parent: entity.taxonomy_vocabulary.overview_form.event_type
+    weight: 2
+    expanded: false
+    enabled: true
+  entity__entity_view_display__taxonomy_term__default__event_type:
+    menu_name: admin
+    parent: entity.taxonomy_vocabulary.overview_form.event_type
+    weight: 3
+    expanded: false
+    enabled: true
+  entity__taxonomy_vocabulary__delete_form__event_type:
+    menu_name: admin
+    parent: entity.taxonomy_vocabulary.overview_form.event_type
+    weight: 5
+    expanded: false
+    enabled: true
+  entity__taxonomy_vocabulary__overview_form__featured_news_taxonomy:
+    menu_name: admin
+    parent: entity.taxonomy_vocabulary.collection
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__taxonomy_vocabulary__edit_form__featured_news_taxonomy:
+    menu_name: admin
+    parent: entity.taxonomy_vocabulary.overview_form.featured_news_taxonomy
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__taxonomy_term__field_ui_fieldsfeatured_news_taxonomy:
+    menu_name: admin
+    parent: entity.taxonomy_vocabulary.overview_form.featured_news_taxonomy
+    weight: 1
+    expanded: false
+    enabled: true
+  entity__entity_form_display__taxonomy_term__defaultfeatured_news_taxonomy:
+    menu_name: admin
+    parent: entity.taxonomy_vocabulary.overview_form.featured_news_taxonomy
+    weight: 2
+    expanded: false
+    enabled: true
+  entity__entity_view_display__taxonomy_term__default__featured_news_taxonomy:
+    menu_name: admin
+    parent: entity.taxonomy_vocabulary.overview_form.featured_news_taxonomy
+    weight: 3
+    expanded: false
+    enabled: true
+  entity__taxonomy_vocabulary__delete_form__featured_news_taxonomy:
+    menu_name: admin
+    parent: entity.taxonomy_vocabulary.overview_form.featured_news_taxonomy
+    weight: 5
+    expanded: false
+    enabled: true
+  entity__taxonomy_vocabulary__overview_form__media_category:
+    menu_name: admin
+    parent: entity.taxonomy_vocabulary.collection
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__taxonomy_vocabulary__edit_form__media_category:
+    menu_name: admin
+    parent: entity.taxonomy_vocabulary.overview_form.media_category
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__taxonomy_term__field_ui_fieldsmedia_category:
+    menu_name: admin
+    parent: entity.taxonomy_vocabulary.overview_form.media_category
+    weight: 1
+    expanded: false
+    enabled: true
+  entity__entity_form_display__taxonomy_term__defaultmedia_category:
+    menu_name: admin
+    parent: entity.taxonomy_vocabulary.overview_form.media_category
+    weight: 2
+    expanded: false
+    enabled: true
+  entity__entity_view_display__taxonomy_term__default__media_category:
+    menu_name: admin
+    parent: entity.taxonomy_vocabulary.overview_form.media_category
+    weight: 3
+    expanded: false
+    enabled: true
+  entity__taxonomy_vocabulary__delete_form__media_category:
+    menu_name: admin
+    parent: entity.taxonomy_vocabulary.overview_form.media_category
+    weight: 5
+    expanded: false
+    enabled: true
+  entity__taxonomy_vocabulary__overview_form__news_taxon_category:
+    menu_name: admin
+    parent: entity.taxonomy_vocabulary.collection
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__taxonomy_vocabulary__edit_form__news_taxon_category:
+    menu_name: admin
+    parent: entity.taxonomy_vocabulary.overview_form.news_taxon_category
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__taxonomy_term__field_ui_fieldsnews_taxon_category:
+    menu_name: admin
+    parent: entity.taxonomy_vocabulary.overview_form.news_taxon_category
+    weight: 1
+    expanded: false
+    enabled: true
+  entity__entity_form_display__taxonomy_term__defaultnews_taxon_category:
+    menu_name: admin
+    parent: entity.taxonomy_vocabulary.overview_form.news_taxon_category
+    weight: 2
+    expanded: false
+    enabled: true
+  entity__entity_view_display__taxonomy_term__default__news_taxon_category:
+    menu_name: admin
+    parent: entity.taxonomy_vocabulary.overview_form.news_taxon_category
+    weight: 3
+    expanded: false
+    enabled: true
+  entity__taxonomy_vocabulary__delete_form__news_taxon_category:
+    menu_name: admin
+    parent: entity.taxonomy_vocabulary.overview_form.news_taxon_category
+    weight: 5
+    expanded: false
+    enabled: true
+  entity__taxonomy_vocabulary__overview_form__people_category:
+    menu_name: admin
+    parent: entity.taxonomy_vocabulary.collection
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__taxonomy_vocabulary__edit_form__people_category:
+    menu_name: admin
+    parent: entity.taxonomy_vocabulary.overview_form.people_category
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__taxonomy_term__field_ui_fieldspeople_category:
+    menu_name: admin
+    parent: entity.taxonomy_vocabulary.overview_form.people_category
+    weight: 1
+    expanded: false
+    enabled: true
+  entity__entity_form_display__taxonomy_term__defaultpeople_category:
+    menu_name: admin
+    parent: entity.taxonomy_vocabulary.overview_form.people_category
+    weight: 2
+    expanded: false
+    enabled: true
+  entity__entity_view_display__taxonomy_term__default__people_category:
+    menu_name: admin
+    parent: entity.taxonomy_vocabulary.overview_form.people_category
+    weight: 3
+    expanded: false
+    enabled: true
+  entity__taxonomy_vocabulary__delete_form__people_category:
+    menu_name: admin
+    parent: entity.taxonomy_vocabulary.overview_form.people_category
+    weight: 5
+    expanded: false
+    enabled: true
+  entity__taxonomy_vocabulary__overview_form__period:
+    menu_name: admin
+    parent: entity.taxonomy_vocabulary.collection
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__taxonomy_vocabulary__edit_form__period:
+    menu_name: admin
+    parent: entity.taxonomy_vocabulary.overview_form.period
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__taxonomy_term__field_ui_fieldsperiod:
+    menu_name: admin
+    parent: entity.taxonomy_vocabulary.overview_form.period
+    weight: 1
+    expanded: false
+    enabled: true
+  entity__entity_form_display__taxonomy_term__defaultperiod:
+    menu_name: admin
+    parent: entity.taxonomy_vocabulary.overview_form.period
+    weight: 2
+    expanded: false
+    enabled: true
+  entity__entity_view_display__taxonomy_term__default__period:
+    menu_name: admin
+    parent: entity.taxonomy_vocabulary.overview_form.period
+    weight: 3
+    expanded: false
+    enabled: true
+  entity__taxonomy_vocabulary__delete_form__period:
+    menu_name: admin
+    parent: entity.taxonomy_vocabulary.overview_form.period
+    weight: 5
+    expanded: false
+    enabled: true
+  entity__taxonomy_vocabulary__overview_form__document_category:
+    menu_name: admin
+    parent: entity.taxonomy_vocabulary.collection
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__taxonomy_vocabulary__edit_form__document_category:
+    menu_name: admin
+    parent: entity.taxonomy_vocabulary.overview_form.document_category
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__taxonomy_term__field_ui_fieldsdocument_category:
+    menu_name: admin
+    parent: entity.taxonomy_vocabulary.overview_form.document_category
+    weight: 1
+    expanded: false
+    enabled: true
+  entity__entity_form_display__taxonomy_term__defaultdocument_category:
+    menu_name: admin
+    parent: entity.taxonomy_vocabulary.overview_form.document_category
+    weight: 2
+    expanded: false
+    enabled: true
+  entity__entity_view_display__taxonomy_term__default__document_category:
+    menu_name: admin
+    parent: entity.taxonomy_vocabulary.overview_form.document_category
+    weight: 3
+    expanded: false
+    enabled: true
+  entity__taxonomy_vocabulary__delete_form__document_category:
+    menu_name: admin
+    parent: entity.taxonomy_vocabulary.overview_form.document_category
+    weight: 5
+    expanded: false
+    enabled: true
+  entity__taxonomy_vocabulary__overview_form__presentation_year:
+    menu_name: admin
+    parent: entity.taxonomy_vocabulary.collection
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__taxonomy_vocabulary__edit_form__presentation_year:
+    menu_name: admin
+    parent: entity.taxonomy_vocabulary.overview_form.presentation_year
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__taxonomy_term__field_ui_fieldspresentation_year:
+    menu_name: admin
+    parent: entity.taxonomy_vocabulary.overview_form.presentation_year
+    weight: 1
+    expanded: false
+    enabled: true
+  entity__entity_form_display__taxonomy_term__defaultpresentation_year:
+    menu_name: admin
+    parent: entity.taxonomy_vocabulary.overview_form.presentation_year
+    weight: 2
+    expanded: false
+    enabled: true
+  entity__entity_view_display__taxonomy_term__default__presentation_year:
+    menu_name: admin
+    parent: entity.taxonomy_vocabulary.overview_form.presentation_year
+    weight: 3
+    expanded: false
+    enabled: true
+  entity__taxonomy_vocabulary__delete_form__presentation_year:
+    menu_name: admin
+    parent: entity.taxonomy_vocabulary.overview_form.presentation_year
+    weight: 5
+    expanded: false
+    enabled: true
+  entity__taxonomy_vocabulary__overview_form__result_year:
+    menu_name: admin
+    parent: entity.taxonomy_vocabulary.collection
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__taxonomy_vocabulary__edit_form__result_year:
+    menu_name: admin
+    parent: entity.taxonomy_vocabulary.overview_form.result_year
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__taxonomy_term__field_ui_fieldsresult_year:
+    menu_name: admin
+    parent: entity.taxonomy_vocabulary.overview_form.result_year
+    weight: 1
+    expanded: false
+    enabled: true
+  entity__entity_form_display__taxonomy_term__defaultresult_year:
+    menu_name: admin
+    parent: entity.taxonomy_vocabulary.overview_form.result_year
+    weight: 2
+    expanded: false
+    enabled: true
+  entity__entity_view_display__taxonomy_term__default__result_year:
+    menu_name: admin
+    parent: entity.taxonomy_vocabulary.overview_form.result_year
+    weight: 3
+    expanded: false
+    enabled: true
+  entity__taxonomy_vocabulary__delete_form__result_year:
+    menu_name: admin
+    parent: entity.taxonomy_vocabulary.overview_form.result_year
+    weight: 5
+    expanded: false
+    enabled: true
+  entity__taxonomy_vocabulary__overview_form__result_category:
+    menu_name: admin
+    parent: entity.taxonomy_vocabulary.collection
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__taxonomy_vocabulary__edit_form__result_category:
+    menu_name: admin
+    parent: entity.taxonomy_vocabulary.overview_form.result_category
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__taxonomy_term__field_ui_fieldsresult_category:
+    menu_name: admin
+    parent: entity.taxonomy_vocabulary.overview_form.result_category
+    weight: 1
+    expanded: false
+    enabled: true
+  entity__entity_form_display__taxonomy_term__defaultresult_category:
+    menu_name: admin
+    parent: entity.taxonomy_vocabulary.overview_form.result_category
+    weight: 2
+    expanded: false
+    enabled: true
+  entity__entity_view_display__taxonomy_term__default__result_category:
+    menu_name: admin
+    parent: entity.taxonomy_vocabulary.overview_form.result_category
+    weight: 3
+    expanded: false
+    enabled: true
+  entity__taxonomy_vocabulary__delete_form__result_category:
+    menu_name: admin
+    parent: entity.taxonomy_vocabulary.overview_form.result_category
+    weight: 5
+    expanded: false
+    enabled: true
+  entity__taxonomy_vocabulary__overview_form__tier:
+    menu_name: admin
+    parent: entity.taxonomy_vocabulary.collection
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__taxonomy_vocabulary__edit_form__tier:
+    menu_name: admin
+    parent: entity.taxonomy_vocabulary.overview_form.tier
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__taxonomy_term__field_ui_fieldstier:
+    menu_name: admin
+    parent: entity.taxonomy_vocabulary.overview_form.tier
+    weight: 1
+    expanded: false
+    enabled: true
+  entity__entity_form_display__taxonomy_term__defaulttier:
+    menu_name: admin
+    parent: entity.taxonomy_vocabulary.overview_form.tier
+    weight: 2
+    expanded: false
+    enabled: true
+  entity__entity_view_display__taxonomy_term__default__tier:
+    menu_name: admin
+    parent: entity.taxonomy_vocabulary.overview_form.tier
+    weight: 3
+    expanded: false
+    enabled: true
+  entity__taxonomy_vocabulary__delete_form__tier:
+    menu_name: admin
+    parent: entity.taxonomy_vocabulary.overview_form.tier
+    weight: 5
+    expanded: false
+    enabled: true
+  entity__taxonomy_vocabulary__overview_form__tier_variation:
+    menu_name: admin
+    parent: entity.taxonomy_vocabulary.collection
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__taxonomy_vocabulary__edit_form__tier_variation:
+    menu_name: admin
+    parent: entity.taxonomy_vocabulary.overview_form.tier_variation
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__taxonomy_term__field_ui_fieldstier_variation:
+    menu_name: admin
+    parent: entity.taxonomy_vocabulary.overview_form.tier_variation
+    weight: 1
+    expanded: false
+    enabled: true
+  entity__entity_form_display__taxonomy_term__defaulttier_variation:
+    menu_name: admin
+    parent: entity.taxonomy_vocabulary.overview_form.tier_variation
+    weight: 2
+    expanded: false
+    enabled: true
+  entity__entity_view_display__taxonomy_term__default__tier_variation:
+    menu_name: admin
+    parent: entity.taxonomy_vocabulary.overview_form.tier_variation
+    weight: 3
+    expanded: false
+    enabled: true
+  entity__taxonomy_vocabulary__delete_form__tier_variation:
+    menu_name: admin
+    parent: entity.taxonomy_vocabulary.overview_form.tier_variation
+    weight: 5
+    expanded: false
+    enabled: true
+  entity__view__collection:
+    weight: 14
+    menu_name: admin
+    parent: system.admin_structure
+    expanded: false
+    enabled: true
+  admin_toolbar_tools__views_ui__add:
+    menu_name: admin
+    parent: entity.view.collection
+    weight: -5
+    expanded: false
+    enabled: true
+  entity__webform__collection:
+    weight: 15
+    menu_name: admin
+    parent: system.admin_structure
+    expanded: false
+    enabled: true
+  system__themes_page:
+    weight: -94
+    menu_name: admin
+    parent: system.admin
+    expanded: false
+    enabled: true
+  update__theme_install_:
+    menu_name: admin
+    parent: system.themes_page
+    weight: 0
+    expanded: false
+    enabled: true
+  admin_toolbar_tools__system__theme_settings:
+    menu_name: admin
+    parent: system.themes_page
+    weight: 0
+    expanded: false
+    enabled: true
+  update__theme_update_:
+    menu_name: admin
+    parent: system.themes_page
+    weight: 0
+    expanded: false
+    enabled: true
+  system__modules_list:
+    weight: -93
+    menu_name: admin
+    parent: system.admin
+    expanded: false
+    enabled: true
+  update__module_install:
+    menu_name: admin
+    parent: system.modules_list
+    weight: 0
+    expanded: false
+    enabled: true
+  system__modules_uninstall:
+    menu_name: admin
+    parent: system.modules_list
+    weight: 0
+    expanded: false
+    enabled: true
+  update__module_update:
+    menu_name: admin
+    parent: system.modules_list
+    weight: 0
+    expanded: false
+    enabled: true
+  system__admin_config:
+    weight: -92
+    menu_name: admin
+    parent: system.admin
+    expanded: false
+    enabled: true
+  user__admin_index:
+    menu_name: admin
+    parent: system.admin_config
+    weight: -20
+    expanded: false
+    enabled: true
+  entity__user__admin_form:
+    menu_name: admin
+    parent: user.admin_index
+    weight: -10
+    expanded: false
+    enabled: true
+  entity__entity_view_display__user__default_:
+    menu_name: admin
+    parent: entity.user.admin_form
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user__field_ui_fields_:
+    menu_name: admin
+    parent: entity.user.admin_form
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__entity_form_display__user__default_:
+    menu_name: admin
+    parent: entity.user.admin_form
+    weight: 0
+    expanded: false
+    enabled: true
+  autologout__set_admin:
+    menu_name: admin
+    parent: user.admin_index
+    weight: -10
+    expanded: false
+    enabled: true
+  captcha__settings:
+    menu_name: admin
+    parent: user.admin_index
+    weight: -1
+    expanded: false
+    enabled: true
+  captcha__examples:
+    menu_name: admin
+    parent: captcha.settings
+    weight: 0
+    expanded: false
+    enabled: true
+  recaptcha__admin_settings_form:
+    menu_name: admin
+    parent: captcha.settings
+    weight: 1
+    expanded: false
+    enabled: true
+  system__admin_config_system:
+    menu_name: admin
+    parent: system.admin_config
+    weight: -20
+    expanded: false
+    enabled: true
+  system__site_information_settings:
+    menu_name: admin
+    parent: system.admin_config_system
+    weight: -20
+    expanded: false
+    enabled: true
+  smtp__config:
+    menu_name: admin
+    parent: system.admin_config_system
+    weight: -20
+    expanded: false
+    enabled: true
+  lightning_core__settings:
+    menu_name: admin
+    parent: system.admin_config_system
+    weight: 0
+    expanded: false
+    enabled: true
+  lightning_media__settings:
+    menu_name: admin
+    parent: lightning_core.settings
+    weight: 0
+    expanded: false
+    enabled: true
+  raname_admin_paths__admin:
+    menu_name: admin
+    parent: system.admin_config_system
+    weight: 0
+    expanded: false
+    enabled: true
+  system__cron_settings:
+    menu_name: admin
+    parent: system.admin_config_system
+    weight: 20
+    expanded: false
+    enabled: true
+  system__admin_config_content:
+    menu_name: admin
+    parent: system.admin_config
+    weight: -15
+    expanded: false
+    enabled: true
+  diff__settings:
+    menu_name: admin
+    parent: system.admin_config_content
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__entity_browser__collection:
+    menu_name: admin
+    parent: system.admin_config_content
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__linkit_profile__collection:
+    menu_name: admin
+    parent: system.admin_config_content
+    weight: 0
+    expanded: false
+    enabled: true
+  scheduler__admin:
+    menu_name: admin
+    parent: system.admin_config_content
+    weight: 0
+    expanded: false
+    enabled: true
+  filter__admin_overview:
+    menu_name: admin
+    parent: system.admin_config_content
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__embed_button__collection:
+    menu_name: admin
+    parent: system.admin_config_content
+    weight: 10
+    expanded: false
+    enabled: true
+  system__admin_config_ui:
+    menu_name: admin
+    parent: system.admin_config
+    weight: -15
+    expanded: false
+    enabled: true
+  entity__shortcut_set__collection:
+    menu_name: admin
+    parent: system.admin_config_ui
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__responsive_preview_device__collection:
+    menu_name: admin
+    parent: system.admin_config_ui
+    weight: 99
+    expanded: false
+    enabled: true
+  system__admin_config_development:
+    menu_name: admin
+    parent: system.admin_config
+    weight: -10
+    expanded: false
+    enabled: true
+  system__performance_settings:
+    menu_name: admin
+    parent: system.admin_config_development
+    weight: -20
+    expanded: false
+    enabled: true
+  system__logging_settings:
+    menu_name: admin
+    parent: system.admin_config_development
+    weight: -15
+    expanded: false
+    enabled: true
+  system__site_maintenance_mode:
+    menu_name: admin
+    parent: system.admin_config_development
+    weight: -10
+    expanded: false
+    enabled: true
+  config__sync:
+    menu_name: admin
+    parent: system.admin_config_development
+    weight: 0
+    expanded: false
+    enabled: true
+  admin_toolbar_tools__config__import:
+    menu_name: admin
+    parent: config.sync
+    weight: 1
+    expanded: false
+    enabled: true
+  admin_toolbar_tools__config__export:
+    menu_name: admin
+    parent: config.sync
+    weight: 2
+    expanded: false
+    enabled: true
+  system__admin_config_media:
+    menu_name: admin
+    parent: system.admin_config
+    weight: -10
+    expanded: false
+    enabled: true
+  crop__overview_types:
+    menu_name: admin
+    parent: system.admin_config_media
+    weight: 0
+    expanded: false
+    enabled: true
+  system__file_system_settings:
+    menu_name: admin
+    parent: system.admin_config_media
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__image_style__collection:
+    menu_name: admin
+    parent: system.admin_config_media
+    weight: 0
+    expanded: false
+    enabled: true
+  image_widget_crop__crop_widget_settings:
+    menu_name: admin
+    parent: system.admin_config_media
+    weight: 0
+    expanded: false
+    enabled: true
+  imce__admin:
+    menu_name: admin
+    parent: system.admin_config_media
+    weight: 0
+    expanded: false
+    enabled: true
+  system__image_toolkit_settings:
+    menu_name: admin
+    parent: system.admin_config_media
+    weight: 20
+    expanded: false
+    enabled: true
+  system__admin_config_search:
+    menu_name: admin
+    parent: system.admin_config
+    weight: -10
+    expanded: false
+    enabled: true
+  path__admin_overview:
+    menu_name: admin
+    parent: system.admin_config_search
+    weight: -5
+    expanded: false
+    enabled: true
+  entity__metatag_defaults__collection:
+    menu_name: admin
+    parent: system.admin_config_search
+    weight: 0
+    expanded: false
+    enabled: true
+  robotstxt__admin_settings_form:
+    menu_name: admin
+    parent: system.admin_config_search
+    weight: 0
+    expanded: false
+    enabled: true
+  simple_sitemap__settings:
+    menu_name: admin
+    parent: system.admin_config_search
+    weight: 0
+    expanded: false
+    enabled: true
+  sitemap__settings:
+    menu_name: admin
+    parent: system.admin_config_search
+    weight: 0
+    expanded: false
+    enabled: true
+  system__admin_config_regional:
+    menu_name: admin
+    parent: system.admin_config
+    weight: -5
+    expanded: false
+    enabled: true
+  system__regional_settings:
+    menu_name: admin
+    parent: system.admin_config_regional
+    weight: -20
+    expanded: false
+    enabled: true
+  entity__date_format__collection:
+    menu_name: admin
+    parent: system.admin_config_regional
+    weight: -9
+    expanded: false
+    enabled: true
+  entity__configurable_language__collection:
+    menu_name: admin
+    parent: system.admin_config_regional
+    weight: 0
+    expanded: false
+    enabled: true
+  admin_toolbar_tools__language__negotiation:
+    menu_name: admin
+    parent: entity.configurable_language.collection
+    weight: 0
+    expanded: false
+    enabled: true
+  language__content_settings_page:
+    menu_name: admin
+    parent: system.admin_config_regional
+    weight: 10
+    expanded: false
+    enabled: true
+  locale__translate_page:
+    menu_name: admin
+    parent: system.admin_config_regional
+    weight: 15
+    expanded: false
+    enabled: true
+  config_translation__mapper_list:
+    menu_name: admin
+    parent: system.admin_config_regional
+    weight: 30
+    expanded: false
+    enabled: true
+  system__admin_config_services:
+    menu_name: admin
+    parent: system.admin_config
+    weight: 0
+    expanded: false
+    enabled: true
+  openapi__downloads:
+    menu_name: admin
+    parent: system.admin_config_services
+    weight: 0
+    expanded: false
+    enabled: true
+  system__rss_feeds_settings:
+    menu_name: admin
+    parent: system.admin_config_services
+    weight: 0
+    expanded: false
+    enabled: true
+  system__admin_config_workflow:
+    menu_name: admin
+    parent: system.admin_config
+    weight: 5
+    expanded: false
+    enabled: true
+  entity__workflow__collection:
+    menu_name: admin
+    parent: system.admin_config_workflow
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__moderation_state_notifications__collection:
+    menu_name: admin
+    parent: system.admin_config_workflow
+    weight: 21
+    expanded: false
+    enabled: true
+  mid_common__admin_content:
+    weight: -91
+    menu_name: admin
+    parent: system.admin
+    expanded: false
+    enabled: true
+  id_cookie_message:
+    menu_name: admin
+    parent: mid_common.admin_content
+    weight: 0
+    expanded: false
+    enabled: true
+  mid_disclaimer__disclaimer_configuration:
+    menu_name: admin
+    parent: mid_common.admin_content
+    weight: 0
+    expanded: false
+    enabled: true
+  mid_disclaimer__disclaimer_mediafile_configuration:
+    menu_name: admin
+    parent: mid_disclaimer.disclaimer_configuration
+    weight: 0
+    expanded: false
+    enabled: true
+  mid_common__gtm_settings:
+    menu_name: admin
+    parent: mid_common.admin_content
+    weight: 0
+    expanded: false
+    enabled: true
+  mid_common__gmap_settings:
+    menu_name: admin
+    parent: mid_common.admin_content
+    weight: 0
+    expanded: false
+    enabled: true
+  id_social_media_feeds__social_feed_config:
+    menu_name: admin
+    parent: mid_common.admin_content
+    weight: 0
+    expanded: false
+    enabled: true
+  id_social_media_feeds__extra_config:
+    menu_name: admin
+    parent: id_social_media_feeds.social_feed_config
+    weight: 0
+    expanded: false
+    enabled: true
+  id_social_media_feeds__social_feed_api_config:
+    menu_name: admin
+    parent: id_social_media_feeds.social_feed_config
+    weight: 0
+    expanded: false
+    enabled: true
+  id_tab_config__tab_config_settings:
+    menu_name: admin
+    parent: mid_common.admin_content
+    weight: 0
+    expanded: false
+    enabled: true
+  idtierconfig__tierconfigsettings:
+    menu_name: admin
+    parent: mid_common.admin_content
+    weight: 0
+    expanded: false
+    enabled: true
+  mid_audit_trail__view_audit_trail_logs:
+    menu_name: admin
+    parent: mid_common.admin_content
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__mid_url_proxy__collection:
+    menu_name: admin
+    parent: mid_common.admin_content
+    weight: 10
+    expanded: false
+    enabled: true
+  mid_url_proxy__admin__structure__settings:
+    menu_name: admin
+    parent: entity.mid_url_proxy.collection
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__mid_solr_search__collection:
+    menu_name: admin
+    parent: mid_common.admin_content
+    weight: 10
+    expanded: false
+    enabled: true
+  mid_solr_search__admin__structure__settings:
+    menu_name: admin
+    parent: entity.mid_solr_search.collection
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user__collection:
+    weight: -89
+    menu_name: admin
+    parent: system.admin
+    expanded: false
+    enabled: true
+  user__admin_create:
+    menu_name: admin
+    parent: entity.user.collection
+    weight: 0
+    expanded: false
+    enabled: true
+  user__admin_permissions:
+    menu_name: admin
+    parent: entity.user.collection
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__collection:
+    menu_name: admin
+    parent: entity.user.collection
+    weight: 0
+    expanded: false
+    enabled: true
+  user__role_add:
+    menu_name: admin
+    parent: entity.user_role.collection
+    weight: -5
+    expanded: false
+    enabled: true
+  entity__user_role__edit_form__administrator:
+    menu_name: admin
+    parent: entity.user_role.collection
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__delete_form__administrator:
+    menu_name: admin
+    parent: entity.user_role.edit_form.administrator
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__edit_permissions_form__administrator:
+    menu_name: admin
+    parent: entity.user_role.edit_form.administrator
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__edit_form__anonymous:
+    menu_name: admin
+    parent: entity.user_role.collection
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__delete_form__anonymous:
+    menu_name: admin
+    parent: entity.user_role.edit_form.anonymous
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__edit_permissions_form__anonymous:
+    menu_name: admin
+    parent: entity.user_role.edit_form.anonymous
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__edit_form__authenticated:
+    menu_name: admin
+    parent: entity.user_role.collection
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__delete_form__authenticated:
+    menu_name: admin
+    parent: entity.user_role.edit_form.authenticated
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__edit_permissions_form__authenticated:
+    menu_name: admin
+    parent: entity.user_role.edit_form.authenticated
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__edit_form__page_creator:
+    menu_name: admin
+    parent: entity.user_role.collection
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__delete_form__page_creator:
+    menu_name: admin
+    parent: entity.user_role.edit_form.page_creator
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__edit_permissions_form__page_creator:
+    menu_name: admin
+    parent: entity.user_role.edit_form.page_creator
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__edit_form__page_reviewer:
+    menu_name: admin
+    parent: entity.user_role.collection
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__delete_form__page_reviewer:
+    menu_name: admin
+    parent: entity.user_role.edit_form.page_reviewer
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__edit_permissions_form__page_reviewer:
+    menu_name: admin
+    parent: entity.user_role.edit_form.page_reviewer
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__edit_form__bricky_creator:
+    menu_name: admin
+    parent: entity.user_role.collection
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__delete_form__bricky_creator:
+    menu_name: admin
+    parent: entity.user_role.edit_form.bricky_creator
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__edit_permissions_form__bricky_creator:
+    menu_name: admin
+    parent: entity.user_role.edit_form.bricky_creator
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__edit_form__bricky_reviewer:
+    menu_name: admin
+    parent: entity.user_role.collection
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__delete_form__bricky_reviewer:
+    menu_name: admin
+    parent: entity.user_role.edit_form.bricky_reviewer
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__edit_permissions_form__bricky_reviewer:
+    menu_name: admin
+    parent: entity.user_role.edit_form.bricky_reviewer
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__edit_form__contact_information_creator:
+    menu_name: admin
+    parent: entity.user_role.collection
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__delete_form__contact_information_creator:
+    menu_name: admin
+    parent: entity.user_role.edit_form.contact_information_creator
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__edit_permissions_form__contact_information_creator:
+    menu_name: admin
+    parent: entity.user_role.edit_form.contact_information_creator
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__edit_form__contact_information_reviewer:
+    menu_name: admin
+    parent: entity.user_role.collection
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__delete_form__contact_information_reviewer:
+    menu_name: admin
+    parent: entity.user_role.edit_form.contact_information_reviewer
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__edit_permissions_form__contact_information_reviewer:
+    menu_name: admin
+    parent: entity.user_role.edit_form.contact_information_reviewer
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__edit_form__drupal_build_team:
+    menu_name: admin
+    parent: entity.user_role.collection
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__delete_form__drupal_build_team:
+    menu_name: admin
+    parent: entity.user_role.edit_form.drupal_build_team
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__edit_permissions_form__drupal_build_team:
+    menu_name: admin
+    parent: entity.user_role.edit_form.drupal_build_team
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__edit_form__drupal_developer:
+    menu_name: admin
+    parent: entity.user_role.collection
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__delete_form__drupal_developer:
+    menu_name: admin
+    parent: entity.user_role.edit_form.drupal_developer
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__edit_permissions_form__drupal_developer:
+    menu_name: admin
+    parent: entity.user_role.edit_form.drupal_developer
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__edit_form__drupal_service_developer:
+    menu_name: admin
+    parent: entity.user_role.collection
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__delete_form__drupal_service_developer:
+    menu_name: admin
+    parent: entity.user_role.edit_form.drupal_service_developer
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__edit_permissions_form__drupal_service_developer:
+    menu_name: admin
+    parent: entity.user_role.edit_form.drupal_service_developer
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__edit_form__eventcontent_creator:
+    menu_name: admin
+    parent: entity.user_role.collection
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__delete_form__eventcontent_creator:
+    menu_name: admin
+    parent: entity.user_role.edit_form.eventcontent_creator
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__edit_permissions_form__eventcontent_creator:
+    menu_name: admin
+    parent: entity.user_role.edit_form.eventcontent_creator
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__edit_form__eventcontent_reviewer:
+    menu_name: admin
+    parent: entity.user_role.collection
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__delete_form__eventcontent_reviewer:
+    menu_name: admin
+    parent: entity.user_role.edit_form.eventcontent_reviewer
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__edit_permissions_form__eventcontent_reviewer:
+    menu_name: admin
+    parent: entity.user_role.edit_form.eventcontent_reviewer
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__edit_form__financial_calendar_creator:
+    menu_name: admin
+    parent: entity.user_role.collection
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__delete_form__financial_calendar_creator:
+    menu_name: admin
+    parent: entity.user_role.edit_form.financial_calendar_creator
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__edit_permissions_form__financial_calendar_creator:
+    menu_name: admin
+    parent: entity.user_role.edit_form.financial_calendar_creator
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__edit_form__financial_calendar_reviewer:
+    menu_name: admin
+    parent: entity.user_role.collection
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__delete_form__financial_calendar_reviewer:
+    menu_name: admin
+    parent: entity.user_role.edit_form.financial_calendar_reviewer
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__edit_permissions_form__financial_calendar_reviewer:
+    menu_name: admin
+    parent: entity.user_role.edit_form.financial_calendar_reviewer
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__edit_form__history_timeline_creator:
+    menu_name: admin
+    parent: entity.user_role.collection
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__delete_form__history_timeline_creator:
+    menu_name: admin
+    parent: entity.user_role.edit_form.history_timeline_creator
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__edit_permissions_form__history_timeline_creator:
+    menu_name: admin
+    parent: entity.user_role.edit_form.history_timeline_creator
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__edit_form__history_timeline_reviewer:
+    menu_name: admin
+    parent: entity.user_role.collection
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__delete_form__history_timeline_reviewer:
+    menu_name: admin
+    parent: entity.user_role.edit_form.history_timeline_reviewer
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__edit_permissions_form__history_timeline_reviewer:
+    menu_name: admin
+    parent: entity.user_role.edit_form.history_timeline_reviewer
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__edit_form__mid_disclaimer_creator:
+    menu_name: admin
+    parent: entity.user_role.collection
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__delete_form__mid_disclaimer_creator:
+    menu_name: admin
+    parent: entity.user_role.edit_form.mid_disclaimer_creator
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__edit_permissions_form__mid_disclaimer_creator:
+    menu_name: admin
+    parent: entity.user_role.edit_form.mid_disclaimer_creator
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__edit_form__mid_disclaimer_reviewer:
+    menu_name: admin
+    parent: entity.user_role.collection
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__delete_form__mid_disclaimer_reviewer:
+    menu_name: admin
+    parent: entity.user_role.edit_form.mid_disclaimer_reviewer
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__edit_permissions_form__mid_disclaimer_reviewer:
+    menu_name: admin
+    parent: entity.user_role.edit_form.mid_disclaimer_reviewer
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__edit_form__investis_user:
+    menu_name: admin
+    parent: entity.user_role.collection
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__delete_form__investis_user:
+    menu_name: admin
+    parent: entity.user_role.edit_form.investis_user
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__edit_permissions_form__investis_user:
+    menu_name: admin
+    parent: entity.user_role.edit_form.investis_user
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__edit_form__landing_page_creator:
+    menu_name: admin
+    parent: entity.user_role.collection
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__delete_form__landing_page_creator:
+    menu_name: admin
+    parent: entity.user_role.edit_form.landing_page_creator
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__edit_permissions_form__landing_page_creator:
+    menu_name: admin
+    parent: entity.user_role.edit_form.landing_page_creator
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__edit_form__landing_page_reviewer:
+    menu_name: admin
+    parent: entity.user_role.collection
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__delete_form__landing_page_reviewer:
+    menu_name: admin
+    parent: entity.user_role.edit_form.landing_page_reviewer
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__edit_permissions_form__landing_page_reviewer:
+    menu_name: admin
+    parent: entity.user_role.edit_form.landing_page_reviewer
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__edit_form__layout_manager:
+    menu_name: admin
+    parent: entity.user_role.collection
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__delete_form__layout_manager:
+    menu_name: admin
+    parent: entity.user_role.edit_form.layout_manager
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__edit_permissions_form__layout_manager:
+    menu_name: admin
+    parent: entity.user_role.edit_form.layout_manager
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__edit_form__media_library_creator:
+    menu_name: admin
+    parent: entity.user_role.collection
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__delete_form__media_library_creator:
+    menu_name: admin
+    parent: entity.user_role.edit_form.media_library_creator
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__edit_permissions_form__media_library_creator:
+    menu_name: admin
+    parent: entity.user_role.edit_form.media_library_creator
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__edit_form__media_library_reviewer:
+    menu_name: admin
+    parent: entity.user_role.collection
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__delete_form__media_library_reviewer:
+    menu_name: admin
+    parent: entity.user_role.edit_form.media_library_reviewer
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__edit_permissions_form__media_library_reviewer:
+    menu_name: admin
+    parent: entity.user_role.edit_form.media_library_reviewer
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__edit_form__media_creator:
+    menu_name: admin
+    parent: entity.user_role.collection
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__delete_form__media_creator:
+    menu_name: admin
+    parent: entity.user_role.edit_form.media_creator
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__edit_permissions_form__media_creator:
+    menu_name: admin
+    parent: entity.user_role.edit_form.media_creator
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__edit_form__media_library_video_creator:
+    menu_name: admin
+    parent: entity.user_role.collection
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__delete_form__media_library_video_creator:
+    menu_name: admin
+    parent: entity.user_role.edit_form.media_library_video_creator
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__edit_permissions_form__media_library_video_creator:
+    menu_name: admin
+    parent: entity.user_role.edit_form.media_library_video_creator
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__edit_form__media_library_video_reviewer:
+    menu_name: admin
+    parent: entity.user_role.collection
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__delete_form__media_library_video_reviewer:
+    menu_name: admin
+    parent: entity.user_role.edit_form.media_library_video_reviewer
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__edit_permissions_form__media_library_video_reviewer:
+    menu_name: admin
+    parent: entity.user_role.edit_form.media_library_video_reviewer
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__edit_form__media_manager:
+    menu_name: admin
+    parent: entity.user_role.collection
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__delete_form__media_manager:
+    menu_name: admin
+    parent: entity.user_role.edit_form.media_manager
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__edit_permissions_form__media_manager:
+    menu_name: admin
+    parent: entity.user_role.edit_form.media_manager
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__edit_form__newscontent_creator:
+    menu_name: admin
+    parent: entity.user_role.collection
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__delete_form__newscontent_creator:
+    menu_name: admin
+    parent: entity.user_role.edit_form.newscontent_creator
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__edit_permissions_form__newscontent_creator:
+    menu_name: admin
+    parent: entity.user_role.edit_form.newscontent_creator
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__edit_form__newscontent_reviewer:
+    menu_name: admin
+    parent: entity.user_role.collection
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__delete_form__newscontent_reviewer:
+    menu_name: admin
+    parent: entity.user_role.edit_form.newscontent_reviewer
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__edit_permissions_form__newscontent_reviewer:
+    menu_name: admin
+    parent: entity.user_role.edit_form.newscontent_reviewer
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__edit_form__people_creator:
+    menu_name: admin
+    parent: entity.user_role.collection
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__delete_form__people_creator:
+    menu_name: admin
+    parent: entity.user_role.edit_form.people_creator
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__edit_permissions_form__people_creator:
+    menu_name: admin
+    parent: entity.user_role.edit_form.people_creator
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__edit_form__people_reviewer:
+    menu_name: admin
+    parent: entity.user_role.collection
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__delete_form__people_reviewer:
+    menu_name: admin
+    parent: entity.user_role.edit_form.people_reviewer
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__edit_permissions_form__people_reviewer:
+    menu_name: admin
+    parent: entity.user_role.edit_form.people_reviewer
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__edit_form__presentations_creator:
+    menu_name: admin
+    parent: entity.user_role.collection
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__delete_form__presentations_creator:
+    menu_name: admin
+    parent: entity.user_role.edit_form.presentations_creator
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__edit_permissions_form__presentations_creator:
+    menu_name: admin
+    parent: entity.user_role.edit_form.presentations_creator
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__edit_form__presentations_reviewer:
+    menu_name: admin
+    parent: entity.user_role.collection
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__delete_form__presentations_reviewer:
+    menu_name: admin
+    parent: entity.user_role.edit_form.presentations_reviewer
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__edit_permissions_form__presentations_reviewer:
+    menu_name: admin
+    parent: entity.user_role.edit_form.presentations_reviewer
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__edit_form__result_creator:
+    menu_name: admin
+    parent: entity.user_role.collection
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__delete_form__result_creator:
+    menu_name: admin
+    parent: entity.user_role.edit_form.result_creator
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__edit_permissions_form__result_creator:
+    menu_name: admin
+    parent: entity.user_role.edit_form.result_creator
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__edit_form__result_reviewer:
+    menu_name: admin
+    parent: entity.user_role.collection
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__delete_form__result_reviewer:
+    menu_name: admin
+    parent: entity.user_role.edit_form.result_reviewer
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__edit_permissions_form__result_reviewer:
+    menu_name: admin
+    parent: entity.user_role.edit_form.result_reviewer
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__edit_form__webform_creator:
+    menu_name: admin
+    parent: entity.user_role.collection
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__delete_form__webform_creator:
+    menu_name: admin
+    parent: entity.user_role.edit_form.webform_creator
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__edit_permissions_form__webform_creator:
+    menu_name: admin
+    parent: entity.user_role.edit_form.webform_creator
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__edit_form__webform_reviewer:
+    menu_name: admin
+    parent: entity.user_role.collection
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__delete_form__webform_reviewer:
+    menu_name: admin
+    parent: entity.user_role.edit_form.webform_reviewer
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__edit_permissions_form__webform_reviewer:
+    menu_name: admin
+    parent: entity.user_role.edit_form.webform_reviewer
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__edit_form__client:
+    menu_name: admin
+    parent: entity.user_role.collection
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__delete_form__client:
+    menu_name: admin
+    parent: entity.user_role.edit_form.client
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__user_role__edit_permissions_form__client:
+    menu_name: admin
+    parent: entity.user_role.edit_form.client
+    weight: 0
+    expanded: false
+    enabled: true
+  system__admin_reports:
+    weight: -88
+    menu_name: admin
+    parent: system.admin
+    expanded: false
+    enabled: true
+  update__status:
+    menu_name: admin
+    parent: system.admin_reports
+    weight: -50
+    expanded: false
+    enabled: true
+  dblog__overview:
+    menu_name: admin
+    parent: system.admin_reports
+    weight: -1
+    expanded: false
+    enabled: true
+  locale__translate_status:
+    menu_name: admin
+    parent: system.admin_reports
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__field_storage_config__collection:
+    menu_name: admin
+    parent: system.admin_reports
+    weight: 0
+    expanded: false
+    enabled: true
+  admin_toolbar_tools__views_ui__field_list:
+    menu_name: admin
+    parent: entity.field_storage_config.collection
+    weight: 0
+    expanded: false
+    enabled: true
+  system__status:
+    menu_name: admin
+    parent: system.admin_reports
+    weight: 0
+    expanded: false
+    enabled: true
+  dblog__access_denied:
+    menu_name: admin
+    parent: system.admin_reports
+    weight: 0
+    expanded: false
+    enabled: true
+  dblog__page_not_found:
+    menu_name: admin
+    parent: system.admin_reports
+    weight: 0
+    expanded: false
+    enabled: true
+  views_ui__reports_plugins:
+    menu_name: admin
+    parent: system.admin_reports
+    weight: 0
+    expanded: false
+    enabled: true
+  webform__reports_plugins:
+    menu_name: admin
+    parent: system.admin_reports
+    weight: 0
+    expanded: false
+    enabled: true
+  help__main:
+    weight: -85
+    menu_name: admin
+    parent: system.admin
+    expanded: false
+    enabled: true
+  tmgmt__admin_tmgmt:
+    weight: -90
+    menu_name: admin
+    parent: system.admin
+    expanded: false
+    enabled: true
+  id_admin__categories:
+    weight: -97
+    menu_name: admin
+    parent: system.admin
+    expanded: false
+    enabled: true
+  id_admin__forms:
+    weight: -96
+    menu_name: admin
+    parent: system.admin
+    expanded: false
+    enabled: true
+_core:
+  default_config_hash: jdY7AU0tU-QsjmiOw3W8vwpYMb-By--_MSFgbqKUTYM

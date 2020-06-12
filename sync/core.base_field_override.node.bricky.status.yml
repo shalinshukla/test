@@ -1,0 +1,27 @@
+uuid: 0c55c617-f3d0-4828-81a0-8235dd6874b2
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.bricky
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: node.bricky.status
+field_name: status
+entity_type: node
+bundle: bricky
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

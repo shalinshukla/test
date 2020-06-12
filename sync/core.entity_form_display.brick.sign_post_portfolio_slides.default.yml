@@ -1,0 +1,55 @@
+uuid: b5325f65-fb65-408e-947f-f412d53a315e
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.sign_post_portfolio_slides
+    - field.field.brick.sign_post_portfolio_slides.field_pf_slides_image
+    - field.field.brick.sign_post_portfolio_slides.field_pf_slides_link
+    - field.field.brick.sign_post_portfolio_slides.field_pf_slides_sub_title
+    - image.style.thumbnail
+  module:
+    - image
+    - imce
+    - lightning_media
+id: brick.sign_post_portfolio_slides.default
+targetEntityType: brick
+bundle: sign_post_portfolio_slides
+mode: default
+content:
+  field_pf_slides_image:
+    type: image_image
+    weight: 1
+    settings:
+      preview_image_style: thumbnail
+      progress_indicator: throbber
+    region: content
+    third_party_settings:
+      imce:
+        enabled: true
+      lightning_media:
+        file_links: true
+        remove_button: true
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_pf_slides_link: true
+  field_pf_slides_sub_title: true

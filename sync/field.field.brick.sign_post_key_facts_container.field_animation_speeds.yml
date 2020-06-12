@@ -1,0 +1,30 @@
+uuid: 9c3e7792-6382-4893-8f92-26689fcb39c8
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.sign_post_key_facts_container
+    - field.storage.brick.field_animation_speeds
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.sign_post_key_facts_container.field_animation_speeds
+field_name: field_animation_speeds
+entity_type: brick
+bundle: sign_post_key_facts_container
+label: 'Animation speed'
+description: 'Provide value (in milliseconds) to manage speed of rolling numbers.'
+required: false
+translatable: true
+default_value:
+  -
+    value: 1500
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

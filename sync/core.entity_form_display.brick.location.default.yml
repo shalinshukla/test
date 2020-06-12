@@ -1,0 +1,162 @@
+uuid: 96a89def-bcb7-476a-825f-7849186c00e2
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.location
+    - field.field.brick.location.field_location_address
+    - field.field.brick.location.field_location_city
+    - field.field.brick.location.field_location_coordinates
+    - field.field.brick.location.field_location_description
+    - field.field.brick.location.field_location_email
+    - field.field.brick.location.field_location_image
+    - field.field.brick.location.field_location_link
+    - field.field.brick.location.field_location_phone
+    - field.field.brick.location.field_location_type
+    - image.style.thumbnail
+  module:
+    - geolocation
+    - image
+    - imce
+    - lightning_media
+    - link_ex
+    - telephone
+    - text
+_core:
+  default_config_hash: qy5U91aCgCALkk2TO1Nhf_aDvcH4RilRFtEy2HeiMR0
+id: brick.location.default
+targetEntityType: brick
+bundle: location
+mode: default
+content:
+  field_location_address:
+    weight: 5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_location_city:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_location_coordinates:
+    weight: 10
+    settings:
+      populate_address_field: ''
+      target_address_field: null
+      explicite_actions_address_field: ''
+      default_longitude: null
+      default_latitude: null
+      auto_client_location: ''
+      auto_client_location_marker: ''
+      allow_override_map_settings: 0
+      google_map_settings:
+        type: ROADMAP
+        zoom: 10
+        minZoom: 0
+        maxZoom: 18
+        rotateControl: false
+        mapTypeControl: 1
+        streetViewControl: 1
+        zoomControl: 1
+        fullscreenControl: 0
+        scrollwheel: 1
+        disableDoubleClickZoom: 0
+        draggable: 1
+        height: 400px
+        width: 100%
+        info_auto_display: 1
+        marker_icon_path: ''
+        disableAutoPan: 1
+        style: ''
+        preferScrollingToZooming: 0
+        gestureHandling: auto
+    third_party_settings: {  }
+    type: geolocation_googlegeocoder
+    region: content
+  field_location_description:
+    weight: 9
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_location_email:
+    weight: 6
+    settings:
+      size: 60
+      placeholder: example@domain.com
+    third_party_settings: {  }
+    type: email_default
+    region: content
+  field_location_image:
+    type: image_image
+    weight: 4
+    settings:
+      preview_image_style: thumbnail
+      progress_indicator: throbber
+    region: content
+    third_party_settings:
+      imce:
+        enabled: true
+      lightning_media:
+        file_links: true
+        remove_button: true
+  field_location_link:
+    weight: 8
+    settings:
+      placeholder_url: 'https://example.com'
+      placeholder_title: ''
+      enabled_attributes:
+        title: title
+        target: target
+        imce: imce
+        id: 0
+        rel: 0
+        name: 0
+        class: 0
+        accesskey: 0
+        download: 0
+        imce_private: 0
+    third_party_settings: {  }
+    type: link_ex
+    region: content
+  field_location_phone:
+    weight: 7
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: telephone_default
+    region: content
+  field_location_type:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  langcode:
+    type: language_select
+    weight: 1
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

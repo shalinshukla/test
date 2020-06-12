@@ -1,0 +1,30 @@
+uuid: 07621d38-b243-40e2-abf0-66ab4ae680c3
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+    - options
+id: brick.field_content_icon
+field_name: field_content_icon
+entity_type: brick
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: chairperson
+      label: Chairperson
+    -
+      value: member
+      label: Member
+    -
+      value: chairperson_of_the_board
+      label: 'Chairperson of the board'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

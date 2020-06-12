@@ -1,0 +1,25 @@
+uuid: 2d572343-071a-40ff-b29e-e782d1e2c907
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.bricky
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: node.bricky.menu_link
+field_name: menu_link
+entity_type: node
+bundle: bricky
+label: 'Menu link'
+description: 'Computed menu link for the node (only available during node saving).'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

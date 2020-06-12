@@ -1,0 +1,23 @@
+uuid: 8d268ded-8216-4e59-9b18-379cac576c7f
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+    - views
+    - viewsreference
+_core:
+  default_config_hash: '-bL91u6nufn08UK47f5H3GCfJ-56K6neveZnGItmYJY'
+id: brick.field_location_view
+field_name: field_location_view
+entity_type: brick
+type: viewsreference
+settings:
+  target_type: view
+module: viewsreference
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

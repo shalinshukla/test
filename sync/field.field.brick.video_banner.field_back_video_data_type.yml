@@ -1,0 +1,25 @@
+uuid: aa93d402-1ba0-4b88-b0e9-51b23226e446
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.video_banner
+    - field.storage.brick.field_back_video_data_type
+  module:
+    - content_translation
+    - options
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.video_banner.field_back_video_data_type
+field_name: field_back_video_data_type
+entity_type: brick
+bundle: video_banner
+label: 'Data Type/Source'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

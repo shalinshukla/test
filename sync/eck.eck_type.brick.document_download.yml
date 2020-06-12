@@ -1,0 +1,9 @@
+uuid: 5bb03983-8b0a-4338-8142-c3591ab694ce
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.brick
+name: 'Document Download'
+type: document_download
+description: 'Document can be downloaded on clicking the download icon'

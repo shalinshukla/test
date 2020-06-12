@@ -1,0 +1,9 @@
+uuid: 0784ddc4-73a9-4a01-826e-e9975c1ea18e
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.brick
+name: 'Banner Content'
+type: banner_content
+description: 'Banner Content  : it will display the banner for the inner pages'

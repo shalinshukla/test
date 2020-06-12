@@ -1,0 +1,39 @@
+uuid: 2e201883-37aa-4b9c-8546-a6a21d0647be
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+    - options
+id: brick.field_config_text_variation
+field_name: field_config_text_variation
+entity_type: brick
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: title-with-border
+      label: 'Title with border'
+    -
+      value: left-title
+      label: 'Left title'
+    -
+      value: center-title
+      label: 'Center title'
+    -
+      value: lowercase-title
+      label: 'Title with lowercase'
+    -
+      value: accordion-title
+      label: 'Title for Accordion'
+    -
+      value: tab-title
+      label: 'Title for Tab'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

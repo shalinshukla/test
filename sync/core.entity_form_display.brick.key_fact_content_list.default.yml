@@ -1,0 +1,85 @@
+uuid: e81336a0-b489-41a0-b99d-55a2e6c1d55d
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.key_fact_content_list
+    - field.field.brick.key_fact_content_list.field_background_color
+    - field.field.brick.key_fact_content_list.field_key_fact_content
+    - field.field.brick.key_fact_content_list.field_lc_keyfact_title
+    - field.field.brick.key_fact_content_list.field_spacing_variation
+  module:
+    - bricks_inline
+    - field_group
+third_party_settings:
+  field_group:
+    group_single_key_fact_content:
+      children: {  }
+      parent_name: ''
+      weight: 3
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: 'Single Key Fact Content'
+      region: content
+id: brick.key_fact_content_list.default
+targetEntityType: brick
+bundle: key_fact_content_list
+mode: default
+content:
+  field_background_color:
+    weight: 6
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_key_fact_content:
+    weight: 4
+    settings:
+      match_operator: CONTAINS
+      form_mode: default
+      override_labels: false
+      label_singular: ''
+      label_plural: ''
+      collapsible: false
+      collapsed: false
+      allow_new: true
+      allow_existing: false
+      allow_duplicate: false
+    third_party_settings: {  }
+    type: bricks_tree_inline
+    region: content
+  field_lc_keyfact_title:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_spacing_variation:
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  langcode:
+    type: language_select
+    weight: 1
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

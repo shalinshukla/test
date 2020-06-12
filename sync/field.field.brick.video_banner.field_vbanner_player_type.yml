@@ -1,0 +1,25 @@
+uuid: 70fc8948-10b7-4c54-a687-b2d525c4eb86
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.video_banner
+    - field.storage.brick.field_vbanner_player_type
+  module:
+    - content_translation
+    - options
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.video_banner.field_vbanner_player_type
+field_name: field_vbanner_player_type
+entity_type: brick
+bundle: video_banner
+label: 'Player Type'
+description: 'To specify Player Type'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

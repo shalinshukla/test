@@ -1,0 +1,9 @@
+uuid: 3dd0ab6e-72e7-44c4-ba1d-2996fe25e218
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.brick
+name: 'Sign Post - News'
+type: sign_post_news
+description: 'Sign Post component for News '

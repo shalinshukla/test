@@ -1,0 +1,31 @@
+uuid: af1e0dbd-9882-4248-9f18-2b66225cfabe
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.dynamic_block_contents
+    - field.storage.brick.field_block_reference
+  module:
+    - brick_modal
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+  brick_modal:
+    delete_referenced_entities: 0
+id: brick.dynamic_block_contents.field_block_reference
+field_name: field_block_reference
+entity_type: brick
+bundle: dynamic_block_contents
+label: 'Block Reference'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:block'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: entity_reference

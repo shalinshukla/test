@@ -1,0 +1,25 @@
+uuid: b59a4ba7-b139-4bfc-94bd-7da9fba7783a
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.video
+    - field.storage.brick.field_signpost_video_variation
+  module:
+    - options
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: brick.video.field_signpost_video_variation
+field_name: field_signpost_video_variation
+entity_type: brick
+bundle: video
+label: 'Signpost video variation'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

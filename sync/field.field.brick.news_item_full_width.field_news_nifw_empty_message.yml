@@ -1,0 +1,26 @@
+uuid: 619ac540-bed2-475e-ac92-9b44dda333ad
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.news_item_full_width
+    - field.storage.brick.field_news_nifw_empty_message
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.news_item_full_width.field_news_nifw_empty_message
+field_name: field_news_nifw_empty_message
+entity_type: brick
+bundle: news_item_full_width
+label: 'Message for empty content for NEWS'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 'No news available.'
+default_value_callback: ''
+settings: {  }
+field_type: string

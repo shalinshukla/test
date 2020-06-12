@@ -1,0 +1,9 @@
+uuid: 05d65ed5-8906-43e6-968a-8ed968b2d041
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.brick
+name: 'Sign Post - Portfolio carousel'
+type: sign_post_portfolio_carousel
+description: 'Sign Post component for Portfolio slider/carousel'

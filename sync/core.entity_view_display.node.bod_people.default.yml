@@ -1,0 +1,171 @@
+uuid: 9799c97e-1d6d-40e9-9733-0454be3ba6dd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.bod_people.body
+    - field.field.node.bod_people.field_boards_description
+    - field.field.node.bod_people.field_bullet_point_title
+    - field.field.node.bod_people.field_components
+    - field.field.node.bod_people.field_do_not_show_description
+    - field.field.node.bod_people.field_linkedin_link
+    - field.field.node.bod_people.field_meta_tags
+    - field.field.node.bod_people.field_people_email
+    - field.field.node.bod_people.field_people_image
+    - field.field.node.bod_people.field_people_phone_number
+    - field.field.node.bod_people.field_position
+    - field.field.node.bod_people.field_related_articles
+    - field.field.node.bod_people.field_short_description_1
+    - field.field.node.bod_people.field_twitter_link
+    - node.type.bod_people
+  module:
+    - bricks
+    - link
+    - metatag
+    - panelizer
+    - svg_image
+    - telephone
+    - text
+    - user
+third_party_settings:
+  panelizer:
+    enable: false
+    custom: false
+    allow: false
+    default: default
+id: node.bod_people.default
+targetEntityType: node
+bundle: bod_people
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_boards_description:
+    weight: 111
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_bullet_point_title:
+    weight: 102
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_components:
+    weight: 103
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    type: bricks_nested
+    region: content
+  field_do_not_show_description:
+    weight: 104
+    label: hidden
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_linkedin_link:
+    weight: 107
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_meta_tags:
+    weight: 108
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_empty_formatter
+    region: content
+  field_people_email:
+    weight: 105
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_people_image:
+    weight: 106
+    label: hidden
+    settings:
+      svg_attributes:
+        width: ''
+        height: ''
+      svg_render_as_image: true
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_people_phone_number:
+    weight: 109
+    label: hidden
+    settings:
+      title: ''
+    third_party_settings: {  }
+    type: telephone_link
+    region: content
+  field_position:
+    weight: 110
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_related_articles:
+    weight: 114
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_short_description_1:
+    weight: 112
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_twitter_link:
+    weight: 113
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  search_api_excerpt: true

@@ -1,0 +1,52 @@
+uuid: 5243d5e1-4f3f-4ca2-a5ac-fad8c9964ca5
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.tab_layout_with_icons
+    - field.field.brick.tab_layout_with_icons.field_tab_content
+    - field.field.brick.tab_layout_with_icons.field_tab_icon
+    - field.field.brick.tab_layout_with_icons.field_tab_title
+  module:
+    - image
+id: brick.tab_layout_with_icons.default
+targetEntityType: brick
+bundle: tab_layout_with_icons
+mode: default
+content:
+  field_tab_content:
+    weight: -2
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_tab_icon:
+    weight: -3
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_tab_title:
+    weight: -4
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  title:
+    label: hidden
+    type: string
+    weight: -5
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  search_api_excerpt: true

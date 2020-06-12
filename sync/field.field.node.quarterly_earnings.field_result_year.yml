@@ -1,0 +1,37 @@
+uuid: 40c19966-1673-4e95-80ca-1402a01fce55
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_result_year
+    - node.type.quarterly_earnings
+    - taxonomy.vocabulary.result_year
+  module:
+    - brick_modal
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+  brick_modal:
+    delete_referenced_entities: 0
+id: node.quarterly_earnings.field_result_year
+field_name: field_result_year
+entity_type: node
+bundle: quarterly_earnings
+label: 'Result Year'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      result_year: result_year
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

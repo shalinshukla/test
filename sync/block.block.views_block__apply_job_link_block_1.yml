@@ -1,0 +1,51 @@
+uuid: a1c59529-3281-47e4-bbe4-625188b14490
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.apply_job_link
+  module:
+    - block_class
+    - ctools
+    - node
+    - system
+    - views
+  theme:
+    - project_bootstrap
+third_party_settings:
+  block_class:
+    classes: ''
+id: views_block__apply_job_link_block_1
+theme: project_bootstrap
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'views_block:apply_job_link-block_1'
+settings:
+  id: 'views_block:apply_job_link-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: '/node/*'
+    negate: false
+    context_mapping: {  }
+  node_type:
+    id: node_type
+    bundles:
+      jobs: jobs
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      jobs: jobs
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

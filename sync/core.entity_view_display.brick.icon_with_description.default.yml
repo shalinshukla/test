@@ -1,0 +1,43 @@
+uuid: e1d380b7-7b08-42cd-92b4-5151437e3edf
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.icon_with_description
+    - field.field.brick.icon_with_description.field_image
+    - field.field.brick.icon_with_description.field_text
+  module:
+    - image
+    - text
+id: brick.icon_with_description.default
+targetEntityType: brick
+bundle: icon_with_description
+mode: default
+content:
+  field_image:
+    weight: -3
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_text:
+    weight: -4
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  title:
+    label: hidden
+    type: string
+    weight: -5
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  search_api_excerpt: true

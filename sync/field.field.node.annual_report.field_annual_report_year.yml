@@ -1,0 +1,37 @@
+uuid: e145bf3a-7d0b-47f3-939e-67cd29a712d3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_annual_report_year
+    - node.type.annual_report
+    - taxonomy.vocabulary.annual_report_year
+  module:
+    - brick_modal
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+  brick_modal:
+    delete_referenced_entities: 0
+id: node.annual_report.field_annual_report_year
+field_name: field_annual_report_year
+entity_type: node
+bundle: annual_report
+label: 'Annual Report Year'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      annual_report_year: annual_report_year
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

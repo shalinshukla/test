@@ -1,0 +1,24 @@
+uuid: adec7350-1859-4c4c-838d-1b659f22c934
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.inner_video
+    - field.storage.brick.field_inner_video_id
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.inner_video.field_inner_video_id
+field_name: field_inner_video_id
+entity_type: brick
+bundle: inner_video
+label: 'Video ID'
+description: 'Video ID respective to the selected Data provider'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

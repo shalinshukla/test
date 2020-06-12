@@ -1,0 +1,26 @@
+uuid: 76a23f90-51d9-4eb5-b11b-2477e148e802
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.infographic
+    - field.storage.brick.field_share_on_email
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.infographic.field_share_on_email
+field_name: field_share_on_email
+entity_type: brick
+bundle: infographic
+label: 'Share on email'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 'mailto:'
+default_value_callback: ''
+settings: {  }
+field_type: string

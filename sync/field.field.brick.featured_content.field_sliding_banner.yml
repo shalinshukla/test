@@ -1,0 +1,36 @@
+uuid: 6253ff64-ca64-4052-96f2-a080dcca8f94
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.featured_content
+    - eck.eck_type.brick.sliding_banner
+    - field.storage.brick.field_sliding_banner
+  module:
+    - brick_modal
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+  brick_modal:
+    delete_referenced_entities: 0
+id: brick.featured_content.field_sliding_banner
+field_name: field_sliding_banner
+entity_type: brick
+bundle: featured_content
+label: 'Sliding banner'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:brick'
+  handler_settings:
+    target_bundles:
+      sliding_banner: sliding_banner
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

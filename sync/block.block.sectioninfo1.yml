@@ -1,0 +1,29 @@
+uuid: 2d099c32-78d9-4102-b56e-6f73efb2c07e
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:fef887e3-d342-4943-9e2a-3a17b2ccc2d8'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - project_bootstrap
+third_party_settings:
+  block_class:
+    classes: ''
+id: sectioninfo1
+theme: project_bootstrap
+region: footer_bottom
+weight: 0
+provider: null
+plugin: 'block_content:fef887e3-d342-4943-9e2a-3a17b2ccc2d8'
+settings:
+  id: 'block_content:fef887e3-d342-4943-9e2a-3a17b2ccc2d8'
+  label: 'Section Info'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

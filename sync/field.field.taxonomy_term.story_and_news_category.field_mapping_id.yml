@@ -1,0 +1,19 @@
+uuid: ce0c359e-d9fb-49ee-9d13-c3828c95d667
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_mapping_id
+    - taxonomy.vocabulary.story_and_news_category
+id: taxonomy_term.story_and_news_category.field_mapping_id
+field_name: field_mapping_id
+entity_type: taxonomy_term
+bundle: story_and_news_category
+label: 'Mapping Id'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

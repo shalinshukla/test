@@ -1,0 +1,29 @@
+uuid: cd76ba40-aff8-4212-abf6-6a75ee4c069b
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.mid_disclaimer
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+_core:
+  default_config_hash: GzqvHKP4hcpkYrpAoS41wUBX5AgjfspG1tr4NPIu2DQ
+id: node.mid_disclaimer.promote
+field_name: promote
+entity_type: node
+bundle: mid_disclaimer
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

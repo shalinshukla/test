@@ -1,0 +1,24 @@
+uuid: b9d1c43d-0548-4ee8-8e1e-934529b8b1cd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contentnews_short_desc
+    - node.type.newscontent
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: node.newscontent.field_contentnews_short_desc
+field_name: field_contentnews_short_desc
+entity_type: node
+bundle: newscontent
+label: 'News short description'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

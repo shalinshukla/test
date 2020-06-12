@@ -1,0 +1,24 @@
+uuid: 1a17872e-df69-40f7-bea4-f925003c0eb5
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.quote_full_width
+    - field.storage.brick.field_fwq_quote_text
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.quote_full_width.field_fwq_quote_text
+field_name: field_fwq_quote_text
+entity_type: brick
+bundle: quote_full_width
+label: 'Quote Text'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

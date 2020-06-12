@@ -1,0 +1,19 @@
+uuid: a0956d91-e838-40de-a667-be838e483ea9
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+    - text
+id: brick.field_body_description_1
+field_name: field_body_description_1
+entity_type: brick
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

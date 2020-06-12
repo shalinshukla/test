@@ -1,0 +1,23 @@
+uuid: 1834f91f-fb26-4ed3-8a17-fc3eec316ce4
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.history_timeline
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: node.history_timeline.metatag
+field_name: metatag
+entity_type: node
+bundle: history_timeline
+label: Metatags
+description: 'The metatags for the entity.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

@@ -1,0 +1,18 @@
+uuid: 0e00b69b-26e1-48db-a16a-31dd878c319e
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+id: brick.field_hide_tabs
+field_name: field_hide_tabs
+entity_type: brick
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

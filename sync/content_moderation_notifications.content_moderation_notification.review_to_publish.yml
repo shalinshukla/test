@@ -1,0 +1,17 @@
+uuid: 4916a57d-8cbc-43cc-9828-dc7fd92be163
+langcode: en
+status: true
+dependencies: {  }
+id: review_to_publish
+workflow: editorial
+transitions:
+  review_to_publish: review_to_publish
+roles:
+  bricky_reviewer: bricky_reviewer
+author: true
+emails: ''
+subject: '[node:title] has been published'
+body:
+  value: "Hi Creator/Reviewer,<br />\r\n<br />\r\nContent \" [node:title] \" has been published. Please take a look on it by clicking on url - [node:url]<br />\r\n<br />\r\nThanks\r\n"
+  format: basic_html
+label: 'Review to publish'

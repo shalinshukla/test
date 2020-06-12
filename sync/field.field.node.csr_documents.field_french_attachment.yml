@@ -1,0 +1,31 @@
+uuid: 531865e3-f6c1-46fb-a2f6-1affd357b6e6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_french_attachment
+    - node.type.csr_documents
+  module:
+    - file
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.csr_documents.field_french_attachment
+field_name: field_french_attachment
+entity_type: node
+bundle: csr_documents
+label: 'French attachment'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'txt pdf doc docx ppt pptx xls xlsx'
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

@@ -1,0 +1,31 @@
+uuid: 5ea5cb8c-0714-43e1-ae2b-3e113d1e4f7a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_english_attachment
+    - node.type.csr_documents
+  module:
+    - file
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.csr_documents.field_english_attachment
+field_name: field_english_attachment
+entity_type: node
+bundle: csr_documents
+label: 'English Attachment'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'txt pdf doc docx ppt pptx xls xlsx'
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

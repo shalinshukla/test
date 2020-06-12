@@ -1,0 +1,25 @@
+uuid: 6ec7d00c-9b06-47c8-89cd-611bb2e0bc64
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.tools
+  module:
+    - system
+  theme:
+    - investis_bootstrap_t2
+id: investis_bootstrap_t2_tools
+theme: investis_bootstrap_t2
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'system_menu_block:tools'
+settings:
+  id: 'system_menu_block:tools'
+  label: Tools
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

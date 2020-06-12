@@ -1,0 +1,27 @@
+uuid: c6c40834-14c7-47a0-a75b-e42bb248163d
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.sign_post_iframe
+    - field.storage.brick.field_links
+  module:
+    - link
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: brick.sign_post_iframe.field_links
+field_name: field_links
+entity_type: brick
+bundle: sign_post_iframe
+label: 'Seel full stock info'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

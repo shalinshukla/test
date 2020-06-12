@@ -1,0 +1,197 @@
+uuid: cf16de25-cfd9-4c2e-89c9-ed4697790e0e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.people.body
+    - field.field.node.people.field_boards_description
+    - field.field.node.people.field_bod
+    - field.field.node.people.field_bullet_point_title
+    - field.field.node.people.field_components
+    - field.field.node.people.field_do_not_show_description
+    - field.field.node.people.field_linkedin_link
+    - field.field.node.people.field_meta_tags
+    - field.field.node.people.field_people_email
+    - field.field.node.people.field_people_image
+    - field.field.node.people.field_people_phone_number
+    - field.field.node.people.field_people_type
+    - field.field.node.people.field_position
+    - field.field.node.people.field_related_articles
+    - field.field.node.people.field_short_description_1
+    - field.field.node.people.field_twitter_link
+    - node.type.people
+  module:
+    - bricks
+    - link
+    - metatag
+    - panelizer
+    - svg_image
+    - telephone
+    - text
+    - user
+third_party_settings:
+  panelizer:
+    enable: false
+    custom: false
+    allow: false
+    default: default
+id: node.people.default
+targetEntityType: node
+bundle: people
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  content_moderation_control:
+    weight: -20
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_boards_description:
+    weight: 16
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_bod:
+    weight: 17
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_bullet_point_title:
+    weight: 15
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_components:
+    weight: 14
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    type: bricks_nested
+    region: content
+  field_do_not_show_description:
+    weight: 8
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_linkedin_link:
+    weight: 13
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_meta_tags:
+    weight: 11
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_empty_formatter
+    region: content
+  field_people_email:
+    weight: 6
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_people_image:
+    weight: 2
+    label: hidden
+    settings:
+      image_style: ''
+      svg_attributes:
+        width: ''
+        height: ''
+      svg_render_as_image: true
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_people_phone_number:
+    weight: 7
+    label: above
+    settings:
+      title: ''
+    third_party_settings: {  }
+    type: telephone_link
+    region: content
+  field_people_type:
+    weight: 4
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_position:
+    weight: 3
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_related_articles:
+    weight: 18
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_short_description_1:
+    weight: 5
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_twitter_link:
+    weight: 12
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  scheduled_publication: true
+  search_api_excerpt: true

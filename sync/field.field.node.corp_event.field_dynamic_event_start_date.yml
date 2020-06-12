@@ -1,0 +1,25 @@
+uuid: 11d515e7-5bf3-4f0a-8262-e328587696b9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_dynamic_event_start_date
+    - node.type.corp_event
+  module:
+    - datetime
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.corp_event.field_dynamic_event_start_date
+field_name: field_dynamic_event_start_date
+entity_type: node
+bundle: corp_event
+label: 'Event start date'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

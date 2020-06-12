@@ -1,0 +1,37 @@
+uuid: b7a73400-fe6f-4ce6-bca9-ba97615dccbe
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.story_and_news
+  module:
+    - block_class
+    - ctools
+    - views
+  theme:
+    - project_bootstrap
+third_party_settings:
+  block_class:
+    classes: story-date
+id: views_block__story_and_news_block_5
+theme: project_bootstrap
+region: content
+weight: -37
+provider: null
+plugin: 'views_block:story_and_news-block_5'
+settings:
+  id: 'views_block:story_and_news-block_5'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      story_and_news: story_and_news
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

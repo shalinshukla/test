@@ -1,0 +1,28 @@
+uuid: 26567785-b0ee-4862-8905-57e259452ca0
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.media_press_kit.field_media_date
+    - field.field.node.media_press_kit.field_media_file
+    - field.field.node.media_press_kit.field_media_press_kit_poster
+    - node.type.media_press_kit
+  module:
+    - user
+id: node.media_press_kit.teaser
+targetEntityType: node
+bundle: media_press_kit
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_media_date: true
+  field_media_file: true
+  field_media_press_kit_poster: true
+  langcode: true
+  search_api_excerpt: true

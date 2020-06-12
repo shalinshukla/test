@@ -1,0 +1,37 @@
+uuid: 13048905-7b5d-420f-b7cc-f0133c11da51
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_job_employment_type_2
+    - node.type.jobs
+    - taxonomy.vocabulary.job_employment_type_ii
+  module:
+    - brick_modal
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+  brick_modal:
+    delete_referenced_entities: 0
+id: node.jobs.field_job_employment_type_2
+field_name: field_job_employment_type_2
+entity_type: node
+bundle: jobs
+label: 'Employment Type II'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      job_employment_type_ii: job_employment_type_ii
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

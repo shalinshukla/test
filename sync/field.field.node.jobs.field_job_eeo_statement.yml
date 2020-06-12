@@ -1,0 +1,25 @@
+uuid: 1cf659ad-e48e-460b-90df-cb499e45e307
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_job_eeo_statement
+    - node.type.jobs
+  module:
+    - text
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.jobs.field_job_eeo_statement
+field_name: field_job_eeo_statement
+entity_type: node
+bundle: jobs
+label: 'EEO Statement'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

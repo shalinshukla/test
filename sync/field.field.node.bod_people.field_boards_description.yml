@@ -1,0 +1,25 @@
+uuid: d9f933e4-22eb-4d40-8267-734717327742
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_boards_description
+    - node.type.bod_people
+  module:
+    - text
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.bod_people.field_boards_description
+field_name: field_boards_description
+entity_type: node
+bundle: bod_people
+label: 'Right side Description '
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

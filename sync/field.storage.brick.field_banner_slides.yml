@@ -1,0 +1,20 @@
+uuid: be80d624-0e22-4038-9f7c-366db6e85aa5
+langcode: en
+status: true
+dependencies:
+  module:
+    - bricks
+    - eck
+id: brick.field_banner_slides
+field_name: field_banner_slides
+entity_type: brick
+type: bricks
+settings:
+  target_type: brick
+module: bricks
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

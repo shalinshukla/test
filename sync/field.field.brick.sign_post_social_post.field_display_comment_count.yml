@@ -1,0 +1,28 @@
+uuid: ca742613-d913-47b2-b178-501ebe300c59
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.sign_post_social_post
+    - field.storage.brick.field_display_comment_count
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.sign_post_social_post.field_display_comment_count
+field_name: field_display_comment_count
+entity_type: brick
+bundle: sign_post_social_post
+label: 'Display Comment Count'
+description: 'Display Comment Count'
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

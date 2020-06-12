@@ -1,0 +1,24 @@
+uuid: 4986c80c-4788-4659-8804-331375b89299
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.news_list
+    - field.storage.brick.field_see_all_news_text
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.news_list.field_see_all_news_text
+field_name: field_see_all_news_text
+entity_type: brick
+bundle: news_list
+label: 'See all text'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

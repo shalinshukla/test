@@ -1,0 +1,19 @@
+uuid: 496f5dac-56de-483d-82c2-f9ab8c23ae63
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+    - text
+id: brick.field_email_id
+field_name: field_email_id
+entity_type: brick
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

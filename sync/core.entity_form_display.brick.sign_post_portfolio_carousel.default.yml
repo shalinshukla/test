@@ -1,0 +1,81 @@
+uuid: b4be6ff3-656d-48ff-acd2-4c1c64fbadec
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.sign_post_portfolio_carousel
+    - field.field.brick.sign_post_portfolio_carousel.field_pf_slider_link
+    - field.field.brick.sign_post_portfolio_carousel.field_pf_slider_slides
+    - field.field.brick.sign_post_portfolio_carousel.field_pf_title
+  module:
+    - bricks_inline
+    - link_ex
+id: brick.sign_post_portfolio_carousel.default
+targetEntityType: brick
+bundle: sign_post_portfolio_carousel
+mode: default
+content:
+  field_pf_slider_link:
+    weight: 3
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+      enabled_attributes:
+        id: id
+        name: name
+        title: title
+        target: target
+        class: class
+        imce: imce
+        imce_private: imce_private
+        rel: 0
+        accesskey: 0
+        download: 0
+    third_party_settings: {  }
+    type: link_ex
+    region: content
+  field_pf_slider_slides:
+    weight: 2
+    settings:
+      match_operator: CONTAINS
+      form_mode: default
+      override_labels: false
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: false
+      collapsible: false
+      collapsed: false
+      allow_duplicate: false
+    third_party_settings: {  }
+    type: bricks_tree_inline
+    region: content
+  field_pf_title:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  langcode:
+    type: language_select
+    weight: 4
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

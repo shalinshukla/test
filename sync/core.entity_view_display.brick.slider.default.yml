@@ -1,0 +1,75 @@
+uuid: 0ad4c580-5a08-4799-8b3d-2c30849593b3
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.slider
+    - field.field.brick.slider.field_carousel_control_options
+    - field.field.brick.slider.field_control_options
+    - field.field.brick.slider.field_slide_interval
+    - field.field.brick.slider.field_slider_html_tags
+    - field.field.brick.slider.field_slider_indicator_position
+    - field.field.brick.slider.field_slides
+  module:
+    - bricks
+    - options
+id: brick.slider.default
+targetEntityType: brick
+bundle: slider
+mode: default
+content:
+  field_carousel_control_options:
+    weight: -1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_control_options:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_slide_interval:
+    weight: -2
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_slider_html_tags:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_slider_indicator_position:
+    weight: -3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_slides:
+    weight: -4
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    type: bricks_nested
+    region: content
+  title:
+    label: hidden
+    type: string
+    weight: -5
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  langcode: true

@@ -1,0 +1,25 @@
+uuid: 1577d8ad-1fa6-4165-8762-5c94303043eb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_uspr_headline
+    - node.type.us_press_release
+  module:
+    - text
+_core:
+  default_config_hash: Jfc_O_8PBy9SPDhvsBSKWfdMdDYmLfAU7KLCzWRl4ms
+id: node.us_press_release.field_uspr_headline
+field_name: field_uspr_headline
+entity_type: node
+bundle: us_press_release
+label: Headline
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

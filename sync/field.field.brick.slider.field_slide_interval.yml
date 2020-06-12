@@ -1,0 +1,24 @@
+uuid: 8abfed2f-3118-4514-8209-1196d35caade
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.slider
+    - field.storage.brick.field_slide_interval
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.slider.field_slide_interval
+field_name: field_slide_interval
+entity_type: brick
+bundle: slider
+label: Interval
+description: 'The amount of time to delay between automatically cycling an item. If false, carousel will not automatically cycle.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

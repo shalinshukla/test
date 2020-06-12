@@ -1,0 +1,56 @@
+uuid: 2e38cadd-90a2-4f94-b25a-48bd63c9f73b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.field_collection_item.field_view_online.field_document
+    - field.field.field_collection_item.field_view_online.field_external_link
+    - field.field.field_collection_item.field_view_online.field_internal_link
+    - field.field.field_collection_item.field_view_online.field_link_text
+    - field_collection.field_collection.field_view_online
+  module:
+    - file
+    - link
+id: field_collection_item.field_view_online.default
+targetEntityType: field_collection_item
+bundle: field_view_online
+mode: default
+content:
+  field_document:
+    weight: 3
+    label: hidden
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  field_external_link:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_internal_link:
+    weight: 5
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_link_text:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  scheduled_publication: true

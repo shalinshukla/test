@@ -1,0 +1,28 @@
+uuid: 88b45240-ca67-4853-b5f0-6fc49a8b4686
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.configurable_text
+    - field.storage.brick.field_full_width_image_signpost
+  module:
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: brick.configurable_text.field_full_width_image_signpost
+field_name: field_full_width_image_signpost
+entity_type: brick
+bundle: configurable_text
+label: 'Full width image signpost'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

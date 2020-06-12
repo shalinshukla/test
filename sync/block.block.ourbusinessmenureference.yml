@@ -1,0 +1,29 @@
+uuid: 41f28cb0-efe9-45a1-86b1-a77a81540e66
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:reference_block:401cf7ab-0c2a-42d2-8368-a226d11e034c'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - project_bootstrap
+third_party_settings:
+  block_class:
+    classes: ''
+id: ourbusinessmenureference
+theme: project_bootstrap
+region: footer_bottom
+weight: 0
+provider: null
+plugin: 'block_content:401cf7ab-0c2a-42d2-8368-a226d11e034c'
+settings:
+  id: 'block_content:401cf7ab-0c2a-42d2-8368-a226d11e034c'
+  label: 'Featured Content'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

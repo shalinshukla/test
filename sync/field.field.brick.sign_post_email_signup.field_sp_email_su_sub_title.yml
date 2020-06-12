@@ -1,0 +1,24 @@
+uuid: 194dec53-6d0d-4558-9871-56bc6c1857c4
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.sign_post_email_signup
+    - field.storage.brick.field_sp_email_su_sub_title
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.sign_post_email_signup.field_sp_email_su_sub_title
+field_name: field_sp_email_su_sub_title
+entity_type: brick
+bundle: sign_post_email_signup
+label: 'Sub Title'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

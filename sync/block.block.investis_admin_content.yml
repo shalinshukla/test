@@ -1,0 +1,22 @@
+uuid: d5f9abea-3e3b-4cef-88a7-16e2f60d9b76
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - investis_admin
+_core:
+  default_config_hash: tXSQ8etCsFF-xM3VbY-JnnzlIDieRupmr7T4XW18_3s
+id: investis_admin_content
+theme: investis_admin
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

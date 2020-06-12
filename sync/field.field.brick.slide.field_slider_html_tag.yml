@@ -1,0 +1,27 @@
+uuid: 0b8e23fd-eb73-4e45-bff6-fad4f237ab7b
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.slide
+    - field.storage.brick.field_slider_html_tag
+  module:
+    - content_translation
+    - options
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.slide.field_slider_html_tag
+field_name: field_slider_html_tag
+entity_type: brick
+bundle: slide
+label: 'HTML tag for title'
+description: 'Select tags to be applied on Slide Title. By default Span is applicable if no HTML tags selected.'
+required: false
+translatable: true
+default_value:
+  -
+    value: span
+default_value_callback: ''
+settings: {  }
+field_type: list_string

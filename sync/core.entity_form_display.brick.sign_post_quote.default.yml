@@ -1,0 +1,122 @@
+uuid: 9338fccf-0f23-46b8-af16-93ffca812b49
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.sign_post_quote
+    - field.field.brick.sign_post_quote.field_quote_image
+    - field.field.brick.sign_post_quote.field_quote_image_position
+    - field.field.brick.sign_post_quote.field_quote_link
+    - field.field.brick.sign_post_quote.field_quote_variation
+    - field.field.brick.sign_post_quote.field_sp_quote_first_name
+    - field.field.brick.sign_post_quote.field_sp_quote_formatted
+    - field.field.brick.sign_post_quote.field_sp_quote_last_name
+    - field.field.brick.sign_post_quote.field_sp_quote_text
+    - field.field.brick.sign_post_quote.field_sp_quote_title
+    - field.field.brick.sign_post_quote.field_space_variation
+    - image.style.thumbnail
+  module:
+    - imce
+    - link_ex
+    - svg_image
+    - text
+id: brick.sign_post_quote.default
+targetEntityType: brick
+bundle: sign_post_quote
+mode: default
+content:
+  field_quote_image:
+    type: image_image
+    weight: 6
+    settings:
+      preview_image_style: thumbnail
+      progress_indicator: throbber
+    region: content
+    third_party_settings:
+      imce:
+        enabled: true
+  field_quote_image_position:
+    weight: 9
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_quote_link:
+    weight: 7
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+      enabled_attributes:
+        title: title
+        class: class
+        imce: imce
+        id: 0
+        rel: 0
+        name: 0
+        target: 0
+        accesskey: 0
+        download: 0
+        imce_private: 0
+    third_party_settings: {  }
+    type: link_ex
+    region: content
+  field_quote_variation:
+    weight: 8
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_sp_quote_first_name:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_sp_quote_formatted:
+    weight: 5
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_sp_quote_title:
+    type: string_textfield
+    weight: 3
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_space_variation:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 50
+      placeholder: 'Enter your Role or Title'
+    third_party_settings: {  }
+  translation:
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_sp_quote_last_name: true
+  field_sp_quote_text: true

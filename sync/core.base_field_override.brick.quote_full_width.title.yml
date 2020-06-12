@@ -1,0 +1,18 @@
+uuid: af017d1c-b9ab-420d-a724-931180bedb2a
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.quote_full_width
+id: brick.quote_full_width.title
+field_name: title
+entity_type: brick
+bundle: quote_full_width
+label: Title
+description: 'The title of the entity.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

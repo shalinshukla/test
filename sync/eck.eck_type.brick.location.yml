@@ -1,0 +1,11 @@
+uuid: 55d175eb-6208-451c-973b-a50cec0ae62f
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.brick
+_core:
+  default_config_hash: bVwCYh8E_GQ1y0DbzEUBt2i2N-EeBsAP4aGa_Ymol60
+name: Location
+type: location
+description: 'Use Location for showing places in the real world, like an office building.'

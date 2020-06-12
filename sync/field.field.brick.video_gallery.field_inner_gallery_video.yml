@@ -1,0 +1,40 @@
+uuid: 97c7aea3-b743-4332-a3e3-5ed8671bd2b5
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.inner_video
+    - eck.eck_type.brick.video_gallery
+    - field.storage.brick.field_inner_gallery_video
+  module:
+    - brick_modal
+    - bricks
+    - content_translation
+    - tmgmt_content
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+  tmgmt_content:
+    excluded: false
+  brick_modal:
+    delete_referenced_entities: 1
+id: brick.video_gallery.field_inner_gallery_video
+field_name: field_inner_gallery_video
+entity_type: brick
+bundle: video_gallery
+label: 'Inner Video'
+description: 'Inner video to be part of Video Gallery'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:brick'
+  handler_settings:
+    target_bundles:
+      inner_video: inner_video
+    sort:
+      field: _none
+    auto_create: 0
+    auto_create_bundle: ''
+field_type: bricks

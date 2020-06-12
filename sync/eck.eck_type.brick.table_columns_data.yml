@@ -1,0 +1,9 @@
+uuid: 05b143d4-133f-4e86-8989-01ce8a7d55bc
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.brick
+name: 'Table Columns Data'
+type: table_columns_data
+description: ''

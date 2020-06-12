@@ -1,0 +1,9 @@
+uuid: 976b7a30-f940-4180-b41c-d44a75e8b5a0
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.brick
+name: 'Contact Sign Post'
+type: contact_sign_post
+description: ''

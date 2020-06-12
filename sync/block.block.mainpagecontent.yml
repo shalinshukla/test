@@ -1,0 +1,20 @@
+uuid: eed2b9de-1b06-43e5-8d2b-e53cc78f3315
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - project_bootstrap
+id: mainpagecontent
+theme: project_bootstrap
+region: content
+weight: -35
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

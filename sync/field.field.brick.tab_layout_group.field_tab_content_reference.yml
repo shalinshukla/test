@@ -1,0 +1,37 @@
+uuid: ac48c241-dce3-42b7-afd4-4138efbc7261
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.tab_layout_group
+    - eck.eck_type.brick.tab_layout_with_icons
+    - field.storage.brick.field_tab_content_reference
+  module:
+    - brick_modal
+    - bricks
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+  brick_modal:
+    delete_referenced_entities: 0
+id: brick.tab_layout_group.field_tab_content_reference
+field_name: field_tab_content_reference
+entity_type: brick
+bundle: tab_layout_group
+label: 'Tab content reference'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:brick'
+  handler_settings:
+    target_bundles:
+      tab_layout_with_icons: tab_layout_with_icons
+    sort:
+      field: _none
+    auto_create: 0
+    auto_create_bundle: external_feeds
+field_type: bricks

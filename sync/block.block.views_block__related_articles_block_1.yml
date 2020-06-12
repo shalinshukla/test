@@ -1,0 +1,38 @@
+uuid: 144cc3e9-a888-4bdb-8304-6279f45e1724
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.related_articles
+  module:
+    - block_class
+    - ctools
+    - views
+  theme:
+    - project_bootstrap
+third_party_settings:
+  block_class:
+    classes: ''
+id: views_block__related_articles_block_1
+theme: project_bootstrap
+region: content
+weight: -28
+provider: null
+plugin: 'views_block:related_articles-block_1'
+settings:
+  id: 'views_block:related_articles-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      bod_people: bod_people
+      people: people
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

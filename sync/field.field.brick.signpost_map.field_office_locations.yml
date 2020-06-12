@@ -1,0 +1,40 @@
+uuid: 349c182b-0f29-47bb-8616-d7886422467d
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.map_office_details
+    - eck.eck_type.brick.signpost_map
+    - field.storage.brick.field_office_locations
+  module:
+    - brick_modal
+    - bricks
+    - content_translation
+    - tmgmt_content
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+  tmgmt_content:
+    excluded: false
+  brick_modal:
+    delete_referenced_entities: 1
+id: brick.signpost_map.field_office_locations
+field_name: field_office_locations
+entity_type: brick
+bundle: signpost_map
+label: 'Location Markers'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:brick'
+  handler_settings:
+    target_bundles:
+      map_office_details: map_office_details
+    sort:
+      field: _none
+    auto_create: 0
+    auto_create_bundle: ''
+field_type: bricks

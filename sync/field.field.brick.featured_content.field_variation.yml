@@ -1,0 +1,27 @@
+uuid: 079ef734-fd82-4715-aac1-6d6974de727c
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.featured_content
+    - field.storage.brick.field_variation
+  module:
+    - options
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: brick.featured_content.field_variation
+field_name: field_variation
+entity_type: brick
+bundle: featured_content
+label: Variation
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: fc-nobg
+default_value_callback: ''
+settings: {  }
+field_type: list_string

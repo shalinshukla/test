@@ -1,0 +1,66 @@
+uuid: cde04381-efdb-4edf-b57b-7a3ca4dbc74f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.twitter_posts.body
+    - field.field.node.twitter_posts.field_post_date
+    - field.field.node.twitter_posts.field_post_id
+    - field.field.node.twitter_posts.field_post_picture
+    - field.field.node.twitter_posts.field_post_url
+    - node.type.twitter_posts
+  module:
+    - datetime
+    - text
+    - user
+id: node.twitter_posts.default
+targetEntityType: node
+bundle: twitter_posts
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_post_date:
+    weight: 102
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_post_id:
+    weight: 103
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_post_picture:
+    weight: 104
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_post_url:
+    weight: 105
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

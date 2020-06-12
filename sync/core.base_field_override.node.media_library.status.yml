@@ -1,0 +1,27 @@
+uuid: 937463a6-bac0-4e0c-be09-3c55cd60dd05
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.media_library
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: node.media_library.status
+field_name: status
+entity_type: node
+bundle: media_library
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

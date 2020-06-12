@@ -1,0 +1,27 @@
+uuid: 21e0f392-cb54-4fd9-b94c-7d89e8532d7d
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.eventcontent
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: node.eventcontent.status
+field_name: status
+entity_type: node
+bundle: eventcontent
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,25 @@
+uuid: 9e119ad2-3ae8-4c54-9a08-f4445117bfb3
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.text
+    - field.storage.brick.field_tags
+  module:
+    - content_translation
+    - options
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.text.field_tags
+field_name: field_tags
+entity_type: brick
+bundle: text
+label: Tags
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,9 @@
+uuid: 848bdd10-2789-4849-8e9b-1dd6ff81eb5f
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.brick
+name: 'Table Module'
+type: table_module
+description: 'To create the table module'

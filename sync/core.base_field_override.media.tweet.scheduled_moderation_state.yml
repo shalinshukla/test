@@ -1,0 +1,18 @@
+uuid: 74dc921f-a9dd-447f-b454-408342152216
+langcode: fr
+status: true
+dependencies:
+  config:
+    - media.type.tweet
+id: media.tweet.scheduled_moderation_state
+field_name: scheduled_moderation_state
+entity_type: media
+bundle: tweet
+label: 'Scheduled moderation state'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

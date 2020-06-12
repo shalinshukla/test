@@ -1,0 +1,9 @@
+uuid: 8d59c657-c915-44ca-916d-e1d01c63075c
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.brick
+name: 'Sign Post - Social Post'
+type: sign_post_social_post
+description: 'Brick to display the social media post in signpost.'

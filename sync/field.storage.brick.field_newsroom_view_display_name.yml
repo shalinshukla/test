@@ -1,0 +1,21 @@
+uuid: 015d998b-dfa2-4d8c-b19b-283848fb3f75
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+id: brick.field_newsroom_view_display_name
+field_name: field_newsroom_view_display_name
+entity_type: brick
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

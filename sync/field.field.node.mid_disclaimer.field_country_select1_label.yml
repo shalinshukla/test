@@ -1,0 +1,31 @@
+uuid: 6fdbeaed-99ee-4a52-8f73-b707000fd516
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_country_select1_label
+    - node.type.mid_disclaimer
+  enforced:
+    module:
+      - mid_disclaimer
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+_core:
+  default_config_hash: Zie2B0TqCNy_HSHNReOEBGgsRCfzKY4gNj_QW1l5B6A
+id: node.mid_disclaimer.field_country_select1_label
+field_name: field_country_select1_label
+entity_type: node
+bundle: mid_disclaimer
+label: 'Origin country select label'
+description: 'Add label text for origin country select box.'
+required: true
+translatable: true
+default_value:
+  -
+    value: 'Please select your origin country'
+default_value_callback: ''
+settings: {  }
+field_type: string

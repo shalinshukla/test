@@ -1,0 +1,77 @@
+uuid: 03e6fbba-77ba-425a-a87e-d13260fe930d
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.slider
+    - field.field.brick.slider.field_carousel_control_options
+    - field.field.brick.slider.field_control_options
+    - field.field.brick.slider.field_slide_interval
+    - field.field.brick.slider.field_slider_html_tags
+    - field.field.brick.slider.field_slider_indicator_position
+    - field.field.brick.slider.field_slides
+  module:
+    - bricks_inline
+id: brick.slider.default
+targetEntityType: brick
+bundle: slider
+mode: default
+content:
+  field_carousel_control_options:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_slide_interval:
+    weight: 5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_slider_html_tags:
+    type: options_select
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_slider_indicator_position:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_slides:
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      form_mode: default
+      override_labels: false
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: false
+      collapsible: false
+      collapsed: false
+      allow_duplicate: false
+    third_party_settings: {  }
+    type: bricks_tree_inline
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_control_options: true
+  langcode: true

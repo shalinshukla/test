@@ -1,0 +1,20 @@
+uuid: 573ae925-3b9b-45ea-9cdc-582ed6605507
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+    - views
+id: brick.field_fin_cal_archive_view
+field_name: field_fin_cal_archive_view
+entity_type: brick
+type: entity_reference
+settings:
+  target_type: view
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

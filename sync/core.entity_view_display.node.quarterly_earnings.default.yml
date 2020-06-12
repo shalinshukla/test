@@ -1,0 +1,120 @@
+uuid: 9e77415d-1a08-4c0b-86bd-4f1529fb2129
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.quarterly_earnings.field_file_attachment
+    - field.field.node.quarterly_earnings.field_form_10_q_10_k_file
+    - field.field.node.quarterly_earnings.field_info_graphic_link
+    - field.field.node.quarterly_earnings.field_press_release_file
+    - field.field.node.quarterly_earnings.field_qpresentation_file
+    - field.field.node.quarterly_earnings.field_quarterly_result_date
+    - field.field.node.quarterly_earnings.field_result_year
+    - field.field.node.quarterly_earnings.field_webcast_file
+    - node.type.quarterly_earnings
+  module:
+    - datetime
+    - link
+    - user
+id: node.quarterly_earnings.default
+targetEntityType: node
+bundle: quarterly_earnings
+mode: default
+content:
+  field_file_attachment:
+    weight: 113
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_form_10_q_10_k_file:
+    weight: 108
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_info_graphic_link:
+    weight: 112
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_press_release_file:
+    weight: 110
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_qpresentation_file:
+    weight: 109
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_quarterly_result_date:
+    weight: 106
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_result_year:
+    weight: 107
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_webcast_file:
+    weight: 111
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

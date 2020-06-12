@@ -1,0 +1,25 @@
+uuid: 8548c799-39e7-45f9-bb8c-5448b17df86d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image_position
+    - node.type.history_timeline
+  module:
+    - content_translation
+    - options
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: node.history_timeline.field_image_position
+field_name: field_image_position
+entity_type: node
+bundle: history_timeline
+label: 'Image Position'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

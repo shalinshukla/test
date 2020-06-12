@@ -1,0 +1,29 @@
+uuid: 8299769a-8ef7-478f-bfc8-094f10cb23b7
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:cfbfacd3-89de-40ff-a735-bece416c9fe0'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - project_bootstrap
+third_party_settings:
+  block_class:
+    classes: ''
+id: careerssubtitle
+theme: project_bootstrap
+region: hiddne_region
+weight: 0
+provider: null
+plugin: 'block_content:cfbfacd3-89de-40ff-a735-bece416c9fe0'
+settings:
+  id: 'block_content:cfbfacd3-89de-40ff-a735-bece416c9fe0'
+  label: 'Careers subtitle'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

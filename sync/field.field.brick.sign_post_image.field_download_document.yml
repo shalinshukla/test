@@ -1,0 +1,25 @@
+uuid: dcba981e-0803-4f9c-a7d1-2bf0e9385e55
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.sign_post_image
+    - field.storage.brick.field_download_document
+  module:
+    - content_translation
+    - options
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.sign_post_image.field_download_document
+field_name: field_download_document
+entity_type: brick
+bundle: sign_post_image
+label: 'Download document'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

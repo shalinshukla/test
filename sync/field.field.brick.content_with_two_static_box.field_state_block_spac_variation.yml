@@ -1,0 +1,25 @@
+uuid: 90daddf4-36e6-44b1-9fef-c0c1819ece29
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.content_with_two_static_box
+    - field.storage.brick.field_state_block_spac_variation
+  module:
+    - options
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: brick.content_with_two_static_box.field_state_block_spac_variation
+field_name: field_state_block_spac_variation
+entity_type: brick
+bundle: content_with_two_static_box
+label: 'Static block spacing variation'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

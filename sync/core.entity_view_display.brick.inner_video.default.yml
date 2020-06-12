@@ -1,0 +1,59 @@
+uuid: ebcbf65b-0517-435d-b5e3-9559bce1c8f3
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.inner_video
+    - field.field.brick.inner_video.field_inner_video_id
+    - field.field.brick.inner_video.field_vg_video_source
+    - field.field.brick.inner_video.field_video_poster_image
+    - field.field.brick.inner_video.field_vshort_description
+  module:
+    - image
+    - options
+id: brick.inner_video.default
+targetEntityType: brick
+bundle: inner_video
+mode: default
+content:
+  field_inner_video_id:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_vg_video_source:
+    weight: 3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_video_poster_image:
+    weight: 4
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_vshort_description:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  title:
+    label: hidden
+    type: string
+    weight: 1
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  langcode: true

@@ -1,0 +1,31 @@
+uuid: dedb22a7-9549-4c01-8bb2-f5a42df8311b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.media_category.field_display_tab_label
+    - taxonomy.vocabulary.media_category
+  module:
+    - text
+id: taxonomy_term.media_category.default
+targetEntityType: taxonomy_term
+bundle: media_category
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_display_tab_label:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  langcode: true

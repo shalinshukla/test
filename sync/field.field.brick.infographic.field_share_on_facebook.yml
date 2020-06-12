@@ -1,0 +1,26 @@
+uuid: ddd9e416-7420-462a-a300-b801023a476a
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.infographic
+    - field.storage.brick.field_share_on_facebook
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.infographic.field_share_on_facebook
+field_name: field_share_on_facebook
+entity_type: brick
+bundle: infographic
+label: 'Share on facebook'
+description: 'Please enter facebook social Sharing URL'
+required: false
+translatable: true
+default_value:
+  -
+    value: 'http://www.facebook.com/sharer.php'
+default_value_callback: ''
+settings: {  }
+field_type: string

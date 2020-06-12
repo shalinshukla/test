@@ -1,0 +1,19 @@
+uuid: a33a6748-fefe-467c-9922-60ebfaab9b32
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+    - text
+id: brick.field_fwq_quote_formatted
+field_name: field_fwq_quote_formatted
+entity_type: brick
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

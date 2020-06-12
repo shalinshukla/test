@@ -1,0 +1,24 @@
+uuid: 0187c016-f1ae-4e91-a98c-d1f97da61598
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_meta_description
+    - node.type.bricky
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: node.bricky.field_meta_description
+field_name: field_meta_description
+entity_type: node
+bundle: bricky
+label: 'Meta description'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

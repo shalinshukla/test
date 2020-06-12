@@ -1,0 +1,24 @@
+uuid: a315ac8e-b03e-4df8-94c9-09cc82423b90
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_position
+    - node.type.bod_people
+  module:
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.bod_people.field_position
+field_name: field_position
+entity_type: node
+bundle: bod_people
+label: Position
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

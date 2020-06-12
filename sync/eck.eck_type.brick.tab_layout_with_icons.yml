@@ -1,0 +1,9 @@
+uuid: 098dee81-8254-4c58-a2f1-af41a7481b54
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.brick
+name: 'Tab layout with icons'
+type: tab_layout_with_icons
+description: 'User can add tab structure with icons above the tab title.'

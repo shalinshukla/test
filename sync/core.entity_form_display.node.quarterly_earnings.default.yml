@@ -1,0 +1,240 @@
+uuid: 9380d39c-2e06-4113-946b-19a6e97d05c9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.quarterly_earnings.field_file_attachment
+    - field.field.node.quarterly_earnings.field_form_10_q_10_k_file
+    - field.field.node.quarterly_earnings.field_info_graphic_link
+    - field.field.node.quarterly_earnings.field_press_release_file
+    - field.field.node.quarterly_earnings.field_qpresentation_file
+    - field.field.node.quarterly_earnings.field_quarterly_result_date
+    - field.field.node.quarterly_earnings.field_result_year
+    - field.field.node.quarterly_earnings.field_webcast_file
+    - node.type.quarterly_earnings
+  module:
+    - content_moderation
+    - datetime
+    - link_ex
+    - path
+    - scheduler
+id: node.quarterly_earnings.default
+targetEntityType: node
+bundle: quarterly_earnings
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_file_attachment:
+    weight: 14
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+      enabled_attributes:
+        name: name
+        title: title
+        target: target
+        class: class
+        imce: imce
+        id: 0
+        rel: 0
+        accesskey: 0
+        download: 0
+        imce_private: 0
+    third_party_settings: {  }
+    type: link_ex
+    region: content
+  field_form_10_q_10_k_file:
+    weight: 15
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+      enabled_attributes:
+        name: name
+        title: title
+        target: target
+        imce: imce
+        id: 0
+        rel: 0
+        class: 0
+        accesskey: 0
+        download: 0
+        imce_private: 0
+    third_party_settings: {  }
+    type: link_ex
+    region: content
+  field_info_graphic_link:
+    weight: 19
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+      enabled_attributes:
+        name: name
+        title: title
+        target: target
+        imce: imce
+        id: 0
+        rel: 0
+        class: 0
+        accesskey: 0
+        download: 0
+        imce_private: 0
+    third_party_settings: {  }
+    type: link_ex
+    region: content
+  field_press_release_file:
+    weight: 17
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+      enabled_attributes:
+        name: name
+        title: title
+        target: target
+        imce: imce
+        id: 0
+        rel: 0
+        class: 0
+        accesskey: 0
+        download: 0
+        imce_private: 0
+    third_party_settings: {  }
+    type: link_ex
+    region: content
+  field_qpresentation_file:
+    weight: 16
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+      enabled_attributes:
+        name: name
+        title: title
+        target: target
+        imce: imce
+        id: 0
+        rel: 0
+        class: 0
+        accesskey: 0
+        download: 0
+        imce_private: 0
+    third_party_settings: {  }
+    type: link_ex
+    region: content
+  field_quarterly_result_date:
+    weight: 12
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_result_year:
+    weight: 13
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_webcast_file:
+    weight: 18
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+      enabled_attributes:
+        name: name
+        title: title
+        target: target
+        imce: imce
+        id: 0
+        rel: 0
+        class: 0
+        accesskey: 0
+        download: 0
+        imce_private: 0
+    third_party_settings: {  }
+    type: link_ex
+    region: content
+  id_class:
+    type: string_textfield
+    weight: 9
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 1
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  moderation_state:
+    type: moderation_state_default
+    weight: 10
+    settings: {  }
+    region: content
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 4
+    region: content
+    third_party_settings: {  }
+  publish_on:
+    type: datetime_timestamp_no_default
+    weight: 8
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 11
+    region: content
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 5
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 2
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    region: content
+    third_party_settings: {  }
+  unpublish_on:
+    type: datetime_timestamp_no_default
+    weight: 7
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

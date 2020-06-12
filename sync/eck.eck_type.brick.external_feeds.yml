@@ -1,0 +1,9 @@
+uuid: 051335bc-47b5-4756-a8a8-70a148ae0df1
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.brick
+name: 'External feeds'
+type: external_feeds
+description: 'This is used to add block reference for external feeds component.'

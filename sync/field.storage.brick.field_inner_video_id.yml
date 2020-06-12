@@ -1,0 +1,21 @@
+uuid: 0a655bc7-c87a-4a3a-ac1c-d48837f43065
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+id: brick.field_inner_video_id
+field_name: field_inner_video_id
+entity_type: brick
+type: string
+settings:
+  max_length: 50
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

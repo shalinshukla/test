@@ -1,0 +1,173 @@
+uuid: 04d661c0-ff20-4f92-a25b-a532ea5010d5
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.sign_post_social_post
+    - field.field.brick.sign_post_social_post.field_account_name_configured
+    - field.field.brick.sign_post_social_post.field_channel
+    - field.field.brick.sign_post_social_post.field_date_format
+    - field.field.brick.sign_post_social_post.field_display_comment_count
+    - field.field.brick.sign_post_social_post.field_display_like_count
+    - field.field.brick.sign_post_social_post.field_display_number_of_tags
+    - field.field.brick.sign_post_social_post.field_display_post_image
+    - field.field.brick.sign_post_social_post.field_display_tags
+    - field.field.brick.sign_post_social_post.field_display_user_views_count
+    - field.field.brick.sign_post_social_post.field_number_of_posts
+    - field.field.brick.sign_post_social_post.field_post_ids
+    - field.field.brick.sign_post_social_post.field_post_text_length
+    - field.field.brick.sign_post_social_post.field_sppost_display_title
+    - field.field.brick.sign_post_social_post.field_time_day_elapsed
+    - field.field.brick.sign_post_social_post.field_trim_post_fix_append
+  module:
+    - options
+id: brick.sign_post_social_post.default
+targetEntityType: brick
+bundle: sign_post_social_post
+mode: default
+content:
+  field_account_name_configured:
+    weight: -4
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_channel:
+    weight: -3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_date_format:
+    weight: -2
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_display_comment_count:
+    weight: -1
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_display_like_count:
+    weight: 0
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_display_number_of_tags:
+    weight: 1
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_display_post_image:
+    weight: 2
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_display_tags:
+    weight: 3
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_display_user_views_count:
+    weight: 4
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_number_of_posts:
+    weight: 5
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_post_ids:
+    weight: 6
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_post_text_length:
+    weight: 7
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_sppost_display_title:
+    weight: 9
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_time_day_elapsed:
+    weight: 8
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_trim_post_fix_append:
+    weight: 10
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  title:
+    label: hidden
+    type: string
+    weight: -5
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  langcode: true

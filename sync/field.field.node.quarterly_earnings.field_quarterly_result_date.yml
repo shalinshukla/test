@@ -1,0 +1,25 @@
+uuid: 4570bacc-bf51-45ec-a029-43fc979b9f1e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_quarterly_result_date
+    - node.type.quarterly_earnings
+  module:
+    - datetime
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.quarterly_earnings.field_quarterly_result_date
+field_name: field_quarterly_result_date
+entity_type: node
+bundle: quarterly_earnings
+label: 'Quarterly Result Date'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

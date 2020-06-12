@@ -1,0 +1,41 @@
+uuid: dcc2c3b6-cff3-4865-9129-92a4e1f3b279
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.slide
+    - eck.eck_type.brick.slider
+    - field.storage.brick.field_slides
+  module:
+    - brick_modal
+    - bricks
+    - content_translation
+    - tmgmt_content
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+  tmgmt_content:
+    excluded: false
+  brick_modal:
+    delete_referenced_entities: 1
+id: brick.slider.field_slides
+field_name: field_slides
+entity_type: brick
+bundle: slider
+label: Slides
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:brick'
+  handler_settings:
+    target_bundles:
+      slide: slide
+      slider: slider
+    sort:
+      field: _none
+    auto_create: 0
+    auto_create_bundle: slide
+field_type: bricks

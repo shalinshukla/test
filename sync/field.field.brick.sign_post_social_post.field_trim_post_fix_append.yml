@@ -1,0 +1,28 @@
+uuid: 86c38ea9-90cd-4e9b-8c7f-e4daac793434
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.sign_post_social_post
+    - field.storage.brick.field_trim_post_fix_append
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.sign_post_social_post.field_trim_post_fix_append
+field_name: field_trim_post_fix_append
+entity_type: brick
+bundle: sign_post_social_post
+label: 'Trim post fix append'
+description: 'Check this if you want to show the "..."  at end of the trimmed text. This will be used only if value added in "Post Text Length"'
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

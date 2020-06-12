@@ -1,0 +1,9 @@
+uuid: 53f0332a-2a04-4890-9902-200233970ca9
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.brick
+name: 'Call to Action'
+type: call_to_action
+description: 'Newsletter subscriber action bar'

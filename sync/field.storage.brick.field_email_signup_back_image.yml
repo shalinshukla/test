@@ -1,0 +1,30 @@
+uuid: 9f90a552-455d-4cba-a58d-0d5211b30d2b
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+    - file
+    - image
+id: brick.field_email_signup_back_image
+field_name: field_email_signup_back_image
+entity_type: brick
+type: image
+settings:
+  uri_scheme: public
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  target_type: file
+  display_field: false
+  display_default: false
+module: image
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

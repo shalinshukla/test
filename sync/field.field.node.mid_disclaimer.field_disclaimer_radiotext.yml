@@ -1,0 +1,30 @@
+uuid: 604afc37-a40e-4f70-a854-64856d826ead
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_disclaimer_radiotext
+    - node.type.mid_disclaimer
+  enforced:
+    module:
+      - mid_disclaimer
+  module:
+    - content_translation
+    - text
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+_core:
+  default_config_hash: EU0hlqSlXtOsVqOmy0KIcaZn2uQpiZp3HaUr6hVx1hM
+id: node.mid_disclaimer.field_disclaimer_radiotext
+field_name: field_disclaimer_radiotext
+entity_type: node
+bundle: mid_disclaimer
+label: 'Disclaimer radiotext'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

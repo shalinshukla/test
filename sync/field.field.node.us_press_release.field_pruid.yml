@@ -1,0 +1,21 @@
+uuid: 68caf74a-d6a8-4107-9ec2-2b0f98e9b9ef
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pruid
+    - node.type.us_press_release
+_core:
+  default_config_hash: z_M2zpHNe5iivQcGGmpu_s6w5wzAXvTJHQtpxhE8x5k
+id: node.us_press_release.field_pruid
+field_name: field_pruid
+entity_type: node
+bundle: us_press_release
+label: PRUID
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

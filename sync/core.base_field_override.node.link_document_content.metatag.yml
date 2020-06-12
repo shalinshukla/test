@@ -1,0 +1,23 @@
+uuid: b2f9d914-8ed0-480e-bdc8-4ad6b779a958
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.link_document_content
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: node.link_document_content.metatag
+field_name: metatag
+entity_type: node
+bundle: link_document_content
+label: Metatags
+description: 'The metatags for the entity.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

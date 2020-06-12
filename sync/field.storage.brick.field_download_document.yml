@@ -1,0 +1,24 @@
+uuid: 4c832fb4-d63f-4ec0-9995-a568456d0cc5
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+    - options
+id: brick.field_download_document
+field_name: field_download_document
+entity_type: brick
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: download-document
+      label: 'Display Download Icon'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

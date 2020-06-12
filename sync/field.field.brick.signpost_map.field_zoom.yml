@@ -1,0 +1,28 @@
+uuid: a66f95ba-c69b-4f83-859b-920f7ebf6b49
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.signpost_map
+    - field.storage.brick.field_zoom
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.signpost_map.field_zoom
+field_name: field_zoom
+entity_type: brick
+bundle: signpost_map
+label: Zoom
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

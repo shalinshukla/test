@@ -1,0 +1,41 @@
+uuid: 6966fef5-e15f-46ba-bb0c-0476523df203
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.table_columns
+    - field.field.brick.table_columns.field_content_icon
+    - field.field.brick.table_columns.field_content_title
+  module:
+    - options
+id: brick.table_columns.default
+targetEntityType: brick
+bundle: table_columns
+mode: default
+content:
+  field_content_icon:
+    weight: -3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_content_title:
+    weight: -4
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  title:
+    label: hidden
+    type: string
+    weight: -5
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  search_api_excerpt: true

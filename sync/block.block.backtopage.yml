@@ -1,0 +1,43 @@
+uuid: 64b83039-61ec-48c5-bf19-748552ca2893
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:2b5fd2e2-214e-47f6-82be-5a6db05f1134'
+  module:
+    - block_class
+    - block_content
+    - node
+    - system
+  theme:
+    - project_bootstrap
+third_party_settings:
+  block_class:
+    classes: ''
+id: backtopage
+theme: project_bootstrap
+region: content
+weight: -29
+provider: null
+plugin: 'block_content:2b5fd2e2-214e-47f6-82be-5a6db05f1134'
+settings:
+  id: 'block_content:2b5fd2e2-214e-47f6-82be-5a6db05f1134'
+  label: 'Back To Page'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      us_press_release: us_press_release
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+  request_path:
+    id: request_path
+    pages: '/newsroom/press-releases/*'
+    negate: true
+    context_mapping: {  }

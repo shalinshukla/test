@@ -1,0 +1,27 @@
+uuid: ac67e21f-ddc4-455e-9365-4db7416177d7
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.link_document_content
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: node.link_document_content.status
+field_name: status
+entity_type: node
+bundle: link_document_content
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

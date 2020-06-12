@@ -1,0 +1,92 @@
+uuid: 31736fcb-c351-4530-a5b1-85822d2bc827
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.location_list
+    - field.storage.brick.field_location_view
+  module:
+    - content_translation
+    - viewsreference
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+_core:
+  default_config_hash: AXxH-WGGh2YfK6lKJ831yeMWsPkJW9gAVso11znBFak
+id: brick.location_list.field_location_view
+field_name: field_location_view
+entity_type: brick
+bundle: location_list
+label: View
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    options:
+      title: 0
+      argument: ''
+    display_id: list
+    argument: null
+    title: 0
+    data: null
+    target_uuid: ab672502-c302-4fff-be71-b66a805fddd8
+default_value_callback: ''
+settings:
+  handler: 'default:view'
+  handler_settings:
+    target_bundles: null
+    auto_create: 0
+  plugin_types:
+    block: block
+    default: 0
+    page: 0
+    feed: 0
+    entity_browser: 0
+  preselect_views:
+    location_list: location_list
+    banner_header: 0
+    block_content: 0
+    comment: 0
+    comments_recent: 0
+    contact_messages: 0
+    content: 0
+    content_recent: 0
+    event_list: 0
+    featured_news: 0
+    files: 0
+    financial_calendar_archive: 0
+    financial_calendar_current: 0
+    frontpage: 0
+    history: 0
+    latest_event: 0
+    media: 0
+    media_disclaimer_example_view: 0
+    media_gallery: 0
+    media_library: 0
+    media_library_video: 0
+    moderated_content: 0
+    newsfw: 0
+    newsroom: 0
+    news_list: 0
+    news_room_text_only_t2: 0
+    people: 0
+    presentations: 0
+    presentation_year_term_view: 0
+    results: 0
+    results_year_term_view: 0
+    scheduler_scheduled_content: 0
+    share_content: 0
+    taxonomy_term: 0
+    top_news: 0
+    user_admin_people: 0
+    watchdog: 0
+    who_s_new: 0
+    who_s_online: 0
+  enabled_settings:
+    argument: argument
+    offset: 0
+    limit: 0
+    pager: 0
+    title: title
+field_type: viewsreference

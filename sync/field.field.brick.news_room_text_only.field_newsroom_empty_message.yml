@@ -1,0 +1,26 @@
+uuid: f65cc37c-f2de-4e8e-906c-7751c46e1433
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.news_room_text_only
+    - field.storage.brick.field_newsroom_empty_message
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.news_room_text_only.field_newsroom_empty_message
+field_name: field_newsroom_empty_message
+entity_type: brick
+bundle: news_room_text_only
+label: 'Newsroom Empty message'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 'No news available in this category'
+default_value_callback: ''
+settings: {  }
+field_type: string

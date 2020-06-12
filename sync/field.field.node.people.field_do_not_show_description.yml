@@ -1,0 +1,28 @@
+uuid: 1b9f69dd-e34c-4a95-8cd8-e31e38de1f35
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_do_not_show_description
+    - node.type.people
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: node.people.field_do_not_show_description
+field_name: field_do_not_show_description
+entity_type: node
+bundle: people
+label: 'Don''t show description'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

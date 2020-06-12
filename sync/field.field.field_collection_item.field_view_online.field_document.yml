@@ -1,0 +1,27 @@
+uuid: ba0c1558-f8a1-4673-ae65-ded1a356cda8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.field_collection_item.field_document
+    - field_collection.field_collection.field_view_online
+  module:
+    - file
+id: field_collection_item.field_view_online.field_document
+field_name: field_document
+entity_type: field_collection_item
+bundle: field_view_online
+label: Document
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: view_online_document
+  file_extensions: 'pdf txt docx doc ppt pptx xls xlsx'
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

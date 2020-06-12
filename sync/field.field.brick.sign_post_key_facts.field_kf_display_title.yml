@@ -1,0 +1,24 @@
+uuid: d6b5b6d2-dd10-47b7-87b9-e051b94c3f0c
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.sign_post_key_facts
+    - field.storage.brick.field_kf_display_title
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.sign_post_key_facts.field_kf_display_title
+field_name: field_kf_display_title
+entity_type: brick
+bundle: sign_post_key_facts
+label: 'Display title'
+description: 'Title that would be displayed on site when component is rendered'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

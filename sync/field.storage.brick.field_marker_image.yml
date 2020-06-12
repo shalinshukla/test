@@ -1,0 +1,30 @@
+uuid: 41d03466-5401-4600-85da-1127d72ee56f
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+    - file
+    - image
+id: brick.field_marker_image
+field_name: field_marker_image
+entity_type: brick
+type: image
+settings:
+  uri_scheme: public
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  target_type: file
+  display_field: false
+  display_default: false
+module: image
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

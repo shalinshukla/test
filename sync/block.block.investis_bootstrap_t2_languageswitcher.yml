@@ -1,0 +1,20 @@
+uuid: 3125f458-d9b0-4f38-83a8-44e0c575f079
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+  theme:
+    - investis_bootstrap_t2
+id: investis_bootstrap_t2_languageswitcher
+theme: investis_bootstrap_t2
+region: navigation
+weight: -10
+provider: null
+plugin: 'language_block:language_interface'
+settings:
+  id: 'language_block:language_interface'
+  label: 'Language switcher'
+  provider: language
+  label_display: '0'
+visibility: {  }

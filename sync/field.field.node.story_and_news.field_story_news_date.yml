@@ -1,0 +1,31 @@
+uuid: 635f0de1-aa9f-4ad7-9507-d147208d59f4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_story_news_date
+    - node.type.story_and_news
+  module:
+    - datetime
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.story_and_news.field_story_news_date
+field_name: field_story_news_date
+entity_type: node
+bundle: story_and_news
+label: 'Story/News Date'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+    field_defaults:
+      update_defaults: 1
+      no_overwrite: 1
+default_value_callback: ''
+settings: {  }
+field_type: datetime

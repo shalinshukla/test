@@ -1,0 +1,27 @@
+uuid: 72adf98f-b358-4cd1-ac79-8b4fbef26ccc
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+    - options
+id: brick.field_background_color
+field_name: field_background_color
+entity_type: brick
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: lc-blue-bg
+      label: 'Blue Background'
+    -
+      value: lc-gray-bg
+      label: 'Gray Background'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

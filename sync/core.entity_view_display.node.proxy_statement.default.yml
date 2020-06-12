@@ -1,0 +1,51 @@
+uuid: 0ed791ab-cf75-41b4-8303-3b087ab37565
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.proxy_statement.field_proxy_statement
+    - field.field.node.proxy_statement.field_proxy_statement_date
+    - field.field.node.proxy_statement.field_proxy_statement_year
+    - node.type.proxy_statement
+  module:
+    - datetime
+    - file
+    - user
+id: node.proxy_statement.default
+targetEntityType: node
+bundle: proxy_statement
+mode: default
+content:
+  field_proxy_statement:
+    weight: 102
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  field_proxy_statement_date:
+    weight: 104
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_proxy_statement_year:
+    weight: 103
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

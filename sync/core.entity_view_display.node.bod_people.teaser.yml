@@ -1,0 +1,32 @@
+uuid: c8f5a8b4-b8dc-43eb-84cf-baae27e1b73a
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.bod_people.body
+    - node.type.bod_people
+  module:
+    - text
+    - user
+id: node.bod_people.teaser
+targetEntityType: node
+bundle: bod_people
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

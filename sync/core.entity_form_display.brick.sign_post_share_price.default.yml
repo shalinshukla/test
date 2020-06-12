@@ -1,0 +1,61 @@
+uuid: c50007ab-6afd-463d-9142-f85b814938d6
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.sign_post_share_price
+    - field.field.brick.sign_post_share_price.field_sign_post_iframe_url
+    - field.field.brick.sign_post_share_price.field_sp_additional_parameter
+    - field.field.brick.sign_post_share_price.field_sp_shrprice_title
+  module:
+    - link
+id: brick.sign_post_share_price.default
+targetEntityType: brick
+bundle: sign_post_share_price
+mode: default
+content:
+  field_sign_post_iframe_url:
+    weight: 2
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_sp_additional_parameter:
+    weight: 5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_sp_shrprice_title:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  langcode:
+    type: language_select
+    weight: 3
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

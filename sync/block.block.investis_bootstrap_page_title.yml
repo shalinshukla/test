@@ -1,0 +1,20 @@
+uuid: 03b65661-7088-44f3-b46e-d75ae6d66093
+langcode: en
+status: true
+dependencies:
+  theme:
+    - investis_bootstrap
+_core:
+  default_config_hash: 1TQP4b3ZnlzvIH9bj6cpCz_SyUHdJjLQkZnHpikjjhw
+id: investis_bootstrap_page_title
+theme: investis_bootstrap
+region: header
+weight: 0
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,21 @@
+uuid: 4aedf465-a2e2-451b-9204-613c77d8e5ac
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_prclientname
+    - node.type.us_press_release
+_core:
+  default_config_hash: oaEykNz90AWf3Q_Oi5vzKF5adkmPLTIg1lxLRULciRc
+id: node.us_press_release.field_prclientname
+field_name: field_prclientname
+entity_type: node
+bundle: us_press_release
+label: PRCLientName
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

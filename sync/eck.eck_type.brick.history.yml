@@ -1,0 +1,9 @@
+uuid: 0feafe19-ac9d-498b-9ea7-def244919fc5
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.brick
+name: History
+type: history
+description: ''

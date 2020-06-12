@@ -1,0 +1,65 @@
+uuid: 032fbced-392d-4cd4-826b-54cfaddae2cb
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.slide
+    - field.field.brick.slide.field_description
+    - field.field.brick.slide.field_link
+    - field.field.brick.slide.field_slide_image
+    - field.field.brick.slide.field_slider_html_tag
+    - image.style.medium
+  module:
+    - image
+    - link
+    - options
+id: brick.slide.default
+targetEntityType: brick
+bundle: slide
+mode: default
+content:
+  field_description:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_link:
+    weight: 3
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_slide_image:
+    weight: 1
+    label: hidden
+    settings:
+      image_style: medium
+      image_link: file
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_slider_html_tag:
+    weight: 4
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  title:
+    label: hidden
+    type: string
+    weight: 0
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  langcode: true

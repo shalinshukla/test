@@ -1,0 +1,24 @@
+uuid: 096c40de-4675-4590-94df-bd3145e16282
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.slide
+    - field.storage.brick.field_description
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.slide.field_description
+field_name: field_description
+entity_type: brick
+bundle: slide
+label: Description
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

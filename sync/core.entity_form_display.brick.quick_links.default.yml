@@ -1,0 +1,65 @@
+uuid: 77e348b8-1300-4956-a4a1-76706691fdba
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.quick_links
+    - field.field.brick.quick_links.field_link_variation
+    - field.field.brick.quick_links.field_quick_links
+    - field.field.brick.quick_links.field_quick_links_title
+  module:
+    - link_ex
+id: brick.quick_links.default
+targetEntityType: brick
+bundle: quick_links
+mode: default
+content:
+  field_link_variation:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_quick_links:
+    weight: 1
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+      enabled_attributes:
+        name: name
+        title: title
+        target: target
+        class: class
+        imce: imce
+        id: 0
+        rel: 0
+        accesskey: 0
+        download: 0
+        imce_private: 0
+    third_party_settings: {  }
+    type: link_ex
+    region: content
+  field_quick_links_title:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

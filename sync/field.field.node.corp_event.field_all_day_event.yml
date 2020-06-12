@@ -1,0 +1,25 @@
+uuid: 7e257c7a-e09e-4015-8e32-d93b3a5e090f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_all_day_event
+    - node.type.corp_event
+  module:
+    - options
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.corp_event.field_all_day_event
+field_name: field_all_day_event
+entity_type: node
+bundle: corp_event
+label: 'All day event'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,19 @@
+uuid: 41426709-f029-49e4-9020-2365a92b7bad
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.field_collection_item.field_dl_link_text
+    - field_collection.field_collection.field_download_content
+id: field_collection_item.field_download_content.field_dl_link_text
+field_name: field_dl_link_text
+entity_type: field_collection_item
+bundle: field_download_content
+label: 'Link Text'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

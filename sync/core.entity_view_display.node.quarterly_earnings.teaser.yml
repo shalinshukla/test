@@ -1,0 +1,26 @@
+uuid: ff50bd05-fbf4-46f7-b9ad-f72f433a6474
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.quarterly_earnings.field_quarterly_result_date
+    - field.field.node.quarterly_earnings.field_result_year
+    - node.type.quarterly_earnings
+  module:
+    - user
+id: node.quarterly_earnings.teaser
+targetEntityType: node
+bundle: quarterly_earnings
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_quarterly_result_date: true
+  field_result_year: true
+  langcode: true
+  search_api_excerpt: true

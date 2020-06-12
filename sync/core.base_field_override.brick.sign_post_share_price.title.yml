@@ -1,0 +1,18 @@
+uuid: ac2cc18d-98d2-4f04-ad21-d8b813535590
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.sign_post_share_price
+id: brick.sign_post_share_price.title
+field_name: title
+entity_type: brick
+bundle: sign_post_share_price
+label: Title
+description: 'The title of the entity.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

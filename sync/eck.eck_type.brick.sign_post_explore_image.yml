@@ -1,0 +1,9 @@
+uuid: 3b655caa-e99f-4894-bb06-62124ebcf3d8
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.brick
+name: 'Sign Post - Explore Image'
+type: sign_post_explore_image
+description: 'Sign Post component to explore image furthur'

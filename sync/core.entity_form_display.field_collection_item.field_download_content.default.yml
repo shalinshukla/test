@@ -1,0 +1,60 @@
+uuid: d628f87a-dbc6-4913-922f-5b33d8e96885
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.field_collection_item.field_download_content.field_dl_document
+    - field.field.field_collection_item.field_download_content.field_dl_external_link
+    - field.field.field_collection_item.field_download_content.field_dl_internal_link
+    - field.field.field_collection_item.field_download_content.field_dl_link_text
+    - field_collection.field_collection.field_download_content
+  module:
+    - file
+    - imce
+    - link
+id: field_collection_item.field_download_content.default
+targetEntityType: field_collection_item
+bundle: field_download_content
+mode: default
+content:
+  field_dl_document:
+    weight: 3
+    settings:
+      progress_indicator: throbber
+    third_party_settings:
+      imce:
+        enabled: true
+    type: file_generic
+    region: content
+  field_dl_external_link:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_dl_internal_link:
+    weight: 1
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_dl_link_text:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  scheduled_publication:
+    type: datetime_default
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  moderation_state: true

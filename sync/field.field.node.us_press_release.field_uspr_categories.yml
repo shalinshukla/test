@@ -1,0 +1,29 @@
+uuid: cc70b327-5e4f-4f2e-b4c8-a56e80459f9d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_uspr_categories
+    - node.type.us_press_release
+    - taxonomy.vocabulary.uspr
+_core:
+  default_config_hash: fQzzEKbbha-YwSmUMBuaijoyHyceHdy9rPB5rxBT9Ak
+id: node.us_press_release.field_uspr_categories
+field_name: field_uspr_categories
+entity_type: node
+bundle: us_press_release
+label: 'Uspr Categories'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      uspr: uspr
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

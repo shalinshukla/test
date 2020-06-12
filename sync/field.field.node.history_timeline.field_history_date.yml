@@ -1,0 +1,28 @@
+uuid: 0d53bd4b-3a8c-4060-81b3-092f23b0b009
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_history_date
+    - node.type.history_timeline
+  module:
+    - content_translation
+    - datetime
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: node.history_timeline.field_history_date
+field_name: field_history_date
+entity_type: node
+bundle: history_timeline
+label: 'History Date'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

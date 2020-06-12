@@ -1,0 +1,25 @@
+uuid: c05c537d-119d-4943-85cf-51c125b72ff6
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.share_content
+  module:
+    - views
+  theme:
+    - investis_bootstrap_t2
+id: investis_bootstrap_t2_views_block__share_content_block_1
+theme: investis_bootstrap_t2
+region: navigation
+weight: -8
+provider: null
+plugin: 'views_block:share_content-block_1'
+settings:
+  id: 'views_block:share_content-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility: {  }

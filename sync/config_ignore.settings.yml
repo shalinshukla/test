@@ -1,0 +1,13 @@
+ignored_config_entities:
+  0: id_social_media_feeds.extraconfig.settings
+  2: id_social_media_feeds.feeddatastorageconfig.settings
+  4: id_social_media_feeds.socialmediafeedconfig.settings
+  6: id_social_media_feeds.socialmediafeedsapiconfig.settings
+  8: mid_common.gtm_settings
+  10: mid_common.gmap_settings
+  12: mid_disclaimer.settings
+  14: myinvestis.settings
+  16: geolocation.settings
+  18: id_tab_config.settings
+_core:
+  default_config_hash: UVH1aJ4b44UM-VdPVN7hNNuuVqfReJxwfVeDQH1Hvsk

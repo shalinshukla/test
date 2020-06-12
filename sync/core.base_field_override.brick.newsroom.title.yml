@@ -1,0 +1,18 @@
+uuid: ee1c0d3f-f4aa-4231-b5cb-eeaf77f74020
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.newsroom
+id: brick.newsroom.title
+field_name: title
+entity_type: brick
+bundle: newsroom
+label: Title
+description: 'The title of the entity.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

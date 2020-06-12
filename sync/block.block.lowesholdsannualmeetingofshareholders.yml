@@ -1,0 +1,29 @@
+uuid: c9092069-944c-471a-965d-3af2cb62cf92
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:header_mega_menu_contents:9ae90e23-b166-4e22-bb73-428bcf376bea'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - project_bootstrap
+third_party_settings:
+  block_class:
+    classes: ''
+id: lowesholdsannualmeetingofshareholders
+theme: project_bootstrap
+region: hiddne_region
+weight: 0
+provider: null
+plugin: 'block_content:9ae90e23-b166-4e22-bb73-428bcf376bea'
+settings:
+  id: 'block_content:9ae90e23-b166-4e22-bb73-428bcf376bea'
+  label: 'Our Responsibilities -- header block'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

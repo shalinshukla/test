@@ -1,0 +1,18 @@
+uuid: 29cb3116-9a85-4cfd-b82e-29b0ee70d888
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.document
+id: media.document.scheduled_transition_state
+field_name: scheduled_transition_state
+entity_type: media
+bundle: document
+label: null
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

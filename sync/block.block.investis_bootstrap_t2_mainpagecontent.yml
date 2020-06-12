@@ -1,0 +1,20 @@
+uuid: 34aeb485-e545-4d25-8a92-ab87d641d045
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - investis_bootstrap_t2
+id: investis_bootstrap_t2_mainpagecontent
+theme: investis_bootstrap_t2
+region: content
+weight: -9
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

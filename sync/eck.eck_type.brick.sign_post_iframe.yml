@@ -1,0 +1,9 @@
+uuid: 718b5c1f-10e7-4d7e-9045-babb880f28dd
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.brick
+name: Iframe
+type: sign_post_iframe
+description: 'Component for Iframe based URL'

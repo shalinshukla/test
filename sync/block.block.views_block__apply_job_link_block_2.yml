@@ -1,0 +1,37 @@
+uuid: 2300b4f0-0206-438d-9cb3-ee73f7c3bc18
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.apply_job_link
+  module:
+    - block_class
+    - node
+    - views
+  theme:
+    - project_bootstrap
+third_party_settings:
+  block_class:
+    classes: ''
+id: views_block__apply_job_link_block_2
+theme: project_bootstrap
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'views_block:apply_job_link-block_2'
+settings:
+  id: 'views_block:apply_job_link-block_2'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      eventcontent: eventcontent
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

@@ -1,0 +1,24 @@
+uuid: 958f79f1-d70c-4338-a46e-24460f4e2fa4
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.map_office_details
+    - field.storage.brick.field_office_phone
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.map_office_details.field_office_phone
+field_name: field_office_phone
+entity_type: brick
+bundle: map_office_details
+label: Phone
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

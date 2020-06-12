@@ -1,0 +1,9 @@
+uuid: 2d7e4557-8c1c-4b62-80ca-dcd19b6886f2
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.brick
+name: 'Contact Information'
+type: contact_information
+description: 'View contact information of specific departments of company'

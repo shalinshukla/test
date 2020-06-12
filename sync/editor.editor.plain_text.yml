@@ -1,0 +1,28 @@
+uuid: 30c7a77b-2a62-43c4-b0b8-6247b522b6b7
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.plain_text
+  module:
+    - ckeditor
+format: plain_text
+editor: ckeditor
+settings:
+  toolbar:
+    rows: {  }
+  plugins:
+    language:
+      language_list: un
+    stylescombo:
+      styles: ''
+    linkit:
+      linkit_profile: ''
+image_upload:
+  status: false
+  scheme: public
+  directory: inline-images
+  max_size: ''
+  max_dimensions:
+    width: null
+    height: null

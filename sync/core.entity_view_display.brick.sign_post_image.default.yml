@@ -1,0 +1,106 @@
+uuid: a6202747-da9e-4b33-bdc8-ca2b907a690d
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.sign_post_image
+    - field.field.brick.sign_post_image.field_download_document
+    - field.field.brick.sign_post_image.field_sign_post_description
+    - field.field.brick.sign_post_image.field_sign_post_image
+    - field.field.brick.sign_post_image.field_sign_post_image_effect
+    - field.field.brick.sign_post_image.field_sign_post_image_over_link
+    - field.field.brick.sign_post_image.field_signpost_image_variation
+    - field.field.brick.sign_post_image.field_sp_image_title
+    - field.field.brick.sign_post_image.field_title_variation
+  module:
+    - link_ex
+    - options
+    - svg_image
+id: brick.sign_post_image.default
+targetEntityType: brick
+bundle: sign_post_image
+mode: default
+content:
+  field_download_document:
+    weight: 6
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_sign_post_description:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_sign_post_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_sign_post_image_effect:
+    weight: 4
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_sign_post_image_over_link:
+    weight: 3
+    label: hidden
+    settings:
+      trim_length: '80'
+      url_only: false
+      url_plain: false
+      rel: 0
+      target: 0
+    third_party_settings: {  }
+    type: link_ex
+    region: content
+  field_signpost_image_variation:
+    weight: 10
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_sp_image_title:
+    weight: 8
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_title_variation:
+    weight: 9
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  langcode:
+    type: language
+    weight: 5
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+      native_language: false
+    third_party_settings: {  }
+  title:
+    label: hidden
+    type: string
+    weight: 1
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  search_api_excerpt: true

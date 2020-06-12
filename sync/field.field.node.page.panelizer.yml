@@ -1,0 +1,27 @@
+uuid: ec6404df-4a53-4d4d-8002-d19da30f676e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.panelizer
+    - node.type.page
+  module:
+    - content_translation
+    - panelizer
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+_core:
+  default_config_hash: cKdPvtzkZya6i5DgLSYvOEsqBcX_l55hpV4k1o6i1Xs
+id: node.page.panelizer
+field_name: panelizer
+entity_type: node
+bundle: page
+label: Panelizer
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: panelizer

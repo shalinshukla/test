@@ -1,0 +1,27 @@
+uuid: 2528a029-ca45-4224-8bb4-5c468ce42de0
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.description_with_background
+    - field.storage.brick.field_link
+  module:
+    - link
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: brick.description_with_background.field_link
+field_name: field_link
+entity_type: brick
+bundle: description_with_background
+label: Link
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

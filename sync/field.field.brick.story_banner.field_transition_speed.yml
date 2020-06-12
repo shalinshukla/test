@@ -1,0 +1,30 @@
+uuid: a37ab2eb-7151-48fe-84ed-51346ef42837
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.story_banner
+    - field.storage.brick.field_transition_speed
+  module:
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: brick.story_banner.field_transition_speed
+field_name: field_transition_speed
+entity_type: brick
+bundle: story_banner
+label: 'Slide Transition Speed (in milliseconds)'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 650
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

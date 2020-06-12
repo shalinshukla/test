@@ -1,0 +1,35 @@
+uuid: 317ebe95-b82f-4b0a-be90-8bc5d71f8aef
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_twitter_link
+    - node.type.people
+  module:
+    - content_translation
+    - link
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: node.people.field_twitter_link
+field_name: field_twitter_link
+entity_type: node
+bundle: people
+label: 'Twitter link'
+description: 'Twitter account link of the person.'
+required: false
+translatable: true
+default_value:
+  -
+    attributes: {  }
+    uri: 'http://twitter.com/'
+    options:
+      attributes:
+        target: _blank
+        class: twitter-link
+    title: ''
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

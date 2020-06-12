@@ -1,0 +1,22 @@
+uuid: f10e2566-f8bd-4bab-bf37-40ade3069e3e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.field_collection_item.field_download_content
+    - field_collection.field_collection.field_presentation_content
+  module:
+    - field_collection
+id: field_collection_item.field_presentation_content.field_download_content
+field_name: field_download_content
+entity_type: field_collection_item
+bundle: field_presentation_content
+label: 'Download Content'
+description: ''
+required: false
+translatable: true
+default_value:
+  - {  }
+default_value_callback: ''
+settings: {  }
+field_type: field_collection

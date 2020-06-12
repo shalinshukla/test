@@ -1,0 +1,56 @@
+uuid: ff86772d-11b8-4b24-9b75-42e4b08430c2
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.icon_with_description
+    - field.field.brick.icon_with_description.field_image
+    - field.field.brick.icon_with_description.field_text
+    - image.style.thumbnail
+  module:
+    - image
+    - imce
+    - lightning_media
+    - text
+id: brick.icon_with_description.default
+targetEntityType: brick
+bundle: icon_with_description
+mode: default
+content:
+  field_image:
+    type: image_image
+    weight: 4
+    settings:
+      preview_image_style: thumbnail
+      progress_indicator: throbber
+    region: content
+    third_party_settings:
+      imce:
+        enabled: true
+      lightning_media:
+        file_links: true
+        remove_button: true
+  field_text:
+    weight: 3
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

@@ -1,0 +1,9 @@
+uuid: e7c2bf1f-eea9-4265-9788-6d20a80cfaf9
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.brick
+name: Slider
+type: slider
+description: 'Slider content'

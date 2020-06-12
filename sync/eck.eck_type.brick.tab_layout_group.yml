@@ -1,0 +1,9 @@
+uuid: e9fe397f-681c-4933-b86d-ab357e2f749a
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.brick
+name: 'Tab layout group'
+type: tab_layout_group
+description: ''

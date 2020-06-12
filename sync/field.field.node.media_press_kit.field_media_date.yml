@@ -1,0 +1,25 @@
+uuid: 4f720f2d-84ac-4a56-b7c5-99767c62eb87
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_media_date
+    - node.type.media_press_kit
+  module:
+    - datetime
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.media_press_kit.field_media_date
+field_name: field_media_date
+entity_type: node
+bundle: media_press_kit
+label: 'Media Date'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

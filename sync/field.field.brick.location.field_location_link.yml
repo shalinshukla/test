@@ -1,0 +1,29 @@
+uuid: 8b9e6457-9675-4a97-89fa-08dc043d8f2b
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.location
+    - field.storage.brick.field_location_link
+  module:
+    - content_translation
+    - link
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+_core:
+  default_config_hash: Jc8L94K3pHBM7GWHr6LqDSwxIYTyT3Z3ESM9X8bPdLQ
+id: brick.location.field_location_link
+field_name: field_location_link
+entity_type: brick
+bundle: location
+label: Link
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 0
+field_type: link

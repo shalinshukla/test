@@ -1,0 +1,26 @@
+uuid: 0eadafb8-9ab1-4a9b-b715-e38f15de6973
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.sign_post_email_signup
+    - field.storage.brick.field_sp_email_input_value
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.sign_post_email_signup.field_sp_email_input_value
+field_name: field_sp_email_input_value
+entity_type: brick
+bundle: sign_post_email_signup
+label: 'Input value'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 'Enter your email address'
+default_value_callback: ''
+settings: {  }
+field_type: string

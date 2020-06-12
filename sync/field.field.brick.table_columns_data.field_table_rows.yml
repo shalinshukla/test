@@ -1,0 +1,37 @@
+uuid: 05e84e4a-5447-4e0a-bdd7-3b64c5502750
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.table_columns
+    - eck.eck_type.brick.table_columns_data
+    - field.storage.brick.field_table_rows
+  module:
+    - brick_modal
+    - bricks
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+  brick_modal:
+    delete_referenced_entities: 0
+id: brick.table_columns_data.field_table_rows
+field_name: field_table_rows
+entity_type: brick
+bundle: table_columns_data
+label: 'Table Rows'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:brick'
+  handler_settings:
+    target_bundles:
+      table_columns: table_columns
+    sort:
+      field: _none
+    auto_create: 0
+    auto_create_bundle: ''
+field_type: bricks

@@ -1,0 +1,25 @@
+uuid: 1a54bd6e-f984-4b1a-92e0-1444876e29c9
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.media_library
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: node.media_library.uid
+field_name: uid
+entity_type: node
+bundle: media_library
+label: 'Authored by'
+description: 'The username of the content author.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: 'Drupal\node\Entity\Node::getCurrentUserId'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

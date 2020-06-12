@@ -1,0 +1,9 @@
+uuid: f06f99ac-0002-44b5-b353-3b0f108ab19f
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.brick
+name: 'Signpost Map'
+type: signpost_map
+description: 'showing map displaying locations '

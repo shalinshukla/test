@@ -1,0 +1,32 @@
+uuid: 8a6a8cef-5a06-4ac6-9ac8-50ef3253996a
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.brick.ief_preview
+    - eck.eck_type.brick.banner_slides
+    - field.field.brick.banner_slides.field_links
+    - field.field.brick.banner_slides.field_slbanner_description
+    - field.field.brick.banner_slides.field_slbanner_image
+    - image.style.thumbnail
+  module:
+    - image
+id: brick.banner_slides.ief_preview
+targetEntityType: brick
+bundle: banner_slides
+mode: ief_preview
+content:
+  field_slbanner_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: thumbnail
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  field_links: true
+  field_slbanner_description: true
+  langcode: true
+  title: true

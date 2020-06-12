@@ -1,0 +1,24 @@
+uuid: 172fcc3e-45d2-4752-9c0f-af54ffe27ac5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.field_collection_item.field_result_content_date
+    - field_collection.field_collection.field_result_content
+  module:
+    - datetime
+id: field_collection_item.field_result_content.field_result_content_date
+field_name: field_result_content_date
+entity_type: field_collection_item
+bundle: field_result_content
+label: 'Result Content Date'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

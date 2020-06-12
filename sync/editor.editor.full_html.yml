@@ -1,0 +1,69 @@
+uuid: c0474f10-eff2-4289-bbf1-62887d4320e1
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+  module:
+    - ckeditor
+format: full_html
+editor: ckeditor
+settings:
+  toolbar:
+    rows:
+      -
+        -
+          name: Formatting
+          items:
+            - Bold
+            - Underline
+            - Italic
+            - Format
+            - JustifyLeft
+            - JustifyRight
+            - JustifyCenter
+            - JustifyBlock
+            - Styles
+        -
+          name: Links
+          items:
+            - Link
+            - Unlink
+        -
+          name: Lists
+          items:
+            - BulletedList
+            - NumberedList
+        -
+          name: Media
+          items:
+            - ImceImage
+            - ImceLink
+        -
+          name: Table
+          items:
+            - Table
+        -
+          name: Tools
+          items:
+            - Source
+        -
+          name: 'Node Link'
+          items:
+            - Linkit
+            - DrupalUnlink
+  plugins:
+    language:
+      language_list: un
+    stylescombo:
+      styles: "table.basic-table|Table Basic\r\ntable.basic-table-zebra|Table Zebra\r\ntable.basic-table-row-highlight|Table Highlight\r\np.paragraph-thin | Small text\r\np.paragraph-bold | Big Text\r\np.paragraph-small-font |Small font\r\np.paragraph-big-font|Big font\r\na.button-blue|Blue button\r\na.button-white|White button\r\np.paragraph-medium|Medium font\r\np.left-img|Image Left\r\np.right-img|Image Right\r\np.center-img|Image Center"
+    linkit:
+      linkit_profile: full_html
+image_upload:
+  status: true
+  scheme: public
+  directory: inline-images
+  max_size: ''
+  max_dimensions:
+    width: null
+    height: null

@@ -1,0 +1,20 @@
+uuid: b2b8d4e5-b6b7-4bb0-b1a0-5073a526eeb2
+langcode: en
+status: true
+dependencies:
+  module:
+    - datetime
+    - eck
+id: brick.field_event_end_date
+field_name: field_event_end_date
+entity_type: brick
+type: datetime
+settings:
+  datetime_type: datetime
+module: datetime
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

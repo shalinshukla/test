@@ -1,0 +1,30 @@
+uuid: 7fb0b41b-c476-4112-9834-6aed9d5241d5
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+    - options
+id: brick.field_carousel_control_option
+field_name: field_carousel_control_option
+entity_type: brick
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: hidden
+      label: 'Disable Indicators'
+    -
+      value: pause-on-hover
+      label: 'Pause on HOVER'
+    -
+      value: enable-caption
+      label: 'Show Caption'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

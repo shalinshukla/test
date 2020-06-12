@@ -1,0 +1,22 @@
+uuid: 81cb50d8-80fc-4f07-88c5-63b21880cd8a
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - investis_admin
+_core:
+  default_config_hash: JCNhIgaIXHu0jMqQVWEKxoX296mZgPD6pVZCxhv6HpE
+id: investis_admin_breadcrumbs
+theme: investis_admin
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

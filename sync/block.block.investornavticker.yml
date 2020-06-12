@@ -1,0 +1,29 @@
+uuid: 53b23b41-d0a3-4e70-80dc-1963f79c5066
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:7cfdb213-3899-4ef8-a744-6f65e4be91a9'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - project_bootstrap
+third_party_settings:
+  block_class:
+    classes: ''
+id: investornavticker
+theme: project_bootstrap
+region: hiddne_region
+weight: 0
+provider: null
+plugin: 'block_content:7cfdb213-3899-4ef8-a744-6f65e4be91a9'
+settings:
+  id: 'block_content:7cfdb213-3899-4ef8-a744-6f65e4be91a9'
+  label: 'Investor nav ticker'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

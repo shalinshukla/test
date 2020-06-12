@@ -1,0 +1,9 @@
+uuid: 8efa92bf-8e65-4376-8915-2c45b0b9a446
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.brick
+name: Banner
+type: banner
+description: ''

@@ -1,0 +1,20 @@
+uuid: a88f0c5a-4211-45ed-be27-d47620d8bef6
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.media_category
+  module:
+    - path
+id: taxonomy_term.media_category.path
+field_name: path
+entity_type: taxonomy_term
+bundle: media_category
+label: 'URL alias'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

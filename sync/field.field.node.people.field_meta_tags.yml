@@ -1,0 +1,27 @@
+uuid: c1674b61-e7a8-4b1d-96f6-cc7715bc9083
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_meta_tags
+    - node.type.people
+  module:
+    - content_translation
+    - metatag
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: node.people.field_meta_tags
+field_name: field_meta_tags
+entity_type: node
+bundle: people
+label: 'Meta tags'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 'a:0:{}'
+default_value_callback: ''
+settings: {  }
+field_type: metatag

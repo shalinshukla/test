@@ -1,0 +1,33 @@
+uuid: f553b4b3-d9c9-49cd-8a53-9e73b95d6c25
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_one_time_disclaimer
+    - node.type.mid_disclaimer
+  enforced:
+    module:
+      - mid_disclaimer
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+_core:
+  default_config_hash: puVg9NEcivien3sY_lM5lQZeCLIOMhN0LcLY0DqdGZU
+id: node.mid_disclaimer.field_one_time_disclaimer
+field_name: field_one_time_disclaimer
+entity_type: node
+bundle: mid_disclaimer
+label: 'One time disclaimer'
+description: 'If checked the disclaimer will be asked only once.'
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'One time Disclaimer'
+  off_label: 'One time Disclaimer'
+field_type: boolean

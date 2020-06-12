@@ -1,0 +1,9 @@
+uuid: 838c1f39-f10d-4c6e-b811-53f9643fbd01
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.brick
+name: 'Contact Sign'
+type: contact_details_
+description: ''

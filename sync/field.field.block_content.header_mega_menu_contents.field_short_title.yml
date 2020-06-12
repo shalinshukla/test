@@ -1,0 +1,24 @@
+uuid: b5fd0d46-cb04-4220-96ad-128dc6f2510b
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.header_mega_menu_contents
+    - field.storage.block_content.field_short_title
+  module:
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: block_content.header_mega_menu_contents.field_short_title
+field_name: field_short_title
+entity_type: block_content
+bundle: header_mega_menu_contents
+label: 'Short Title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

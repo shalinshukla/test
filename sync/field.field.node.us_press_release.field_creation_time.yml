@@ -1,0 +1,23 @@
+uuid: 75a46f6d-7d33-4e85-b7c0-0b3cfed2122d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_creation_time
+    - node.type.us_press_release
+  module:
+    - datetime
+_core:
+  default_config_hash: AGBX80UMcMdXMjKcVjlxE9M1jxqBRqYFPqBXI_90NJ4
+id: node.us_press_release.field_creation_time
+field_name: field_creation_time
+entity_type: node
+bundle: us_press_release
+label: 'Creation Time'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

@@ -1,0 +1,22 @@
+uuid: d7aca513-f04e-451f-b5ed-742df81f5470
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - investis_bootstrap
+_core:
+  default_config_hash: 9RnnTUBcn0WRWXfrGOnId2H0Q31uQUeu_F5TnDxl2yg
+id: investis_bootstrap_messages
+theme: investis_bootstrap
+region: header
+weight: -7
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

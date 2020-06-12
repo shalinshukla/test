@@ -1,0 +1,18 @@
+uuid: 5b050621-2040-4852-b20a-840d440331f7
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.landing_page
+id: node.landing_page.scheduled_moderation_state
+field_name: scheduled_moderation_state
+entity_type: node
+bundle: landing_page
+label: 'Scheduled moderation state'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

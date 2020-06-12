@@ -1,0 +1,24 @@
+uuid: a7900ddb-5d6d-4dcf-9b06-32a4a0d7bc42
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.video
+    - field.storage.brick.field_inv_video_id
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.video.field_inv_video_id
+field_name: field_inv_video_id
+entity_type: brick
+bundle: video
+label: 'Video ID'
+description: 'To specify video id. Brightcove: refID, YouTube: Youtube Video ID'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

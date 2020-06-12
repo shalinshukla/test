@@ -1,0 +1,27 @@
+uuid: 0fe77904-5b92-423d-99e5-964f570d900f
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.sign_post_image
+    - field.storage.brick.field_sign_post_image_over_link
+  module:
+    - content_translation
+    - link
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.sign_post_image.field_sign_post_image_over_link
+field_name: field_sign_post_image_over_link
+entity_type: brick
+bundle: sign_post_image
+label: Link
+description: 'Link configuration field to be used either to upload file or to provide external/internal link URL'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 2
+field_type: link

@@ -1,0 +1,25 @@
+uuid: 0ac69abc-197b-41da-bc6e-f255b93e9094
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.sign_post_news
+    - field.storage.brick.field_sp_news_category
+  module:
+    - content_translation
+    - options
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.sign_post_news.field_sp_news_category
+field_name: field_sp_news_category
+entity_type: brick
+bundle: sign_post_news
+label: Category
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

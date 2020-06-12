@@ -1,0 +1,44 @@
+uuid: 38f71b16-2ea0-4ed4-9824-6a3304f0add1
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.media_library_video.body
+    - field.field.node.media_library_video.field_media_category
+    - field.field.node.media_library_video.field_media_library_video_id
+    - field.field.node.media_library_video.field_media_video_loop_enabled
+    - field.field.node.media_library_video.field_media_video_poster_image
+    - field.field.node.media_library_video.field_media_video_source
+    - field.field.node.media_library_video.field_meta_tags
+    - node.type.media_library_video
+  module:
+    - text
+    - user
+id: node.media_library_video.teaser
+targetEntityType: node
+bundle: media_library_video
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_media_category: true
+  field_media_library_video_id: true
+  field_media_video_loop_enabled: true
+  field_media_video_poster_image: true
+  field_media_video_source: true
+  field_meta_tags: true
+  langcode: true
+  scheduled_publication: true

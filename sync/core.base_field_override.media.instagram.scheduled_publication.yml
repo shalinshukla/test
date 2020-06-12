@@ -1,0 +1,20 @@
+uuid: 2de71920-49be-417b-a006-7a8248c4cf28
+langcode: fr
+status: true
+dependencies:
+  config:
+    - media.type.instagram
+  module:
+    - datetime
+id: media.instagram.scheduled_publication
+field_name: scheduled_publication
+entity_type: media
+bundle: instagram
+label: 'Scheduled publication'
+description: 'A date and time when the moderation state should be changed automatically.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

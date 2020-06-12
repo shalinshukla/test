@@ -1,0 +1,27 @@
+uuid: 2546db9f-b93f-4913-93ef-48af5cf962fa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_press_release_file
+    - node.type.quarterly_earnings
+  module:
+    - link
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.quarterly_earnings.field_press_release_file
+field_name: field_press_release_file
+entity_type: node
+bundle: quarterly_earnings
+label: 'Press Release File'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

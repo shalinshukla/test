@@ -1,0 +1,9 @@
+uuid: aadf209e-efc7-4cc5-8491-4a912a1a2f72
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.brick
+name: 'Description with background'
+type: description_with_background
+description: 'Add title with link'

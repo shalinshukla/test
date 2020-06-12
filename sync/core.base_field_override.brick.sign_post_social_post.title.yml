@@ -1,0 +1,18 @@
+uuid: 067e4d34-961b-4883-b558-fa94b3b50f98
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.sign_post_social_post
+id: brick.sign_post_social_post.title
+field_name: title
+entity_type: brick
+bundle: sign_post_social_post
+label: Title
+description: 'The title of the entity.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,9 @@
+uuid: f60bacec-a1a3-4863-a75a-96de100165b5
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.brick
+name: 'Financial Calendar'
+type: financial_calendar
+description: ''

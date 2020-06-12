@@ -1,0 +1,23 @@
+uuid: a0c923d3-997b-4348-8866-7c2ab5c8dc19
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.media_library
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: node.media_library.created
+field_name: created
+entity_type: node
+bundle: media_library
+label: 'Authored on'
+description: 'The time that the node was created.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

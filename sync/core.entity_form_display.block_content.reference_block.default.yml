@@ -1,0 +1,66 @@
+uuid: 73aa5929-f2e4-4b0a-9521-8c8667d313d4
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.reference_block
+    - field.field.block_content.reference_block.body
+    - field.field.block_content.reference_block.field_reference_block
+  module:
+    - brickex
+    - text
+id: block_content.reference_block.default
+targetEntityType: block_content
+bundle: reference_block
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 3
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+    region: content
+  field_reference_block:
+    weight: 2
+    settings:
+      form_mode: default
+      label_singular: ''
+      label_plural: ''
+      allow_new: '1'
+      match_operator: CONTAINS
+      override_labels: 0
+      allow_existing: 0
+    third_party_settings: {  }
+    type: brickex_tree_inline
+    region: content
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 1
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  moderation_state:
+    type: moderation_state_default
+    weight: 100
+    settings: {  }
+    region: content
+    third_party_settings: {  }
+  translation:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

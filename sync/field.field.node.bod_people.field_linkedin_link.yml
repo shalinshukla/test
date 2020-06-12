@@ -1,0 +1,27 @@
+uuid: 937a9c34-d3e7-4b0f-bf31-43fc6ea6264c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_linkedin_link
+    - node.type.bod_people
+  module:
+    - link
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.bod_people.field_linkedin_link
+field_name: field_linkedin_link
+entity_type: node
+bundle: bod_people
+label: 'Linkedin link'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

@@ -1,0 +1,9 @@
+uuid: 22922796-0b99-46ed-bf04-98efc63eb04f
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.brick
+name: 'Image Gallery'
+type: image_gallery
+description: 'Image gallery full width showing images with prev - next options'

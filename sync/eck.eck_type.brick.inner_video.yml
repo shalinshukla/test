@@ -1,0 +1,9 @@
+uuid: 37917228-bd0c-473e-aab6-f85a37d2f7d9
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.brick
+name: 'Inner Video'
+type: inner_video
+description: 'Inner Video to be the part of Video Gallery'

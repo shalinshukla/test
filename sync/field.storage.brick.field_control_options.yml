@@ -1,0 +1,27 @@
+uuid: 4525e576-1b62-4f6b-978d-6334f5035dca
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+    - options
+id: brick.field_control_options
+field_name: field_control_options
+entity_type: brick
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: hidden
+      label: 'Disable pagination Indicators'
+    -
+      value: hide-arrows
+      label: 'Disable next/prev arrows'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

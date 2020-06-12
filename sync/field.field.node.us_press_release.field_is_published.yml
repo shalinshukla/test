@@ -1,0 +1,25 @@
+uuid: 7a195042-ff75-4d0b-850f-b75627317fd7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_is_published
+    - node.type.us_press_release
+_core:
+  default_config_hash: JwDpPRzqQaJmCB7uYAOC62NKZNXgiRzQ_xHgXc4XbiU
+id: node.us_press_release.field_is_published
+field_name: field_is_published
+entity_type: node
+bundle: us_press_release
+label: 'Is Published'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Is Published'
+  off_label: 'Is Published'
+field_type: boolean

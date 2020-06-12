@@ -1,0 +1,25 @@
+uuid: 74445633-b80e-45a5-9420-538cd3c9e045
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.video_banner
+    - field.storage.brick.field_vbanner_video_data_type
+  module:
+    - content_translation
+    - options
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.video_banner.field_vbanner_video_data_type
+field_name: field_vbanner_video_data_type
+entity_type: brick
+bundle: video_banner
+label: 'Data Type/Source'
+description: 'To specify Type of Data / Video Source'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

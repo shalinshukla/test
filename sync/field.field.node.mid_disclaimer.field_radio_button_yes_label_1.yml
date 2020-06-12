@@ -1,0 +1,26 @@
+uuid: 54be0565-fd14-46b9-808c-fca447286a11
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_radio_button_yes_label_1
+    - node.type.mid_disclaimer
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: node.mid_disclaimer.field_radio_button_yes_label_1
+field_name: field_radio_button_yes_label_1
+entity_type: node
+bundle: mid_disclaimer
+label: 'Radio Button Yes Label Level 1'
+description: 'This is Radio button Yes label.'
+required: false
+translatable: true
+default_value:
+  -
+    value: 'Yes'
+default_value_callback: ''
+settings: {  }
+field_type: string

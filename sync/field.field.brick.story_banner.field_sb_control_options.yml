@@ -1,0 +1,25 @@
+uuid: a2750b67-e4e9-433a-9a5d-78d88afc6b8c
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.story_banner
+    - field.storage.brick.field_sb_control_options
+  module:
+    - options
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: brick.story_banner.field_sb_control_options
+field_name: field_sb_control_options
+entity_type: brick
+bundle: story_banner
+label: 'Control options'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

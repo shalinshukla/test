@@ -1,0 +1,24 @@
+uuid: 60693e3f-c289-4b38-993b-40389e4dd74f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_bullet_point_title
+    - node.type.bod_people
+  module:
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.bod_people.field_bullet_point_title
+field_name: field_bullet_point_title
+entity_type: node
+bundle: bod_people
+label: 'Bullet point title'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

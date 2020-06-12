@@ -1,0 +1,25 @@
+uuid: eed97fbb-ebb7-422e-85f4-a20e9b2d9f48
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_annual_report_date
+    - node.type.annual_report
+  module:
+    - datetime
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.annual_report.field_annual_report_date
+field_name: field_annual_report_date
+entity_type: node
+bundle: annual_report
+label: 'Annual Report Date'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

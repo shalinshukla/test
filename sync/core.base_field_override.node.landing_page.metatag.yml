@@ -1,0 +1,23 @@
+uuid: b16eea9d-bd4a-4e4c-b4c0-38e887e2ce7c
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.landing_page
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: node.landing_page.metatag
+field_name: metatag
+entity_type: node
+bundle: landing_page
+label: Metatags
+description: 'The meta tags for the entity.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

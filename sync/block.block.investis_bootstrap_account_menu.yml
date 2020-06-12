@@ -1,0 +1,27 @@
+uuid: c00e8cfa-c636-4b27-8d4b-e3a3893f5e05
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - investis_bootstrap
+_core:
+  default_config_hash: R2K_qX0ZUMbUL6ie_-S9tZVjvqmlWKlscikgeRv9vhw
+id: investis_bootstrap_account_menu
+theme: investis_bootstrap
+region: navigation
+weight: -3
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'User account menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 2
+  expand_all_items: false
+visibility: {  }

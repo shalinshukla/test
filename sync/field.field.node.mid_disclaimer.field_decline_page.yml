@@ -1,0 +1,38 @@
+uuid: 493b1fea-428c-4acd-91e3-749c632e4e8f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_decline_page
+    - node.type.mid_disclaimer
+    - node.type.page
+  enforced:
+    module:
+      - mid_disclaimer
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+_core:
+  default_config_hash: QXUDYDWHajsfM4as_fnDIhEs4tH-DvORJMjd4CKUm3Y
+id: node.mid_disclaimer.field_decline_page
+field_name: field_decline_page
+entity_type: node
+bundle: mid_disclaimer
+label: 'Decline page'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      page: page
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

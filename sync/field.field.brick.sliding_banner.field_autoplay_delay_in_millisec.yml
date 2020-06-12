@@ -1,0 +1,30 @@
+uuid: dae85560-bb87-4bb2-94c4-ab6dd4e2ffe6
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.sliding_banner
+    - field.storage.brick.field_autoplay_delay_in_millisec
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    translation_sync: {  }
+id: brick.sliding_banner.field_autoplay_delay_in_millisec
+field_name: field_autoplay_delay_in_millisec
+entity_type: brick
+bundle: sliding_banner
+label: 'Autoplay delay (in milliseconds)'
+description: 'The amount of time to delay between automatically cycling an item. If no value is entered, carousel will not automatically cycle.'
+required: false
+translatable: true
+default_value:
+  -
+    value: 5000
+default_value_callback: ''
+settings:
+  min: 500
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

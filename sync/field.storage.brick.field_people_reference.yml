@@ -1,0 +1,20 @@
+uuid: 83f5ed29-8f35-4ce0-a22c-232595fece75
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+    - views
+id: brick.field_people_reference
+field_name: field_people_reference
+entity_type: brick
+type: entity_reference
+settings:
+  target_type: view
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

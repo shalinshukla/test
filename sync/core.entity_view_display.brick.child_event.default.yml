@@ -1,0 +1,44 @@
+uuid: 378b80f1-a958-4b05-8d61-42d66a7dae8f
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.child_event
+    - field.field.brick.child_event.field_event_end_date
+    - field.field.brick.child_event.field_event_start_date
+  module:
+    - datetime
+id: brick.child_event.default
+targetEntityType: brick
+bundle: child_event
+mode: default
+content:
+  field_event_end_date:
+    weight: -3
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_event_start_date:
+    weight: -4
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  title:
+    label: hidden
+    type: string
+    weight: -5
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  search_api_excerpt: true

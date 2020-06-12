@@ -1,0 +1,37 @@
+uuid: 0f91d9f9-c220-4c9a-b407-86439e873fe0
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.key_fact_content
+    - eck.eck_type.brick.key_fact_content_list
+    - field.storage.brick.field_key_fact_content
+  module:
+    - brick_modal
+    - bricks
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+  brick_modal:
+    delete_referenced_entities: 0
+id: brick.key_fact_content_list.field_key_fact_content
+field_name: field_key_fact_content
+entity_type: brick
+bundle: key_fact_content_list
+label: 'Key Fact Content'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:brick'
+  handler_settings:
+    target_bundles:
+      key_fact_content: key_fact_content
+    sort:
+      field: _none
+    auto_create: 0
+    auto_create_bundle: ''
+field_type: bricks

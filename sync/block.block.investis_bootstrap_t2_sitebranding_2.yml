@@ -1,0 +1,23 @@
+uuid: 57aa8213-d75c-4e17-a0b7-834d5fe1898d
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - investis_bootstrap_t2
+id: investis_bootstrap_t2_sitebranding_2
+theme: investis_bootstrap_t2
+region: footer
+weight: -5
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: false
+visibility: {  }

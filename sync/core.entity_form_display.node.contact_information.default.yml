@@ -1,0 +1,155 @@
+uuid: 3c12fb74-0c28-4c2c-bdaf-52fa0cbfcef6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.contact_information.body
+    - field.field.node.contact_information.field_contact_designation
+    - field.field.node.contact_information.field_contact_email
+    - field.field.node.contact_information.field_contact_image
+    - field.field.node.contact_information.field_contact_linkedin
+    - field.field.node.contact_information.field_contact_phone_number
+    - field.field.node.contact_information.field_meta_tags
+    - image.style.thumbnail
+    - node.type.contact_information
+    - workflows.workflow.editorial
+  module:
+    - content_moderation
+    - field_group
+    - image
+    - imce
+    - lightning_media
+    - metatag
+    - scheduler
+    - telephone
+third_party_settings:
+  field_group:
+    group_social_profile_links:
+      children:
+        - field_contact_linkedin
+      parent_name: ''
+      weight: 6
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: open
+        description: ''
+        required_fields: true
+      label: 'Social profile links'
+      region: content
+id: node.contact_information.default
+targetEntityType: node
+bundle: contact_information
+mode: default
+content:
+  field_contact_designation:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_contact_email:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: email_default
+    region: content
+  field_contact_image:
+    type: image_image
+    weight: 2
+    settings:
+      preview_image_style: thumbnail
+      progress_indicator: throbber
+    region: content
+    third_party_settings:
+      imce:
+        enabled: true
+      lightning_media:
+        file_links: true
+        remove_button: true
+  field_contact_linkedin:
+    weight: 7
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_contact_phone_number:
+    weight: 4
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: telephone_default
+    region: content
+  field_meta_tags:
+    weight: 7
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_firehose
+    region: content
+  id_class:
+    type: string_textfield
+    weight: 10
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  moderation_state:
+    type: moderation_state_default
+    weight: 12
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  publish_on:
+    type: datetime_timestamp_no_default
+    weight: 8
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  scheduler_settings:
+    weight: 20
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 11
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  unpublish_on:
+    type: datetime_timestamp_no_default
+    weight: 9
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  body: true
+  created: true
+  langcode: true
+  path: true
+  promote: true
+  scheduled_publication: true
+  sticky: true
+  uid: true
