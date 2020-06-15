@@ -1,0 +1,239 @@
+<?php
+
+/**
+ * @file
+ * Install file to add indexes columns.
+ */
+
+use Drupal\Core\Entity\Sql\SqlContentEntityStorage;
+
+/**
+ * Implements hook_install().
+ */
+function geocluster_install() {
+  // Add the tables to the geofield fields.
+  $field_type = 'geofield';
+
+  for ($i = 1; $i <= 12; $i++) {
+    $name = 'geocluster_index_' . $i;
+    _geocluster_field_definition_add_helper($field_type, $name);
+  }
+
+  _geocluster_clean_definitions();
+
+  // Enable geocluster views plugin.
+  $config = \Drupal::service('config.factory')->getEditable('views.settings');
+  $display_extenders = $config->get('display_extenders') ?? [];
+  $display_extenders[] = 'geocluster_views_display_extender';
+  $config->set('display_extenders', $display_extenders);
+  $config->save();
+}
+
+/**
+ * Implements hook_uninstall().
+ */
+function geocluster_uninstall() {
+  // Remove the tables to the geofield fields.
+  $field_type = 'geofield';
+
+  for ($i = 1; $i <= 12; $i++) {
+    $name = 'geocluster_index_' . $i;
+    _geocluster_field_definition_delete_helper($field_type, $name);
+  }
+
+  _geocluster_clean_definitions();
+
+  // Disable geocluster views plugin.
+  $config = \Drupal::service('config.factory')->getEditable('views.settings');
+  $display_extenders = $config->get('display_extenders') ?: [];
+  $key = array_search('geocluster_views_display_extender', $display_extenders);
+  if ($key !== FALSE) {
+    unset($display_extenders[$key]);
+    $config->set('display_extenders', $display_extenders);
+    $config->save();
+  }
+}
+
+/**
+ * Add a new column for fieldType.
+ *
+ * @param string $field_type
+ *   FieldTypeId in your definition.
+ * @param string $new_property
+ *   Column name.
+ */
+function _geocluster_field_definition_add_helper($field_type, $new_property) {
+  // From https://gist.github.com/JPustkuchen/ce53d40303a51ca5f17ce7f48c363b9b
+  $manager = \Drupal::entityDefinitionUpdateManager();
+  $field_map = \Drupal::service('entity_field.manager')->getFieldMapByFieldType($field_type);
+
+  foreach ($field_map as $entity_type_id => $fields) {
+    foreach (array_keys($fields) as $field_name) {
+      $field_storage_definition = $manager->getFieldStorageDefinition($field_name, $entity_type_id);
+      $storage = \Drupal::entityTypeManager()->getStorage($entity_type_id);
+
+      if ($storage instanceof SqlContentEntityStorage) {
+        $table_mapping = $storage->getTableMapping([$field_name => $field_storage_definition]);
+        $table_names = $table_mapping->getDedicatedTableNames();
+        $columns = $table_mapping->getColumnNames($field_name);
+
+        foreach ($table_names as $table_name) {
+          $field_schema = $field_storage_definition->getSchema();
+          $schema = \Drupal::database()->schema();
+          $field_exists = $schema->fieldExists($table_name, $columns[$new_property]);
+          $table_exists = $schema->tableExists($table_name);
+          if (!$field_exists && $table_exists) {
+            $schema->addField($table_name, $columns[$new_property], $field_schema['columns'][$new_property]);
+            // TODO: add those columns as Index.
+          }
+        }
+      }
+    }
+  }
+}
+
+/**
+ * Remove a column of field_type.
+ *
+ * @param string $field_type
+ *   FieldTypeId in your definition.
+ * @param string $property
+ *   Column name.
+ */
+function _geocluster_field_definition_delete_helper($field_type, $property) {
+  $field_map = \Drupal::service('entity_field.manager')->getFieldMapByFieldType($field_type);
+  foreach ($field_map as $entity_type_id => $fields) {
+    foreach (array_keys($fields) as $field_name) {
+      _geocluster_field_property_definition_delete($entity_type_id, $field_name, $property);
+    }
+  }
+}
+
+/**
+ * Inner function, called by field_definition_delete_helper.
+ *
+ * @param string $entity_type_id
+ *   EntityTypeID in your definition.
+ * @param string $field_name
+ *   Field name in your definition.
+ * @param string $property
+ *   Column name.
+ */
+function _geocluster_field_property_definition_delete($entity_type_id, $field_name, $property) {
+  $entity_type_manager       = \Drupal::entityTypeManager();
+  $entity_update_manager     = \Drupal::entityDefinitionUpdateManager();
+  $entity_storage_schema_sql = \Drupal::keyValue('entity.storage_schema.sql');
+
+  $entity_type = $entity_type_manager->getDefinition($entity_type_id);
+  $field_storage_definition = $entity_update_manager->getFieldStorageDefinition($field_name, $entity_type_id);
+  $entity_storage = \Drupal::entityTypeManager()->getStorage($entity_type_id);
+  /** @var Drupal\Core\Entity\Sql\DefaultTableMapping $table_mapping */
+  $table_mapping = $entity_storage->getTableMapping([$field_name => $field_storage_definition]);
+
+  // Load the installed field schema so that it can be updated.
+  $schema_key = "$entity_type_id.field_schema_data.$field_name";
+  $field_schema_data = $entity_storage_schema_sql->get($schema_key);
+
+  // Get table name and revision table name, getFieldTableName DO NOT WORK
+  // So we use getDedicatedDataTableName.
+  $table = $table_mapping->getDedicatedDataTableName($field_storage_definition);
+  // try/catch.
+  $revision_table = NULL;
+  if ($entity_type->isRevisionable() && $field_storage_definition->isRevisionable()) {
+    if ($table_mapping->requiresDedicatedTableStorage($field_storage_definition)) {
+      $revision_table = $table_mapping->getDedicatedRevisionTableName($field_storage_definition);
+    }
+    elseif ($table_mapping->allowsSharedTableStorage($field_storage_definition)) {
+      $revision_table = $entity_type->getRevisionDataTable() ?: $entity_type->getRevisionTable();
+    }
+  }
+
+  // Save changes to the installed field schema.
+  if ($field_schema_data) {
+    $_column = $table_mapping->getFieldColumnName($field_storage_definition, $property);
+    // Update schema definition in database.
+    unset($field_schema_data[$table]['fields'][$_column]);
+    if ($revision_table) {
+      unset($field_schema_data[$revision_table]['fields'][$_column]);
+    }
+    $entity_storage_schema_sql->set($schema_key, $field_schema_data);
+    // Try to drop field data.
+    \Drupal::database()->schema()->dropField($table, $_column);
+  }
+}
+
+/**
+ * Inner function, called by field_definition_delete_helper.
+ */
+function _geocluster_clean_definitions() {
+  // From https://gist.github.com/JPustkuchen/ce53d40303a51ca5f17ce7f48c363b9b
+  $field_type = 'geofield';
+
+  $entity_type_manager = \Drupal::entityTypeManager();
+  $entity_field_manager = \Drupal::service('entity_field.manager');
+  $entity_field_map = $entity_field_manager->getFieldMapByFieldType($field_type);
+
+  foreach ($entity_field_map as $entity_type_id => $field_map) {
+    $entity_storage = $entity_type_manager->getStorage($entity_type_id);
+    $entity_type = $entity_type_manager->getDefinition($entity_type_id);
+    $field_storage_definitions = $entity_field_manager->getFieldStorageDefinitions($entity_type_id);
+    /** @var Drupal\Core\Entity\Sql\DefaultTableMapping $table_mapping */
+    $table_mapping = $entity_storage->getTableMapping($field_storage_definitions);
+    // Only need field storage definitions of address fields.
+    /** @var \Drupal\Core\Field\FieldStorageDefinitionInterface $field_storage_definition */
+    foreach (array_intersect_key($field_storage_definitions, $field_map) as $field_storage_definition) {
+      $field_name = $field_storage_definition->getName();
+      $tables = [];
+      try {
+        $table = $table_mapping->getFieldTableName($field_name);
+        $tables[] = $table;
+      }
+      catch (SqlContentEntityStorageException $e) {
+        // Custom storage? Broken site? No matter what, if there is no table
+        // or column, there's little we can do.
+        continue;
+      }
+      // See if the field has a revision table.
+      $revision_table = NULL;
+      if ($entity_type->isRevisionable() && $field_storage_definition->isRevisionable()) {
+        if ($table_mapping->requiresDedicatedTableStorage($field_storage_definition)) {
+          $revision_table = $table_mapping->getDedicatedRevisionTableName($field_storage_definition);
+          $tables[] = $revision_table;
+        }
+        elseif ($table_mapping->allowsSharedTableStorage($field_storage_definition)) {
+          $revision_table = $entity_type->getRevisionDataTable() ?: $entity_type->getRevisionTable();
+          $tables[] = $revision_table;
+        }
+      }
+
+      $database = \Drupal::database();
+      $existing_data = [];
+      foreach ($tables as $table) {
+        // Get the old data.
+        $existing_data[$table] = $database->select($table)
+          ->fields($table)
+          ->execute()
+          ->fetchAll(PDO::FETCH_ASSOC);
+
+        // Wipe it.
+        $database->truncate($table)->execute();
+      }
+
+      $manager = \Drupal::entityDefinitionUpdateManager();
+      $manager->updateFieldStorageDefinition($manager->getFieldStorageDefinition($field_name, $entity_type_id));
+
+      // Restore the data.
+      foreach ($tables as $table) {
+        if ($existing_data[$table]) {
+          $insert_query = $database
+            ->insert($table)
+            ->fields(array_keys(end($existing_data[$table])));
+          foreach ($existing_data[$table] as $row) {
+            $insert_query->values(array_values($row));
+          }
+          $insert_query->execute();
+        }
+      }
+    }
+  }
+}
